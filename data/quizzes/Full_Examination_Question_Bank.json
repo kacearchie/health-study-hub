@@ -1,0 +1,3706 @@
+{
+  "mcq_questions": [
+    {
+      "id": 1,
+      "question": "What is the atomic number of carbon?",
+      "options": ["4", "6", "8", "12"],
+      "correct_answer": "6",
+      "explanation": "Carbon has 6 protons in its nucleus, giving it an atomic number of 6."
+    },
+    {
+      "id": 2,
+      "question": "What is the normal resting heart rate for an adult?",
+      "options": ["40-60 bpm", "60-100 bpm", "100-120 bpm", "120-140 bpm"],
+      "correct_answer": "60-100 bpm",
+      "explanation": "Normal resting heart rate for a healthy adult is 60-100 beats per minute."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a carbohydrate?",
+      "options": ["Glucose", "Protein", "Lipid", "DNA"],
+      "correct_answer": "Glucose",
+      "explanation": "Glucose is a monosaccharide carbohydrate with the formula C6H12O6."
+    },
+    {
+      "id": 4,
+      "question": "What is the primary function of hemoglobin?",
+      "options": ["Oxygen transport", "Immune defense", "Blood clotting", "Hormone transport"],
+      "correct_answer": "Oxygen transport",
+      "explanation": "Hemoglobin transports oxygen from the lungs to tissues and helps carry carbon dioxide back."
+    },
+    {
+      "id": 5,
+      "question": "Which organ produces bile?",
+      "options": ["Stomach", "Pancreas", "Liver", "Gallbladder"],
+      "correct_answer": "Liver",
+      "explanation": "The liver produces bile, which is stored in the gallbladder and released for fat digestion."
+    },
+    {
+      "id": 6,
+      "question": "What type of bond links nucleotides in DNA?",
+      "options": ["Peptide", "Glycosidic", "Phosphodiester", "Hydrogen"],
+      "correct_answer": "Phosphodiester",
+      "explanation": "Nucleotides in DNA are linked by phosphodiester bonds between the 3' and 5' carbons."
+    },
+    {
+      "id": 7,
+      "question": "What is the normal pH of arterial blood?",
+      "options": ["7.0", "7.4", "8.0", "6.8"],
+      "correct_answer": "7.4",
+      "explanation": "Normal arterial blood pH is 7.35-7.45, tightly regulated by buffer systems."
+    },
+    {
+      "id": 8,
+      "question": "Which muscle type is involuntary and striated?",
+      "options": ["Skeletal", "Cardiac", "Smooth", "Voluntary"],
+      "correct_answer": "Cardiac",
+      "explanation": "Cardiac muscle is involuntary and striated, found only in the heart."
+    },
+    {
+      "id": 9,
+      "question": "What is the functional unit of the kidney?",
+      "options": ["Glomerulus", "Nephron", "Renal pyramid", "Collecting duct"],
+      "correct_answer": "Nephron",
+      "explanation": "The nephron is the functional unit of the kidney, responsible for filtration and urine formation."
+    },
+    {
+      "id": 10,
+      "question": "Which vitamin is essential for blood clotting?",
+      "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+      "correct_answer": "Vitamin K",
+      "explanation": "Vitamin K is essential for the synthesis of clotting factors in the liver."
+    },
+    {
+      "id": 11,
+      "question": "What is the primary energy currency of the cell?",
+      "options": ["GTP", "ATP", "NADH", "Glucose"],
+      "correct_answer": "ATP",
+      "explanation": "ATP is the primary energy currency of all cells, used to power most energy-requiring processes."
+    },
+    {
+      "id": 12,
+      "question": "Which amino acid is essential?",
+      "options": ["Alanine", "Leucine", "Glutamic acid", "Aspartic acid"],
+      "correct_answer": "Leucine",
+      "explanation": "Leucine is an essential amino acid that must be obtained from the diet."
+    },
+    {
+      "id": 13,
+      "question": "What is the pacemaker of the heart?",
+      "options": ["AV node", "SA node", "Bundle of His", "Purkinje fibers"],
+      "correct_answer": "SA node",
+      "explanation": "The sinoatrial (SA) node is the natural pacemaker, generating impulses at 60-100 bpm."
+    },
+    {
+      "id": 14,
+      "question": "What type of joint is the shoulder?",
+      "options": ["Hinge", "Ball-and-socket", "Pivot", "Saddle"],
+      "correct_answer": "Ball-and-socket",
+      "explanation": "The shoulder is a ball-and-socket joint allowing multi-axial movement."
+    },
+    {
+      "id": 15,
+      "question": "What is the function of mitochondria?",
+      "options": ["Protein synthesis", "ATP production", "Waste disposal", "Cell division"],
+      "correct_answer": "ATP production",
+      "explanation": "Mitochondria produce ATP through oxidative phosphorylation."
+    },
+    {
+      "id": 16,
+      "question": "What is the general formula for carbohydrates?",
+      "options": ["(CH2O)n", "(C6H12O6)n", "(CH2O2)n", "(C3H6O3)n"],
+      "correct_answer": "(CH2O)n",
+      "explanation": "Carbohydrates have the general formula (CH2O)n. For glucose, n=6."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is an alkane?",
+      "options": ["C2H4", "C2H6", "C2H2", "C6H6"],
+      "correct_answer": "C2H6",
+      "explanation": "Ethane (C2H6) is an alkane with only single bonds. C2H4 is an alkene, C2H2 is an alkyne."
+    },
+    {
+      "id": 18,
+      "question": "What is the normal tidal volume at rest?",
+      "options": ["250 mL", "500 mL", "750 mL", "1000 mL"],
+      "correct_answer": "500 mL",
+      "explanation": "Tidal volume is approximately 500 mL during normal, quiet breathing."
+    },
+    {
+      "id": 19,
+      "question": "Which hormone regulates blood glucose?",
+      "options": ["Insulin", "Glucagon", "Both", "Neither"],
+      "correct_answer": "Both",
+      "explanation": "Insulin lowers blood glucose, while glucagon raises it - both maintain glucose homeostasis."
+    },
+    {
+      "id": 20,
+      "question": "What is the function of the cerebellum?",
+      "options": ["Memory", "Coordination and balance", "Vision", "Speech"],
+      "correct_answer": "Coordination and balance",
+      "explanation": "The cerebellum coordinates voluntary movements, maintains posture and balance."
+    },
+    {
+      "id": 21,
+      "question": "Which chamber of the heart pumps blood to the lungs?",
+      "options": ["Right atrium", "Right ventricle", "Left atrium", "Left ventricle"],
+      "correct_answer": "Right ventricle",
+      "explanation": "The right ventricle pumps deoxygenated blood through the pulmonary artery to the lungs."
+    },
+    {
+      "id": 22,
+      "question": "What is the function of the large intestine?",
+      "options": ["Digestion of proteins", "Absorption of nutrients", "Water and electrolyte absorption", "Production of bile"],
+      "correct_answer": "Water and electrolyte absorption",
+      "explanation": "The large intestine absorbs water, electrolytes, and some vitamins from undigested food."
+    },
+    {
+      "id": 23,
+      "question": "What is the role of surfactant in the lungs?",
+      "options": ["Prevents infection", "Reduces surface tension", "Increases oxygen binding", "Produces mucus"],
+      "correct_answer": "Reduces surface tension",
+      "explanation": "Surfactant reduces surface tension in the alveoli, preventing collapse during expiration."
+    },
+    {
+      "id": 24,
+      "question": "Which enzyme digests proteins in the stomach?",
+      "options": ["Amylase", "Lipase", "Pepsin", "Trypsin"],
+      "correct_answer": "Pepsin",
+      "explanation": "Pepsin is the primary protein-digesting enzyme in the stomach, activated by the acidic environment."
+    },
+    {
+      "id": 25,
+      "question": "What is the resting membrane potential of a neuron?",
+      "options": ["-70 mV", "+30 mV", "0 mV", "-90 mV"],
+      "correct_answer": "-70 mV",
+      "explanation": "The resting membrane potential of a typical neuron is approximately -70 mV."
+    },
+    {
+      "id": 26,
+      "question": "Which of the following is a strong acid?",
+      "options": ["CH3COOH", "HCl", "H2CO3", "H3PO4"],
+      "correct_answer": "HCl",
+      "explanation": "HCl is a strong acid that completely dissociates in water."
+    },
+    {
+      "id": 27,
+      "question": "What is the function of platelets?",
+      "options": ["Oxygen transport", "Immune defense", "Blood clotting", "Hormone transport"],
+      "correct_answer": "Blood clotting",
+      "explanation": "Platelets are essential for blood clotting and hemostasis."
+    },
+    {
+      "id": 28,
+      "question": "What is the pH of a solution with [H+] = 1 × 10⁻⁵ M?",
+      "options": ["5", "7", "9", "2"],
+      "correct_answer": "5",
+      "explanation": "pH = -log[H+]. For [H+] = 1 × 10⁻⁵ M, pH = 5."
+    },
+    {
+      "id": 29,
+      "question": "Which neurotransmitter is released at the neuromuscular junction?",
+      "options": ["Dopamine", "Acetylcholine", "Serotonin", "Glutamate"],
+      "correct_answer": "Acetylcholine",
+      "explanation": "Acetylcholine (ACh) is released at the neuromuscular junction to trigger muscle contraction."
+    },
+    {
+      "id": 30,
+      "question": "What is the difference between saturated and unsaturated fats?",
+      "options": ["Number of carbons", "Presence of double bonds", "Presence of oxygen", "Chain length"],
+      "correct_answer": "Presence of double bonds",
+      "explanation": "Saturated fats have no double bonds, unsaturated fats have double bonds."
+    },
+    {
+      "id": 31,
+      "question": "What is the function of the ribosomes?",
+      "options": ["ATP production", "Protein synthesis", "Waste disposal", "Cell division"],
+      "correct_answer": "Protein synthesis",
+      "explanation": "Ribosomes are the site of protein synthesis, translating mRNA into polypeptide chains."
+    },
+    {
+      "id": 32,
+      "question": "Which blood type is the universal recipient?",
+      "options": ["Type A", "Type B", "Type AB", "Type O"],
+      "correct_answer": "Type AB",
+      "explanation": "Type AB blood is the universal recipient because it has no anti-A or anti-B antibodies."
+    },
+    {
+      "id": 33,
+      "question": "What is the function of the gallbladder?",
+      "options": ["Produces bile", "Stores and concentrates bile", "Digests proteins", "Produces insulin"],
+      "correct_answer": "Stores and concentrates bile",
+      "explanation": "The gallbladder stores and concentrates bile produced by the liver."
+    },
+    {
+      "id": 34,
+      "question": "What is the normal respiratory rate for an adult at rest?",
+      "options": ["8-10 breaths/min", "12-20 breaths/min", "25-30 breaths/min", "35-40 breaths/min"],
+      "correct_answer": "12-20 breaths/min",
+      "explanation": "Normal resting respiratory rate for an adult is 12-20 breaths per minute."
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is a monosaccharide?",
+      "options": ["Sucrose", "Lactose", "Glucose", "Starch"],
+      "correct_answer": "Glucose",
+      "explanation": "Glucose is a monosaccharide (single sugar unit). Sucrose and lactose are disaccharides."
+    },
+    {
+      "id": 36,
+      "question": "What is the function of the kidneys?",
+      "options": ["Filter blood and produce urine", "Digest food", "Pump blood", "Produce hormones"],
+      "correct_answer": "Filter blood and produce urine",
+      "explanation": "The kidneys filter blood to remove waste and regulate fluid balance."
+    },
+    {
+      "id": 37,
+      "question": "Which hormone regulates water reabsorption in the kidneys?",
+      "options": ["Aldosterone", "ADH", "Insulin", "Glucagon"],
+      "correct_answer": "ADH",
+      "explanation": "ADH increases water reabsorption in the collecting ducts, concentrating urine."
+    },
+    {
+      "id": 38,
+      "question": "What is the function of the myelin sheath?",
+      "options": ["Protects the neuron", "Speeds up impulse conduction", "Provides nutrition", "Produces neurotransmitters"],
+      "correct_answer": "Speeds up impulse conduction",
+      "explanation": "The myelin sheath insulates the axon and speeds up impulse conduction."
+    },
+    {
+      "id": 39,
+      "question": "What is the product of a neutralization reaction?",
+      "options": ["Water and salt", "Water and carbon dioxide", "Salt and hydrogen", "Water and oxygen"],
+      "correct_answer": "Water and salt",
+      "explanation": "Neutralization: Acid + Base → Salt + Water."
+    },
+    {
+      "id": 40,
+      "question": "Which of the following is a disaccharide?",
+      "options": ["Glucose", "Fructose", "Sucrose", "Starch"],
+      "correct_answer": "Sucrose",
+      "explanation": "Sucrose (table sugar) is a disaccharide composed of glucose and fructose."
+    },
+    {
+      "id": 41,
+      "question": "What is the function of the pancreas?",
+      "options": ["Produces digestive enzymes and insulin", "Produces bile", "Stores bile", "Digests proteins"],
+      "correct_answer": "Produces digestive enzymes and insulin",
+      "explanation": "The pancreas produces digestive enzymes and hormones (insulin, glucagon)."
+    },
+    {
+      "id": 42,
+      "question": "What is the normal cardiac output at rest?",
+      "options": ["2.5 L/min", "5 L/min", "10 L/min", "15 L/min"],
+      "correct_answer": "5 L/min",
+      "explanation": "Average cardiac output at rest is approximately 5 L/min."
+    },
+    {
+      "id": 43,
+      "question": "Which of the following is a ketone body?",
+      "options": ["Glucose", "Acetoacetate", "Lactate", "Pyruvate"],
+      "correct_answer": "Acetoacetate",
+      "explanation": "Acetoacetate is one of the ketone bodies produced during fatty acid oxidation."
+    },
+    {
+      "id": 44,
+      "question": "What is the function of the thymus?",
+      "options": ["Produces T cells", "Produces B cells", "Filters blood", "Produces hormones"],
+      "correct_answer": "Produces T cells",
+      "explanation": "The thymus is where T lymphocytes mature and become immunocompetent."
+    },
+    {
+      "id": 45,
+      "question": "What is the pH of pure water?",
+      "options": ["0", "7", "14", "10"],
+      "correct_answer": "7",
+      "explanation": "Pure water has a pH of 7, which is neutral."
+    },
+    {
+      "id": 46,
+      "question": "Which of the following is a product of glycolysis?",
+      "options": ["Glucose", "Pyruvate", "Acetyl-CoA", "Fatty acids"],
+      "correct_answer": "Pyruvate",
+      "explanation": "Glycolysis breaks down glucose to produce pyruvate, ATP, and NADH."
+    },
+    {
+      "id": 47,
+      "question": "What is the function of the spleen?",
+      "options": ["Filters blood and destroys old RBCs", "Produces bile", "Digests food", "Produces hormones"],
+      "correct_answer": "Filters blood and destroys old RBCs",
+      "explanation": "The spleen filters blood, destroys old red blood cells, and stores platelets."
+    },
+    {
+      "id": 48,
+      "question": "What is the normal systolic blood pressure?",
+      "options": ["60-80 mmHg", "80-100 mmHg", "90-120 mmHg", "120-140 mmHg"],
+      "correct_answer": "90-120 mmHg",
+      "explanation": "Normal systolic blood pressure is approximately 90-120 mmHg."
+    },
+    {
+      "id": 49,
+      "question": "Which of the following is an aromatic hydrocarbon?",
+      "options": ["Ethane", "Ethene", "Benzene", "Ethyne"],
+      "correct_answer": "Benzene",
+      "explanation": "Benzene (C6H6) is the simplest aromatic hydrocarbon with a ring of delocalized pi electrons."
+    },
+    {
+      "id": 50,
+      "question": "What is the function of the adrenal glands?",
+      "options": ["Produce stress hormones", "Produce digestive enzymes", "Produce insulin", "Produce bile"],
+      "correct_answer": "Produce stress hormones",
+      "explanation": "The adrenal glands produce cortisol, adrenaline, and aldosterone."
+    },
+    {
+      "id": 51,
+      "question": "What is the role of insulin in carbohydrate metabolism?",
+      "options": ["Promotes glycogen breakdown", "Promotes glucose uptake", "Promotes gluconeogenesis", "Promotes glycogenolysis"],
+      "correct_answer": "Promotes glucose uptake",
+      "explanation": "Insulin promotes glucose uptake by cells and stimulates glycogenesis."
+    },
+    {
+      "id": 52,
+      "question": "Which part of the brain controls breathing?",
+      "options": ["Cerebrum", "Cerebellum", "Brainstem", "Thalamus"],
+      "correct_answer": "Brainstem",
+      "explanation": "The brainstem (medulla oblongata and pons) controls breathing and other vital functions."
+    },
+    {
+      "id": 53,
+      "question": "What is the function of the alveoli?",
+      "options": ["Air passage", "Gas exchange", "Mucus production", "Sound production"],
+      "correct_answer": "Gas exchange",
+      "explanation": "Alveoli are the sites of gas exchange where oxygen enters the blood and CO2 leaves."
+    },
+    {
+      "id": 54,
+      "question": "Which of the following is an ester?",
+      "options": ["CH3COOH", "CH3COOCH3", "CH3CH2OH", "CH3OCH3"],
+      "correct_answer": "CH3COOCH3",
+      "explanation": "CH3COOCH3 (methyl acetate) is an ester. CH3COOH is a carboxylic acid."
+    },
+    {
+      "id": 55,
+      "question": "What is the function of the pituitary gland?",
+      "options": ["Master gland controlling other endocrine glands", "Produces insulin", "Produces bile", "Filters blood"],
+      "correct_answer": "Master gland controlling other endocrine glands",
+      "explanation": "The pituitary gland is the master gland, producing hormones that regulate other endocrine glands."
+    },
+    {
+      "id": 56,
+      "question": "What is the normal hemoglobin concentration in males?",
+      "options": ["10-12 g/dL", "13-17 g/dL", "18-20 g/dL", "21-25 g/dL"],
+      "correct_answer": "13-17 g/dL",
+      "explanation": "Normal hemoglobin concentration is approximately 13-17 g/dL in males and 12-16 g/dL in females."
+    },
+    {
+      "id": 57,
+      "question": "What type of reaction do alkenes undergo?",
+      "options": ["Substitution", "Addition", "Elimination", "Combustion"],
+      "correct_answer": "Addition",
+      "explanation": "Alkenes undergo addition reactions where the pi bond breaks and two new sigma bonds form."
+    },
+    {
+      "id": 58,
+      "question": "What is the function of the lymphatic system?",
+      "options": ["Transports oxygen", "Defense and fluid balance", "Transports nutrients", "Produces bile"],
+      "correct_answer": "Defense and fluid balance",
+      "explanation": "The lymphatic system provides immune defense and maintains fluid balance."
+    },
+    {
+      "id": 59,
+      "question": "What is the pH of gastric juice?",
+      "options": ["1-2", "4-5", "6-7", "8-9"],
+      "correct_answer": "1-2",
+      "explanation": "Gastric juice has a pH of 1-2 due to hydrochloric acid."
+    },
+    {
+      "id": 60,
+      "question": "Which of the following is a coenzyme?",
+      "options": ["NAD+", "ATP", "Glucose", "Protein"],
+      "correct_answer": "NAD+",
+      "explanation": "NAD+ is a coenzyme that acts as an electron carrier in metabolic reactions."
+    },
+    {
+      "id": 61,
+      "question": "What is the function of the thyroid gland?",
+      "options": ["Produces thyroxine", "Produces insulin", "Produces cortisol", "Produces bile"],
+      "correct_answer": "Produces thyroxine",
+      "explanation": "The thyroid gland produces thyroxine (T4) and triiodothyronine (T3), regulating metabolism."
+    },
+    {
+      "id": 62,
+      "question": "What is the normal white blood cell count?",
+      "options": ["1,000-2,000 /μL", "4,500-11,000 /μL", "15,000-20,000 /μL", "25,000-30,000 /μL"],
+      "correct_answer": "4,500-11,000 /μL",
+      "explanation": "Normal WBC count is 4,500-11,000 cells per microliter of blood."
+    },
+    {
+      "id": 63,
+      "question": "What type of bond is formed by the sharing of electrons?",
+      "options": ["Ionic", "Covalent", "Hydrogen", "Metallic"],
+      "correct_answer": "Covalent",
+      "explanation": "Covalent bonds form when atoms share electron pairs."
+    },
+    {
+      "id": 64,
+      "question": "What is the function of the small intestine?",
+      "options": ["Water absorption", "Nutrient absorption", "Bile production", "Protein digestion"],
+      "correct_answer": "Nutrient absorption",
+      "explanation": "The small intestine is the primary site of nutrient absorption."
+    },
+    {
+      "id": 65,
+      "question": "What is the function of the hypothalamus?",
+      "options": ["Regulates body temperature and hunger", "Produces bile", "Filters blood", "Digests food"],
+      "correct_answer": "Regulates body temperature and hunger",
+      "explanation": "The hypothalamus regulates body temperature, hunger, thirst, and the endocrine system."
+    },
+    {
+      "id": 66,
+      "question": "Which of the following is a product of the TCA cycle?",
+      "options": ["ATP", "NADH", "FADH2", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The TCA cycle produces ATP, NADH, and FADH2."
+    },
+    {
+      "id": 67,
+      "question": "What is the normal platelet count?",
+      "options": ["50,000-100,000 /μL", "150,000-400,000 /μL", "450,000-600,000 /μL", "650,000-800,000 /μL"],
+      "correct_answer": "150,000-400,000 /μL",
+      "explanation": "Normal platelet count is 150,000-400,000 per microliter of blood."
+    },
+    {
+      "id": 68,
+      "question": "What type of muscle is found in the walls of blood vessels?",
+      "options": ["Skeletal", "Cardiac", "Smooth", "Voluntary"],
+      "correct_answer": "Smooth",
+      "explanation": "Smooth muscle is found in the walls of blood vessels, hollow organs, and airways."
+    },
+    {
+      "id": 69,
+      "question": "What is the function of the parathyroid glands?",
+      "options": ["Regulate calcium levels", "Regulate blood glucose", "Produce insulin", "Produce bile"],
+      "correct_answer": "Regulate calcium levels",
+      "explanation": "The parathyroid glands regulate calcium levels through parathyroid hormone (PTH)."
+    },
+    {
+      "id": 70,
+      "question": "Which of the following is a product of anaerobic glycolysis?",
+      "options": ["Glucose", "Pyruvate", "Lactate", "Acetyl-CoA"],
+      "correct_answer": "Lactate",
+      "explanation": "Anaerobic glycolysis produces lactate and 2 ATP."
+    },
+    {
+      "id": 71,
+      "question": "What is the function of the esophagus?",
+      "options": ["Digests food", "Transports food to stomach", "Absorbs nutrients", "Produces bile"],
+      "correct_answer": "Transports food to stomach",
+      "explanation": "The esophagus transports food from the pharynx to the stomach via peristalsis."
+    },
+    {
+      "id": 72,
+      "question": "What is the normal blood glucose level?",
+      "options": ["40-60 mg/dL", "70-100 mg/dL", "120-150 mg/dL", "160-200 mg/dL"],
+      "correct_answer": "70-100 mg/dL",
+      "explanation": "Normal fasting blood glucose is 70-100 mg/dL."
+    },
+    {
+      "id": 73,
+      "question": "What type of bond links amino acids in proteins?",
+      "options": ["Glycosidic", "Peptide", "Ester", "Phosphodiester"],
+      "correct_answer": "Peptide",
+      "explanation": "Amino acids are linked by peptide bonds formed by condensation reactions."
+    },
+    {
+      "id": 74,
+      "question": "What is the function of the prostate gland?",
+      "options": ["Produces sperm", "Produces seminal fluid", "Stores urine", "Produces testosterone"],
+      "correct_answer": "Produces seminal fluid",
+      "explanation": "The prostate gland produces a milky fluid that contributes to semen."
+    },
+    {
+      "id": 75,
+      "question": "What is the normal hematocrit in females?",
+      "options": ["30-35%", "37-47%", "48-55%", "56-60%"],
+      "correct_answer": "37-47%",
+      "explanation": "Normal hematocrit is 37-47% in females and 40-50% in males."
+    },
+    {
+      "id": 76,
+      "question": "What type of joint is the knee?",
+      "options": ["Ball-and-socket", "Hinge", "Pivot", "Saddle"],
+      "correct_answer": "Hinge",
+      "explanation": "The knee is a hinge joint allowing flexion and extension."
+    },
+    {
+      "id": 77,
+      "question": "What is the function of the sympathetic nervous system?",
+      "options": ["Rest and digest", "Fight or flight", "Sleep", "Digestion"],
+      "correct_answer": "Fight or flight",
+      "explanation": "The sympathetic nervous system is responsible for the fight-or-flight response."
+    },
+    {
+      "id": 78,
+      "question": "What is the normal partial pressure of oxygen in arterial blood?",
+      "options": ["40 mmHg", "100 mmHg", "150 mmHg", "760 mmHg"],
+      "correct_answer": "100 mmHg",
+      "explanation": "Normal PaO2 is approximately 100 mmHg."
+    },
+    {
+      "id": 79,
+      "question": "What type of bond is found in water molecules?",
+      "options": ["Covalent", "Ionic", "Hydrogen", "Metallic"],
+      "correct_answer": "Covalent",
+      "explanation": "Water molecules are held together by polar covalent bonds between oxygen and hydrogen."
+    },
+    {
+      "id": 80,
+      "question": "What is the function of the posterior pituitary?",
+      "options": ["Produces hormones", "Stores and releases hormones", "Produces insulin", "Produces bile"],
+      "correct_answer": "Stores and releases hormones",
+      "explanation": "The posterior pituitary stores and releases ADH and oxytocin produced by the hypothalamus."
+    },
+    {
+      "id": 81,
+      "question": "What is the normal serum potassium level?",
+      "options": ["2.5-3.5 mEq/L", "3.5-5.0 mEq/L", "5.5-6.5 mEq/L", "6.5-7.5 mEq/L"],
+      "correct_answer": "3.5-5.0 mEq/L",
+      "explanation": "Normal serum potassium is 3.5-5.0 mEq/L."
+    },
+    {
+      "id": 82,
+      "question": "What type of reaction do alkanes undergo?",
+      "options": ["Addition", "Substitution", "Elimination", "Oxidation"],
+      "correct_answer": "Substitution",
+      "explanation": "Alkanes undergo substitution reactions where hydrogen atoms are replaced by other groups."
+    },
+    {
+      "id": 83,
+      "question": "What is the function of the adrenal medulla?",
+      "options": ["Produces cortisol", "Produces adrenaline", "Produces aldosterone", "Produces insulin"],
+      "correct_answer": "Produces adrenaline",
+      "explanation": "The adrenal medulla produces adrenaline (epinephrine) and noradrenaline (norepinephrine)."
+    },
+    {
+      "id": 84,
+      "question": "Which of the following is an essential fatty acid?",
+      "options": ["Palmitic acid", "Stearic acid", "Linoleic acid", "Oleic acid"],
+      "correct_answer": "Linoleic acid",
+      "explanation": "Linoleic acid is an essential fatty acid that must be obtained from the diet."
+    },
+    {
+      "id": 85,
+      "question": "What is the normal serum sodium level?",
+      "options": ["115-125 mEq/L", "135-145 mEq/L", "155-165 mEq/L", "175-185 mEq/L"],
+      "correct_answer": "135-145 mEq/L",
+      "explanation": "Normal serum sodium is 135-145 mEq/L."
+    },
+    {
+      "id": 86,
+      "question": "What is the function of the gall bladder?",
+      "options": ["Produces bile", "Stores bile", "Produces insulin", "Digests proteins"],
+      "correct_answer": "Stores bile",
+      "explanation": "The gallbladder stores and concentrates bile produced by the liver."
+    },
+    {
+      "id": 87,
+      "question": "What is the normal pH of urine?",
+      "options": ["4.5-8.0", "7.0", "6.0-7.0", "8.0-9.0"],
+      "correct_answer": "4.5-8.0",
+      "explanation": "Normal urine pH ranges from 4.5 to 8.0 depending on diet and metabolic factors."
+    },
+    {
+      "id": 88,
+      "question": "What type of bond is formed by the transfer of electrons?",
+      "options": ["Covalent", "Ionic", "Hydrogen", "Metallic"],
+      "correct_answer": "Ionic",
+      "explanation": "Ionic bonds form when electrons are transferred from a metal to a nonmetal."
+    },
+    {
+      "id": 89,
+      "question": "What is the normal body temperature?",
+      "options": ["35°C", "37°C", "39°C", "41°C"],
+      "correct_answer": "37°C",
+      "explanation": "Normal core body temperature is approximately 37°C (98.6°F)."
+    },
+    {
+      "id": 90,
+      "question": "What type of tissue lines the respiratory tract?",
+      "options": ["Squamous epithelium", "Ciliated pseudostratified epithelium", "Transitional epithelium", "Simple cuboidal epithelium"],
+      "correct_answer": "Ciliated pseudostratified epithelium",
+      "explanation": "The respiratory tract is lined with ciliated pseudostratified columnar epithelium that moves mucus."
+    },
+    {
+      "id": 91,
+      "question": "What is the normal serum creatinine level?",
+      "options": ["0.1-0.5 mg/dL", "0.6-1.2 mg/dL", "1.3-2.0 mg/dL", "2.1-3.0 mg/dL"],
+      "correct_answer": "0.6-1.2 mg/dL",
+      "explanation": "Normal serum creatinine is 0.6-1.2 mg/dL, reflecting kidney function."
+    },
+    {
+      "id": 92,
+      "question": "What type of neuron carries impulses toward the CNS?",
+      "options": ["Motor neuron", "Sensory neuron", "Interneuron", "Association neuron"],
+      "correct_answer": "Sensory neuron",
+      "explanation": "Sensory (afferent) neurons carry impulses toward the central nervous system."
+    },
+    {
+      "id": 93,
+      "question": "What is the function of the adrenal cortex?",
+      "options": ["Produces cortisol", "Produces adrenaline", "Produces aldosterone", "Both A and C"],
+      "correct_answer": "Both A and C",
+      "explanation": "The adrenal cortex produces cortisol and aldosterone. The adrenal medulla produces adrenaline."
+    },
+    {
+      "id": 94,
+      "question": "Which of the following is a function of bile?",
+      "options": ["Emulsifies fats", "Digests proteins", "Absorbs carbohydrates", "Produces hormones"],
+      "correct_answer": "Emulsifies fats",
+      "explanation": "Bile emulsifies fats, increasing their surface area for lipase digestion."
+    },
+    {
+      "id": 95,
+      "question": "What is the normal partial pressure of carbon dioxide in arterial blood?",
+      "options": ["20 mmHg", "40 mmHg", "60 mmHg", "80 mmHg"],
+      "correct_answer": "40 mmHg",
+      "explanation": "Normal PaCO2 is approximately 40 mmHg."
+    },
+    {
+      "id": 96,
+      "question": "What type of tissue forms the outer layer of the skin?",
+      "options": ["Stratified squamous epithelium", "Simple squamous epithelium", "Transitional epithelium", "Columnar epithelium"],
+      "correct_answer": "Stratified squamous epithelium",
+      "explanation": "The epidermis is composed of stratified squamous epithelium, providing protection."
+    },
+    {
+      "id": 97,
+      "question": "Which of the following is an example of a coordination compound?",
+      "options": ["NaCl", "[Fe(CN)6]4-", "H2O", "CO2"],
+      "correct_answer": "[Fe(CN)6]4-",
+      "explanation": "[Fe(CN)6]4- is a coordination compound with iron as the central metal ion and cyanide ligands."
+    },
+    {
+      "id": 98,
+      "question": "What is the function of the hypothalamus?",
+      "options": ["Regulates body temperature", "Controls pituitary gland", "Regulates hunger and thirst", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The hypothalamus regulates body temperature, controls the pituitary gland, and regulates hunger and thirst."
+    },
+    {
+      "id": 99,
+      "question": "What type of epithelium lines the urinary bladder?",
+      "options": ["Stratified squamous", "Transitional", "Columnar", "Cuboidal"],
+      "correct_answer": "Transitional",
+      "explanation": "The urinary bladder is lined with transitional epithelium, which can stretch to accommodate urine."
+    },
+    {
+      "id": 100,
+      "question": "What is the function of the corpus luteum?",
+      "options": ["Produces estrogen and progesterone", "Produces eggs", "Produces testosterone", "Produces insulin"],
+      "correct_answer": "Produces estrogen and progesterone",
+      "explanation": "The corpus luteum produces estrogen and progesterone after ovulation to support pregnancy."
+    },
+    {
+      "id": 101,
+      "question": "Which of the following is a peptide hormone?",
+      "options": ["Insulin", "Testosterone", "Estrogen", "Cortisol"],
+      "correct_answer": "Insulin",
+      "explanation": "Insulin is a peptide hormone. Testosterone, estrogen, and cortisol are steroid hormones."
+    },
+    {
+      "id": 102,
+      "question": "What is the function of the cochlea?",
+      "options": ["Hearing", "Balance", "Vision", "Smell"],
+      "correct_answer": "Hearing",
+      "explanation": "The cochlea is the hearing organ of the inner ear, converting sound vibrations to nerve impulses."
+    },
+    {
+      "id": 103,
+      "question": "What is the function of the semicircular canals?",
+      "options": ["Hearing", "Balance", "Vision", "Smell"],
+      "correct_answer": "Balance",
+      "explanation": "The semicircular canals in the inner ear detect head movement and help maintain balance."
+    },
+    {
+      "id": 104,
+      "question": "Which vitamin is synthesized in the skin upon exposure to sunlight?",
+      "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+      "correct_answer": "Vitamin D",
+      "explanation": "Vitamin D is synthesized in the skin when exposed to UVB rays from sunlight."
+    },
+    {
+      "id": 105,
+      "question": "What is the function of the thymus gland?",
+      "options": ["T-cell maturation", "B-cell maturation", "Red blood cell production", "Platelet production"],
+      "correct_answer": "T-cell maturation",
+      "explanation": "The thymus is the site of T lymphocyte maturation and education."
+    },
+    {
+      "id": 106,
+      "question": "What type of immunity is provided by antibodies?",
+      "options": ["Cell-mediated", "Humoral", "Innate", "Non-specific"],
+      "correct_answer": "Humoral",
+      "explanation": "Humoral immunity involves antibodies produced by B cells, targeting extracellular pathogens."
+    },
+    {
+      "id": 107,
+      "question": "What is the function of the rough endoplasmic reticulum?",
+      "options": ["ATP production", "Protein synthesis", "Lipid synthesis", "Waste disposal"],
+      "correct_answer": "Protein synthesis",
+      "explanation": "The rough ER is studded with ribosomes and is involved in protein synthesis and modification."
+    },
+    {
+      "id": 108,
+      "question": "What is the function of the smooth endoplasmic reticulum?",
+      "options": ["ATP production", "Protein synthesis", "Lipid synthesis", "Waste disposal"],
+      "correct_answer": "Lipid synthesis",
+      "explanation": "The smooth ER is involved in lipid synthesis, detoxification, and calcium storage."
+    },
+    {
+      "id": 109,
+      "question": "Which of the following is a function of the Golgi apparatus?",
+      "options": ["Protein modification and packaging", "ATP production", "Lipid synthesis", "Waste disposal"],
+      "correct_answer": "Protein modification and packaging",
+      "explanation": "The Golgi apparatus modifies, sorts, and packages proteins for secretion or delivery to other organelles."
+    },
+    {
+      "id": 110,
+      "question": "What is the function of lysosomes?",
+      "options": ["ATP production", "Protein synthesis", "Intracellular digestion", "Lipid synthesis"],
+      "correct_answer": "Intracellular digestion",
+      "explanation": "Lysosomes contain digestive enzymes that break down cellular waste and foreign materials."
+    },
+    {
+      "id": 111,
+      "question": "What is the function of peroxisomes?",
+      "options": ["Beta-oxidation of fatty acids", "ATP production", "Protein synthesis", "Lipid synthesis"],
+      "correct_answer": "Beta-oxidation of fatty acids",
+      "explanation": "Peroxisomes break down fatty acids through beta-oxidation and detoxify hydrogen peroxide."
+    },
+    {
+      "id": 112,
+      "question": "Which of the following is a function of the cytoskeleton?",
+      "options": ["Cell shape and support", "Intracellular transport", "Cell division", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The cytoskeleton provides cell shape, enables intracellular transport, and facilitates cell division."
+    },
+    {
+      "id": 113,
+      "question": "What type of muscle contraction maintains constant length?",
+      "options": ["Isotonic", "Isometric", "Eccentric", "Concentric"],
+      "correct_answer": "Isometric",
+      "explanation": "Isometric contractions maintain constant muscle length while increasing tension."
+    },
+    {
+      "id": 114,
+      "question": "What type of muscle contraction involves shortening of muscle?",
+      "options": ["Isotonic", "Isometric", "Eccentric", "Concentric"],
+      "correct_answer": "Concentric",
+      "explanation": "Concentric contraction involves muscle shortening (e.g., lifting a weight)."
+    },
+    {
+      "id": 115,
+      "question": "What type of muscle contraction involves lengthening of muscle?",
+      "options": ["Isotonic", "Isometric", "Eccentric", "Concentric"],
+      "correct_answer": "Eccentric",
+      "explanation": "Eccentric contraction involves muscle lengthening under tension (e.g., lowering a weight)."
+    },
+    {
+      "id": 116,
+      "question": "What is the primary energy source during short-term, high-intensity exercise?",
+      "options": ["Fatty acids", "Glucose", "Proteins", "Ketone bodies"],
+      "correct_answer": "Glucose",
+      "explanation": "Glucose is the primary energy source for short-term, high-intensity exercise through glycolysis."
+    },
+    {
+      "id": 117,
+      "question": "What is the primary energy source during long-term, low-intensity exercise?",
+      "options": ["Fatty acids", "Glucose", "Proteins", "Ketone bodies"],
+      "correct_answer": "Fatty acids",
+      "explanation": "Fatty acids are the primary energy source for long-term, low-intensity exercise through beta-oxidation."
+    },
+    {
+      "id": 118,
+      "question": "What is the function of the blood-brain barrier?",
+      "options": ["Protects brain from pathogens", "Regulates passage of substances into brain", "Prevents infection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The blood-brain barrier protects the brain, regulates substance passage, and prevents infection."
+    },
+    {
+      "id": 119,
+      "question": "Which of the following is a major neurotransmitter in the brain?",
+      "options": ["Dopamine", "Serotonin", "Glutamate", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Dopamine, serotonin, and glutamate are major neurotransmitters in the brain with different functions."
+    },
+    {
+      "id": 120,
+      "question": "What is the function of the basal ganglia?",
+      "options": ["Motor control", "Speech production", "Memory", "Vision"],
+      "correct_answer": "Motor control",
+      "explanation": "The basal ganglia are involved in motor control, movement initiation, and learning."
+    },
+    {
+      "id": 121,
+      "question": "What is the function of the hippocampus?",
+      "options": ["Memory formation", "Motor control", "Speech production", "Vision"],
+      "correct_answer": "Memory formation",
+      "explanation": "The hippocampus is crucial for the formation of new memories and spatial navigation."
+    },
+    {
+      "id": 122,
+      "question": "What is the function of the amygdala?",
+      "options": ["Emotion processing", "Memory formation", "Motor control", "Speech production"],
+      "correct_answer": "Emotion processing",
+      "explanation": "The amygdala is involved in emotion processing, especially fear and aggression."
+    },
+    {
+      "id": 123,
+      "question": "Which of the following is a function of the frontal lobe?",
+      "options": ["Executive function", "Motor planning", "Personality", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The frontal lobe is responsible for executive function, motor planning, and personality."
+    },
+    {
+      "id": 124,
+      "question": "What is the function of the parietal lobe?",
+      "options": ["Sensory integration", "Motor planning", "Vision", "Hearing"],
+      "correct_answer": "Sensory integration",
+      "explanation": "The parietal lobe integrates sensory information, including touch, pain, and spatial awareness."
+    },
+    {
+      "id": 125,
+      "question": "What is the function of the temporal lobe?",
+      "options": ["Hearing", "Language comprehension", "Memory", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The temporal lobe is involved in hearing, language comprehension, and memory."
+    },
+    {
+      "id": 126,
+      "question": "What is the function of the occipital lobe?",
+      "options": ["Vision", "Hearing", "Touch", "Movement"],
+      "correct_answer": "Vision",
+      "explanation": "The occipital lobe is the primary visual processing center of the brain."
+    },
+    {
+      "id": 127,
+      "question": "Which hormone stimulates milk production?",
+      "options": ["Oxytocin", "Prolactin", "Estrogen", "Progesterone"],
+      "correct_answer": "Prolactin",
+      "explanation": "Prolactin stimulates milk production (lactation) after childbirth."
+    },
+    {
+      "id": 128,
+      "question": "Which hormone stimulates milk ejection?",
+      "options": ["Oxytocin", "Prolactin", "Estrogen", "Progesterone"],
+      "correct_answer": "Oxytocin",
+      "explanation": "Oxytocin stimulates milk ejection (let-down reflex) during breastfeeding."
+    },
+    {
+      "id": 129,
+      "question": "What is the function of the fallopian tubes?",
+      "options": ["Transport ova", "Sperm storage", "Hormone production", "Fertilization and transport"],
+      "correct_answer": "Fertilization and transport",
+      "explanation": "The fallopian tubes transport ova from the ovary to the uterus and are the site of fertilization."
+    },
+    {
+      "id": 130,
+      "question": "What is the function of the endometrium?",
+      "options": ["Sperm transport", "Ovum production", "Implantation of embryo", "Hormone production"],
+      "correct_answer": "Implantation of embryo",
+      "explanation": "The endometrium is the inner lining of the uterus where the embryo implants."
+    },
+    {
+      "id": 131,
+      "question": "Which hormone maintains pregnancy?",
+      "options": ["Estrogen", "Progesterone", "LH", "FSH"],
+      "correct_answer": "Progesterone",
+      "explanation": "Progesterone maintains pregnancy by keeping the endometrium suitable for implantation and preventing uterine contractions."
+    },
+    {
+      "id": 132,
+      "question": "What is the function of the placenta?",
+      "options": ["Nutrient exchange", "Gas exchange", "Hormone production", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The placenta facilitates nutrient exchange, gas exchange, and produces hormones during pregnancy."
+    },
+    {
+      "id": 133,
+      "question": "What is the normal gestation period for humans?",
+      "options": ["36 weeks", "38 weeks", "40 weeks", "42 weeks"],
+      "correct_answer": "40 weeks",
+      "explanation": "Normal human gestation is approximately 40 weeks (280 days) from the last menstrual period."
+    },
+    {
+      "id": 134,
+      "question": "Which of the following is a function of amniotic fluid?",
+      "options": ["Protects the fetus", "Maintains temperature", "Allows movement", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Amniotic fluid protects the fetus, maintains a constant temperature, and allows for movement."
+    },
+    {
+      "id": 135,
+      "question": "What is the function of the umbilical cord?",
+      "options": ["Connects fetus to placenta", "Transports nutrients", "Transports waste", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The umbilical cord connects the fetus to the placenta and transports nutrients, oxygen, and waste."
+    },
+    {
+      "id": 136,
+      "question": "What is the function of surfactant in the developing fetus?",
+      "options": ["Prevents alveolar collapse", "Promotes lung development", "Reduces surface tension", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Surfactant prevents alveolar collapse, promotes lung development, and reduces surface tension in the fetal lungs."
+    },
+    {
+      "id": 137,
+      "question": "What type of immunity is passed from mother to fetus?",
+      "options": ["Active immunity", "Passive immunity", "Cell-mediated immunity", "Innate immunity"],
+      "correct_answer": "Passive immunity",
+      "explanation": "Maternal antibodies cross the placenta, providing passive immunity to the fetus."
+    },
+    {
+      "id": 138,
+      "question": "Which hormone stimulates labor contractions?",
+      "options": ["Oxytocin", "Prolactin", "Estrogen", "Progesterone"],
+      "correct_answer": "Oxytocin",
+      "explanation": "Oxytocin stimulates uterine contractions during labor."
+    },
+    {
+      "id": 139,
+      "question": "What is the function of the cervix during pregnancy?",
+      "options": ["Keeps fetus in place", "Expands during delivery", "Produces mucus", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The cervix keeps the fetus in place, produces mucus, and dilates during delivery."
+    },
+    {
+      "id": 140,
+      "question": "What is the function of the Bartholin's glands?",
+      "options": ["Produce lubrication", "Produce eggs", "Produce hormones", "Produce milk"],
+      "correct_answer": "Produce lubrication",
+      "explanation": "Bartholin's glands produce lubrication during sexual arousal."
+    },
+    {
+      "id": 141,
+      "question": "Which of the following is a contraceptive mechanism?",
+      "options": ["Prevents ovulation", "Prevents fertilization", "Prevents implantation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Contraceptive mechanisms can prevent ovulation, fertilization, or implantation."
+    },
+    {
+      "id": 142,
+      "question": "What is the function of the vas deferens?",
+      "options": ["Sperm transport", "Sperm production", "Sperm storage", "Sperm maturation"],
+      "correct_answer": "Sperm transport",
+      "explanation": "The vas deferens transports sperm from the epididymis to the ejaculatory duct."
+    },
+    {
+      "id": 143,
+      "question": "What is the function of the seminal vesicles?",
+      "options": ["Produce seminal fluid", "Produce sperm", "Store sperm", "Produce hormones"],
+      "correct_answer": "Produce seminal fluid",
+      "explanation": "The seminal vesicles produce fructose-rich seminal fluid that nourishes sperm."
+    },
+    {
+      "id": 144,
+      "question": "What is the function of the bulbourethral glands?",
+      "options": ["Produce pre-ejaculatory fluid", "Produce sperm", "Produce hormones", "Store urine"],
+      "correct_answer": "Produce pre-ejaculatory fluid",
+      "explanation": "The bulbourethral glands produce a lubricating pre-ejaculatory fluid."
+    },
+    {
+      "id": 145,
+      "question": "What is the function of the penis?",
+      "options": ["Urination", "Sexual intercourse", "Sperm delivery", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The penis serves functions in urination, sexual intercourse, and sperm delivery."
+    },
+    {
+      "id": 146,
+      "question": "Which part of the male reproductive system produces testosterone?",
+      "options": ["Testes", "Prostate", "Seminal vesicles", "Pituitary gland"],
+      "correct_answer": "Testes",
+      "explanation": "The Leydig cells in the testes produce testosterone."
+    },
+    {
+      "id": 147,
+      "question": "Which part of the female reproductive system produces estrogen?",
+      "options": ["Ovaries", "Uterus", "Fallopian tubes", "Vagina"],
+      "correct_answer": "Ovaries",
+      "explanation": "The ovaries produce estrogen and progesterone."
+    },
+    {
+      "id": 148,
+      "question": "What is the normal duration of the menstrual phase?",
+      "options": ["1-3 days", "3-5 days", "5-7 days", "7-10 days"],
+      "correct_answer": "3-5 days",
+      "explanation": "The menstrual phase typically lasts 3-5 days."
+    },
+    {
+      "id": 149,
+      "question": "What is the normal duration of the proliferative phase?",
+      "options": ["3-5 days", "5-7 days", "7-10 days", "10-14 days"],
+      "correct_answer": "7-10 days",
+      "explanation": "The proliferative phase typically lasts 7-10 days, from the end of menstruation to ovulation."
+    },
+    {
+      "id": 150,
+      "question": "What is the normal duration of the secretory phase?",
+      "options": ["3-5 days", "5-7 days", "7-10 days", "10-14 days"],
+      "correct_answer": "10-14 days",
+      "explanation": "The secretory phase lasts 10-14 days, from ovulation to menstruation."
+    },
+    {
+      "id": 151,
+      "question": "What is the first stage of the ovarian cycle?",
+      "options": ["Follicular phase", "Ovulatory phase", "Luteal phase", "Menstrual phase"],
+      "correct_answer": "Follicular phase",
+      "explanation": "The follicular phase is the first stage of the ovarian cycle, where follicles develop."
+    },
+    {
+      "id": 152,
+      "question": "What is the second stage of the ovarian cycle?",
+      "options": ["Follicular phase", "Ovulatory phase", "Luteal phase", "Menstrual phase"],
+      "correct_answer": "Ovulatory phase",
+      "explanation": "The ovulatory phase is the second stage, where the dominant follicle releases the ovum."
+    },
+    {
+      "id": 153,
+      "question": "What is the third stage of the ovarian cycle?",
+      "options": ["Follicular phase", "Ovulatory phase", "Luteal phase", "Menstrual phase"],
+      "correct_answer": "Luteal phase",
+      "explanation": "The luteal phase is the third stage, where the corpus luteum forms and produces progesterone."
+    },
+    {
+      "id": 154,
+      "question": "Which hormone triggers ovulation?",
+      "options": ["Estrogen", "Progesterone", "LH surge", "FSH"],
+      "correct_answer": "LH surge",
+      "explanation": "A surge in Luteinizing Hormone (LH) triggers ovulation."
+    },
+    {
+      "id": 155,
+      "question": "What is the function of the hymen?",
+      "options": ["Partial covering of vaginal opening", "Produces lubrication", "Prevents infection", "Supports uterus"],
+      "correct_answer": "Partial covering of vaginal opening",
+      "explanation": "The hymen is a thin membrane that partially covers the vaginal opening."
+    },
+    {
+      "id": 156,
+      "question": "What is the function of the labia?",
+      "options": ["Protect vaginal opening", "Produce lubrication", "Prevent infection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The labia protect the vaginal opening, produce lubrication, and help prevent infection."
+    },
+    {
+      "id": 157,
+      "question": "What is the function of the clitoris?",
+      "options": ["Sexual pleasure", "Urination", "Produce eggs", "Produce hormones"],
+      "correct_answer": "Sexual pleasure",
+      "explanation": "The clitoris is highly sensitive and is the primary organ for sexual pleasure in females."
+    },
+    {
+      "id": 158,
+      "question": "What is the normal length of the menstrual cycle?",
+      "options": ["21 days", "28 days", "35 days", "40 days"],
+      "correct_answer": "28 days",
+      "explanation": "The average menstrual cycle is 28 days, though it can vary from 21 to 35 days."
+    },
+    {
+      "id": 159,
+      "question": "What is the function of the fallopian tubes?",
+      "options": ["Transport ova", "Site of fertilization", "Both", "Neither"],
+      "correct_answer": "Both",
+      "explanation": "The fallopian tubes transport ova and are the site of fertilization."
+    },
+    {
+      "id": 160,
+      "question": "What is the function of the fimbriae?",
+      "options": ["Sweep ovum into fallopian tube", "Produce eggs", "Produce hormones", "Support uterus"],
+      "correct_answer": "Sweep ovum into fallopian tube",
+      "explanation": "The fimbriae are finger-like projections that sweep the ovum from the ovary into the fallopian tube."
+    },
+    {
+      "id": 161,
+      "question": "What is the function of the uterus?",
+      "options": ["Supports fetus", "Implants embryo", "Nourishes fetus", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The uterus supports the fetus, allows embryo implantation, and nourishes the developing fetus."
+    },
+    {
+      "id": 162,
+      "question": "What is the function of the vagina?",
+      "options": ["Birth canal", "Copulatory organ", "Menstrual flow passage", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The vagina serves as the birth canal, copulatory organ, and passage for menstrual flow."
+    },
+    {
+      "id": 163,
+      "question": "What is the normal pH of the vagina?",
+      "options": ["3.5-4.5", "5.0-6.0", "6.5-7.5", "8.0-9.0"],
+      "correct_answer": "3.5-4.5",
+      "explanation": "The normal vaginal pH is 3.5-4.5, maintained by lactic acid from lactobacilli."
+    },
+    {
+      "id": 164,
+      "question": "What is the function of the cervix?",
+      "options": ["Produces mucus", "Dilates during labor", "Keeps fetus in place", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The cervix produces mucus, dilates during labor, and keeps the fetus in place."
+    },
+    {
+      "id": 165,
+      "question": "What is the function of the endometrium?",
+      "options": ["Implantation site", "Supports embryo", "Sheds during menstruation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The endometrium serves as the implantation site, supports the embryo, and sheds during menstruation."
+    },
+    {
+      "id": 166,
+      "question": "What is the function of the myometrium?",
+      "options": ["Uterine contractions", "Supports uterus", "Produces hormones", "Regulates menstruation"],
+      "correct_answer": "Uterine contractions",
+      "explanation": "The myometrium is the muscular layer of the uterus responsible for contractions during labor and menstruation."
+    },
+    {
+      "id": 167,
+      "question": "Which of the following is a function of the placenta?",
+      "options": ["Nutrient exchange", "Waste removal", "Gas exchange", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The placenta facilitates nutrient exchange, waste removal, and gas exchange between mother and fetus."
+    },
+    {
+      "id": 168,
+      "question": "What is the function of the umbilical cord?",
+      "options": ["Connects fetus to placenta", "Carries blood vessels", "Transports nutrients", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The umbilical cord connects the fetus to the placenta, carries blood vessels, and transports nutrients."
+    },
+    {
+      "id": 169,
+      "question": "What is the normal weight of the placenta at term?",
+      "options": ["300-400 g", "400-500 g", "500-600 g", "600-700 g"],
+      "correct_answer": "400-500 g",
+      "explanation": "The average weight of the placenta at term is 400-500 g."
+    },
+    {
+      "id": 170,
+      "question": "What is the function of the amniotic fluid?",
+      "options": ["Cushions fetus", "Allows movement", "Maintains temperature", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Amniotic fluid cushions the fetus, allows movement, and maintains a constant temperature."
+    },
+    {
+      "id": 171,
+      "question": "What is the normal volume of amniotic fluid at term?",
+      "options": ["500-600 mL", "600-700 mL", "700-800 mL", "800-1000 mL"],
+      "correct_answer": "800-1000 mL",
+      "explanation": "The normal volume of amniotic fluid at term is approximately 800-1000 mL."
+    },
+    {
+      "id": 172,
+      "question": "Which of the following is a function of the fetal circulation?",
+      "options": ["Bypasses lungs", "Shunts blood away from liver", "Provides oxygenated blood to fetus", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Fetal circulation bypasses the lungs, shunts blood away from the liver, and provides oxygenated blood to the fetus."
+    },
+    {
+      "id": 173,
+      "question": "What is the function of the ductus arteriosus?",
+      "options": ["Shunts blood from pulmonary artery to aorta", "Shunts blood from liver to heart", "Transports nutrients", "Filters waste"],
+      "correct_answer": "Shunts blood from pulmonary artery to aorta",
+      "explanation": "The ductus arteriosus shunts blood from the pulmonary artery to the aorta, bypassing the lungs."
+    },
+    {
+      "id": 174,
+      "question": "What is the function of the ductus venosus?",
+      "options": ["Shunts blood from liver to IVC", "Shunts blood from heart to lungs", "Transports nutrients", "Filters waste"],
+      "correct_answer": "Shunts blood from liver to IVC",
+      "explanation": "The ductus venosus shunts oxygenated blood from the placenta to the inferior vena cava, bypassing the liver."
+    },
+    {
+      "id": 175,
+      "question": "What is the function of the foramen ovale?",
+      "options": ["Shunts blood from right to left atrium", "Shunts blood from left to right atrium", "Transports nutrients", "Filters waste"],
+      "correct_answer": "Shunts blood from right to left atrium",
+      "explanation": "The foramen ovale shunts blood from the right atrium to the left atrium, bypassing the lungs."
+    },
+    {
+      "id": 176,
+      "question": "What is the normal oxygen saturation in fetal blood?",
+      "options": ["40-50%", "50-60%", "60-70%", "70-80%"],
+      "correct_answer": "60-70%",
+      "explanation": "Normal fetal oxygen saturation is 60-70%, as opposed to 95-100% in adults."
+    },
+    {
+      "id": 177,
+      "question": "Which of the following hormones decreases during pregnancy?",
+      "options": ["hCG", "Estrogen", "Progesterone", "Relaxin"],
+      "correct_answer": "hCG",
+      "explanation": "hCG levels peak early in pregnancy then decrease, while estrogen, progesterone, and relaxin increase."
+    },
+    {
+      "id": 178,
+      "question": "What is the function of relaxin during pregnancy?",
+      "options": ["Softens cervix", "Relaxes pelvic ligaments", "Prepares for delivery", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Relaxin softens the cervix, relaxes pelvic ligaments, and prepares the body for delivery."
+    },
+    {
+      "id": 179,
+      "question": "What is the function of hCG?",
+      "options": ["Maintains corpus luteum", "Detects pregnancy", "Stimulates progesterone production", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "hCG maintains the corpus luteum, is used in pregnancy detection, and stimulates progesterone production."
+    },
+    {
+      "id": 180,
+      "question": "What is the normal weight gain during pregnancy?",
+      "options": ["15-20 lbs", "20-25 lbs", "25-35 lbs", "35-45 lbs"],
+      "correct_answer": "25-35 lbs",
+      "explanation": "Recommended weight gain during pregnancy is 25-35 lbs for women with normal BMI."
+    },
+    {
+      "id": 181,
+      "question": "Which of the following is a physiological change during pregnancy?",
+      "options": ["Increased heart rate", "Increased blood volume", "Increased oxygen consumption", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Pregnancy causes increased heart rate, blood volume, and oxygen consumption."
+    },
+    {
+      "id": 182,
+      "question": "What is the function of colostrum?",
+      "options": ["Contains antibodies", "Provides nutrition", "Promotes baby immunity", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Colostrum contains antibodies, provides nutrition, and promotes baby immunity."
+    },
+    {
+      "id": 183,
+      "question": "What is the normal duration of breastfeeding?",
+      "options": ["3-6 months", "6-12 months", "12-24 months", "24-36 months"],
+      "correct_answer": "12-24 months",
+      "explanation": "The World Health Organization recommends exclusive breastfeeding for 6 months and continued breastfeeding for up to 2 years."
+    },
+    {
+      "id": 184,
+      "question": "Which of the following is a physiological change in the cardiovascular system during pregnancy?",
+      "options": ["Increased cardiac output", "Decreased heart rate", "Decreased blood volume", "Decreased vascular resistance"],
+      "correct_answer": "Increased cardiac output",
+      "explanation": "Cardiac output increases by 30-50% during pregnancy due to increased stroke volume and heart rate."
+    },
+    {
+      "id": 185,
+      "question": "What is the normal blood pressure during pregnancy?",
+      "options": ["Decreases in second trimester", "Increases in third trimester", "Remains unchanged", "Both A and C"],
+      "correct_answer": "Decreases in second trimester",
+      "explanation": "Blood pressure typically decreases in the second trimester and returns to normal in the third trimester."
+    },
+    {
+      "id": 186,
+      "question": "Which of the following is a physiological change in the respiratory system during pregnancy?",
+      "options": ["Decreased tidal volume", "Decreased respiratory rate", "Increased oxygen consumption", "Decreased vital capacity"],
+      "correct_answer": "Increased oxygen consumption",
+      "explanation": "Oxygen consumption increases by 20-30% during pregnancy due to increased metabolic demand."
+    },
+    {
+      "id": 187,
+      "question": "What is the normal respiratory rate during pregnancy?",
+      "options": ["10-12 breaths/min", "12-16 breaths/min", "16-20 breaths/min", "20-24 breaths/min"],
+      "correct_answer": "16-20 breaths/min",
+      "explanation": "Respiratory rate may increase slightly during pregnancy to 16-20 breaths/min."
+    },
+    {
+      "id": 188,
+      "question": "Which of the following is a physiological change in the renal system during pregnancy?",
+      "options": ["Increased renal blood flow", "Decreased GFR", "Decreased urine output", "Decreased creatinine clearance"],
+      "correct_answer": "Increased renal blood flow",
+      "explanation": "Renal blood flow and GFR increase by up to 50% during pregnancy."
+    },
+    {
+      "id": 189,
+      "question": "What is the normal GFR during pregnancy?",
+      "options": ["80-100 mL/min", "100-120 mL/min", "120-150 mL/min", "150-180 mL/min"],
+      "correct_answer": "120-150 mL/min",
+      "explanation": "GFR increases by 40-50% during pregnancy to approximately 120-150 mL/min."
+    },
+    {
+      "id": 190,
+      "question": "Which of the following is a physiological change in the gastrointestinal system during pregnancy?",
+      "options": ["Decreased gastric motility", "Decreased gastric emptying", "Increased constipation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Pregnancy causes decreased gastric motility, delayed emptying, and increased constipation."
+    },
+    {
+      "id": 191,
+      "question": "What is the function of progesterone during pregnancy?",
+      "options": ["Maintains endometrium", "Suppresses uterine contractions", "Relaxes smooth muscle", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Progesterone maintains the endometrium, suppresses contractions, and relaxes smooth muscle."
+    },
+    {
+      "id": 192,
+      "question": "What is the function of estrogen during pregnancy?",
+      "options": ["Stimulates uterine growth", "Prepares breasts for lactation", "Increases blood flow", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Estrogen stimulates uterine growth, prepares breasts, and increases blood flow during pregnancy."
+    },
+    {
+      "id": 193,
+      "question": "Which of the following is a component of breast milk?",
+      "options": ["Immunoglobulins", "Lactoferrin", "Lysozyme", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Breast milk contains immunoglobulins, lactoferrin, and lysozyme for immune protection."
+    },
+    {
+      "id": 194,
+      "question": "What is the function of lactoferrin in breast milk?",
+      "options": ["Binds iron", "Inhibits bacterial growth", "Promotes immune defense", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Lactoferrin binds iron, inhibits bacterial growth, and promotes immune defense."
+    },
+    {
+      "id": 195,
+      "question": "Which of the following is a complication of pregnancy?",
+      "options": ["Gestational diabetes", "Preeclampsia", "Anemia", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Gestational diabetes, preeclampsia, and anemia are common pregnancy complications."
+    },
+    {
+      "id": 196,
+      "question": "What is the function of oxytocin in childbirth?",
+      "options": ["Stimulates uterine contractions", "Promotes cervical dilation", "Stimulates milk ejection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Oxytocin stimulates contractions, promotes cervical dilation, and stimulates milk ejection."
+    },
+    {
+      "id": 197,
+      "question": "What is the function of the cervix during labor?",
+      "options": ["Effacement", "Dilation", "Thinning", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "During labor, the cervix effaces, dilates, and thins to allow for delivery."
+    },
+    {
+      "id": 198,
+      "question": "What is the normal duration of the first stage of labor?",
+      "options": ["4-6 hours", "6-12 hours", "12-18 hours", "18-24 hours"],
+      "correct_answer": "12-18 hours",
+      "explanation": "The first stage of labor (cervical dilation) typically lasts 12-18 hours for a first pregnancy."
+    },
+    {
+      "id": 199,
+      "question": "What is the normal duration of the second stage of labor?",
+      "options": ["15-30 minutes", "30-60 minutes", "60-90 minutes", "90-120 minutes"],
+      "correct_answer": "30-60 minutes",
+      "explanation": "The second stage of labor (fetal delivery) typically lasts 30-60 minutes for a first pregnancy."
+    },
+    {
+      "id": 200,
+      "question": "What is the normal duration of the third stage of labor?",
+      "options": ["5-10 minutes", "10-15 minutes", "15-20 minutes", "20-30 minutes"],
+      "correct_answer": "5-10 minutes",
+      "explanation": "The third stage of labor (delivery of the placenta) typically lasts 5-10 minutes."
+    },
+    {
+      "id": 201,
+      "question": "What is the function of oxygen in cellular respiration?",
+      "options": ["Acts as final electron acceptor", "Produces ATP", "Combines with H+ to form water", "Both A and C"],
+      "correct_answer": "Both A and C",
+      "explanation": "Oxygen acts as the final electron acceptor in the electron transport chain and combines with H+ to form water."
+    },
+    {
+      "id": 202,
+      "question": "What is the function of the electron transport chain?",
+      "options": ["Produces ATP", "Creates proton gradient", "Transfers electrons to oxygen", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The electron transport chain produces ATP, creates a proton gradient, and transfers electrons to oxygen."
+    },
+    {
+      "id": 203,
+      "question": "What is the function of ATP synthase?",
+      "options": ["Synthesizes ATP", "Creates proton gradient", "Breaks down ATP", "Transports electrons"],
+      "correct_answer": "Synthesizes ATP",
+      "explanation": "ATP synthase uses the proton gradient to synthesize ATP from ADP and Pi."
+    },
+    {
+      "id": 204,
+      "question": "What is the normal pH of the stomach?",
+      "options": ["1-3", "3-5", "5-7", "7-9"],
+      "correct_answer": "1-3",
+      "explanation": "The stomach has a pH of 1-3 due to hydrochloric acid, which activates pepsin and kills bacteria."
+    },
+    {
+      "id": 205,
+      "question": "What is the function of the small intestine?",
+      "options": ["Digestion", "Absorption", "Motility", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The small intestine is responsible for digestion, absorption, and motility of food."
+    },
+    {
+      "id": 206,
+      "question": "What is the function of villi in the small intestine?",
+      "options": ["Increase surface area", "Absorb nutrients", "Secrete enzymes", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Villi increase surface area, absorb nutrients, and secrete enzymes for digestion."
+    },
+    {
+      "id": 207,
+      "question": "What is the function of the large intestine?",
+      "options": ["Absorbs water", "Absorbs electrolytes", "Compacts feces", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The large intestine absorbs water and electrolytes and compacts feces for elimination."
+    },
+    {
+      "id": 208,
+      "question": "What is the function of the rectum?",
+      "options": ["Stores feces", "Absorbs water", "Produces mucus", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The rectum stores feces, absorbs remaining water, and produces mucus for lubrication."
+    },
+    {
+      "id": 209,
+      "question": "What is the function of the anal sphincter?",
+      "options": ["Controls defecation", "Prevents leakage", "Maintains continence", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The anal sphincter controls defecation, prevents leakage, and maintains continence."
+    },
+    {
+      "id": 210,
+      "question": "What is the normal stool frequency?",
+      "options": ["1-3 times per day", "3 times per week", "1-2 times per day", "Both A and C"],
+      "correct_answer": "Both A and C",
+      "explanation": "Normal stool frequency ranges from 1-3 times per day to 3 times per week."
+    },
+    {
+      "id": 211,
+      "question": "What is the function of the liver in digestion?",
+      "options": ["Produces bile", "Metabolizes nutrients", "Detoxifies", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces bile, metabolizes nutrients, and detoxifies substances in digestion."
+    },
+    {
+      "id": 212,
+      "question": "What is the function of the pancreas in digestion?",
+      "options": ["Produces digestive enzymes", "Produces bicarbonate", "Produces insulin", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The pancreas produces digestive enzymes, bicarbonate, and insulin for digestion and metabolism."
+    },
+    {
+      "id": 213,
+      "question": "What is the function of the gallbladder?",
+      "options": ["Stores bile", "Concentrates bile", "Releases bile", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The gallbladder stores, concentrates, and releases bile in response to fatty meals."
+    },
+    {
+      "id": 214,
+      "question": "What is the function of bile salts?",
+      "options": ["Emulsify fats", "Facilitate lipid digestion", "Form micelles", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Bile salts emulsify fats, facilitate lipid digestion, and form micelles for absorption."
+    },
+    {
+      "id": 215,
+      "question": "What is the function of pancreatic lipase?",
+      "options": ["Digests fats", "Breaks down triglycerides", "Produces fatty acids", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Pancreatic lipase digests fats, breaks down triglycerides, and produces fatty acids."
+    },
+    {
+      "id": 216,
+      "question": "What is the function of pancreatic amylase?",
+      "options": ["Digests carbohydrates", "Breaks down starch", "Produces glucose", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Pancreatic amylase digests carbohydrates, breaks down starch, and produces glucose."
+    },
+    {
+      "id": 217,
+      "question": "What is the function of pancreatic proteases?",
+      "options": ["Digests proteins", "Breaks down peptides", "Produces amino acids", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Pancreatic proteases digest proteins, break down peptides, and produce amino acids."
+    },
+    {
+      "id": 218,
+      "question": "What is the function of the ileocecal valve?",
+      "options": ["Prevents backflow", "Controls emptying", "Regulates flow", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The ileocecal valve prevents backflow, controls emptying, and regulates flow from the ileum to the cecum."
+    },
+    {
+      "id": 219,
+      "question": "What is the function of the appendix?",
+      "options": ["Immune function", "Bacteria reservoir", "Protection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The appendix serves immune function, acts as a bacteria reservoir, and may provide protection."
+    },
+    {
+      "id": 220,
+      "question": "What is the function of the gastrointestinal hormones?",
+      "options": ["Regulate digestion", "Stimulate secretions", "Control motility", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Gastrointestinal hormones regulate digestion, stimulate secretions, and control motility."
+    },
+    {
+      "id": 221,
+      "question": "What is the function of gastrin?",
+      "options": ["Stimulates acid secretion", "Promotes gastric motility", "Stimulates pepsinogen release", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Gastrin stimulates acid secretion, promotes gastric motility, and stimulates pepsinogen release."
+    },
+    {
+      "id": 222,
+      "question": "What is the function of cholecystokinin?",
+      "options": ["Stimulates gallbladder contraction", "Stimulates pancreatic enzyme release", "Suppresses appetite", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "CCK stimulates gallbladder contraction, pancreatic enzyme release, and suppresses appetite."
+    },
+    {
+      "id": 223,
+      "question": "What is the function of secretin?",
+      "options": ["Stimulates bicarbonate release", "Inhibits gastric acid", "Stimulates pancreatic secretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Secretin stimulates bicarbonate release, inhibits gastric acid, and stimulates pancreatic secretion."
+    },
+    {
+      "id": 224,
+      "question": "What is the function of GIP?",
+      "options": ["Stimulates insulin release", "Inhibits gastric acid", "Promotes glucose uptake", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "GIP stimulates insulin release, inhibits gastric acid, and promotes glucose uptake."
+    },
+    {
+      "id": 225,
+      "question": "What is the function of the nervous system in digestion?",
+      "options": ["Regulates motility", "Controls secretions", "Coordinates reflexes", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The nervous system regulates motility, controls secretions, and coordinates reflexes in digestion."
+    },
+    {
+      "id": 226,
+      "question": "What is the function of the enteric nervous system?",
+      "options": ["Controls gastrointestinal function", "Regulates motility", "Modulates secretions", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The enteric nervous system controls gastrointestinal function, regulates motility, and modulates secretions."
+    },
+    {
+      "id": 227,
+      "question": "What is the function of the vagus nerve in digestion?",
+      "options": ["Stimulates GI motility", "Increases secretions", "Promotes relaxation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The vagus nerve stimulates GI motility, increases secretions, and promotes relaxation."
+    },
+    {
+      "id": 228,
+      "question": "What is the function of the sympathetic nervous system in digestion?",
+      "options": ["Inhibits digestion", "Reduces motility", "Decreases secretions", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The sympathetic nervous system inhibits digestion, reduces motility, and decreases secretions."
+    },
+    {
+      "id": 229,
+      "question": "What is the function of the parasympathetic nervous system in digestion?",
+      "options": ["Stimulates digestion", "Increases motility", "Increases secretions", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The parasympathetic nervous system stimulates digestion, increases motility, and increases secretions."
+    },
+    {
+      "id": 230,
+      "question": "What is the function of the epiglottis?",
+      "options": ["Prevents aspiration", "Protects airway", "Directs food to esophagus", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The epiglottis prevents aspiration, protects the airway, and directs food to the esophagus."
+    },
+    {
+      "id": 231,
+      "question": "What is the function of the tongue?",
+      "options": ["Taste", "Manipulates food", "Speech", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The tongue is involved in taste, food manipulation, and speech."
+    },
+    {
+      "id": 232,
+      "question": "What is the function of the salivary glands?",
+      "options": ["Produces saliva", "Contains amylase", "Lubricates food", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Salivary glands produce saliva, contain amylase, and lubricate food."
+    },
+    {
+      "id": 233,
+      "question": "What is the function of the teeth?",
+      "options": ["Mastication", "Mechanical digestion", "Reduces particle size", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Teeth perform mastication, mechanical digestion, and reduce particle size."
+    },
+    {
+      "id": 234,
+      "question": "What is the function of the esophagus?",
+      "options": ["Transports food", "Peristalsis", "Connects pharynx to stomach", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The esophagus transports food, uses peristalsis, and connects the pharynx to the stomach."
+    },
+    {
+      "id": 235,
+      "question": "What is the function of the gastroesophageal sphincter?",
+      "options": ["Prevents reflux", "Regulates emptying", "Controls flow", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The gastroesophageal sphincter prevents reflux, regulates emptying, and controls flow."
+    },
+    {
+      "id": 236,
+      "question": "What is the function of the pyloric sphincter?",
+      "options": ["Regulates gastric emptying", "Prevents backflow", "Controls flow", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The pyloric sphincter regulates gastric emptying, prevents backflow, and controls flow."
+    },
+    {
+      "id": 237,
+      "question": "What is the function of the stomach?",
+      "options": ["Mixes food", "Digests proteins", "Kills bacteria", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The stomach mixes food, digests proteins, and kills bacteria with acid."
+    },
+    {
+      "id": 238,
+      "question": "What is the function of gastric acid?",
+      "options": ["Activates pepsin", "Kills bacteria", "Denatures proteins", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Gastric acid activates pepsin, kills bacteria, and denatures proteins."
+    },
+    {
+      "id": 239,
+      "question": "What is the function of pepsin?",
+      "options": ["Digests proteins", "Breaks down peptides", "Activated by acid", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Pepsin digests proteins, breaks down peptides, and is activated by acid."
+    },
+    {
+      "id": 240,
+      "question": "What is the function of mucus in the stomach?",
+      "options": ["Protects mucosa", "Lubricates food", "Prevents self-digestion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Mucus protects the gastric mucosa, lubricates food, and prevents self-digestion."
+    },
+    {
+      "id": 241,
+      "question": "What is the function of the duodenum?",
+      "options": ["Mixes chyme with digestive juices", "Neutralizes gastric acid", "Begins nutrient absorption", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The duodenum mixes chyme with digestive juices, neutralizes acid, and begins nutrient absorption."
+    },
+    {
+      "id": 242,
+      "question": "What is the function of the jejunum?",
+      "options": ["Main nutrient absorption", "Digests carbohydrates", "Absorbs proteins", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The jejunum is responsible for main nutrient absorption, digesting carbohydrates, and absorbing proteins."
+    },
+    {
+      "id": 243,
+      "question": "What is the function of the ileum?",
+      "options": ["Absorbs vitamin B12", "Absorbs bile salts", "Absorbs remaining nutrients", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The ileum absorbs vitamin B12, bile salts, and remaining nutrients."
+    },
+    {
+      "id": 244,
+      "question": "What is the function of the mesentery?",
+      "options": ["Supports intestines", "Provides blood supply", "Transmits lymph", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The mesentery supports the intestines, provides blood supply, and transmits lymph."
+    },
+    {
+      "id": 245,
+      "question": "What is the function of the peritoneum?",
+      "options": ["Lines abdominal cavity", "Supports organs", "Reduces friction", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The peritoneum lines the abdominal cavity, supports organs, and reduces friction."
+    },
+    {
+      "id": 246,
+      "question": "What is the function of the omentum?",
+      "options": ["Stores fat", "Immune protection", "Shields intestines", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The omentum stores fat, provides immune protection, and shields the intestines."
+    },
+    {
+      "id": 247,
+      "question": "What is the function of the rectal mucosa?",
+      "options": ["Senses distention", "Secrets mucus", "Facilitates defecation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The rectal mucosa senses distention, secretes mucus, and facilitates defecation."
+    },
+    {
+      "id": 248,
+      "question": "What is the function of the internal anal sphincter?",
+      "options": ["Involuntary control", "Maintains continence", "Relaxes during defecation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The internal anal sphincter provides involuntary control, maintains continence, and relaxes during defecation."
+    },
+    {
+      "id": 249,
+      "question": "What is the function of the external anal sphincter?",
+      "options": ["Voluntary control", "Maintains continence", "Allows defecation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The external anal sphincter provides voluntary control, maintains continence, and allows defecation."
+    },
+    {
+      "id": 250,
+      "question": "What is the function of the hepatic portal system?",
+      "options": ["Transports nutrients from gut to liver", "Detoxifies absorbed substances", "Metabolizes absorbed nutrients", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The hepatic portal system transports nutrients from the gut to the liver for detoxification and metabolism."
+    },
+    {
+      "id": 251,
+      "question": "What is the function of the hepatic artery?",
+      "options": ["Supplies oxygenated blood to liver", "Provides nutrients to liver", "Supports liver function", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The hepatic artery supplies oxygenated blood, nutrients, and supports liver function."
+    },
+    {
+      "id": 252,
+      "question": "What is the function of the hepatic vein?",
+      "options": ["Drains blood from liver", "Returns blood to heart", "Transports metabolites", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The hepatic vein drains blood from the liver, returns it to the heart, and transports metabolites."
+    },
+    {
+      "id": 253,
+      "question": "What is the function of the liver sinusoids?",
+      "options": ["Facilitate exchange", "Filter blood", "Support hepatocytes", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Liver sinusoids facilitate exchange, filter blood, and support hepatocytes."
+    },
+    {
+      "id": 254,
+      "question": "What is the function of the Kupffer cells?",
+      "options": ["Phagocytosis", "Immune defense", "Clear pathogens", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Kupffer cells perform phagocytosis, provide immune defense, and clear pathogens."
+    },
+    {
+      "id": 255,
+      "question": "What is the function of the stellate cells?",
+      "options": ["Store vitamin A", "Support liver regeneration", "Produce collagen", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Stellate cells store vitamin A, support liver regeneration, and produce collagen."
+    },
+    {
+      "id": 256,
+      "question": "What is the function of the hepatocytes?",
+      "options": ["Nutrient metabolism", "Detoxification", "Protein synthesis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Hepatocytes are responsible for nutrient metabolism, detoxification, and protein synthesis."
+    },
+    {
+      "id": 257,
+      "question": "What is the function of the bile canaliculi?",
+      "options": ["Collect bile", "Transport bile", "Connect to bile ducts", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The bile canaliculi collect, transport, and connect bile to the bile ducts."
+    },
+    {
+      "id": 258,
+      "question": "What is the function of the hepatic duct?",
+      "options": ["Transports bile", "Connects to gallbladder", "Drains bile from liver", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The hepatic duct transports bile, connects to the gallbladder, and drains bile from the liver."
+    },
+    {
+      "id": 259,
+      "question": "What is the function of the cystic duct?",
+      "options": ["Connects gallbladder", "Transports bile", "Regulates flow", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The cystic duct connects the gallbladder, transports bile, and regulates flow."
+    },
+    {
+      "id": 260,
+      "question": "What is the function of the common bile duct?",
+      "options": ["Transports bile", "Connects to duodenum", "Regulates flow", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The common bile duct transports bile, connects to the duodenum, and regulates flow."
+    },
+    {
+      "id": 261,
+      "question": "What is the function of the sphincter of Oddi?",
+      "options": ["Regulates bile flow", "Controls pancreatic secretion", "Prevents reflux", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The sphincter of Oddi regulates bile flow, controls pancreatic secretion, and prevents reflux."
+    },
+    {
+      "id": 262,
+      "question": "What is the function of the portal triad?",
+      "options": ["Contains hepatic artery, portal vein, bile duct", "Provides blood flow", "Supports liver function", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The portal triad contains the hepatic artery, portal vein, and bile duct, providing blood flow and supporting liver function."
+    },
+    {
+      "id": 263,
+      "question": "What is the function of the liver lobules?",
+      "options": ["Functional units", "Organize hepatocytes", "Facilitate metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "Liver lobules are functional units that organize hepatocytes and facilitate metabolism."
+    },
+    {
+      "id": 264,
+      "question": "What is the function of the central vein?",
+      "options": ["Drains blood from lobule", "Connects to hepatic vein", "Collects metabolites", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The central vein drains blood from the lobule, connects to the hepatic vein, and collects metabolites."
+    },
+    {
+      "id": 265,
+      "question": "What is the function of the perisinusoidal space?",
+      "options": ["Facilitates exchange", "Supports cells", "Allows diffusion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The perisinusoidal space facilitates exchange, supports cells, and allows diffusion."
+    },
+    {
+      "id": 266,
+      "question": "What is the function of the junctional complex in the liver?",
+      "options": ["Cell adhesion", "Signal transmission", "Maintains structure", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The junctional complex provides cell adhesion, signal transmission, and maintains structure."
+    },
+    {
+      "id": 267,
+      "question": "What is the function of the liver in detoxification?",
+      "options": ["Metabolizes toxins", "Converts to less toxic substances", "Facilitates excretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes toxins, converts them to less toxic substances, and facilitates excretion."
+    },
+    {
+      "id": 268,
+      "question": "What is the function of the liver in drug metabolism?",
+      "options": ["Phase I reactions", "Phase II reactions", "Drug clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs Phase I and Phase II reactions for drug metabolism and drug clearance."
+    },
+    {
+      "id": 269,
+      "question": "What is the function of the liver in protein synthesis?",
+      "options": ["Produces albumin", "Synthesizes clotting factors", "Produces transport proteins", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces albumin, synthesizes clotting factors, and produces transport proteins."
+    },
+    {
+      "id": 270,
+      "question": "What is the function of the liver in carbohydrate metabolism?",
+      "options": ["Glycogen storage", "Gluconeogenesis", "Glycogenesis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver is involved in glycogen storage, gluconeogenesis, and glycogenesis."
+    },
+    {
+      "id": 271,
+      "question": "What is the function of the liver in lipid metabolism?",
+      "options": ["Fatty acid synthesis", "Cholesterol synthesis", "Lipoprotein production", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs fatty acid synthesis, cholesterol synthesis, and lipoprotein production."
+    },
+    {
+      "id": 272,
+      "question": "What is the function of the liver in vitamin metabolism?",
+      "options": ["Vitamin storage", "Vitamin metabolism", "Vitamin activation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver stores vitamins, metabolizes them, and activates them for use."
+    },
+    {
+      "id": 273,
+      "question": "What is the function of the liver in mineral metabolism?",
+      "options": ["Iron storage", "Copper storage", "Mineral regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver stores iron and copper and regulates mineral metabolism."
+    },
+    {
+      "id": 274,
+      "question": "What is the function of the liver in hormone metabolism?",
+      "options": ["Hormone degradation", "Hormone synthesis", "Hormone regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver degrades hormones, synthesizes some, and regulates hormone levels."
+    },
+    {
+      "id": 275,
+      "question": "What is the function of the liver in immune function?",
+      "options": ["Phagocytosis", "Cytokine production", "Immune defense", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs phagocytosis, produces cytokines, and provides immune defense."
+    },
+    {
+      "id": 276,
+      "question": "What is the function of the liver in detoxifying ammonia?",
+      "options": ["Urea cycle", "Ammonia conversion", "Excretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver detoxifies ammonia through the urea cycle, converting it to urea for excretion."
+    },
+    {
+      "id": 277,
+      "question": "What is the function of the liver in bilirubin metabolism?",
+      "options": ["Uptake", "Conjugation", "Excretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver takes up bilirubin, conjugates it, and excretes it in bile."
+    },
+    {
+      "id": 278,
+      "question": "What is the function of the liver in bile production?",
+      "options": ["Bile acid synthesis", "Bile secretion", "Bile concentration", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes bile acids, secretes bile, and concentrates it for digestion."
+    },
+    {
+      "id": 279,
+      "question": "What is the function of the liver in blood clotting?",
+      "options": ["Synthesizes clotting factors", "Regulates coagulation", "Supports hemostasis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes clotting factors, regulates coagulation, and supports hemostasis."
+    },
+    {
+      "id": 280,
+      "question": "What is the function of the liver in blood volume regulation?",
+      "options": ["Regulates blood volume", "Controls fluid balance", "Maintains homeostasis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates blood volume, controls fluid balance, and maintains homeostasis."
+    },
+    {
+      "id": 281,
+      "question": "What is the function of the liver in blood glucose regulation?",
+      "options": ["Glycogen storage", "Glucose release", "Gluconeogenesis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver stores glycogen, releases glucose, and performs gluconeogenesis for blood glucose regulation."
+    },
+    {
+      "id": 282,
+      "question": "What is the function of the liver in cholesterol metabolism?",
+      "options": ["Cholesterol synthesis", "Cholesterol regulation", "HDL production", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes cholesterol, regulates cholesterol levels, and produces HDL."
+    },
+    {
+      "id": 283,
+      "question": "What is the function of the liver in lipid transport?",
+      "options": ["Lipoprotein production", "Triglyceride transport", "Lipid regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces lipoproteins, transports triglycerides, and regulates lipid metabolism."
+    },
+    {
+      "id": 284,
+      "question": "What is the function of the liver in ketogenesis?",
+      "options": ["Ketone body production", "Fatty acid oxidation", "Energy regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces ketone bodies, performs fatty acid oxidation, and regulates energy."
+    },
+    {
+      "id": 285,
+      "question": "What is the function of the liver in nitrogen metabolism?",
+      "options": ["Urea synthesis", "Ammonia detoxification", "Amino acid metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes urea, detoxifies ammonia, and metabolizes amino acids."
+    },
+    {
+      "id": 286,
+      "question": "What is the function of the liver in electrolyte balance?",
+      "options": ["Electrolyte regulation", "Sodium balance", "Potassium balance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates electrolytes, maintains sodium and potassium balance."
+    },
+    {
+      "id": 287,
+      "question": "What is the function of the liver in acid-base balance?",
+      "options": ["Acid-base regulation", "Bicarbonate production", "pH control", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates acid-base balance, produces bicarbonate, and controls pH."
+    },
+    {
+      "id": 288,
+      "question": "What is the function of the liver in thermoregulation?",
+      "options": ["Heat production", "Temperature regulation", "Metabolic heat", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces heat, regulates temperature, and generates metabolic heat."
+    },
+    {
+      "id": 289,
+      "question": "What is the function of the liver in tissue repair?",
+      "options": ["Regeneration", "Repair", "Growth factors", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regenerates, repairs tissues, and produces growth factors."
+    },
+    {
+      "id": 290,
+      "question": "What is the function of the liver in fetal development?",
+      "options": ["Hematopoiesis", "Nutrient supply", "Metabolic support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs hematopoiesis, supplies nutrients, and supports metabolism in fetal development."
+    },
+    {
+      "id": 291,
+      "question": "What is the function of the liver in detoxification of drugs?",
+      "options": ["Metabolism", "Clearance", "Excretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes, clears, and excretes drugs and toxins."
+    },
+    {
+      "id": 292,
+      "question": "What is the function of the liver in alcohol metabolism?",
+      "options": ["Alcohol dehydrogenase", "Acetaldehyde conversion", "Alcohol clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver uses alcohol dehydrogenase, converts acetaldehyde, and clears alcohol."
+    },
+    {
+      "id": 293,
+      "question": "What is the function of the liver in drug resistance?",
+      "options": ["P-glycoprotein", "Efflux pumps", "Resistance mechanisms", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver uses P-glycoprotein, efflux pumps, and resistance mechanisms for drug clearance."
+    },
+    {
+      "id": 294,
+      "question": "What is the function of the liver in viral defense?",
+      "options": ["Antiviral response", "Immune surveillance", "Pathogen clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver provides antiviral response, immune surveillance, and pathogen clearance."
+    },
+    {
+      "id": 295,
+      "question": "What is the function of the liver in tumor suppression?",
+      "options": ["Tumor surveillance", "Immune response", "Apoptosis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs tumor surveillance, immune response, and apoptosis."
+    },
+    {
+      "id": 296,
+      "question": "What is the function of the liver in longevity?",
+      "options": ["Metabolic regulation", "Oxidative protection", "Anti-aging", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates metabolism, provides oxidative protection, and supports longevity."
+    },
+    {
+      "id": 297,
+      "question": "What is the function of the liver in aging?",
+      "options": ["Age-related changes", "Functional decline", "Metabolic changes", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver undergoes age-related changes, functional decline, and metabolic changes."
+    },
+    {
+      "id": 298,
+      "question": "What is the function of the liver in pregnancy?",
+      "options": ["Placental support", "Hormone production", "Metabolic adaptation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports the placenta, produces hormones, and adapts metabolism in pregnancy."
+    },
+    {
+      "id": 299,
+      "question": "What is the function of the liver in lactation?",
+      "options": ["Nutrient metabolism", "Hormone support", "Energy supply", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes nutrients, supports hormones, and supplies energy for lactation."
+    },
+    {
+      "id": 300,
+      "question": "What is the function of the liver in stress response?",
+      "options": ["Cortisol metabolism", "Energy regulation", "Stress adaptation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes cortisol, regulates energy, and adapts to stress."
+    },
+    {
+      "id": 301,
+      "question": "What is the function of the liver in wound healing?",
+      "options": ["Growth factors", "Protein synthesis", "Tissue repair", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces growth factors, synthesizes proteins, and supports tissue repair."
+    },
+    {
+      "id": 302,
+      "question": "What is the function of the liver in inflammation?",
+      "options": ["Inflammatory response", "Cytokine production", "Immune regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver responds to inflammation, produces cytokines, and regulates immunity."
+    },
+    {
+      "id": 303,
+      "question": "What is the function of the liver in tissue homeostasis?",
+      "options": ["Cell turnover", "Tissue maintenance", "Organ function", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver maintains cell turnover, tissue maintenance, and organ function."
+    },
+    {
+      "id": 304,
+      "question": "What is the function of the liver in organ regeneration?",
+      "options": ["Regenerative capacity", "Growth factors", "Tissue renewal", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver has regenerative capacity, produces growth factors, and renews tissue."
+    },
+    {
+      "id": 305,
+      "question": "What is the function of the liver in metabolic homeostasis?",
+      "options": ["Metabolic regulation", "Energy balance", "Nutrient homeostasis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates metabolism, balances energy, and maintains nutrient homeostasis."
+    },
+    {
+      "id": 306,
+      "question": "What is the function of the liver in endocrine function?",
+      "options": ["Hormone production", "Hormone metabolism", "Endocrine regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces hormones, metabolizes hormones, and regulates endocrine function."
+    },
+    {
+      "id": 307,
+      "question": "What is the function of the liver in exocrine function?",
+      "options": ["Bile production", "Digestive support", "Exocrine secretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces bile, supports digestion, and provides exocrine secretion."
+    },
+    {
+      "id": 308,
+      "question": "What is the function of the liver in temperature regulation?",
+      "options": ["Heat production", "Thermoregulation", "Metabolic heat", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces heat, regulates temperature, and generates metabolic heat."
+    },
+    {
+      "id": 309,
+      "question": "What is the function of the liver in nutrient storage?",
+      "options": ["Glycogen", "Vitamins", "Minerals", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver stores glycogen, vitamins, and minerals for future use."
+    },
+    {
+      "id": 310,
+      "question": "What is the function of the liver in energy metabolism?",
+      "options": ["ATP production", "Energy storage", "Energy release", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces ATP, stores energy, and releases energy for the body."
+    },
+    {
+      "id": 311,
+      "question": "What is the function of the liver in hormonal regulation?",
+      "options": ["Hormone synthesis", "Hormone degradation", "Hormone action", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes, degrades, and facilitates hormone action."
+    },
+    {
+      "id": 312,
+      "question": "What is the function of the liver in cell signaling?",
+      "options": ["Signal transduction", "Cell communication", "Cellular response", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs signal transduction, cell communication, and cellular response."
+    },
+    {
+      "id": 313,
+      "question": "What is the function of the liver in gene expression?",
+      "options": ["Gene regulation", "Transcription", "Translation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates gene expression, transcription, and translation."
+    },
+    {
+      "id": 314,
+      "question": "What is the function of the liver in protein folding?",
+      "options": ["Protein folding", "Chaperone function", "Quality control", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver folds proteins, provides chaperone function, and performs quality control."
+    },
+    {
+      "id": 315,
+      "question": "What is the function of the liver in cellular respiration?",
+      "options": ["Energy production", "Mitochondrial function", "Metabolic support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces energy, supports mitochondrial function, and metabolizes nutrients."
+    },
+    {
+      "id": 316,
+      "question": "What is the function of the liver in DNA repair?",
+      "options": ["DNA repair", "Genomic stability", "Maintenance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs DNA repair, maintains genomic stability, and supports maintenance."
+    },
+    {
+      "id": 317,
+      "question": "What is the function of the liver in apoptosis?",
+      "options": ["Programmed cell death", "Cell turnover", "Tissue maintenance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates apoptosis, cell turnover, and tissue maintenance."
+    },
+    {
+      "id": 318,
+      "question": "What is the function of the liver in cellular differentiation?",
+      "options": ["Cell differentiation", "Development", "Maturation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports cell differentiation, development, and maturation."
+    },
+    {
+      "id": 319,
+      "question": "What is the function of the liver in cellular proliferation?",
+      "options": ["Cell division", "Growth", "Regeneration", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates cell division, growth, and regeneration."
+    },
+    {
+      "id": 320,
+      "question": "What is the function of the liver in cellular metabolism?",
+      "options": ["Metabolic pathways", "Energy production", "Nutrient metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs metabolic pathways, produces energy, and metabolizes nutrients."
+    },
+    {
+      "id": 321,
+      "question": "What is the function of the liver in transport proteins?",
+      "options": ["Albumin production", "Carrier proteins", "Transport function", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces albumin, carrier proteins, and facilitates transport."
+    },
+    {
+      "id": 322,
+      "question": "What is the function of the liver in immune proteins?",
+      "options": ["Complement proteins", "Cytokines", "Immune function", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces complement proteins, cytokines, and supports immune function."
+    },
+    {
+      "id": 323,
+      "question": "What is the function of the liver in acute phase response?",
+      "options": ["Acute phase proteins", "Inflammation", "Response to injury", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces acute phase proteins, responds to inflammation and injury."
+    },
+    {
+      "id": 324,
+      "question": "What is the function of the liver in detoxification of ammonia?",
+      "options": ["Urea synthesis", "Ammonia clearance", "Toxicity prevention", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes urea, clears ammonia, and prevents toxicity."
+    },
+    {
+      "id": 325,
+      "question": "What is the function of the liver in heme synthesis?",
+      "options": ["Heme production", "Porphyrin synthesis", "Hemoglobin synthesis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces heme, synthesizes porphyrins, and supports hemoglobin synthesis."
+    },
+    {
+      "id": 326,
+      "question": "What is the function of the liver in iron metabolism?",
+      "options": ["Iron storage", "Iron release", "Iron regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver stores iron, releases it, and regulates iron metabolism."
+    },
+    {
+      "id": 327,
+      "question": "What is the function of the liver in copper metabolism?",
+      "options": ["Copper storage", "Copper excretion", "Copper regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver stores copper, excretes it, and regulates copper metabolism."
+    },
+    {
+      "id": 328,
+      "question": "What is the function of the liver in zinc metabolism?",
+      "options": ["Zinc storage", "Zinc regulation", "Zinc metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver stores zinc, regulates it, and metabolizes zinc."
+    },
+    {
+      "id": 329,
+      "question": "What is the function of the liver in calcium metabolism?",
+      "options": ["Calcium regulation", "Calcium storage", "Calcium homeostasis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates calcium, stores it, and maintains calcium homeostasis."
+    },
+    {
+      "id": 330,
+      "question": "What is the function of the liver in magnesium metabolism?",
+      "options": ["Magnesium regulation", "Magnesium storage", "Magnesium homeostasis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates magnesium, stores it, and maintains magnesium homeostasis."
+    },
+    {
+      "id": 331,
+      "question": "What is the function of the liver in phosphate metabolism?",
+      "options": ["Phosphate regulation", "Phosphate storage", "Phosphate homeostasis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates phosphate, stores it, and maintains phosphate homeostasis."
+    },
+    {
+      "id": 332,
+      "question": "What is the function of the liver in glucose metabolism?",
+      "options": ["Glycogenesis", "Glycogenolysis", "Gluconeogenesis", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs glycogenesis, glycogenolysis, and gluconeogenesis for glucose metabolism."
+    },
+    {
+      "id": 333,
+      "question": "What is the function of the liver in fructose metabolism?",
+      "options": ["Fructose conversion", "Fructose metabolism", "Energy production", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver converts fructose, metabolizes it, and produces energy."
+    },
+    {
+      "id": 334,
+      "question": "What is the function of the liver in galactose metabolism?",
+      "options": ["Galactose conversion", "Galactose metabolism", "Glucose production", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver converts galactose, metabolizes it, and produces glucose."
+    },
+    {
+      "id": 335,
+      "question": "What is the function of the liver in lactose metabolism?",
+      "options": ["Lactose processing", "Glucose production", "Energy metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver processes lactose, produces glucose, and metabolizes energy."
+    },
+    {
+      "id": 336,
+      "question": "What is the function of the liver in glycogen metabolism?",
+      "options": ["Glycogen synthesis", "Glycogen breakdown", "Glucose regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes glycogen, breaks it down, and regulates glucose."
+    },
+    {
+      "id": 337,
+      "question": "What is the function of the liver in lipid digestion?",
+      "options": ["Emulsification", "Lipid processing", "Bile acids", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver emulsifies fats, processes lipids, and produces bile acids."
+    },
+    {
+      "id": 338,
+      "question": "What is the function of the liver in cholesterol regulation?",
+      "options": ["Cholesterol synthesis", "Cholesterol uptake", "Cholesterol excretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes, takes up, and excretes cholesterol."
+    },
+    {
+      "id": 339,
+      "question": "What is the function of the liver in HDL production?",
+      "options": ["HDL synthesis", "Cholesterol transport", "Reverse cholesterol transport", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes HDL, transports cholesterol, and performs reverse cholesterol transport."
+    },
+    {
+      "id": 340,
+      "question": "What is the function of the liver in LDL clearance?",
+      "options": ["LDL uptake", "LDL metabolism", "Cholesterol clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver takes up LDL, metabolizes it, and clears cholesterol."
+    },
+    {
+      "id": 341,
+      "question": "What is the function of the liver in VLDL production?",
+      "options": ["VLDL synthesis", "Triglyceride transport", "Lipid metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes VLDL, transports triglycerides, and metabolizes lipids."
+    },
+    {
+      "id": 342,
+      "question": "What is the function of the liver in ketone body metabolism?",
+      "options": ["Ketogenesis", "Ketone utilization", "Energy regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces ketone bodies, utilizes them, and regulates energy."
+    },
+    {
+      "id": 343,
+      "question": "What is the function of the liver in fatty acid oxidation?",
+      "options": ["Beta-oxidation", "Fatty acid breakdown", "Energy production", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs beta-oxidation, breaks down fatty acids, and produces energy."
+    },
+    {
+      "id": 344,
+      "question": "What is the function of the liver in protein metabolism?",
+      "options": ["Protein synthesis", "Protein degradation", "Amino acid metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes proteins, degrades them, and metabolizes amino acids."
+    },
+    {
+      "id": 345,
+      "question": "What is the function of the liver in nitrogen metabolism?",
+      "options": ["Urea cycle", "Ammonia detoxification", "Nitrogen balance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs the urea cycle, detoxifies ammonia, and maintains nitrogen balance."
+    },
+    {
+      "id": 346,
+      "question": "What is the function of the liver in neurotransmitter metabolism?",
+      "options": ["Neurotransmitter synthesis", "Neurotransmitter degradation", "Brain function", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver synthesizes and degrades neurotransmitters, supporting brain function."
+    },
+    {
+      "id": 347,
+      "question": "What is the function of the liver in stress management?",
+      "options": ["Cortisol metabolism", "Stress response", "Hormonal regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes cortisol, responds to stress, and regulates hormones."
+    },
+    {
+      "id": 348,
+      "question": "What is the function of the liver in growth support?",
+      "options": ["Growth factors", "Insulin-like growth factor", "Development", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces growth factors, IGF, and supports development."
+    },
+    {
+      "id": 349,
+      "question": "What is the function of the liver in fertility?",
+      "options": ["Hormone metabolism", "Reproductive function", "Fertility support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes hormones, supports reproductive function, and fertility."
+    },
+    {
+      "id": 350,
+      "question": "What is the function of the liver in menstrual cycle?",
+      "options": ["Hormone regulation", "Cycle support", "Reproductive health", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates hormones, supports the menstrual cycle, and reproductive health."
+    },
+    {
+      "id": 351,
+      "question": "What is the function of the liver in menopause?",
+      "options": ["Hormonal changes", "Metabolic changes", "Adaptation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver undergoes hormonal and metabolic changes during menopause."
+    },
+    {
+      "id": 352,
+      "question": "What is the function of the liver in reproductive aging?",
+      "options": ["Age-related changes", "Hormonal decline", "Metabolic adaptation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver experiences age-related changes, hormonal decline, and metabolic adaptation."
+    },
+    {
+      "id": 353,
+      "question": "What is the function of the liver in cardiovascular health?",
+      "options": ["Lipid metabolism", "Cholesterol regulation", "Vascular health", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes lipids, regulates cholesterol, and supports vascular health."
+    },
+    {
+      "id": 354,
+      "question": "What is the function of the liver in bone health?",
+      "options": ["Vitamin D metabolism", "Calcium regulation", "Bone support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes vitamin D, regulates calcium, and supports bone health."
+    },
+    {
+      "id": 355,
+      "question": "What is the function of the liver in skin health?",
+      "options": ["Vitamin A metabolism", "Skin support", "Protection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes vitamin A, supports skin health, and provides protection."
+    },
+    {
+      "id": 356,
+      "question": "What is the function of the liver in muscle function?",
+      "options": ["Protein metabolism", "Energy supply", "Muscle support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes proteins, supplies energy, and supports muscle function."
+    },
+    {
+      "id": 357,
+      "question": "What is the function of the liver in brain function?",
+      "options": ["Glucose supply", "Neurotransmitter metabolism", "Brain support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supplies glucose, metabolizes neurotransmitters, and supports brain function."
+    },
+    {
+      "id": 358,
+      "question": "What is the function of the liver in vision?",
+      "options": ["Vitamin A metabolism", "Retinol synthesis", "Visual support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes vitamin A, synthesizes retinol, and supports vision."
+    },
+    {
+      "id": 359,
+      "question": "What is the function of the liver in hearing?",
+      "options": ["Vitamin A metabolism", "Hearing support", "Protection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes vitamin A, supports hearing, and provides protection."
+    },
+    {
+      "id": 360,
+      "question": "What is the function of the liver in smell?",
+      "options": ["Vitamin A metabolism", "Olfactory support", "Protection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes vitamin A, supports olfaction, and provides protection."
+    },
+    {
+      "id": 361,
+      "question": "What is the function of the liver in taste?",
+      "options": ["Nutrient metabolism", "Taste support", "Protection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes nutrients, supports taste, and provides protection."
+    },
+    {
+      "id": 362,
+      "question": "What is the function of the liver in digestion?",
+      "options": ["Bile production", "Nutrient metabolism", "Digestive support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces bile, metabolizes nutrients, and supports digestion."
+    },
+    {
+      "id": 363,
+      "question": "What is the function of the liver in absorption?",
+      "options": ["Nutrient absorption", "Metabolic support", "Digestion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports nutrient absorption, metabolism, and digestion."
+    },
+    {
+      "id": 364,
+      "question": "What is the function of the liver in excretion?",
+      "options": ["Bile excretion", "Waste removal", "Detoxification", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver excretes bile, removes waste, and detoxifies substances."
+    },
+    {
+      "id": 365,
+      "question": "What is the function of the liver in bile secretion?",
+      "options": ["Bile acid secretion", "Bilirubin secretion", "Cholesterol secretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver secretes bile acids, bilirubin, and cholesterol in bile."
+    },
+    {
+      "id": 366,
+      "question": "What is the function of the liver in bilirubin clearance?",
+      "options": ["Bilirubin uptake", "Bilirubin conjugation", "Bilirubin excretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver takes up, conjugates, and excretes bilirubin."
+    },
+    {
+      "id": 367,
+      "question": "What is the function of the liver in drug clearance?",
+      "options": ["Drug metabolism", "Drug excretion", "Drug clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes, excretes, and clears drugs."
+    },
+    {
+      "id": 368,
+      "question": "What is the function of the liver in toxin clearance?",
+      "options": ["Toxin metabolism", "Toxin excretion", "Toxin clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes, excretes, and clears toxins."
+    },
+    {
+      "id": 369,
+      "question": "What is the function of the liver in alcohol clearance?",
+      "options": ["Alcohol metabolism", "Alcohol excretion", "Alcohol clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes, excretes, and clears alcohol."
+    },
+    {
+      "id": 370,
+      "question": "What is the function of the liver in ammonia clearance?",
+      "options": ["Ammonia metabolism", "Ammonia excretion", "Ammonia clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes, excretes, and clears ammonia."
+    },
+    {
+      "id": 371,
+      "question": "What is the function of the liver in urea synthesis?",
+      "options": ["Urea production", "Ammonia conversion", "Urea excretion", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver produces urea, converts ammonia, and excretes urea."
+    },
+    {
+      "id": 372,
+      "question": "What is the function of the liver in drug metabolism?",
+      "options": ["Phase I reactions", "Phase II reactions", "Drug metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs Phase I and Phase II reactions for drug metabolism."
+    },
+    {
+      "id": 373,
+      "question": "What is the function of the liver in alcohol metabolism?",
+      "options": ["Alcohol dehydrogenase", "Acetaldehyde metabolism", "Alcohol metabolism", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver uses alcohol dehydrogenase, metabolizes acetaldehyde, and clears alcohol."
+    },
+    {
+      "id": 374,
+      "question": "What is the function of the liver in toxin metabolism?",
+      "options": ["Toxin metabolism", "Detoxification", "Toxin clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes toxins, detoxifies them, and clears them."
+    },
+    {
+      "id": 375,
+      "question": "What is the function of the liver in drug detoxification?",
+      "options": ["Drug metabolism", "Drug conjugation", "Drug clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes, conjugates, and clears drugs."
+    },
+    {
+      "id": 376,
+      "question": "What is the function of the liver in carcinogen metabolism?",
+      "options": ["Carcinogen metabolism", "Carcinogen detoxification", "Carcinogen clearance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver metabolizes, detoxifies, and clears carcinogens."
+    },
+    {
+      "id": 377,
+      "question": "What is the function of the liver in DNA repair?",
+      "options": ["DNA repair", "Genomic stability", "Tissue protection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs DNA repair, maintains genomic stability, and protects tissues."
+    },
+    {
+      "id": 378,
+      "question": "What is the function of the liver in oxidative stress?",
+      "options": ["Antioxidant defense", "Oxidative protection", "Stress response", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver provides antioxidant defense, oxidative protection, and stress response."
+    },
+    {
+      "id": 379,
+      "question": "What is the function of the liver in inflammation?",
+      "options": ["Inflammatory response", "Cytokine production", "Immune regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver responds to inflammation, produces cytokines, and regulates immunity."
+    },
+    {
+      "id": 380,
+      "question": "What is the function of the liver in infection?",
+      "options": ["Immune response", "Pathogen clearance", "Infection defense", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver mounts immune responses, clears pathogens, and defends against infection."
+    },
+    {
+      "id": 381,
+      "question": "What is the function of the liver in autoimmune disease?",
+      "options": ["Immune regulation", "Autoimmune response", "Disease protection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates immunity, responds to autoimmune processes, and provides protection."
+    },
+    {
+      "id": 382,
+      "question": "What is the function of the liver in metabolic disease?",
+      "options": ["Metabolic regulation", "Disease management", "Health support", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regulates metabolism, manages disease, and supports health."
+    },
+    {
+      "id": 383,
+      "question": "What is the function of the liver in cancer prevention?",
+      "options": ["Tumor surveillance", "Immune response", "Cancer prevention", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver performs tumor surveillance, mounts immune responses, and prevents cancer."
+    },
+    {
+      "id": 384,
+      "question": "What is the function of the liver in aging prevention?",
+      "options": ["Anti-aging", "Metabolic support", "Health maintenance", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver provides anti-aging, metabolic support, and health maintenance."
+    },
+    {
+      "id": 385,
+      "question": "What is the function of the liver in longevity?",
+      "options": ["Longevity support", "Health maintenance", "Disease prevention", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports longevity, maintains health, and prevents disease."
+    },
+    {
+      "id": 386,
+      "question": "What is the function of the liver in quality of life?",
+      "options": ["Health support", "Wellness", "Quality of life", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports health, wellness, and quality of life."
+    },
+    {
+      "id": 387,
+      "question": "What is the function of the liver in homeostasis?",
+      "options": ["Homeostasis", "Balance", "Regulation", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver maintains homeostasis, balance, and regulation."
+    },
+    {
+      "id": 388,
+      "question": "What is the function of the liver in health?",
+      "options": ["Health support", "Disease prevention", "Wellness", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports health, prevents disease, and promotes wellness."
+    },
+    {
+      "id": 389,
+      "question": "What is the function of the liver in disease?",
+      "options": ["Disease resistance", "Pathogen clearance", "Health protection", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver resists disease, clears pathogens, and protects health."
+    },
+    {
+      "id": 390,
+      "question": "What is the function of the liver in recovery?",
+      "options": ["Recovery support", "Healing", "Regeneration", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports recovery, healing, and regeneration."
+    },
+    {
+      "id": 391,
+      "question": "What is the function of the liver in healing?",
+      "options": ["Healing support", "Tissue repair", "Regeneration", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports healing, tissue repair, and regeneration."
+    },
+    {
+      "id": 392,
+      "question": "What is the function of the liver in regeneration?",
+      "options": ["Regeneration", "Tissue renewal", "Repair", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver regenerates, renews tissue, and repairs damage."
+    },
+    {
+      "id": 393,
+      "question": "What is the function of the liver in repair?",
+      "options": ["Repair support", "Tissue healing", "Regeneration", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports repair, tissue healing, and regeneration."
+    },
+    {
+      "id": 394,
+      "question": "What is the function of the liver in adaptation?",
+      "options": ["Adaptation", "Response to stress", "Change", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver adapts, responds to stress, and changes."
+    },
+    {
+      "id": 395,
+      "question": "What is the function of the liver in resilience?",
+      "options": ["Resilience", "Stress response", "Recovery", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver provides resilience, stress response, and recovery."
+    },
+    {
+      "id": 396,
+      "question": "What is the function of the liver in survival?",
+      "options": ["Survival support", "Life support", "Health", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports survival, life, and health."
+    },
+    {
+      "id": 397,
+      "question": "What is the function of the liver in life?",
+      "options": ["Life support", "Health maintenance", "Survival", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports life, maintains health, and ensures survival."
+    },
+    {
+      "id": 398,
+      "question": "What is the function of the liver in health maintenance?",
+      "options": ["Health maintenance", "Disease prevention", "Wellness", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver maintains health, prevents disease, and promotes wellness."
+    },
+    {
+      "id": 399,
+      "question": "What is the function of the liver in wellness?",
+      "options": ["Wellness support", "Health promotion", "Quality of life", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports wellness, promotes health, and improves quality of life."
+    },
+    {
+      "id": 400,
+      "question": "What is the function of the liver in quality of life?",
+      "options": ["Quality of life support", "Health improvement", "Wellness", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The liver supports quality of life, improves health, and promotes wellness."
+    }
+  ],
+  "essay_questions": [
+    {
+      "id": 1,
+      "question": "Explain the structure and function of hemoglobin. Include its role in oxygen transport and the clinical significance of hemoglobinopathies.",
+      "maxScore": 15,
+      "topic": "Blood Physiology"
+    },
+    {
+      "id": 2,
+      "question": "Describe the cardiac cycle in detail. Include the phases of the cycle, pressure and volume changes, and the electrical events. Explain the Frank-Starling law and its physiological significance.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 3,
+      "question": "Discuss the regulation of blood glucose levels. Describe the roles of insulin and glucagon in carbohydrate metabolism. Include mechanisms of action, target tissues, and clinical consequences of dysregulation.",
+      "maxScore": 15,
+      "topic": "Metabolism"
+    },
+    {
+      "id": 4,
+      "question": "Explain the structure and function of the nephron in the kidney. Describe the processes of filtration, reabsorption, and secretion. Discuss hormonal regulation of kidney function by ADH and aldosterone.",
+      "maxScore": 15,
+      "topic": "Renal Physiology"
+    },
+    {
+      "id": 5,
+      "question": "Compare and contrast the structure and function of DNA and RNA. Discuss transcription and translation in protein synthesis, including the role of the genetic code and its degeneracy.",
+      "maxScore": 15,
+      "topic": "Molecular Biology"
+    },
+    {
+      "id": 6,
+      "question": "Describe the structure of the nervous system and explain the generation and propagation of action potentials. Discuss synaptic transmission and the role of major neurotransmitters.",
+      "maxScore": 15,
+      "topic": "Neurophysiology"
+    },
+    {
+      "id": 7,
+      "question": "Explain the mechanisms of gas exchange in the lungs. Describe oxygen and carbon dioxide transport in blood. Discuss regulation of respiration and the role of chemoreceptors.",
+      "maxScore": 15,
+      "topic": "Pulmonary Physiology"
+    },
+    {
+      "id": 8,
+      "question": "Discuss the structure and function of lipids. Describe fatty acid oxidation (β-oxidation) and synthesis. Explain clinical significance of lipid metabolism disorders.",
+      "maxScore": 15,
+      "topic": "Lipid Metabolism"
+    },
+    {
+      "id": 9,
+      "question": "Describe the structure of the heart including chambers, valves, and blood flow. Explain the conduction system and its role in cardiac rhythm. Discuss the clinical significance of arrhythmias.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Anatomy"
+    },
+    {
+      "id": 10,
+      "question": "Explain the process of cellular respiration, including glycolysis, the TCA cycle, and oxidative phosphorylation. Calculate the ATP yield from complete glucose oxidation and discuss regulation of each pathway.",
+      "maxScore": 15,
+      "topic": "Metabolism"
+    },
+    {
+      "id": 11,
+      "question": "Discuss the immune system, including innate and adaptive immunity. Describe the roles of lymphocytes, antibodies, and MHC molecules. Explain the significance of immune memory in vaccination.",
+      "maxScore": 15,
+      "topic": "Immunology"
+    },
+    {
+      "id": 12,
+      "question": "Describe the anatomy and physiology of the digestive system. Explain the processes of digestion and absorption of carbohydrates, proteins, and lipids.",
+      "maxScore": 15,
+      "topic": "Digestive Physiology"
+    },
+    {
+      "id": 13,
+      "question": "Explain the mechanisms of blood clotting (hemostasis). Discuss the coagulation cascade and the role of platelets and clotting factors. Explain the clinical significance of clotting disorders.",
+      "maxScore": 15,
+      "topic": "Blood Physiology"
+    },
+    {
+      "id": 14,
+      "question": "Describe the structure and function of enzymes. Discuss enzyme kinetics, inhibition, and regulation. Explain the clinical significance of enzyme defects and the use of enzymes as therapeutic targets.",
+      "maxScore": 15,
+      "topic": "Biochemistry"
+    },
+    {
+      "id": 15,
+      "question": "Explain the role of the endocrine system in maintaining homeostasis. Discuss the major endocrine glands, their hormones, and the regulation of hormone secretion.",
+      "maxScore": 15,
+      "topic": "Endocrine Physiology"
+    },
+    {
+      "id": 16,
+      "question": "Describe the anatomy and physiology of the respiratory system. Explain the mechanics of ventilation, gas exchange, and oxygen-hemoglobin dissociation curve.",
+      "maxScore": 15,
+      "topic": "Pulmonary Physiology"
+    },
+    {
+      "id": 17,
+      "question": "Discuss the clinical significance of arterial blood gases (ABGs). Explain the interpretation of pH, PaO2, PaCO2, and bicarbonate levels in diagnosing acid-base disorders.",
+      "maxScore": 15,
+      "topic": "Clinical Physiology"
+    },
+    {
+      "id": 18,
+      "question": "Describe the mechanism of muscle contraction. Explain the sliding filament theory and the role of calcium, ATP, and regulatory proteins. Discuss different types of muscle contraction.",
+      "maxScore": 15,
+      "topic": "Muscle Physiology"
+    },
+    {
+      "id": 19,
+      "question": "Explain the principles of drug-receptor interactions. Discuss agonist, antagonist, and inverse agonist. Explain the clinical significance of drug potency, efficacy, and selectivity.",
+      "maxScore": 15,
+      "topic": "Pharmacology"
+    },
+    {
+      "id": 20,
+      "question": "Describe the anatomy of the respiratory system. Explain the process of gas exchange at the alveolar level and the role of pulmonary circulation. Discuss the clinical significance of respiratory diseases.",
+      "maxScore": 15,
+      "topic": "Respiratory Physiology"
+    },
+    {
+      "id": 21,
+      "question": "Discuss the structure and function of carbohydrates, lipids, and proteins in the human body. Explain their roles in energy metabolism and as structural components.",
+      "maxScore": 15,
+      "topic": "Biochemistry"
+    },
+    {
+      "id": 22,
+      "question": "Explain the physiology of blood pressure regulation. Discuss short-term (baroreceptor reflex) and long-term (renal) mechanisms. Explain the clinical significance of hypertension.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 23,
+      "question": "Describe the structure and function of the brain. Explain the functions of different lobes and regions. Discuss the blood-brain barrier and its clinical significance.",
+      "maxScore": 15,
+      "topic": "Neuroanatomy"
+    },
+    {
+      "id": 24,
+      "question": "Explain the process of wound healing. Describe the phases of healing, the role of growth factors, and the clinical significance of disorders of wound healing.",
+      "maxScore": 15,
+      "topic": "Pathology"
+    },
+    {
+      "id": 25,
+      "question": "Discuss the concept of homeostasis. Explain feedback mechanisms (negative and positive) and their role in maintaining the internal environment. Give specific physiological examples.",
+      "maxScore": 15,
+      "topic": "General Physiology"
+    },
+    {
+      "id": 26,
+      "question": "Describe the anatomy of the liver. Explain its histological structure, blood supply, and biliary system. Discuss the functional significance of the liver's unique blood supply.",
+      "maxScore": 15,
+      "topic": "Hepatic Physiology"
+    },
+    {
+      "id": 27,
+      "question": "Explain the mechanisms of hepatic drug metabolism. Discuss Phase I and Phase II reactions, their regulation, and clinical significance in drug interactions and toxicity.",
+      "maxScore": 15,
+      "topic": "Pharmacology"
+    },
+    {
+      "id": 28,
+      "question": "Describe the role of the liver in lipid metabolism. Discuss lipoprotein synthesis, cholesterol metabolism, and the clinical significance of dyslipidemia.",
+      "maxScore": 15,
+      "topic": "Lipid Metabolism"
+    },
+    {
+      "id": 29,
+      "question": "Explain the mechanisms of hepatic detoxification. Describe the role of the liver in metabolizing toxins, drugs, and endogenous substances. Discuss clinical implications.",
+      "maxScore": 15,
+      "topic": "Hepatic Physiology"
+    },
+    {
+      "id": 30,
+      "question": "Discuss the role of the liver in protein metabolism. Describe albumin synthesis, coagulation factor production, and amino acid metabolism. Explain clinical significance.",
+      "maxScore": 15,
+      "topic": "Hepatic Physiology"
+    },
+    {
+      "id": 31,
+      "question": "Describe the role of the liver in carbohydrate metabolism. Explain glycogenesis, glycogenolysis, and gluconeogenesis. Discuss regulation of blood glucose.",
+      "maxScore": 15,
+      "topic": "Metabolism"
+    },
+    {
+      "id": 32,
+      "question": "Explain the mechanisms of hepatic regeneration. Discuss the growth factors, cytokines, and signaling pathways involved. Explain clinical significance.",
+      "maxScore": 15,
+      "topic": "Hepatic Physiology"
+    },
+    {
+      "id": 33,
+      "question": "Describe the pathophysiology of hepatic cirrhosis. Discuss causes, mechanisms, clinical features, and complications. Explain the role of portal hypertension.",
+      "maxScore": 15,
+      "topic": "Pathology"
+    },
+    {
+      "id": 34,
+      "question": "Discuss the clinical features and management of hepatic encephalopathy. Explain the mechanisms of ammonia toxicity and the role of the liver in nitrogen metabolism.",
+      "maxScore": 15,
+      "topic": "Clinical Medicine"
+    },
+    {
+      "id": 35,
+      "question": "Explain the mechanisms of jaundice. Describe the types of jaundice (pre-hepatic, hepatic, post-hepatic) and their causes. Discuss clinical features and investigations.",
+      "maxScore": 15,
+      "topic": "Clinical Medicine"
+    },
+    {
+      "id": 36,
+      "question": "Describe the anatomy and physiology of the adrenal glands. Explain the functions of the adrenal cortex and medulla. Discuss clinical disorders.",
+      "maxScore": 15,
+      "topic": "Endocrine Physiology"
+    },
+    {
+      "id": 37,
+      "question": "Explain the mechanism of steroid hormone action. Discuss receptor binding, signal transduction, and effects on gene expression. Provide clinical examples.",
+      "maxScore": 15,
+      "topic": "Endocrine Physiology"
+    },
+    {
+      "id": 38,
+      "question": "Describe the pathophysiology of diabetes mellitus. Discuss the types of diabetes, mechanisms, complications, and management.",
+      "maxScore": 15,
+      "topic": "Endocrine Physiology"
+    },
+    {
+      "id": 39,
+      "question": "Explain the physiology of the menstrual cycle. Describe the ovarian and uterine cycles, hormonal regulation, and clinical significance.",
+      "maxScore": 15,
+      "topic": "Reproductive Physiology"
+    },
+    {
+      "id": 40,
+      "question": "Describe the mechanisms of labor and delivery. Explain the role of hormones, uterine contractions, and fetal factors. Discuss clinical management.",
+      "maxScore": 15,
+      "topic": "Reproductive Physiology"
+    },
+    {
+      "id": 41,
+      "question": "Explain the physiology of lactation. Discuss hormonal regulation, milk production, and milk ejection. Discuss clinical significance.",
+      "maxScore": 15,
+      "topic": "Reproductive Physiology"
+    },
+    {
+      "id": 42,
+      "question": "Describe the pathophysiology of preeclampsia. Discuss mechanisms, risk factors, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Clinical Medicine"
+    },
+    {
+      "id": 43,
+      "question": "Explain the mechanisms of fetal circulation. Describe the shunts, their functions, and adaptations at birth. Discuss clinical significance.",
+      "maxScore": 15,
+      "topic": "Physiology"
+    },
+    {
+      "id": 44,
+      "question": "Discuss the physiology of pregnancy. Describe the hormonal changes, physiological adaptations, and clinical implications.",
+      "maxScore": 15,
+      "topic": "Physiology"
+    },
+    {
+      "id": 45,
+      "question": "Explain the mechanisms of contraception. Discuss the types of contraceptives, mechanisms of action, and clinical considerations.",
+      "maxScore": 15,
+      "topic": "Reproductive Physiology"
+    },
+    {
+      "id": 46,
+      "question": "Describe the pathophysiology of infertility. Discuss causes, investigations, and treatment options. Explain assisted reproductive technologies.",
+      "maxScore": 15,
+      "topic": "Reproductive Physiology"
+    },
+    {
+      "id": 47,
+      "question": "Explain the physiology of menopause. Discuss hormonal changes, symptoms, and management options.",
+      "maxScore": 15,
+      "topic": "Reproductive Physiology"
+    },
+    {
+      "id": 48,
+      "question": "Describe the anatomy and physiology of the breast. Explain development, lactation, and clinical disorders.",
+      "maxScore": 15,
+      "topic": "Anatomy"
+    },
+    {
+      "id": 49,
+      "question": "Explain the mechanisms of genetic inheritance. Discuss Mendelian genetics, chromosomal disorders, and multifactorial inheritance.",
+      "maxScore": 15,
+      "topic": "Genetics"
+    },
+    {
+      "id": 50,
+      "question": "Describe the structure and function of chromosomes. Explain chromosomal abnormalities and their clinical significance.",
+      "maxScore": 15,
+      "topic": "Genetics"
+    },
+    {
+      "id": 51,
+      "question": "Discuss the principles of molecular diagnostics. Explain PCR, DNA sequencing, and other molecular techniques. Discuss clinical applications.",
+      "maxScore": 15,
+      "topic": "Molecular Biology"
+    },
+    {
+      "id": 52,
+      "question": "Explain the mechanisms of gene expression regulation. Discuss transcriptional, post-transcriptional, and translational regulation. Provide clinical examples.",
+      "maxScore": 15,
+      "topic": "Molecular Biology"
+    },
+    {
+      "id": 53,
+      "question": "Describe the pathophysiology of cancer. Discuss the hallmarks of cancer, genetic mutations, and the role of oncogenes and tumor suppressor genes.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 54,
+      "question": "Explain the mechanisms of chemotherapy. Discuss the types of chemotherapy agents, mechanisms of action, and clinical considerations.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 55,
+      "question": "Describe the principles of radiation therapy. Explain the mechanisms of action, types of radiation, and clinical applications.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 56,
+      "question": "Discuss the pathophysiology of sepsis. Explain the mechanisms of systemic inflammatory response and organ dysfunction.",
+      "maxScore": 15,
+      "topic": "Pathophysiology"
+    },
+    {
+      "id": 57,
+      "question": "Explain the mechanisms of shock. Discuss the types of shock, hemodynamic changes, and clinical management.",
+      "maxScore": 15,
+      "topic": "Clinical Medicine"
+    },
+    {
+      "id": 58,
+      "question": "Describe the pathophysiology of heart failure. Discuss the compensatory mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 59,
+      "question": "Explain the mechanisms of atherosclerosis. Discuss risk factors, pathogenesis, and clinical consequences.",
+      "maxScore": 15,
+      "topic": "Pathology"
+    },
+    {
+      "id": 60,
+      "question": "Describe the pathophysiology of myocardial infarction. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 61,
+      "question": "Explain the mechanisms of stroke. Discuss the types of stroke, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 62,
+      "question": "Describe the pathophysiology of Parkinson's disease. Discuss mechanisms, clinical features, and treatment options.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 63,
+      "question": "Explain the mechanisms of Alzheimer's disease. Discuss the role of amyloid and tau proteins, and clinical features.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 64,
+      "question": "Describe the pathophysiology of epilepsy. Discuss seizure types, mechanisms, and management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 65,
+      "question": "Explain the mechanisms of drug addiction. Discuss the neurobiology of addiction, the role of dopamine, and treatment approaches.",
+      "maxScore": 15,
+      "topic": "Neurobiology"
+    },
+    {
+      "id": 66,
+      "question": "Describe the pathophysiology of depression. Discuss the monoamine hypothesis, the role of stress, and treatment options.",
+      "maxScore": 15,
+      "topic": "Psychiatry"
+    },
+    {
+      "id": 67,
+      "question": "Explain the mechanisms of schizophrenia. Discuss the dopamine hypothesis, genetic factors, and treatment options.",
+      "maxScore": 15,
+      "topic": "Psychiatry"
+    },
+    {
+      "id": 68,
+      "question": "Describe the pathophysiology of asthma. Discuss airway hyperreactivity, inflammation, and clinical management.",
+      "maxScore": 15,
+      "topic": "Pulmonary Physiology"
+    },
+    {
+      "id": 69,
+      "question": "Explain the mechanisms of COPD. Discuss the pathophysiology of chronic bronchitis and emphysema, and clinical management.",
+      "maxScore": 15,
+      "topic": "Pulmonary Physiology"
+    },
+    {
+      "id": 70,
+      "question": "Describe the pathophysiology of pneumonia. Discuss the mechanisms of infection, the immune response, and clinical management.",
+      "maxScore": 15,
+      "topic": "Pulmonary Physiology"
+    },
+    {
+      "id": 71,
+      "question": "Explain the mechanisms of tuberculosis. Discuss the pathogenesis, clinical features, and management of TB.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 72,
+      "question": "Describe the pathophysiology of HIV/AIDS. Discuss the mechanism of HIV infection, the immune response, and clinical management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 73,
+      "question": "Explain the mechanisms of malaria. Discuss the life cycle of Plasmodium, the pathophysiology of disease, and clinical management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 74,
+      "question": "Describe the pathophysiology of typhoid fever. Discuss the mechanisms of infection, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 75,
+      "question": "Explain the mechanisms of cholera. Discuss the pathophysiology of cholera toxin, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 76,
+      "question": "Describe the pathophysiology of peptic ulcer disease. Discuss the role of H. pylori, acid secretion, and clinical management.",
+      "maxScore": 15,
+      "topic": "Gastroenterology"
+    },
+    {
+      "id": 77,
+      "question": "Explain the mechanisms of inflammatory bowel disease. Discuss the pathophysiology of Crohn's disease and ulcerative colitis, and clinical management.",
+      "maxScore": 15,
+      "topic": "Gastroenterology"
+    },
+    {
+      "id": 78,
+      "question": "Describe the pathophysiology of liver cirrhosis. Discuss the causes, mechanisms of fibrosis, and clinical complications.",
+      "maxScore": 15,
+      "topic": "Hepatology"
+    },
+    {
+      "id": 79,
+      "question": "Explain the mechanisms of hepatitis. Discuss the types of viral hepatitis, the pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Hepatology"
+    },
+    {
+      "id": 80,
+      "question": "Describe the pathophysiology of renal failure. Discuss acute and chronic renal failure, mechanisms, and clinical management.",
+      "maxScore": 15,
+      "topic": "Nephrology"
+    },
+    {
+      "id": 81,
+      "question": "Explain the mechanisms of glomerulonephritis. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Nephrology"
+    },
+    {
+      "id": 82,
+      "question": "Describe the pathophysiology of urinary tract infections. Discuss the mechanisms of infection, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Urology"
+    },
+    {
+      "id": 83,
+      "question": "Explain the mechanisms of kidney stones. Discuss the types of stones, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Urology"
+    },
+    {
+      "id": 84,
+      "question": "Describe the pathophysiology of prostate cancer. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 85,
+      "question": "Explain the mechanisms of breast cancer. Discuss the pathophysiology, risk factors, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 86,
+      "question": "Describe the pathophysiology of cervical cancer. Discuss the role of HPV, mechanisms, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 87,
+      "question": "Explain the mechanisms of ovarian cancer. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 88,
+      "question": "Describe the pathophysiology of lung cancer. Discuss the types of lung cancer, mechanisms, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 89,
+      "question": "Explain the mechanisms of colorectal cancer. Discuss the pathophysiology, risk factors, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 90,
+      "question": "Describe the pathophysiology of leukemia. Discuss the types of leukemia, mechanisms, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 91,
+      "question": "Explain the mechanisms of lymphoma. Discuss Hodgkin's and non-Hodgkin's lymphoma, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 92,
+      "question": "Describe the pathophysiology of osteoporosis. Discuss the mechanisms of bone loss, risk factors, and clinical management.",
+      "maxScore": 15,
+      "topic": "Rheumatology"
+    },
+    {
+      "id": 93,
+      "question": "Explain the mechanisms of osteoarthritis. Discuss the pathophysiology, risk factors, and clinical management.",
+      "maxScore": 15,
+      "topic": "Rheumatology"
+    },
+    {
+      "id": 94,
+      "question": "Describe the pathophysiology of rheumatoid arthritis. Discuss the autoimmune mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Rheumatology"
+    },
+    {
+      "id": 95,
+      "question": "Explain the mechanisms of gout. Discuss the pathophysiology of uric acid metabolism, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Rheumatology"
+    },
+    {
+      "id": 96,
+      "question": "Describe the pathophysiology of systemic lupus erythematosus. Discuss the autoimmune mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Rheumatology"
+    },
+    {
+      "id": 97,
+      "question": "Explain the mechanisms of multiple sclerosis. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 98,
+      "question": "Describe the pathophysiology of Guillain-Barré syndrome. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 99,
+      "question": "Explain the mechanisms of myasthenia gravis. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 100,
+      "question": "Describe the pathophysiology of Parkinson's disease. Discuss the mechanisms of dopamine depletion, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 101,
+      "question": "Explain the mechanisms of Alzheimer's disease. Discuss the role of amyloid plaques and neurofibrillary tangles, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 102,
+      "question": "Describe the pathophysiology of epilepsy. Discuss seizure types, mechanisms of neuronal hyperexcitability, and clinical management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 103,
+      "question": "Explain the mechanisms of stroke. Discuss ischemic and hemorrhagic stroke, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Neurology"
+    },
+    {
+      "id": 104,
+      "question": "Describe the pathophysiology of meningitis. Discuss the mechanisms of infection, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 105,
+      "question": "Explain the mechanisms of encephalitis. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 106,
+      "question": "Describe the pathophysiology of tetanus. Discuss the mechanism of action of tetanus toxin, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 107,
+      "question": "Explain the mechanisms of botulism. Discuss the mechanism of botulinum toxin, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 108,
+      "question": "Describe the pathophysiology of rabies. Discuss the mechanisms of infection, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Infectious Disease"
+    },
+    {
+      "id": 109,
+      "question": "Explain the mechanisms of viral hepatitis. Discuss the types of hepatitis viruses, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Hepatology"
+    },
+    {
+      "id": 110,
+      "question": "Describe the pathophysiology of liver failure. Discuss the causes, mechanisms of hepatic dysfunction, and clinical management.",
+      "maxScore": 15,
+      "topic": "Hepatology"
+    },
+    {
+      "id": 111,
+      "question": "Explain the mechanisms of biliary tract disease. Discuss the pathophysiology of gallstones, cholangitis, and clinical management.",
+      "maxScore": 15,
+      "topic": "Hepatology"
+    },
+    {
+      "id": 112,
+      "question": "Describe the pathophysiology of pancreatitis. Discuss the mechanisms of acute and chronic pancreatitis, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Gastroenterology"
+    },
+    {
+      "id": 113,
+      "question": "Explain the mechanisms of gastrointestinal bleeding. Discuss the causes, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Gastroenterology"
+    },
+    {
+      "id": 114,
+      "question": "Describe the pathophysiology of colorectal cancer. Discuss the mechanisms of carcinogenesis, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 115,
+      "question": "Explain the mechanisms of gastric cancer. Discuss the pathophysiology, risk factors, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 116,
+      "question": "Describe the pathophysiology of esophageal cancer. Discuss the mechanisms, risk factors, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 117,
+      "question": "Explain the mechanisms of pancreatic cancer. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 118,
+      "question": "Describe the pathophysiology of liver cancer. Discuss the mechanisms of hepatocellular carcinoma, risk factors, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 119,
+      "question": "Explain the mechanisms of leukemia. Discuss the types of leukemia, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 120,
+      "question": "Describe the pathophysiology of lymphoma. Discuss Hodgkin's and non-Hodgkin's lymphoma, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 121,
+      "question": "Explain the mechanisms of multiple myeloma. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Oncology"
+    },
+    {
+      "id": 122,
+      "question": "Describe the pathophysiology of anemia. Discuss the types of anemia, mechanisms, and clinical management.",
+      "maxScore": 15,
+      "topic": "Hematology"
+    },
+    {
+      "id": 123,
+      "question": "Explain the mechanisms of hemophilia. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Hematology"
+    },
+    {
+      "id": 124,
+      "question": "Describe the pathophysiology of thalassemia. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Hematology"
+    },
+    {
+      "id": 125,
+      "question": "Explain the mechanisms of sickle cell disease. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Hematology"
+    },
+    {
+      "id": 126,
+      "question": "Describe the pathophysiology of von Willebrand disease. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Hematology"
+    },
+    {
+      "id": 127,
+      "question": "Explain the mechanisms of thrombocytopenia. Discuss the causes, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Hematology"
+    },
+    {
+      "id": 128,
+      "question": "Describe the pathophysiology of pulmonary embolism. Discuss the mechanisms of thrombosis, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 129,
+      "question": "Explain the mechanisms of deep vein thrombosis. Discuss the pathophysiology, risk factors, and clinical management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 130,
+      "question": "Describe the pathophysiology of hypertension. Discuss the mechanisms, complications, and clinical management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 131,
+      "question": "Explain the mechanisms of hypotension. Discuss the causes, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 132,
+      "question": "Describe the pathophysiology of cardiogenic shock. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 133,
+      "question": "Explain the mechanisms of arrhythmias. Discuss the types of arrhythmias, pathophysiology, and clinical management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 134,
+      "question": "Describe the pathophysiology of heart block. Discuss the types of heart block, mechanisms, and clinical management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 135,
+      "question": "Explain the mechanisms of aortic stenosis. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 136,
+      "question": "Describe the pathophysiology of mitral stenosis. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 137,
+      "question": "Explain the mechanisms of infective endocarditis. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 138,
+      "question": "Describe the pathophysiology of pericarditis. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 139,
+      "question": "Explain the mechanisms of myocarditis. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 140,
+      "question": "Describe the pathophysiology of cardiomyopathy. Discuss the types of cardiomyopathy, mechanisms, and clinical management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 141,
+      "question": "Explain the mechanisms of congestive heart failure. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 142,
+      "question": "Describe the pathophysiology of pulmonary hypertension. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 143,
+      "question": "Explain the mechanisms of cor pulmonale. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 144,
+      "question": "Describe the pathophysiology of systemic hypertension. Discuss the mechanisms, complications, and clinical management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 145,
+      "question": "Explain the mechanisms of stroke volume regulation. Discuss the factors affecting stroke volume, including preload, afterload, and contractility.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 146,
+      "question": "Describe the pathophysiology of cardiac tamponade. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 147,
+      "question": "Explain the mechanisms of cardiopulmonary resuscitation. Discuss the physiology of CPR and its role in cardiac arrest.",
+      "maxScore": 15,
+      "topic": "Clinical Medicine"
+    },
+    {
+      "id": 148,
+      "question": "Describe the pathophysiology of acute coronary syndrome. Discuss the mechanisms of myocardial infarction and unstable angina, and clinical management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 149,
+      "question": "Explain the mechanisms of peripheral vascular disease. Discuss the pathophysiology, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    },
+    {
+      "id": 150,
+      "question": "Describe the pathophysiology of varicose veins. Discuss the mechanisms, clinical features, and management.",
+      "maxScore": 15,
+      "topic": "Cardiovascular Physiology"
+    }
+  ]
+}

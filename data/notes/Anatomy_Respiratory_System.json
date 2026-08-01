@@ -1,0 +1,60 @@
+{
+  "title": "Systemic Anatomy I: The Respiratory System",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to the Respiratory System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The respiratory system provides gas exchange between the atmosphere and blood. Its functions include: Oxygen supply to tissues, Carbon dioxide removal, Speech production, Olfaction (smell), Acid-base balance regulation, and Blood filtration (pulmonary capillaries). The respiratory system is divided into the upper respiratory tract (nose, nasal cavity, pharynx, larynx) and lower respiratory tract (trachea, bronchi, bronchioles, alveoli)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Respiratory System Overview",
+      "code": "graph TD\n    A[Respiratory System] --> B[Upper Respiratory]\n    A --> C[Lower Respiratory]\n    B --> D[Nose]\n    B --> E[Pharynx]\n    B --> F[Larynx]\n    C --> G[Trachea]\n    C --> H[Bronchi]\n    C --> I[Bronchioles]\n    C --> J[Alveoli]"
+    },
+    {
+      "type": "heading",
+      "text": "Upper Respiratory Tract"
+    },
+    {
+      "type": "paragraph",
+      "text": "The nose is the primary entrance for air, containing vibrissae (hairs) that filter large particles. The nasal cavity is lined with mucous membranes that warm, moisten, and filter air. The pharynx is a shared passage for air and food, divided into nasopharynx, oropharynx, and laryngopharynx. The larynx (voice box) contains the vocal folds and the epiglottis (prevents food from entering the trachea during swallowing)."
+    },
+    {
+      "type": "heading",
+      "text": "Lower Respiratory Tract"
+    },
+    {
+      "type": "paragraph",
+      "text": "The trachea (windpipe) is a tube reinforced by C-shaped cartilage rings. It bifurcates into the right and left main bronchi. The bronchi further divide into bronchioles, which lack cartilage. Bronchioles end in terminal bronchioles, then respiratory bronchioles, alveolar ducts, and alveolar sacs. Alveoli are the sites of gas exchange, with walls containing surfactant to prevent collapse. The pulmonary capillary network surrounds alveoli for efficient gas exchange."
+    },
+    {
+      "type": "mermaid",
+      "title": "Respiratory Tree",
+      "code": "graph TD\n    A[Trachea] --> B[Right Main Bronchus]\n    A --> C[Left Main Bronchus]\n    B --> D[Bronchioles]\n    C --> D\n    D --> E[Terminal Bronchioles]\n    E --> F[Respiratory Bronchioles]\n    F --> G[Alveolar Ducts]\n    G --> H[Alveolar Sacs]"
+    },
+    {
+      "type": "heading",
+      "text": "Mechanics of Breathing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Inspiration is an active process: contraction of the diaphragm and external intercostal muscles increases thoracic volume, decreasing pressure and drawing air in. Expiration is normally passive: relaxation of muscles decreases thoracic volume, increasing pressure and pushing air out. Lung compliance is the ease of expansion, reduced by surfactant deficiency or fibrosis. Elastic recoil is the tendency of lungs to return to resting volume after stretch."
+    },
+    {
+      "type": "chart",
+      "title": "Lung Volumes and Capacities",
+      "labels": ["Tidal Volume", "Inspiratory Reserve", "Expiratory Reserve", "Residual Volume", "Vital Capacity"],
+      "data": [500, 3000, 1200, 1200, 4700],
+      "label": "Volume (mL)",
+      "x_label": "Lung Measurement"
+    },
+    {
+      "type": "mermaid",
+      "title": "Breathing Mechanics",
+      "code": "graph LR\n    A[Inspiration] --> B[Diaphragm contracts]\n    B --> C[Thorax expands]\n    C --> D[Pressure drops]\n    D --> E[Air enters]\n    F[Expiration] --> G[Diaphragm relaxes]\n    G --> H[Thorax compresses]\n    H --> I[Pressure rises]\n    I --> J[Air exits]"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Inorganic Chemistry: Acids, Bases & Salts",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Theories of Acids and Bases"
+    },
+    {
+      "type": "paragraph",
+      "text": "Three main theories describe acids and bases: Arrhenius theory (acids produce H⁺ in water, bases produce OH⁻), Brønsted-Lowry theory (acids donate protons, bases accept protons), and Lewis theory (acids accept electron pairs, bases donate electron pairs). The Brønsted-Lowry theory is more comprehensive as it applies to non-aqueous systems. Conjugate acid-base pairs differ by one proton (H⁺)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Acid-Base Theories",
+      "code": "graph TD\n    A[Acid-Base Theories] --> B[Arrhenius]\n    A --> C[Brønsted-Lowry]\n    A --> D[Lewis]\n    B --> E[Acid: H+ donor]\n    B --> F[Base: OH- donor]\n    C --> G[Acid: H+ donor]\n    C --> H[Base: H+ acceptor]\n    D --> I[Acid: e- acceptor]\n    D --> J[Base: e- donor]"
+    },
+    {
+      "type": "heading",
+      "text": "pH Scale and Calculations"
+    },
+    {
+      "type": "paragraph",
+      "text": "The pH scale measures hydrogen ion concentration: pH = -log[H⁺]. pH values range from 0 (strongly acidic) to 14 (strongly basic), with pH 7 being neutral. The ion product of water (Kw) = [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25°C. Strong acids (HCl, H₂SO₄) completely dissociate, while weak acids (CH₃COOH) partially dissociate. The acid dissociation constant (Ka) measures acid strength: larger Ka means stronger acid."
+    },
+    {
+      "type": "chart",
+      "title": "pH Scale",
+      "labels": ["Acidic", "Neutral", "Basic"],
+      "data": [3, 7, 11],
+      "label": "pH Value",
+      "x_label": "Category"
+    },
+    {
+      "type": "heading",
+      "text": "Salts and Salt Hydrolysis"
+    },
+    {
+      "type": "paragraph",
+      "text": "Salts are ionic compounds formed from neutralization reactions between acids and bases. Salts can be neutral, acidic, or basic depending on the parent acid and base. Salt hydrolysis is the reaction of salt ions with water. Salts of strong acids and strong bases form neutral solutions. Salts of weak acids and strong bases form basic solutions. Salts of strong acids and weak bases form acidic solutions. Buffers resist pH changes and consist of weak acid/conjugate base or weak base/conjugate acid pairs."
+    },
+    {
+      "type": "mermaid",
+      "title": "Salt Types",
+      "code": "graph TD\n    A[SALTS] --> B[Neutral Salts]\n    A --> C[Acidic Salts]\n    A --> D[Basic Salts]\n    B --> E[NaCl, KNO3]\n    B --> F[Strong acid + Strong base]\n    C --> G[NH4Cl, AlCl3]\n    C --> H[Strong acid + Weak base]\n    D --> I[Na2CO3, CH3COONa]\n    D --> J[Weak acid + Strong base]"
+    },
+    {
+      "type": "heading",
+      "text": "Titration and Neutralization"
+    },
+    {
+      "type": "paragraph",
+      "text": "Titration is a technique used to determine the concentration of an unknown acid or base. A standard solution (titrant) of known concentration is slowly added to the unknown solution until neutralization is complete (equivalence point). Indicators change color near the equivalence point. The equivalence point is when moles of acid = moles of base. The end point is the point where the indicator changes color. Acid-base indicators are weak acids or bases that change color over specific pH ranges."
+    },
+    {
+      "type": "mermaid",
+      "title": "Titration Process",
+      "code": "graph LR\n    A[Buret with NaOH] --> B[Add to acid]\n    B --> C[Indicator changes]\n    C --> D[End Point]\n    D --> E[Calculate concentration]\n    E --> F[Moles acid = moles base]"
+    }
+  ]
+}

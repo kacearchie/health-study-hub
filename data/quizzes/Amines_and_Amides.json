@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the functional group of an amide?",
+      "options": ["-CONH2", "-NH2", "-COOH", "-COOR"],
+      "correct_answer": "-CONH2",
+      "explanation": "Amides contain a carbonyl group attached to a nitrogen atom (R-CONH2). They are formed from carboxylic acids and amines."
+    },
+    {
+      "id": 2,
+      "question": "What is a peptide bond?",
+      "options": ["Ether bond", "Amide bond", "Ester bond", "Hydrogen bond"],
+      "correct_answer": "Amide bond",
+      "explanation": "Peptide bonds are amide bonds formed between the carboxylic acid of one amino acid and the amine of another amino acid."
+    },
+    {
+      "id": 3,
+      "question": "What makes Kevlar so strong?",
+      "options": ["Strong covalent bonds", "Hydrogen bonds between chains", "Ionic interactions", "Metallic bonding"],
+      "correct_answer": "Hydrogen bonds between chains",
+      "explanation": "Kevlar's strength comes from extensive hydrogen bonding between adjacent polymer chains (between carbonyl O and N-H groups) plus aromatic stacking interactions."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is an alkaloid?",
+      "options": ["Glucose", "Nicotine", "Ethanol", "Acetic acid"],
+      "correct_answer": "Nicotine",
+      "explanation": "Nicotine is a naturally occurring alkaloid found in tobacco plants. Alkaloids are cyclic molecules containing amine functional groups."
+    },
+    {
+      "id": 5,
+      "question": "What is the basicity of amines due to?",
+      "options": ["Lone pair on nitrogen", "Hydrogen bonding", "Ionic character", "Carbon chain length"],
+      "correct_answer": "Lone pair on nitrogen",
+      "explanation": "The lone pair of electrons on the nitrogen atom can accept protons, making amines weak bases."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a primary amine?",
+      "options": ["CH3NH2", "(CH3)2NH", "(CH3)3N", "CH3NO2"],
+      "correct_answer": "CH3NH2",
+      "explanation": "Methylamine (CH3NH2) has one carbon group attached to nitrogen, making it a primary amine."
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between an amine and an amide?",
+      "options": ["Amines contain oxygen", "Amides contain a carbonyl group", "Amides are more basic", "Amines contain nitrogen"],
+      "correct_answer": "Amides contain a carbonyl group",
+      "explanation": "Amides have a carbonyl group (C=O) attached to the nitrogen (R-CONH2), while amines simply have nitrogen bonded to carbon/hydrogen (R-NH2)."
+    },
+    {
+      "id": 8,
+      "question": "What type of bond links amino acids in proteins?",
+      "options": ["Glycosidic bond", "Peptide bond", "Ester bond", "Phosphodiester bond"],
+      "correct_answer": "Peptide bond",
+      "explanation": "Amino acids are linked by peptide (amide) bonds formed by condensation reactions between the carboxyl group of one amino acid and the amino group of another."
+    }
+  ]
+}

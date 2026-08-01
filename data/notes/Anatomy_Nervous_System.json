@@ -1,0 +1,70 @@
+{
+  "title": "Systemic Anatomy I: The Nervous System",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to the Nervous System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The nervous system is the master control and communication system of the body. It receives sensory input, processes information, and generates motor output. The nervous system has two main divisions: The Central Nervous System (CNS) consisting of the brain and spinal cord, and the Peripheral Nervous System (PNS) consisting of cranial nerves, spinal nerves, and ganglia. The PNS is further divided into the sensory (afferent) and motor (efferent) divisions."
+    },
+    {
+      "type": "mermaid",
+      "title": "Organization of the Nervous System",
+      "code": "graph TD\n    A[Nervous System] --> B[Central CNS]\n    A --> C[Peripheral PNS]\n    B --> D[Brain]\n    B --> E[Spinal Cord]\n    C --> F[Cranial Nerves]\n    C --> G[Spinal Nerves]\n    C --> H[Ganglia]"
+    },
+    {
+      "type": "heading",
+      "text": "Neurons and Neuroglia"
+    },
+    {
+      "type": "paragraph",
+      "text": "Neurons are the functional units of the nervous system, specialized for transmitting electrical signals. A neuron consists of a cell body (soma), dendrites (receive signals), and an axon (transmits signals). Neuroglia (glial cells) support and protect neurons. Types of glial cells in the CNS include: Astrocytes (blood-brain barrier), Oligodendrocytes (myelination), Microglia (immune defense), and Ependymal cells (CSF production). In the PNS, Schwann cells provide myelination."
+    },
+    {
+      "type": "mermaid",
+      "title": "Neuron Structure",
+      "code": "graph LR\n    A[Dendrites] --> B[Cell Body]\n    B --> C[Axon]\n    C --> D[Axon Terminals]\n    E[Myelin Sheath] --> C"
+    },
+    {
+      "type": "heading",
+      "text": "The Brain"
+    },
+    {
+      "type": "paragraph",
+      "text": "The brain is the control center of the nervous system, weighing approximately 1.4 kg. Major regions include: The Cerebrum (largest part, divided into two hemispheres, responsible for higher functions like thinking, memory, voluntary movement), The Cerebellum (coordinates movement and balance), The Brainstem (midbrain, pons, medulla oblongata - controls vital functions like breathing, heart rate). The cerebral cortex is the outer layer of gray matter, with distinct lobes: Frontal, Parietal, Temporal, and Occipital."
+    },
+    {
+      "type": "mermaid",
+      "title": "Brain Regions",
+      "code": "graph TD\n    A[Brain] --> B[Cerebrum]\n    A --> C[Cerebellum]\n    A --> D[Brainstem]\n    B --> E[Frontal Lobe]\n    B --> F[Parietal Lobe]\n    B --> G[Temporal Lobe]\n    B --> H[Occipital Lobe]\n    D --> I[Midbrain]\n    D --> J[Pons]\n    D --> K[Medulla]"
+    },
+    {
+      "type": "heading",
+      "text": "The Spinal Cord"
+    },
+    {
+      "type": "paragraph",
+      "text": "The spinal cord extends from the foramen magnum to the conus medullaris (L1-L2). It consists of gray matter (inner, H-shaped, contains cell bodies) and white matter (outer, contains myelinated axons). The spinal cord is divided into segments: Cervical (8), Thoracic (12), Lumbar (5), Sacral (5), and Coccygeal (1). Spinal nerves emerge from each segment. The spinal cord functions as a conduit for nerve signals and as a center for spinal reflexes."
+    },
+    {
+      "type": "mermaid",
+      "title": "Spinal Cord Segments",
+      "code": "graph TD\n    A[Spinal Cord] --> B[Cervical C1-C8]\n    A --> C[Thoracic T1-T12]\n    A --> D[Lumbar L1-L5]\n    A --> E[Sacral S1-S5]\n    A --> F[Coccygeal Co1]"
+    },
+    {
+      "type": "heading",
+      "text": "Cranial and Spinal Nerves"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are 12 pairs of cranial nerves originating from the brain: Olfactory (I), Optic (II), Oculomotor (III), Trochlear (IV), Trigeminal (V), Abducens (VI), Facial (VII), Vestibulocochlear (VIII), Glossopharyngeal (IX), Vagus (X), Accessory (XI), Hypoglossal (XII). There are 31 pairs of spinal nerves: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, and 1 coccygeal. Each spinal nerve is formed by dorsal (sensory) and ventral (motor) roots."
+    },
+    {
+      "type": "mermaid",
+      "title": "Spinal Nerve Formation",
+      "code": "graph LR\n    A[Dorsal Root Sensory] --> B[Spinal Nerve]\n    C[Ventral Root Motor] --> B\n    B --> D[Posterior Ramus]\n    B --> E[Anterior Ramus]"
+    }
+  ]
+}

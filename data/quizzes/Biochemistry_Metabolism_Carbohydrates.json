@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the net ATP yield from glycolysis?",
+      "options": ["1 ATP", "2 ATP", "3 ATP", "4 ATP"],
+      "correct_answer": "2 ATP",
+      "explanation": "Glycolysis produces a net yield of 2 ATP per glucose (4 produced, 2 consumed in the investment phase)."
+    },
+    {
+      "id": 2,
+      "question": "What is the role of insulin in carbohydrate metabolism?",
+      "options": ["Promotes glycogen breakdown", "Promotes glucose uptake", "Promotes gluconeogenesis", "Promotes glycogenolysis"],
+      "correct_answer": "Promotes glucose uptake",
+      "explanation": "Insulin promotes glucose uptake by cells, stimulates glycogenesis, and inhibits gluconeogenesis, reducing blood glucose."
+    },
+    {
+      "id": 3,
+      "question": "What is gluconeogenesis?",
+      "options": ["Breakdown of glycogen", "Synthesis of glucose from non-carbohydrate sources", "Breakdown of glucose", "Synthesis of glycogen"],
+      "correct_answer": "Synthesis of glucose from non-carbohydrate sources",
+      "explanation": "Gluconeogenesis is the synthesis of glucose from non-carbohydrate precursors like lactate, amino acids, and glycerol."
+    },
+    {
+      "id": 4,
+      "question": "What is the role of the TCA cycle?",
+      "options": ["Produces ATP directly", "Produces NADH and FADH2", "Breaks down fatty acids", "Synthesizes glucose"],
+      "correct_answer": "Produces NADH and FADH2",
+      "explanation": "The TCA cycle produces NADH and FADH2 (which enter the ETC) and GTP, not ATP directly."
+    },
+    {
+      "id": 5,
+      "question": "What is oxidative phosphorylation?",
+      "options": ["ATP production from substrate-level phosphorylation", "ATP production using the electron transport chain", "ATP production from glycolysis", "ATP production from fermentation"],
+      "correct_answer": "ATP production using the electron transport chain",
+      "explanation": "Oxidative phosphorylation is ATP production driven by the electron transport chain and proton gradient in mitochondria."
+    },
+    {
+      "id": 6,
+      "question": "What is the Cori cycle?",
+      "options": ["Glucose → lactate → glucose", "Glucose → pyruvate → glucose", "Glycogen → glucose → glycogen", "Fatty acid → glucose → fatty acid"],
+      "correct_answer": "Glucose → lactate → glucose",
+      "explanation": "The Cori cycle shuttles lactate from muscles to the liver, where it is converted back to glucose for energy."
+    },
+    {
+      "id": 7,
+      "question": "What is glycogenolysis?",
+      "options": ["Breakdown of glycogen to glucose", "Synthesis of glycogen from glucose", "Breakdown of glucose", "Synthesis of glucose"],
+      "correct_answer": "Breakdown of glycogen to glucose",
+      "explanation": "Glycogenolysis is the breakdown of glycogen to glucose-6-phosphate, releasing glucose for energy."
+    },
+    {
+      "id": 8,
+      "question": "What is the function of the pentose phosphate pathway?",
+      "options": ["Produces ATP", "Produces NADPH and ribose-5-P", "Produces glucose", "Produces fatty acids"],
+      "correct_answer": "Produces NADPH and ribose-5-P",
+      "explanation": "The pentose phosphate pathway produces NADPH for biosynthesis and ribose-5-P for nucleotide synthesis."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "title": "Introductory Biochemistry: Carbohydrate Metabolism",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Metabolism"
+    },
+    {
+      "type": "paragraph",
+      "text": "Metabolism encompasses all chemical reactions in living organisms. It is divided into: Catabolism (breakdown of molecules, releases energy) and Anabolism (synthesis of molecules, consumes energy). Metabolic pathways are organized and regulated. ATP is the energy currency of the cell. Catabolic pathways converge (many substrates → few products). Anabolic pathways diverge (few substrates → many products). The cell maintains a high ATP/ADP ratio. Metabolism is regulated by hormones (insulin, glucagon, adrenaline), allosteric effects, and gene expression."
+    },
+    {
+      "type": "mermaid",
+      "title": "Metabolism Overview",
+      "code": "graph TD\n    A[Metabolism] --> B[Catabolism]\n    A --> C[Anabolism]\n    B --> D[Breakdown]\n    B --> E[Energy released]\n    C --> F[Synthesis]\n    C --> G[Energy consumed]\n    E --> H[ATP]\n    G --> H"
+    },
+    {
+      "type": "heading",
+      "text": "Glycolysis"
+    },
+    {
+      "type": "paragraph",
+      "text": "Glycolysis is the breakdown of glucose (6C) to two pyruvate molecules (3C). It occurs in the cytosol and does not require oxygen. Energy investment phase: 2 ATP consumed. Energy payoff phase: 4 ATP and 2 NADH produced. Net yield: 2 ATP + 2 NADH per glucose. Key enzymes: Hexokinase (glucose → glucose-6-P), Phosphofructokinase-1 (PFK-1 - rate-limiting), Pyruvate kinase. Glycolysis is regulated by PFK-1 (inhibited by ATP, citrate; activated by AMP, fructose-2,6-bisphosphate). Anaerobic glycolysis yields lactate (with NADH recycling)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Glycolysis Overview",
+      "code": "graph LR\n    A[Glucose] --> B[2 ATP]\n    B --> C[Fructose-1,6-BP]\n    C --> D[2 × 3C]\n    D --> E[4 ATP + 2 NADH]\n    E --> F[2 Pyruvate]"
+    },
+    {
+      "type": "heading",
+      "text": "The TCA Cycle (Citric Acid Cycle)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The TCA cycle occurs in the mitochondrial matrix. Pyruvate is converted to acetyl-CoA (by pyruvate dehydrogenase complex, producing NADH). Acetyl-CoA (2C) combines with oxaloacetate (4C) to form citrate (6C). The cycle generates: 3 NADH, 1 FADH2, 1 GTP per acetyl-CoA. Key enzymes: Citrate synthase, Isocitrate dehydrogenase (rate-limiting, activated by ADP, inhibited by ATP/NADH), α-ketoglutarate dehydrogenase. Anaplerotic reactions replenish TCA intermediates (e.g., pyruvate carboxylase). The TCA cycle provides intermediates for biosynthesis."
+    },
+    {
+      "type": "mermaid",
+      "title": "TCA Cycle",
+      "code": "graph LR\n    A[Acetyl-CoA] --> B[Citrate]\n    B --> C[Isocitrate]\n    C --> D[α-Ketoglutarate]\n    D --> E[Succinyl-CoA]\n    E --> F[Succinate]\n    F --> G[Fumarate]\n    G --> H[Malate]\n    H --> I[Oxaloacetate]\n    I --> B"
+    },
+    {
+      "type": "heading",
+      "text": "Oxidative Phosphorylation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Oxidative phosphorylation occurs in the inner mitochondrial membrane. The electron transport chain (ETC) consists of four complexes: Complex I (NADH dehydrogenase), Complex II (succinate dehydrogenase), Complex III (cytochrome bc1), Complex IV (cytochrome c oxidase). Electrons flow from NADH/FADH2 to oxygen, pumping protons across the membrane. The proton gradient drives ATP synthase (Complex V), producing ATP. ATP yield per glucose: ~30-32 ATP (including substrate-level phosphorylation). The ETC is inhibited by cyanide (Complex IV), rotenone (Complex I), and oligomycin (ATP synthase)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Electron Transport Chain",
+      "code": "graph LR\n    A[NADH] --> B[Complex I]\n    C[FADH2] --> D[Complex II]\n    B --> E[Complex III]\n    D --> E\n    E --> F[Complex IV]\n    F --> G[O2 → H2O]\n    E --> H[ATP Synthase]"
+    },
+    {
+      "type": "heading",
+      "text": "Glycogen Metabolism and Gluconeogenesis"
+    },
+    {
+      "type": "paragraph",
+      "text": "Glycogen is stored in liver and muscles. Glycogenesis (glycogen synthesis) is activated by insulin, converting glucose to glycogen. Glycogenolysis (glycogen breakdown) is activated by glucagon and adrenaline, releasing glucose-6-P. Gluconeogenesis is synthesis of glucose from non-carbohydrate precursors (lactate, amino acids, glycerol). Occurs in liver and kidneys. Key enzymes: Pyruvate carboxylase, Phosphoenolpyruvate carboxykinase (PEPCK), Fructose-1,6-bisphosphatase. Gluconeogenesis bypasses irreversible glycolytic steps. Cori cycle: muscle lactate → liver glucose."
+    },
+    {
+      "type": "mermaid",
+      "title": "Glycogen Metabolism",
+      "code": "graph LR\n    A[Glucose] --> B[Glycogenesis]\n    B --> C[Glycogen]\n    C --> D[Glycogenolysis]\n    D --> E[Glucose-6-P]\n    E --> F[Glucose]"
+    },
+    {
+      "type": "heading",
+      "text": "Pentose Phosphate Pathway"
+    },
+    {
+      "type": "paragraph",
+      "text": "The pentose phosphate pathway (PPP) occurs in the cytosol. It has oxidative and non-oxidative phases. The oxidative phase produces NADPH and ribulose-5-P. The non-oxidative phase interconverts sugar phosphates, producing ribose-5-P and fructose-6-P. NADPH is essential for biosynthesis (fatty acids, cholesterol) and protection against oxidative stress (maintains glutathione in reduced form). Glucose-6-phosphate dehydrogenase (G6PD) is the rate-limiting enzyme. G6PD deficiency causes hemolytic anemia due to reduced antioxidant capacity."
+    },
+    {
+      "type": "mermaid",
+      "title": "Pentose Phosphate Pathway",
+      "code": "graph LR\n    A[Glucose-6-P] --> B[Oxidative Phase]\n    B --> C[NADPH + CO2]\n    B --> D[Ribulose-5-P]\n    D --> E[Non-oxidative Phase]\n    E --> F[Ribose-5-P]\n    E --> G[Fructose-6-P]"
+    },
+    {
+      "type": "chart",
+      "title": "ATP Yield from Glucose Metabolism",
+      "labels": ["Glycolysis", "TCA Cycle", "ETC", "Total ATP"],
+      "data": [2, 2, 28, 32],
+      "label": "ATP Molecules",
+      "x_label": "Pathway"
+    }
+  ]
+}

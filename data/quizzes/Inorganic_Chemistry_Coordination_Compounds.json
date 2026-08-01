@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is a coordination compound?",
+      "options": ["A compound with ionic bonds", "A compound with a central metal ion bonded to ligands", "A compound with covalent bonds", "A compound with metallic bonds"],
+      "correct_answer": "A compound with a central metal ion bonded to ligands",
+      "explanation": "Coordination compounds consist of a central metal ion surrounded by ligands (molecules or ions that donate electron pairs)."
+    },
+    {
+      "id": 2,
+      "question": "What is the coordination number in [Fe(CN)6]⁴⁻?",
+      "options": ["4", "6", "8", "2"],
+      "correct_answer": "6",
+      "explanation": "The coordination number is the number of ligand donor atoms attached to the metal. In [Fe(CN)6]⁴⁻, Fe is bonded to 6 CN⁻ ligands."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is an example of a coordination compound?",
+      "options": ["NaCl", "H2O", "[Fe(CN)6]⁴⁻", "CO2"],
+      "correct_answer": "[Fe(CN)6]⁴⁻",
+      "explanation": "[Fe(CN)6]⁴⁻ is a coordination compound with iron (Fe) as the central metal ion and cyanide (CN⁻) as ligands."
+    },
+    {
+      "id": 4,
+      "question": "What is a ligand?",
+      "options": ["A metal atom", "An ion or molecule that donates electrons to a metal", "A salt", "A covalent compound"],
+      "correct_answer": "An ion or molecule that donates electrons to a metal",
+      "explanation": "Ligands are molecules or ions that donate electron pairs to the central metal ion, forming coordinate covalent bonds."
+    },
+    {
+      "id": 5,
+      "question": "What type of isomerism is shown by cis- and trans- isomers in coordination compounds?",
+      "options": ["Structural", "Geometric", "Optical", "Conformational"],
+      "correct_answer": "Geometric",
+      "explanation": "Cis-trans isomers in coordination compounds are geometric isomers. They differ in the spatial arrangement of ligands around the metal."
+    },
+    {
+      "id": 6,
+      "question": "What is the denticity of ethylenediamine (en)?",
+      "options": ["Monodentate", "Bidentate", "Tridentate", "Hexadentate"],
+      "correct_answer": "Bidentate",
+      "explanation": "Ethylenediamine (en) is a bidentate ligand because it has two donor atoms (both nitrogen atoms) that can bind to the metal."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is used in cancer treatment?",
+      "options": ["NaCl", "Cisplatin", "NaOH", "KCl"],
+      "correct_answer": "Cisplatin",
+      "explanation": "Cisplatin is a coordination compound used in chemotherapy to treat various types of cancer."
+    },
+    {
+      "id": 8,
+      "question": "What is a chelate?",
+      "options": ["A metal ion", "A coordination compound with a polydentate ligand forming rings", "A salt", "A covalent compound"],
+      "correct_answer": "A coordination compound with a polydentate ligand forming rings",
+      "explanation": "Chelates are coordination compounds where a polydentate ligand forms ring structures around the metal ion (chelation)."
+    }
+  ]
+}

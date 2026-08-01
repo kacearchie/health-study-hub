@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which functional group is found in alcohols?",
+      "options": ["-OH", "-CHO", "-COOH", "-NH2"],
+      "correct_answer": "-OH",
+      "explanation": "Alcohols contain the hydroxyl group (-OH) attached to a carbon atom. Examples include ethanol (CH3CH2OH) and methanol (CH3OH)."
+    },
+    {
+      "id": 2,
+      "question": "What is the IUPAC name for CH3CH(OH)CH3?",
+      "options": ["1-Propanol", "2-Propanol", "Propanal", "Acetone"],
+      "correct_answer": "2-Propanol",
+      "explanation": "The -OH group is on the middle carbon (carbon 2) of the three-carbon propane chain. In the new IUPAC style, this would be propan-2-ol."
+    },
+    {
+      "id": 3,
+      "question": "What type of alcohol cannot be oxidized?",
+      "options": ["Primary", "Secondary", "Tertiary", "All can be oxidized"],
+      "correct_answer": "Tertiary",
+      "explanation": "Tertiary alcohols lack a C-H bond on the carbon bearing the -OH, so they cannot be oxidized."
+    },
+    {
+      "id": 4,
+      "question": "What is the functional group of an ether?",
+      "options": ["R-OH", "R-O-R", "R-CO-R", "R-COOH"],
+      "correct_answer": "R-O-R",
+      "explanation": "Ethers have two carbon groups bonded to an oxygen atom (R-O-R')."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a polyhydric alcohol?",
+      "options": ["Ethanol", "Ethylene glycol", "Propanol", "Butanol"],
+      "correct_answer": "Ethylene glycol",
+      "explanation": "Ethylene glycol (HOCH2CH2OH) has two -OH groups, making it a polyhydric alcohol. It is used as antifreeze."
+    },
+    {
+      "id": 6,
+      "question": "What is the common name for diethyl ether?",
+      "options": ["Ethyl ether", "Methyl ether", "Propyl ether", "Butyl ether"],
+      "correct_answer": "Ethyl ether",
+      "explanation": "Diethyl ether is commonly called ethyl ether. It was historically used as an anesthetic."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is the correct structure for glycerine?",
+      "options": ["CH3CH2OH", "HOCH2CH2OH", "HOCH2CHOHCH2OH", "CH3OCH3"],
+      "correct_answer": "HOCH2CHOHCH2OH",
+      "explanation": "Glycerine (1,2,3-propanetriol) has three -OH groups attached to a three-carbon chain: HOCH2CHOHCH2OH."
+    },
+    {
+      "id": 8,
+      "question": "What type of bond links monosaccharides in disaccharides?",
+      "options": ["Ester", "Ether", "Amide", "Peptide"],
+      "correct_answer": "Ether",
+      "explanation": "Disaccharides like lactose and sucrose are linked by glycosidic (ether) bonds between monosaccharide units."
+    }
+  ]
+}

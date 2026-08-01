@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the normal tidal volume at rest?",
+      "options": ["250 mL", "500 mL", "750 mL", "1000 mL"],
+      "correct_answer": "500 mL",
+      "explanation": "Tidal volume is the volume of air inhaled and exhaled during normal, quiet breathing - approximately 500 mL."
+    },
+    {
+      "id": 2,
+      "question": "What is the partial pressure of oxygen in arterial blood?",
+      "options": ["40 mmHg", "100 mmHg", "150 mmHg", "760 mmHg"],
+      "correct_answer": "100 mmHg",
+      "explanation": "The partial pressure of oxygen (PaO2) in arterial blood is normally about 100 mmHg."
+    },
+    {
+      "id": 3,
+      "question": "What is the role of surfactant in the lungs?",
+      "options": ["Prevents infection", "Reduces surface tension", "Increases oxygen binding", "Produces mucus"],
+      "correct_answer": "Reduces surface tension",
+      "explanation": "Surfactant reduces surface tension in the alveoli, preventing them from collapsing during expiration."
+    },
+    {
+      "id": 4,
+      "question": "What is the primary muscle of inspiration?",
+      "options": ["Abdominal muscles", "Intercostal muscles", "Diaphragm", "Sternocleidomastoid"],
+      "correct_answer": "Diaphragm",
+      "explanation": "The diaphragm is the primary muscle of inspiration. Its contraction increases thoracic volume, drawing air into the lungs."
+    },
+    {
+      "id": 5,
+      "question": "Where does gas exchange occur in the lungs?",
+      "options": ["Trachea", "Bronchi", "Bronchioles", "Alveoli"],
+      "correct_answer": "Alveoli",
+      "explanation": "Gas exchange occurs in the alveoli, where oxygen diffuses into the blood and carbon dioxide diffuses out."
+    },
+    {
+      "id": 6,
+      "question": "What is the normal respiratory rate for an adult at rest?",
+      "options": ["8-10 breaths/min", "12-20 breaths/min", "25-30 breaths/min", "35-40 breaths/min"],
+      "correct_answer": "12-20 breaths/min",
+      "explanation": "Normal resting respiratory rate for an adult is 12-20 breaths per minute."
+    },
+    {
+      "id": 7,
+      "question": "What is the function of the cilia in the respiratory tract?",
+      "options": ["Gas exchange", "Mucus movement", "Sound production", "Air filtration"],
+      "correct_answer": "Mucus movement",
+      "explanation": "Cilia in the respiratory tract move mucus toward the pharynx, trapping and removing inhaled particles and pathogens."
+    },
+    {
+      "id": 8,
+      "question": "What is the partial pressure of carbon dioxide in arterial blood?",
+      "options": ["20 mmHg", "40 mmHg", "60 mmHg", "80 mmHg"],
+      "correct_answer": "40 mmHg",
+      "explanation": "The partial pressure of carbon dioxide (PaCO2) in arterial blood is normally about 40 mmHg."
+    }
+  ]
+}

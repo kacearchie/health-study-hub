@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the pH of a solution with [H+] = 1 × 10⁻⁵ M?",
+      "options": ["5", "7", "9", "2"],
+      "correct_answer": "5",
+      "explanation": "pH = -log[H+]. For [H+] = 1 × 10⁻⁵ M, pH = -log(1 × 10⁻⁵) = 5."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is a strong acid?",
+      "options": ["CH3COOH", "HCl", "H2CO3", "H3PO4"],
+      "correct_answer": "HCl",
+      "explanation": "HCl (hydrochloric acid) is a strong acid that completely dissociates in water. Acetic acid (CH3COOH) is a weak acid."
+    },
+    {
+      "id": 3,
+      "question": "What is the product of a neutralization reaction between an acid and a base?",
+      "options": ["Water and salt", "Water and carbon dioxide", "Salt and hydrogen", "Water and oxygen"],
+      "correct_answer": "Water and salt",
+      "explanation": "Neutralization: Acid + Base → Salt + Water. For example: HCl + NaOH → NaCl + H2O."
+    },
+    {
+      "id": 4,
+      "question": "What is the pH of a neutral solution?",
+      "options": ["0", "7", "14", "10"],
+      "correct_answer": "7",
+      "explanation": "A neutral solution has a pH of 7, where [H+] = [OH-] = 1 × 10⁻⁷ M."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a weak acid?",
+      "options": ["HCl", "HNO3", "H2SO4", "CH3COOH"],
+      "correct_answer": "CH3COOH",
+      "explanation": "Acetic acid (CH3COOH) is a weak acid that only partially dissociates in water. HCl, HNO3, and H2SO4 are strong acids."
+    },
+    {
+      "id": 6,
+      "question": "What is the pH of a solution with [OH-] = 1 × 10⁻⁴ M?",
+      "options": ["4", "7", "10", "14"],
+      "correct_answer": "10",
+      "explanation": "pOH = -log[OH-] = -log(1 × 10⁻⁴) = 4. pH + pOH = 14, so pH = 14 - 4 = 10."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following salts forms a basic solution when dissolved in water?",
+      "options": ["NaCl", "Na2CO3", "NH4Cl", "KNO3"],
+      "correct_answer": "Na2CO3",
+      "explanation": "Sodium carbonate (Na2CO3) is a salt of a weak acid (H2CO3) and strong base (NaOH), so its solution is basic."
+    },
+    {
+      "id": 8,
+      "question": "What is the conjugate acid of NH3?",
+      "options": ["NH2-", "NH4+", "NH3+", "N3-"],
+      "correct_answer": "NH4+",
+      "explanation": "NH3 (ammonia) accepts a proton to become NH4+ (ammonium ion), which is its conjugate acid."
+    }
+  ]
+}

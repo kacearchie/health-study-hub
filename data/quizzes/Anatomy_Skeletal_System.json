@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many bones are in the adult human skeleton?",
+      "options": ["206", "208", "204", "210"],
+      "correct_answer": "206",
+      "explanation": "The adult human skeleton consists of 206 bones. The number is higher at birth (about 270) because some bones fuse during development."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is NOT a function of the skeletal system?",
+      "options": ["Support", "Mineral storage", "Hormone production", "Blood cell formation"],
+      "correct_answer": "Hormone production",
+      "explanation": "The skeletal system provides support, stores minerals (calcium, phosphorus), and produces blood cells (hematopoiesis). Hormone production is primarily a function of the endocrine system."
+    },
+    {
+      "id": 3,
+      "question": "What type of bone is the femur?",
+      "options": ["Short bone", "Flat bone", "Long bone", "Irregular bone"],
+      "correct_answer": "Long bone",
+      "explanation": "The femur is a long bone. Long bones have a shaft and two ends and are longer than they are wide."
+    },
+    {
+      "id": 4,
+      "question": "What is the function of the periosteum?",
+      "options": ["Covers the outer surface of bone", "Lines the inner surface of bone", "Produces blood cells", "Stores calcium"],
+      "correct_answer": "Covers the outer surface of bone",
+      "explanation": "The periosteum is a fibrous membrane that covers the outer surface of bones, providing attachment for tendons and ligaments."
+    },
+    {
+      "id": 5,
+      "question": "What is the axial skeleton composed of?",
+      "options": ["Arms and legs", "Skull, vertebral column, and rib cage", "Pelvis and shoulder girdle", "Hands and feet"],
+      "correct_answer": "Skull, vertebral column, and rib cage",
+      "explanation": "The axial skeleton (80 bones) consists of the skull, vertebral column, rib cage, and sternum."
+    },
+    {
+      "id": 6,
+      "question": "What type of joint allows the most movement?",
+      "options": ["Fibrous joint", "Cartilaginous joint", "Synovial joint", "Suture"],
+      "correct_answer": "Synovial joint",
+      "explanation": "Synovial joints (like the shoulder and knee) are freely movable and allow the greatest range of motion."
+    },
+    {
+      "id": 7,
+      "question": "What is the name of the first cervical vertebra?",
+      "options": ["Axis", "Atlas", "Cervical", "Occipital"],
+      "correct_answer": "Atlas",
+      "explanation": "The first cervical vertebra is called the atlas (C1). It supports the skull and allows nodding movement."
+    },
+    {
+      "id": 8,
+      "question": "What is the function of red bone marrow?",
+      "options": ["Stores fat", "Produces blood cells", "Stores minerals", "Provides structural support"],
+      "correct_answer": "Produces blood cells",
+      "explanation": "Red bone marrow is responsible for hematopoiesis - the production of red blood cells, white blood cells, and platelets."
+    }
+  ]
+}

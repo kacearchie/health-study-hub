@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the monomer of proteins?",
+      "options": ["Monosaccharide", "Fatty acid", "Amino acid", "Nucleotide"],
+      "correct_answer": "Amino acid",
+      "explanation": "Proteins are polymers of amino acids linked by peptide bonds."
+    },
+    {
+      "id": 2,
+      "question": "What type of bond links amino acids in proteins?",
+      "options": ["Glycosidic bond", "Peptide bond", "Ester bond", "Phosphodiester bond"],
+      "correct_answer": "Peptide bond",
+      "explanation": "Amino acids are linked by peptide (amide) bonds formed by condensation reactions."
+    },
+    {
+      "id": 3,
+      "question": "How many standard amino acids are there?",
+      "options": ["10", "15", "20", "25"],
+      "correct_answer": "20",
+      "explanation": "There are 20 standard amino acids that make up proteins, each with a different side chain."
+    },
+    {
+      "id": 4,
+      "question": "What is an essential amino acid?",
+      "options": ["An amino acid that cannot be synthesized by the body", "An amino acid that can be synthesized by the body", "An amino acid with a special function", "An amino acid found only in meat"],
+      "correct_answer": "An amino acid that cannot be synthesized by the body",
+      "explanation": "Essential amino acids (leucine, lysine, etc.) cannot be synthesized by the body and must be obtained from the diet."
+    },
+    {
+      "id": 5,
+      "question": "What is the primary structure of a protein?",
+      "options": ["3D structure", "Amino acid sequence", "α-helix and β-sheet", "Multiple subunits"],
+      "correct_answer": "Amino acid sequence",
+      "explanation": "Primary structure is the linear sequence of amino acids in a protein, determined by the genetic code."
+    },
+    {
+      "id": 6,
+      "question": "What is the function of hemoglobin?",
+      "options": ["Oxygen transport", "Immune defense", "Blood clotting", "Hormone transport"],
+      "correct_answer": "Oxygen transport",
+      "explanation": "Hemoglobin is an oxygen transport protein with four subunits (2α, 2β) and heme groups containing iron."
+    },
+    {
+      "id": 7,
+      "question": "What is collagen?",
+      "options": ["The most abundant protein in the body", "A hormone", "An enzyme", "A nucleic acid"],
+      "correct_answer": "The most abundant protein in the body",
+      "explanation": "Collagen is the most abundant protein in the body, found in skin, bone, tendons, and ligaments."
+    },
+    {
+      "id": 8,
+      "question": "What is the function of enzymes?",
+      "options": ["Store energy", "Catalyze reactions", "Transport oxygen", "Store genetic information"],
+      "correct_answer": "Catalyze reactions",
+      "explanation": "Enzymes are proteins that catalyze biochemical reactions by lowering activation energy."
+    }
+  ]
+}

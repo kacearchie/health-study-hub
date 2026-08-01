@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What are the two main divisions of the nervous system?",
+      "options": ["Brain and spinal cord", "Central and peripheral", "Somatic and autonomic", "Sensory and motor"],
+      "correct_answer": "Central and peripheral",
+      "explanation": "The nervous system has two main divisions: the Central Nervous System (CNS - brain and spinal cord) and the Peripheral Nervous System (PNS - nerves and ganglia)."
+    },
+    {
+      "id": 2,
+      "question": "What is the functional unit of the nervous system?",
+      "options": ["Neuroglia", "Neuron", "Axon", "Dendrite"],
+      "correct_answer": "Neuron",
+      "explanation": "The neuron is the functional unit of the nervous system, specialized for transmitting electrical signals."
+    },
+    {
+      "id": 3,
+      "question": "Which part of the brain controls balance and coordination?",
+      "options": ["Cerebrum", "Cerebellum", "Brainstem", "Thalamus"],
+      "correct_answer": "Cerebellum",
+      "explanation": "The cerebellum coordinates voluntary movements, maintains posture and balance, and is involved in motor learning."
+    },
+    {
+      "id": 4,
+      "question": "What is the function of myelin sheath?",
+      "options": ["Protects the neuron", "Speeds up impulse conduction", "Provides nutrition", "Produces neurotransmitters"],
+      "correct_answer": "Speeds up impulse conduction",
+      "explanation": "The myelin sheath insulates the axon and speeds up the conduction of nerve impulses through saltatory conduction."
+    },
+    {
+      "id": 5,
+      "question": "How many pairs of cranial nerves are there?",
+      "options": ["10", "12", "14", "16"],
+      "correct_answer": "12",
+      "explanation": "There are 12 pairs of cranial nerves originating from the brain, numbered I to XII."
+    },
+    {
+      "id": 6,
+      "question": "What is the largest part of the brain?",
+      "options": ["Cerebellum", "Brainstem", "Cerebrum", "Thalamus"],
+      "correct_answer": "Cerebrum",
+      "explanation": "The cerebrum is the largest part of the brain, responsible for higher functions like thinking, memory, and voluntary movement."
+    },
+    {
+      "id": 7,
+      "question": "What type of neuron carries impulses toward the central nervous system?",
+      "options": ["Motor neuron", "Sensory neuron", "Interneuron", "Association neuron"],
+      "correct_answer": "Sensory neuron",
+      "explanation": "Sensory (afferent) neurons carry impulses from sensory receptors toward the central nervous system."
+    },
+    {
+      "id": 8,
+      "question": "Which lobe of the brain is responsible for vision?",
+      "options": ["Frontal", "Parietal", "Temporal", "Occipital"],
+      "correct_answer": "Occipital",
+      "explanation": "The occipital lobe is the visual processing center of the brain, located at the back of the head."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Introductory Biochemistry: Lipid Metabolism",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Lipid Digestion and Transport"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dietary lipids are emulsified by bile salts and digested by pancreatic lipase in the small intestine. Products (monoglycerides, fatty acids) are absorbed by enterocytes and reassembled into triglycerides. Chylomicrons transport dietary lipids in lymph and blood. Endogenous lipids are transported by VLDL (from liver) and LDL/HDL. Lipoprotein lipase (LPL) hydrolyzes triglycerides in chylomicrons and VLDL, releasing fatty acids for tissue uptake or storage. Hepatic lipase acts on remnant lipoproteins."
+    },
+    {
+      "type": "mermaid",
+      "title": "Lipid Transport",
+      "code": "graph LR\n    A[Dietary Lipids] --> B[Chylomicrons]\n    C[Liver Lipids] --> D[VLDL]\n    D --> E[LDL]\n    B --> F[LPL]\n    E --> F\n    F --> G[Tissue Uptake]"
+    },
+    {
+      "type": "heading",
+      "text": "Fatty Acid Oxidation (β-Oxidation)"
+    },
+    {
+      "type": "paragraph",
+      "text": "β-Oxidation occurs in the mitochondrial matrix for fatty acids. Fatty acids are activated to acyl-CoA (requires ATP). Acyl-CoA is transported into mitochondria via carnitine shuttle (carnitine palmitoyl transferase I is rate-limiting). Each β-oxidation cycle produces: 1 FADH2, 1 NADH, 1 acetyl-CoA. Complete oxidation of palmitic acid (16:0) yields 106 ATP. Odd-chain fatty acids yield propionyl-CoA → succinyl-CoA. Unsaturated fatty acids require isomerases and reductases. Ketogenesis occurs in the liver when β-oxidation is high (produces acetoacetate, β-hydroxybutyrate, acetone)."
+    },
+    {
+      "type": "mermaid",
+      "title": "β-Oxidation",
+      "code": "graph LR\n    A[Fatty Acid] --> B[Acyl-CoA]\n    B --> C[Transported]\n    C --> D[β-Oxidation]\n    D --> E[Acetyl-CoA]\n    D --> F[FADH2 + NADH]"
+    },
+    {
+      "type": "heading",
+      "text": "Fatty Acid Synthesis (Lipogenesis)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fatty acid synthesis occurs in the cytosol. It uses acetyl-CoA (from citrate) and NADPH (from the pentose phosphate pathway). Acetyl-CoA carboxylase (ACC) converts acetyl-CoA to malonyl-CoA (rate-limiting). Fatty acid synthase (FAS) adds 2-carbon units sequentially. Palmitic acid is the primary product (16:0). Elongases and desaturases modify fatty acids. Insulin activates lipogenesis; glucagon/epinephrine inhibit it. Citrate activates ACC; palmitoyl-CoA inhibits it. Triglycerides are synthesized from fatty acids and glycerol-3-P (from glycolysis)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Fatty Acid Synthesis",
+      "code": "graph LR\n    A[Acetyl-CoA] --> B[Malonyl-CoA]\n    B --> C[Fatty Acid Synthase]\n    C --> D[Palmitic Acid]\n    C --> E[NADPH]\n    D --> F[Triglycerides]"
+    },
+    {
+      "type": "heading",
+      "text": "Cholesterol and Ketone Body Metabolism"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cholesterol is synthesized in the liver from acetyl-CoA via mevalonate pathway. HMG-CoA reductase is the rate-limiting enzyme (target of statins). Cholesterol is a precursor for bile acids, steroid hormones, and vitamin D. Ketone bodies (acetoacetate, β-hydroxybutyrate, acetone) are produced in the liver during fasting/ketogenic states. They serve as an alternative fuel for the brain, heart, and skeletal muscle. Ketone body utilization: acetoacetate/β-hydroxybutyrate → acetoacetyl-CoA → acetyl-CoA. Diabetic ketoacidosis results from excessive ketogenesis in uncontrolled diabetes."
+    },
+    {
+      "type": "mermaid",
+      "title": "Cholesterol Synthesis",
+      "code": "graph LR\n    A[Acetyl-CoA] --> B[HMG-CoA]\n    B --> C[Mevalonate]\n    C --> D[Cholesterol]\n    B --> E[HMG-CoA Reductase]\n    E --> F[Rate-limiting]\n    F --> G[Statin target]"
+    },
+    {
+      "type": "chart",
+      "title": "Energy Yield from Lipids vs Carbohydrates",
+      "labels": ["Carbohydrates", "Lipids"],
+      "data": [4, 9],
+      "label": "Energy (kcal/g)",
+      "x_label": "Macronutrient"
+    }
+  ]
+}

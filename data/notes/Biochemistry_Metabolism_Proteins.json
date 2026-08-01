@@ -1,0 +1,83 @@
+{
+  "title": "Introductory Biochemistry: Protein & Amino Acid Metabolism",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Amino Acid Digestion and Absorption"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dietary proteins are digested by proteolytic enzymes: Pepsin (stomach), Trypsin and chymotrypsin (pancreas), and peptidases (small intestine). Amino acids are absorbed by enterocytes via specific transporters. The amino acid pool is maintained by protein turnover (synthesis and degradation). There is no protein storage - excess amino acids are deaminated or used for energy. Essential amino acids must be obtained from the diet. Amino acid transporters include neutral, basic, acidic, and imino transporters."
+    },
+    {
+      "type": "mermaid",
+      "title": "Protein Digestion",
+      "code": "graph LR\n    A[Stomach] --> B[Pepsin]\n    C[Pancreas] --> D[Trypsin]\n    C --> E[Chymotrypsin]\n    F[Small Intestine] --> G[Peptidases]\n    G --> H[Amino Acids]"
+    },
+    {
+      "type": "heading",
+      "text": "Transamination and Deamination"
+    },
+    {
+      "type": "paragraph",
+      "text": "Transamination transfers amino groups from amino acids to α-keto acids, catalyzed by aminotransferases (ALT, AST). The amino group is transferred to α-ketoglutarate to form glutamate. Glutamate is the central amino group carrier. Oxidative deamination (glutamate dehydrogenase) releases free ammonia (NH4+). Ammonia is toxic and converted to urea in the liver via the urea cycle. Alanine transaminase (ALT) transfers amino groups to pyruvate (forming alanine). Aspartate transaminase (AST) transfers to oxaloacetate (forming aspartate)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Transamination and Deamination",
+      "code": "graph LR\n    A[Amino Acid] --> B[α-Ketoglutarate]\n    B --> C[Glutamate]\n    C --> D[NH4+]\n    D --> E[Urea Cycle]"
+    },
+    {
+      "type": "heading",
+      "text": "The Urea Cycle"
+    },
+    {
+      "type": "paragraph",
+      "text": "The urea cycle converts toxic ammonia to urea. It occurs in the liver (mitochondria and cytosol). Reactions: Carbamoyl phosphate synthetase I (CPSI) combines NH4+ + CO2 + 2 ATP → carbamoyl phosphate. Ornithine transcarbamoylase (OTC) forms citrulline. Citrulline + aspartate → argininosuccinate (via argininosuccinate synthetase). Argininosuccinate → arginine + fumarate (via argininosuccinate lyase). Arginine → urea + ornithine (via arginase). The urea cycle is regulated by N-acetylglutamate. Urea is excreted by the kidneys."
+    },
+    {
+      "type": "mermaid",
+      "title": "The Urea Cycle",
+      "code": "graph LR\n    A[NH4+ + CO2] --> B[Carbamoyl Phosphate]\n    B --> C[Citrulline]\n    D[Aspartate] --> C\n    C --> E[Argininosuccinate]\n    E --> F[Arginine + Fumarate]\n    F --> G[Urea + Ornithine]"
+    },
+    {
+      "type": "heading",
+      "text": "Amino Acid Catabolism"
+    },
+    {
+      "type": "paragraph",
+      "text": "Amino acid carbon skeletons are converted to metabolic intermediates: Glucogenic amino acids → glucose precursors (alanine, aspartate, glutamine) → pyruvate, α-ketoglutarate, oxaloacetate, fumarate, succinyl-CoA. Ketogenic amino acids → ketone body precursors (leucine, lysine) → acetyl-CoA or acetoacetyl-CoA. Phenylalanine hydroxylase converts phenylalanine to tyrosine. Tyrosine is a precursor for melanin, catecholamines, thyroid hormones. Branched-chain amino acids (leucine, isoleucine, valine) are metabolized in muscle (BCAA dehydrogenase). Maple syrup urine disease results from BCAA dehydrogenase deficiency."
+    },
+    {
+      "type": "mermaid",
+      "title": "Amino Acid Catabolism",
+      "code": "graph TD\n    A[Amino Acids] --> B[Glucogenic]\n    A --> C[Ketogenic]\n    B --> D[Glucose]\n    B --> E[Pyruvate]\n    B --> F[TCA Intermediates]\n    C --> G[Acetyl-CoA]\n    C --> H[Acetoacetyl-CoA]"
+    },
+    {
+      "type": "heading",
+      "text": "Important Amino Acid Derivatives"
+    },
+    {
+      "type": "paragraph",
+      "text": "Amino acids are precursors for many important molecules: Phenylalanine → tyrosine → dopamine, norepinephrine, epinephrine, melanin, thyroid hormones. Tryptophan → serotonin, melatonin, niacin (NAD+). Histidine → histamine. Glycine → heme, creatine. Arginine → nitric oxide (NO), polyamines, creatine. Glutamate → GABA, glutathione. Glutamine → nucleotide synthesis. Cysteine → glutathione, taurine. S-adenosylmethionine (SAM) from methionine is a methyl donor for many reactions. Creatine is synthesized from arginine, glycine, and methionine."
+    },
+    {
+      "type": "mermaid",
+      "title": "Amino Acid Derivatives",
+      "code": "graph TD\n    A[Amino Acids] --> B[Phenylalanine]\n    A --> C[Tryptophan]\n    A --> D[Histidine]\n    A --> E[Glycine]\n    B --> F[Tyrosine → Catecholamines]\n    C --> G[Serotonin → Melatonin]\n    D --> H[Histamine]\n    E --> I[Heme, Creatine]"
+    },
+    {
+      "type": "heading",
+      "text": "Inborn Errors of Amino Acid Metabolism"
+    },
+    {
+      "type": "paragraph",
+      "text": "Genetic defects in amino acid metabolism cause various diseases: Phenylketonuria (PKU) - deficiency of phenylalanine hydroxylase, mental retardation if untreated. Maple syrup urine disease - BCAA dehydrogenase deficiency, neurological symptoms. Alkaptonuria - homogentisate oxidase deficiency, ochronosis. Homocystinuria - cystathionine synthase deficiency, vascular and skeletal abnormalities. Tyrosinemia - fumarylacetoacetate hydrolase deficiency, liver disease. Screening for these disorders (e.g., newborn screening) allows early intervention and dietary management to prevent serious complications."
+    },
+    {
+      "type": "mermaid",
+      "title": "Inborn Errors",
+      "code": "graph TD\n    A[Inborn Errors] --> B[PKU]\n    A --> C[MSUD]\n    A --> D[Alkaptonuria]\n    A --> E[Homocystinuria]\n    B --> F[Phenylalanine accumulation]\n    C --> G[BCAA accumulation]\n    D --> H[Homogentisate accumulation]\n    E --> I[Homocysteine accumulation]"
+    }
+  ]
+}

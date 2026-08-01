@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary function of the respiratory system?",
+      "options": ["Digestion", "Gas exchange", "Excretion", "Movement"],
+      "correct_answer": "Gas exchange",
+      "explanation": "The respiratory system's primary function is gas exchange - delivering oxygen to the blood and removing carbon dioxide."
+    },
+    {
+      "id": 2,
+      "question": "Where does gas exchange occur in the lungs?",
+      "options": ["Trachea", "Bronchi", "Bronchioles", "Alveoli"],
+      "correct_answer": "Alveoli",
+      "explanation": "Gas exchange occurs in the alveoli, where oxygen diffuses into the blood and carbon dioxide diffuses out."
+    },
+    {
+      "id": 3,
+      "question": "What is the role of surfactant in the lungs?",
+      "options": ["Prevents infection", "Reduces surface tension", "Increases oxygen binding", "Produces mucus"],
+      "correct_answer": "Reduces surface tension",
+      "explanation": "Surfactant reduces surface tension in the alveoli, preventing them from collapsing during expiration."
+    },
+    {
+      "id": 4,
+      "question": "What is the tidal volume?",
+      "options": ["The maximum amount of air that can be inhaled", "The volume of air exchanged during normal breathing", "The volume of air remaining in the lungs after expiration", "The maximum amount of air that can be exhaled"],
+      "correct_answer": "The volume of air exchanged during normal breathing",
+      "explanation": "Tidal volume is the volume of air inhaled and exhaled during normal, quiet breathing - approximately 500 mL."
+    },
+    {
+      "id": 5,
+      "question": "What structure prevents food from entering the trachea?",
+      "options": ["Pharynx", "Epiglottis", "Larynx", "Tonsils"],
+      "correct_answer": "Epiglottis",
+      "explanation": "The epiglottis is a flap of cartilage that covers the trachea during swallowing, preventing food from entering the airway."
+    },
+    {
+      "id": 6,
+      "question": "What is the partial pressure of oxygen in arterial blood?",
+      "options": ["40 mmHg", "100 mmHg", "150 mmHg", "760 mmHg"],
+      "correct_answer": "100 mmHg",
+      "explanation": "The partial pressure of oxygen (PaO2) in arterial blood is normally about 100 mmHg."
+    },
+    {
+      "id": 7,
+      "question": "Which muscle is primarily responsible for inspiration?",
+      "options": ["Abdominal muscles", "Intercostal muscles", "Diaphragm", "Sternocleidomastoid"],
+      "correct_answer": "Diaphragm",
+      "explanation": "The diaphragm is the primary muscle of inspiration. Its contraction increases thoracic volume, drawing air into the lungs."
+    },
+    {
+      "id": 8,
+      "question": "What is the trachea?",
+      "options": ["Voice box", "Windpipe", "Air sac", "Gullet"],
+      "correct_answer": "Windpipe",
+      "explanation": "The trachea (windpipe) is a tube reinforced by C-shaped cartilage rings that carries air from the larynx to the bronchi."
+    }
+  ]
+}

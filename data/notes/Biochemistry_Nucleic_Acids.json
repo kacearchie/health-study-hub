@@ -1,0 +1,91 @@
+{
+  "title": "Introductory Biochemistry: Nucleic Acids (DNA & RNA)",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Nucleic Acids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nucleic acids are polymers of nucleotides that store and transmit genetic information. Two types exist: Deoxyribonucleic acid (DNA) - stores genetic information, and Ribonucleic acid (RNA) - involved in protein synthesis. Nucleotides consist of a nitrogenous base, a pentose sugar (ribose or deoxyribose), and a phosphate group. Nitrogenous bases include purines (adenine, guanine) and pyrimidines (cytosine, thymine in DNA, uracil in RNA). Nucleotides are linked by phosphodiester bonds between the 3' and 5' carbons."
+    },
+    {
+      "type": "mermaid",
+      "title": "Nucleic Acid Components",
+      "code": "graph TD\n    A[Nucleic Acids] --> B[DNA]\n    A --> C[RNA]\n    B --> D[Deoxyribose]\n    C --> E[Ribose]\n    B --> F[Thymine]\n    C --> G[Uracil]\n    B --> H[Double-stranded]\n    C --> I[Single-stranded]"
+    },
+    {
+      "type": "heading",
+      "text": "DNA Structure"
+    },
+    {
+      "type": "paragraph",
+      "text": "DNA is a double helix composed of two antiparallel strands held together by hydrogen bonds between complementary base pairs: A=T (2 H-bonds) and G≡C (3 H-bonds). The sugar-phosphate backbone is on the outside, with bases on the inside. The double helix has major and minor grooves, important for protein binding. DNA can exist in different conformations: B-DNA (most common, right-handed), A-DNA (right-handed, dehydrated), Z-DNA (left-handed). The genome contains coding regions (genes) and non-coding regions (regulatory sequences, introns, repetitive DNA)."
+    },
+    {
+      "type": "mermaid",
+      "title": "DNA Double Helix",
+      "code": "graph LR\n    A[Two Strands] --> B[Antiparallel]\n    B --> C[Base Pairing]\n    C --> D[A=T]\n    C --> E[G≡C]\n    D --> F[2 H-bonds]\n    E --> G[3 H-bonds]"
+    },
+    {
+      "type": "heading",
+      "text": "RNA Types and Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "RNA is single-stranded and contains ribose sugar and uracil instead of thymine. Three major types: mRNA (messenger RNA) - carries genetic code from DNA to ribosomes, tRNA (transfer RNA) - brings amino acids to the ribosome, recognizing codons through anticodons, and rRNA (ribosomal RNA) - structural and catalytic component of ribosomes (ribozyme activity). Other RNA types include miRNA (microRNA) and siRNA (small interfering RNA) involved in gene regulation. RNA undergoes post-transcriptional modifications (capping, polyadenylation, splicing) in eukaryotes."
+    },
+    {
+      "type": "mermaid",
+      "title": "RNA Types",
+      "code": "graph TD\n    A[RNA] --> B[mRNA]\n    A --> C[tRNA]\n    A --> D[rRNA]\n    A --> E[miRNA]\n    B --> F[Carries genetic code]\n    C --> G[Brings amino acids]\n    D --> H[Forms ribosomes]\n    E --> I[Gene regulation]"
+    },
+    {
+      "type": "heading",
+      "text": "DNA Replication"
+    },
+    {
+      "type": "paragraph",
+      "text": "DNA replication is semiconservative (each new DNA molecule has one old and one new strand). Enzymes involved: Helicase (unwinds DNA), Single-strand binding proteins (stabilize unwound strands), Primase (synthesizes RNA primers), DNA polymerase (adds nucleotides, proofreads), DNA ligase (joins Okazaki fragments). Replication is bidirectional from origins of replication. Leading strand synthesis is continuous (5'→3'), lagging strand synthesis is discontinuous (Okazaki fragments). Telomeres protect chromosome ends from degradation."
+    },
+    {
+      "type": "mermaid",
+      "title": "DNA Replication",
+      "code": "graph LR\n    A[Helicase] --> B[Unwinds DNA]\n    C[Primase] --> D[RNA primers]\n    E[DNA Polymerase] --> F[Adds nucleotides]\n    G[DNA Ligase] --> H[Joins fragments]\n    I[Leading] --> J[Continuous]\n    K[Lagging] --> L[Okazaki fragments]"
+    },
+    {
+      "type": "heading",
+      "text": "Transcription and Translation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Transcription synthesizes RNA from DNA template: Initiation (RNA polymerase binds promoter), Elongation (RNA chain grows), Termination (stop codon). In eukaryotes, pre-mRNA is processed (capping, polyadenylation, splicing) to form mature mRNA. Translation synthesizes proteins from mRNA on ribosomes: Initiation (ribosome assembles at start codon AUG), Elongation (tRNA brings amino acids, peptide bonds form), Termination (stop codon releases polypeptide). The genetic code is degenerate (multiple codons per amino acid), universal, and non-overlapping."
+    },
+    {
+      "type": "mermaid",
+      "title": "Central Dogma",
+      "code": "graph LR\n    A[DNA] --> B[Transcription]\n    B --> C[mRNA]\n    C --> D[Translation]\n    D --> E[Protein]"
+    },
+    {
+      "type": "heading",
+      "text": "The Genetic Code"
+    },
+    {
+      "type": "paragraph",
+      "text": "The genetic code consists of 64 codons (3 nucleotides each). 61 codons code for amino acids, 3 are stop codons (UAA, UAG, UGA). AUG codes for methionine (start codon). The code is degenerate (multiple codons for most amino acids). Wobble allows the third base to vary without changing the amino acid. Mutations: Point mutations (silent, missense, nonsense) and Frameshift mutations (insertions/deletions). Mutagenic agents include UV radiation, chemicals, and viruses. DNA repair mechanisms include mismatch repair, excision repair, and photoreactivation."
+    },
+    {
+      "type": "mermaid",
+      "title": "Genetic Code",
+      "code": "graph LR\n    A[64 Codons] --> B[61 Sense]\n    A --> C[3 Stop]\n    B --> D[20 Amino Acids]\n    D --> E[Redundancy]\n    F[AUG] --> G[Start/Methionine]"
+    },
+    {
+      "type": "chart",
+      "title": "Genetic Code Redundancy",
+      "labels": ["Leucine", "Serine", "Arginine", "Glycine", "Valine"],
+      "data": [6, 6, 6, 4, 4],
+      "label": "Number of Codons",
+      "x_label": "Amino Acid"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Inorganic Chemistry: Atomic Structure",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Atomic Theory: Historical Development"
+    },
+    {
+      "type": "paragraph",
+      "text": "The concept of the atom has evolved over centuries. John Dalton (1803) proposed that all matter is composed of tiny, indivisible particles called atoms. J.J. Thomson (1897) discovered the electron through cathode ray experiments, leading to the 'plum pudding' model. Ernest Rutherford (1911) conducted the gold foil experiment, discovering the atomic nucleus and proposing that atoms are mostly empty space. Niels Bohr (1913) refined this with his planetary model where electrons orbit the nucleus in fixed energy levels."
+    },
+    {
+      "type": "mermaid",
+      "title": "Evolution of Atomic Models",
+      "code": "graph LR\n    A[1803: Dalton\nSolid Sphere] --> B[1897: Thomson\nPlum Pudding]\n    B --> C[1911: Rutherford\nNuclear Model]\n    C --> D[1913: Bohr\nPlanetary Model]\n    D --> E[1926: Quantum\nCloud Model]"
+    },
+    {
+      "type": "heading",
+      "text": "Subatomic Particles"
+    },
+    {
+      "type": "paragraph",
+      "text": "Atoms consist of three primary subatomic particles: protons (positively charged, mass ≈ 1.673 × 10⁻²⁷ kg), neutrons (no charge, mass ≈ 1.675 × 10⁻²⁷ kg), and electrons (negatively charged, mass ≈ 9.109 × 10⁻³¹ kg). Protons and neutrons are located in the nucleus, while electrons orbit in electron clouds. The number of protons determines the atomic number (Z), and the sum of protons and neutrons gives the mass number (A)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Atomic Structure",
+      "code": "graph TD\n    A[ATOM] --> B[Nucleus]\n    A --> C[Electron Cloud]\n    B --> D[Protons +]\n    B --> E[Neutrons 0]\n    C --> F[Electrons -]\n    D --> G[Atomic Number Z]\n    D --> H[Mass Number A]"
+    },
+    {
+      "type": "heading",
+      "text": "Electronic Configuration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electrons occupy specific energy levels or shells (K, L, M, N) around the nucleus. Each shell can hold a maximum of 2n² electrons. The arrangement of electrons in these shells determines the chemical properties of the element. The Aufbau principle states that electrons fill lower energy orbitals first. Hund's rule states that electrons occupy orbitals singly before pairing up. The Pauli Exclusion Principle states that no two electrons in an atom can have the same set of four quantum numbers."
+    },
+    {
+      "type": "mermaid",
+      "title": "Electron Shell Capacity",
+      "code": "graph LR\n    A[Shell K n=1\nMax: 2e-] --> B[Shell L n=2\nMax: 8e-]\n    B --> C[Shell M n=3\nMax: 18e-]\n    C --> D[Shell N n=4\nMax: 32e-]"
+    },
+    {
+      "type": "heading",
+      "text": "Quantum Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Four quantum numbers describe the position and energy of an electron: Principal quantum number (n) defines the energy level; Azimuthal quantum number (l) defines the orbital shape (0=s, 1=p, 2=d, 3=f); Magnetic quantum number (ml) defines orbital orientation; Spin quantum number (ms) defines electron spin (+½ or -½). These quantum numbers provide a complete description of electron location within an atom."
+    },
+    {
+      "type": "heading",
+      "text": "Isotopes and Atomic Mass"
+    },
+    {
+      "type": "paragraph",
+      "text": "Isotopes are atoms of the same element with different numbers of neutrons. They have the same atomic number but different mass numbers. For example, Carbon-12, Carbon-13, and Carbon-14. The atomic mass of an element is the weighted average of the masses of its naturally occurring isotopes. Radioactive isotopes (radioisotopes) have unstable nuclei and decay over time, emitting radiation."
+    },
+    {
+      "type": "chart",
+      "title": "Isotopes of Carbon",
+      "labels": ["Carbon-12", "Carbon-13", "Carbon-14"],
+      "data": [98.89, 1.11, 0.0000000001],
+      "label": "Natural Abundance (%)",
+      "x_label": "Isotope"
+    }
+  ]
+}

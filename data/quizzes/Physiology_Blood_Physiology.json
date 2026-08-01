@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary function of hemoglobin?",
+      "options": ["Clotting", "Oxygen transport", "Immune response", "Hormone transport"],
+      "correct_answer": "Oxygen transport",
+      "explanation": "Hemoglobin is the iron-containing protein in red blood cells responsible for transporting oxygen from the lungs to tissues."
+    },
+    {
+      "id": 2,
+      "question": "What is the normal hematocrit value in adult males?",
+      "options": ["35-40%", "40-50%", "50-60%", "60-70%"],
+      "correct_answer": "40-50%",
+      "explanation": "Normal hematocrit (percentage of blood volume occupied by RBCs) is approximately 40-50% in adult males and 35-45% in adult females."
+    },
+    {
+      "id": 3,
+      "question": "Which blood group is the universal donor?",
+      "options": ["Type A", "Type B", "Type AB", "Type O"],
+      "correct_answer": "Type O",
+      "explanation": "Type O negative is the universal donor because it lacks A and B antigens, minimizing the risk of transfusion reactions."
+    },
+    {
+      "id": 4,
+      "question": "What is the lifespan of a red blood cell?",
+      "options": ["30 days", "60 days", "120 days", "180 days"],
+      "correct_answer": "120 days",
+      "explanation": "Red blood cells have a lifespan of approximately 120 days before being destroyed in the spleen and liver."
+    },
+    {
+      "id": 5,
+      "question": "Which white blood cell is the most abundant?",
+      "options": ["Lymphocytes", "Neutrophils", "Eosinophils", "Basophils"],
+      "correct_answer": "Neutrophils",
+      "explanation": "Neutrophils are the most abundant white blood cells (50-70%), playing a key role in bacterial infection defense."
+    },
+    {
+      "id": 6,
+      "question": "What is the primary function of platelets?",
+      "options": ["Oxygen transport", "Immune defense", "Blood clotting", "Hormone transport"],
+      "correct_answer": "Blood clotting",
+      "explanation": "Platelets (thrombocytes) are essential for blood clotting and hemostasis, forming platelet plugs and releasing clotting factors."
+    },
+    {
+      "id": 7,
+      "question": "What is the function of albumin in plasma?",
+      "options": ["Blood clotting", "Maintains osmotic pressure", "Immune function", "Oxygen transport"],
+      "correct_answer": "Maintains osmotic pressure",
+      "explanation": "Albumin is the most abundant plasma protein, maintaining oncotic pressure and transporting substances like hormones and drugs."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is NOT a component of blood?",
+      "options": ["Plasma", "RBCs", "WBCs", "Lymph"],
+      "correct_answer": "Lymph",
+      "explanation": "Lymph is part of the lymphatic system, not blood. Blood consists of plasma, RBCs, WBCs, and platelets."
+    }
+  ]
+}

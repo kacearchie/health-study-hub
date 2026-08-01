@@ -1,0 +1,74 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the atomic number of an element defined as?",
+      "options": ["Number of neutrons", "Number of protons", "Number of electrons", "Number of nucleons"],
+      "correct_answer": "Number of protons",
+      "explanation": "The atomic number (Z) is the number of protons in the nucleus of an atom. It uniquely identifies the element and determines its chemical properties."
+    },
+    {
+      "id": 2,
+      "question": "Which subatomic particle has a negative charge?",
+      "options": ["Proton", "Neutron", "Electron", "Nucleus"],
+      "correct_answer": "Electron",
+      "explanation": "Electrons are negatively charged particles that orbit the nucleus. Protons are positive, and neutrons have no charge."
+    },
+    {
+      "id": 3,
+      "question": "What is the correct electronic configuration for Carbon (atomic number 6)?",
+      "options": ["1s²2s²2p²", "1s²2s²2p⁴", "1s²2s²2p⁶", "1s²2s²2p³"],
+      "correct_answer": "1s²2s²2p²",
+      "explanation": "Carbon has 6 electrons. The filling order: 1s² (2), 2s² (2), 2p² (2) = total 6 electrons."
+    },
+    {
+      "id": 4,
+      "question": "What is the maximum number of electrons that can occupy the first energy level (n=1)?",
+      "options": ["2", "8", "18", "32"],
+      "correct_answer": "2",
+      "explanation": "The maximum number of electrons in a shell is given by 2n². For n=1, 2(1)² = 2 electrons."
+    },
+    {
+      "id": 5,
+      "question": "What law states that electrons fill lower energy orbitals first?",
+      "options": ["Hund's rule", "Pauli's exclusion principle", "Aufbau principle", "Heisenberg's uncertainty principle"],
+      "correct_answer": "Aufbau principle",
+      "explanation": "The Aufbau principle states that electrons fill atomic orbitals of the lowest available energy levels before occupying higher levels."
+    },
+    {
+      "id": 6,
+      "question": "What are isotopes?",
+      "options": ["Atoms with different atomic numbers", "Atoms with different numbers of neutrons", "Atoms with different numbers of protons", "Atoms with different charges"],
+      "correct_answer": "Atoms with different numbers of neutrons",
+      "explanation": "Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons."
+    },
+    {
+      "id": 7,
+      "question": "Which scientist proposed the planetary model of the atom?",
+      "options": ["Dalton", "Thomson", "Rutherford", "Bohr"],
+      "correct_answer": "Bohr",
+      "explanation": "Niels Bohr proposed the planetary model where electrons orbit the nucleus in fixed energy levels (shells)."
+    },
+    {
+      "id": 8,
+      "question": "What is the electron configuration of Neon (atomic number 10)?",
+      "options": ["1s²2s²2p⁴", "1s²2s²2p⁶", "1s²2s²2p⁵", "1s²2s²2p³"],
+      "correct_answer": "1s²2s²2p⁶",
+      "explanation": "Neon has 10 electrons: 1s² (2), 2s² (2), 2p⁶ (6) = total 10 electrons."
+    },
+    {
+      "id": 9,
+      "question": "What is the mass number of an atom?",
+      "options": ["Number of protons", "Number of neutrons", "Protons + neutrons", "Protons + electrons"],
+      "correct_answer": "Protons + neutrons",
+      "explanation": "The mass number (A) is the sum of protons and neutrons in the nucleus. Electrons have negligible mass."
+    },
+    {
+      "id": 10,
+      "question": "Which principle states that no two electrons in an atom can have the same four quantum numbers?",
+      "options": ["Hund's rule", "Pauli's exclusion principle", "Aufbau principle", "Heisenberg's principle"],
+      "correct_answer": "Pauli's exclusion principle",
+      "explanation": "The Pauli exclusion principle states that no two electrons can have identical quantum numbers. This limits electron configuration in orbitals."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "courses": [
+    {
+      "name": "Inorganic Chemistry",
+      "modules": [
+        {
+          "name": "Inorganic Chemistry",
+          "notes": [
+            "Inorganic_Chemistry_Atomic_Structure.json",
+            "Inorganic_Chemistry_Periodic_Table.json",
+            "Inorganic_Chemistry_Chemical_Bonding.json",
+            "Inorganic_Chemistry_Acids_Bases_Salts.json",
+            "Inorganic_Chemistry_Coordination_Compounds.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Organic Chemistry",
+      "modules": [
+        {
+          "name": "Organic Chemistry",
+          "notes": [
+            "Organic_Chemistry.json",
+            "Alcohols_and_Ethers.json",
+            "Carbonyl_Compounds.json",
+            "Amines_and_Amides.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anatomy",
+      "modules": [
+        {
+          "name": "Anatomy",
+          "notes": [
+            "Anatomy_Introduction.json",
+            "Anatomy_Skeletal_System.json",
+            "Anatomy_Muscular_System.json",
+            "Anatomy_Nervous_System.json",
+            "Anatomy_Cardiovascular_System.json",
+            "Anatomy_Respiratory_System.json",
+            "Anatomy_Digestive_System.json",
+            "Anatomy_Urinary_System.json",
+            "Anatomy_Reproductive_System.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physiology",
+      "modules": [
+        {
+          "name": "Physiology",
+          "notes": [
+            "Physiology_Introduction.json",
+            "Physiology_Cell_Physiology.json",
+            "Physiology_Nerve_Physiology.json",
+            "Physiology_Muscle_Physiology.json",
+            "Physiology_Blood_Physiology.json",
+            "Physiology_Cardiovascular_Physiology.json",
+            "Physiology_Pulmonary_Physiology.json",
+            "Physiology_Cardiopulmonary_Integration.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Biochemistry",
+      "modules": [
+        {
+          "name": "Biochemistry",
+          "notes": [
+            "Biochemistry_Introduction.json",
+            "Biochemistry_Carbohydrates.json",
+            "Biochemistry_Lipids.json",
+            "Biochemistry_Proteins.json",
+            "Biochemistry_Nucleic_Acids.json",
+            "Biochemistry_Enzymes.json",
+            "Biochemistry_Metabolism_Carbohydrates.json",
+            "Biochemistry_Metabolism_Lipids.json",
+            "Biochemistry_Metabolism_Proteins.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

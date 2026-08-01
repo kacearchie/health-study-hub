@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What trend occurs in atomic radius across a period?",
+      "options": ["Increases", "Decreases", "Remains constant", "Varies randomly"],
+      "correct_answer": "Decreases",
+      "explanation": "Atomic radius decreases across a period due to increasing nuclear charge pulling electrons closer to the nucleus."
+    },
+    {
+      "id": 2,
+      "question": "Which group of elements is known as alkali metals?",
+      "options": ["Group 1", "Group 2", "Group 17", "Group 18"],
+      "correct_answer": "Group 1",
+      "explanation": "Group 1 elements (Li, Na, K, Rb, Cs, Fr) are called alkali metals. They have one valence electron and are highly reactive."
+    },
+    {
+      "id": 3,
+      "question": "What is the name of Group 17 elements?",
+      "options": ["Alkali metals", "Alkaline earth metals", "Halogens", "Noble gases"],
+      "correct_answer": "Halogens",
+      "explanation": "Group 17 elements (F, Cl, Br, I, At) are called halogens. They have 7 valence electrons and are highly reactive nonmetals."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following has the highest electronegativity?",
+      "options": ["Fluorine", "Chlorine", "Oxygen", "Nitrogen"],
+      "correct_answer": "Fluorine",
+      "explanation": "Fluorine has the highest electronegativity (4.0 on the Pauling scale). Electronegativity generally increases across a period."
+    },
+    {
+      "id": 5,
+      "question": "What is the trend in ionization energy down a group?",
+      "options": ["Increases", "Decreases", "Remains constant", "Varies randomly"],
+      "correct_answer": "Decreases",
+      "explanation": "Ionization energy decreases down a group because the valence electrons are farther from the nucleus and more shielded."
+    },
+    {
+      "id": 6,
+      "question": "Which group contains elements with a full valence shell?",
+      "options": ["Group 1", "Group 2", "Group 17", "Group 18"],
+      "correct_answer": "Group 18",
+      "explanation": "Group 18 elements (noble gases) have a full valence shell (8 electrons, except helium with 2) and are chemically inert."
+    },
+    {
+      "id": 7,
+      "question": "What is the modern periodic table organized by?",
+      "options": ["Atomic mass", "Atomic number", "Number of neutrons", "Chemical reactivity"],
+      "correct_answer": "Atomic number",
+      "explanation": "The modern periodic table arranges elements by increasing atomic number (number of protons), not atomic mass."
+    },
+    {
+      "id": 8,
+      "question": "Which element is a liquid at room temperature and is in Group 17?",
+      "options": ["Fluorine", "Chlorine", "Bromine", "Iodine"],
+      "correct_answer": "Bromine",
+      "explanation": "Bromine (Br2) is the only nonmetal that is liquid at room temperature. It is a halogen in Group 17."
+    }
+  ]
+}

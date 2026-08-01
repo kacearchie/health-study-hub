@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the main function of triglycerides?",
+      "options": ["Energy storage", "Membrane structure", "Signaling", "Protection"],
+      "correct_answer": "Energy storage",
+      "explanation": "Triglycerides are the main form of energy storage in the body, yielding 9 kcal/g."
+    },
+    {
+      "id": 2,
+      "question": "What are essential fatty acids?",
+      "options": ["Fatty acids synthesized by the body", "Fatty acids that must be obtained from the diet", "Fatty acids with no double bonds", "Fatty acids with a carbon chain"],
+      "correct_answer": "Fatty acids that must be obtained from the diet",
+      "explanation": "Essential fatty acids (linoleic and linolenic acids) cannot be synthesized by the body and must be obtained from the diet."
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between saturated and unsaturated fats?",
+      "options": ["Number of carbons", "Presence of double bonds", "Presence of oxygen", "Chain length"],
+      "correct_answer": "Presence of double bonds",
+      "explanation": "Saturated fats have no double bonds, are solid at room temperature. Unsaturated fats have double bonds, are liquid at room temperature."
+    },
+    {
+      "id": 4,
+      "question": "What is the function of phospholipids?",
+      "options": ["Energy storage", "Cell membrane structure", "Hormone production", "Vitamin storage"],
+      "correct_answer": "Cell membrane structure",
+      "explanation": "Phospholipids are major components of cell membranes, forming the lipid bilayer."
+    },
+    {
+      "id": 5,
+      "question": "What is cholesterol a precursor for?",
+      "options": ["Glucose", "Amino acids", "Steroid hormones", "Nucleotides"],
+      "correct_answer": "Steroid hormones",
+      "explanation": "Cholesterol is a precursor for steroid hormones (cortisol, aldosterone, sex hormones), bile acids, and vitamin D."
+    },
+    {
+      "id": 6,
+      "question": "What is the function of LDL cholesterol?",
+      "options": ["Transports cholesterol to tissues", "Transports cholesterol from tissues to liver", "Transports fatty acids", "Transports glucose"],
+      "correct_answer": "Transports cholesterol to tissues",
+      "explanation": "LDL (low-density lipoprotein) transports cholesterol from the liver to tissues, often called 'bad cholesterol.'"
+    },
+    {
+      "id": 7,
+      "question": "What is the function of HDL cholesterol?",
+      "options": ["Transports cholesterol to tissues", "Transports cholesterol from tissues to liver", "Transports fatty acids", "Transports glucose"],
+      "correct_answer": "Transports cholesterol from tissues to liver",
+      "explanation": "HDL (high-density lipoprotein) transports cholesterol from tissues to the liver for excretion, often called 'good cholesterol.'"
+    },
+    {
+      "id": 8,
+      "question": "What are eicosanoids derived from?",
+      "options": ["Glucose", "Amino acids", "Fatty acids", "Nucleotides"],
+      "correct_answer": "Fatty acids",
+      "explanation": "Eicosanoids (prostaglandins, thromboxanes, leukotrienes) are derived from arachidonic acid, a fatty acid."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "title": "Excitable Tissues: Muscle Physiology",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Skeletal Muscle Structure and Contraction"
+    },
+    {
+      "type": "paragraph",
+      "text": "Skeletal muscles are composed of muscle fibers (cells) containing myofibrils, which are composed of sarcomeres. Sarcomeres contain thick filaments (myosin) and thin filaments (actin). The sliding filament theory explains contraction: myosin heads attach to actin, form cross-bridges, and pull actin filaments toward the center. Contraction requires ATP and calcium. The series of events: Excitation (action potential), Excitation-contraction coupling (Ca2+ release), Contraction (cross-bridge cycling), Relaxation (Ca2+ reuptake)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Sliding Filament Theory",
+      "code": "graph LR\n    A[Myosin heads bind] --> B[Power stroke]\n    B --> C[Actin slides]\n    C --> D[Sarcomere shortens]\n    D --> E[Muscle contracts]"
+    },
+    {
+      "type": "heading",
+      "text": "The Neuromuscular Junction"
+    },
+    {
+      "type": "paragraph",
+      "text": "The neuromuscular junction (NMJ) is the synapse between a motor neuron and a muscle fiber. Events at the NMJ: Action potential arrives at motor neuron terminal, Voltage-gated Ca2+ channels open, ACh is released into synaptic cleft, ACh binds to nicotinic receptors on muscle fiber, Na+ channels open causing depolarization (end-plate potential), Depolarization triggers action potential in muscle fiber. Acetylcholinesterase breaks down ACh to terminate signaling. Myasthenia gravis is an autoimmune disease affecting NMJ receptors."
+    },
+    {
+      "type": "mermaid",
+      "title": "Neuromuscular Junction",
+      "code": "graph LR\n    A[Motor Neuron] --> B[ACh release]\n    B --> C[ACh binds receptors]\n    C --> D[Na+ enters]\n    D --> E[End-Plate Potential]\n    E --> F[Muscle AP]\n    F --> G[Contraction]"
+    },
+    {
+      "type": "heading",
+      "text": "Types of Muscle Contraction"
+    },
+    {
+      "type": "paragraph",
+      "text": "Muscle twitch is a single contraction-relaxation cycle. Summation occurs when twitches overlap. Tetanus is a sustained contraction from rapid stimulation. Isometric contractions: muscle length remains constant, tension increases (e.g., holding a weight). Isotonic contractions: muscle length changes (e.g., lifting a weight). Muscle fiber types: Slow-twitch (Type I) - oxidative, fatigue-resistant, red; Fast-twitch oxidative (Type IIa) - oxidative/glycolytic; Fast-twitch glycolytic (Type IIb) - rapid, fatigue easily, white."
+    },
+    {
+      "type": "chart",
+      "title": "Muscle Fiber Types Comparison",
+      "labels": ["Type I", "Type IIa", "Type IIb"],
+      "data": [50, 80, 120],
+      "label": "Contraction Speed (ms)",
+      "x_label": "Fiber Type"
+    },
+    {
+      "type": "heading",
+      "text": "Energy Sources for Muscle Contraction"
+    },
+    {
+      "type": "paragraph",
+      "text": "Muscles use three energy systems: Phosphocreatine system (immediate energy, 8-10 seconds), Anaerobic glycolysis (short-term energy, 30-60 seconds, produces lactic acid), and Aerobic respiration (long-term energy, produces ATP from carbohydrates and fats). Muscle fatigue results from depletion of ATP, accumulation of lactic acid, and electrolyte imbalances. Recovery requires oxygen, which is used to metabolize lactic acid and replenish energy stores."
+    },
+    {
+      "type": "mermaid",
+      "title": "Muscle Energy Sources",
+      "code": "graph TD\n    A[Energy Systems] --> B[Phosphocreatine]\n    A --> C[Anaerobic Glycolysis]\n    A --> D[Aerobic Respiration]\n    B --> E[0-10 seconds]\n    C --> F[30-60 seconds]\n    D --> G[Hours]\n    E --> H[ATP quickly]\n    F --> I[Lactic acid]\n    G --> J[Sustained ATP]"
+    },
+    {
+      "type": "heading",
+      "text": "Cardiac and Smooth Muscle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cardiac muscle is involuntary, striated, and autorhythmic (generates own action potentials). It has long refractory periods to prevent tetany. Intercalated discs allow synchronous contraction. Smooth muscle is involuntary, non-striated, and found in hollow organs. It contracts slowly and can maintain tonic contraction. Smooth muscle can be single-unit (gap junctions, synchronous) or multi-unit (independent fibers). Contraction is regulated by Ca2+ binding to calmodulin and myosin light chain kinase."
+    },
+    {
+      "type": "mermaid",
+      "title": "Muscle Type Comparison",
+      "code": "graph TD\n    A[Muscle Types] --> B[Skeletal]\n    A --> C[Cardiac]\n    A --> D[Smooth]\n    B --> E[Voluntary, Striated]\n    C --> F[Involuntary, Striated]\n    D --> G[Involuntary, Non-striated]\n    C --> H[Intercalated discs]\n    D --> I[Peristalsis]"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "health-study-hub-desktop",
+  "version": "1.0.0",
+  "description": "Health Study Hub - Desktop Application",
+  "main": "main.js",
+  "author": "Health Study Hub",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win --x64",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.healthstudyhub.app",
+    "productName": "Health Study Hub",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Systemic Anatomy I: The Muscular System",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to the Muscular System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The muscular system consists of over 600 muscles, accounting for approximately 40% of body weight. Muscles provide movement, maintain posture and body position, stabilize joints, generate heat (thermogenesis), and facilitate material movement through the body. Muscles are classified into three types: Skeletal muscle (voluntary, striated, attached to bones), Cardiac muscle (involuntary, striated, found in the heart), and Smooth muscle (involuntary, non-striated, found in walls of hollow organs)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Three Muscle Types",
+      "code": "graph TD\n    A[Muscle Types] --> B[Skeletal]\n    A --> C[Cardiac]\n    A --> D[Smooth]\n    B --> E[Voluntary]\n    B --> F[Striated]\n    B --> G[Attached to bones]\n    C --> H[Involuntary]\n    C --> I[Striated]\n    C --> J[Heart only]\n    D --> K[Involuntary]\n    D --> L[Non-striated]\n    D --> M[Hollow organs]"
+    },
+    {
+      "type": "heading",
+      "text": "Skeletal Muscle Anatomy"
+    },
+    {
+      "type": "paragraph",
+      "text": "Skeletal muscles are composed of fascicles (bundles of muscle fibers). Each muscle fiber is a single muscle cell containing multiple nuclei. Inside each fiber are myofibrils containing sarcomeres (the contractile units). Sarcomeres contain thick filaments (myosin) and thin filaments (actin). The sliding filament theory explains muscle contraction: myosin heads attach to actin, pull, and release, shortening the sarcomere. The neuromuscular junction is where motor neurons connect to muscle fibers for stimulation."
+    },
+    {
+      "type": "mermaid",
+      "title": "Skeletal Muscle Structure",
+      "code": "graph TD\n    A[Muscle] --> B[Fascicles]\n    B --> C[Muscle Fibers]\n    C --> D[Myofibrils]\n    D --> E[Sarcomeres]\n    E --> F[Actin Thin Filaments]\n    E --> G[Myosin Thick Filaments]"
+    },
+    {
+      "type": "heading",
+      "text": "Major Muscle Groups"
+    },
+    {
+      "type": "paragraph",
+      "text": "Muscles are named based on location, shape, size, direction of fibers, number of origins, or action. Major muscle groups include: Head and neck muscles (masseter, sternocleidomastoid), Trunk muscles (pectoralis major, latissimus dorsi, abdominal muscles), Upper limb muscles (biceps brachii, triceps brachii, deltoid), Lower limb muscles (quadriceps, hamstrings, gastrocnemius, gluteus maximus). Muscles work in antagonistic pairs (agonist and antagonist) to produce coordinated movement."
+    },
+    {
+      "type": "mermaid",
+      "title": "Major Muscle Groups",
+      "code": "graph TD\n    A[Major Muscles] --> B[Head & Neck]\n    A --> C[Trunk]\n    A --> D[Upper Limb]\n    A --> E[Lower Limb]\n    B --> F[Masseter, Sternocleidomastoid]\n    C --> G[Pectoralis, Latissimus, Abdominals]\n    D --> H[Biceps, Triceps, Deltoid]\n    E --> I[Quadriceps, Hamstrings, Gastrocnemius]"
+    },
+    {
+      "type": "heading",
+      "text": "Muscle Contraction and Neuromuscular Transmission"
+    },
+    {
+      "type": "paragraph",
+      "text": "Muscle contraction is initiated by action potentials at the neuromuscular junction. Acetylcholine (ACh) is released from motor neurons and binds to receptors on the muscle fiber, causing depolarization. This triggers the release of calcium ions from the sarcoplasmic reticulum. Calcium binds to troponin, exposing myosin-binding sites on actin. The cross-bridge cycle begins: myosin heads bind to actin, pull (power stroke), and release with ATP hydrolysis. Contraction continues until ATP is depleted or calcium is re-uptaken."
+    },
+    {
+      "type": "mermaid",
+      "title": "Muscle Contraction Process",
+      "code": "graph LR\n    A[Action Potential] --> B[ACh Release]\n    B --> C[Depolarization]\n    C --> D[Calcium Release]\n    D --> E[Cross-bridge Formation]\n    E --> F[Power Stroke]\n    F --> G[Muscle Shortening]"
+    },
+    {
+      "type": "heading",
+      "text": "Types of Muscle Contractions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Isotonic contraction: muscle length changes with constant tension (lifting weights). Isometric contraction: muscle length remains constant with increasing tension (pushing against a wall). Concentric contraction: muscle shortens (lifting a weight upward). Eccentric contraction: muscle lengthens (lowering a weight slowly). Twitch contractions are single, brief contractions. Tetanus is a sustained contraction from rapid, repeated stimulation. Muscle fatigue occurs when ATP production cannot keep up with ATP consumption."
+    },
+    {
+      "type": "mermaid",
+      "title": "Types of Contractions",
+      "code": "graph TD\n    A[Muscle Contractions] --> B[Isotonic]\n    A --> C[Isometric]\n    B --> D[Concentric]\n    B --> E[Eccentric]\n    C --> F[Length constant]\n    D --> G[Muscle shortens]\n    E --> H[Muscle lengthens]"
+    },
+    {
+      "type": "chart",
+      "title": "Muscle Force vs Length Relationship",
+      "labels": ["Optimal", "Overstretched", "Understretched"],
+      "data": [100, 40, 60],
+      "label": "Force Generated (%)",
+      "x_label": "Sarcomere Length"
+    }
+  ]
+}

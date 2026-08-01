@@ -1,0 +1,57 @@
+{
+  "title": "Systemic Anatomy I: The Digestive System",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to the Digestive System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The digestive system breaks down food into absorbable nutrients, eliminating waste. Functions include: Ingestion, Mechanical and chemical digestion, Absorption of nutrients, Excretion of waste. The digestive system consists of the alimentary canal (Gastrointestinal tract) and accessory digestive organs. The alimentary canal is a continuous tube from mouth to anus. Accessory organs include the teeth, tongue, salivary glands, liver, gallbladder, and pancreas."
+    },
+    {
+      "type": "mermaid",
+      "title": "Digestive System Overview",
+      "code": "graph LR\n    A[Mouth] --> B[Pharynx]\n    B --> C[Esophagus]\n    C --> D[Stomach]\n    D --> E[Small Intestine]\n    E --> F[Large Intestine]\n    F --> G[Anus]"
+    },
+    {
+      "type": "heading",
+      "text": "Alimentary Canal"
+    },
+    {
+      "type": "paragraph",
+      "text": "The mouth (oral cavity) contains teeth for mechanical digestion and the tongue for manipulation. The pharynx is the passage for food and air. The esophagus carries food to the stomach via peristalsis. The stomach is a J-shaped organ for churning and mixing food, secreting gastric juice (HCl, pepsinogen). The small intestine (duodenum, jejunum, ileum) is the primary site of digestion and absorption, with villi and microvilli increasing surface area. The large intestine (cecum, colon, rectum) absorbs water and forms feces."
+    },
+    {
+      "type": "mermaid",
+      "title": "Alimentary Canal Layers",
+      "code": "graph TD\n    A[Alimentary Canal] --> B[Mucosa]\n    A --> C[Submucosa]\n    A --> D[Muscularis]\n    A --> E[Serosa]\n    B --> F[Innermost layer]\n    C --> G[Blood vessels]\n    D --> H[Peristalsis]\n    E --> I[Outermost layer]"
+    },
+    {
+      "type": "heading",
+      "text": "Accessory Organs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Salivary glands (parotid, submandibular, sublingual) secrete saliva containing amylase. The liver is the largest internal organ, producing bile, storing glycogen, and metabolizing nutrients. The gallbladder stores and concentrates bile. The pancreas produces digestive enzymes (amylase, lipase, protease) and bicarbonate, also housing endocrine functions (insulin, glucagon)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Accessory Digestive Organs",
+      "code": "graph TD\n    A[Accessory Organs] --> B[Salivary Glands]\n    A --> C[Liver]\n    A --> D[Gallbladder]\n    A --> E[Pancreas]\n    B --> F[Saliva]\n    C --> G[Bile]\n    D --> H[Stores bile]\n    E --> I[Digestive enzymes]"
+    },
+    {
+      "type": "heading",
+      "text": "Digestion and Absorption"
+    },
+    {
+      "type": "paragraph",
+      "text": "Carbohydrates are broken down into monosaccharides by amylase and disaccharidases. Proteins are broken down into amino acids by pepsin (stomach), trypsin, and chymotrypsin. Lipids are emulsified by bile and broken down by lipase into fatty acids and glycerol. Vitamins, minerals, and water are absorbed in the small intestine. Vitamin B12 requires intrinsic factor for absorption. The large intestine absorbs electrolytes and remaining water, forming feces for elimination."
+    },
+    {
+      "type": "mermaid",
+      "title": "Nutrient Digestion Summary",
+      "code": "graph TD\n    A[Macronutrients] --> B[Carbohydrates]\n    A --> C[Proteins]\n    A --> D[Lipids]\n    B --> E[Monosaccharides]\n    C --> F[Amino Acids]\n    D --> G[Fatty Acids + Glycerol]"
+    }
+  ]
+}

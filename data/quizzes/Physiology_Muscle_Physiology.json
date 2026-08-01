@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the contractile unit of skeletal muscle?",
+      "options": ["Myofibril", "Sarcomere", "Fascicle", "Muscle fiber"],
+      "correct_answer": "Sarcomere",
+      "explanation": "The sarcomere is the contractile unit of skeletal muscle, containing actin and myosin filaments."
+    },
+    {
+      "id": 2,
+      "question": "What neurotransmitter is released at the neuromuscular junction?",
+      "options": ["Dopamine", "Acetylcholine", "Serotonin", "Glutamate"],
+      "correct_answer": "Acetylcholine",
+      "explanation": "Acetylcholine (ACh) is released at the neuromuscular junction to trigger muscle contraction."
+    },
+    {
+      "id": 3,
+      "question": "What type of muscle contraction involves muscle length remaining constant?",
+      "options": ["Isotonic", "Isometric", "Eccentric", "Concentric"],
+      "correct_answer": "Isometric",
+      "explanation": "In isometric contractions, muscle length remains constant while tension increases (e.g., pushing against an immovable object)."
+    },
+    {
+      "id": 4,
+      "question": "What is the sliding filament theory?",
+      "options": ["Theory of muscle growth", "Theory of muscle contraction", "Theory of muscle relaxation", "Theory of muscle fatigue"],
+      "correct_answer": "Theory of muscle contraction",
+      "explanation": "The sliding filament theory explains muscle contraction as actin filaments sliding over myosin filaments, shortening the sarcomere."
+    },
+    {
+      "id": 5,
+      "question": "Which energy system provides immediate energy for muscle contraction?",
+      "options": ["Aerobic respiration", "Anaerobic glycolysis", "Phosphocreatine system", "Fatty acid oxidation"],
+      "correct_answer": "Phosphocreatine system",
+      "explanation": "The phosphocreatine system provides immediate energy for muscle contraction, lasting about 8-10 seconds."
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between skeletal and cardiac muscle?",
+      "options": ["Skeletal is voluntary, cardiac is involuntary", "Both are voluntary", "Both are involuntary", "Skeletal is striated, cardiac is not"],
+      "correct_answer": "Skeletal is voluntary, cardiac is involuntary",
+      "explanation": "Skeletal muscle is voluntary and striated, while cardiac muscle is involuntary and striated, found only in the heart."
+    },
+    {
+      "id": 7,
+      "question": "What is a motor unit?",
+      "options": ["A single muscle fiber", "A motor neuron and all muscle fibers it innervates", "A group of motor neurons", "A group of muscle fibers"],
+      "correct_answer": "A motor neuron and all muscle fibers it innervates",
+      "explanation": "A motor unit consists of a single motor neuron and all the muscle fibers it innervates."
+    },
+    {
+      "id": 8,
+      "question": "What is the function of tropomyosin?",
+      "options": ["Binds calcium", "Blocks myosin binding sites on actin", "Produces ATP", "Releases acetylcholine"],
+      "correct_answer": "Blocks myosin binding sites on actin",
+      "explanation": "Tropomyosin blocks myosin binding sites on actin in relaxed muscle. Calcium binding to troponin moves tropomyosin, allowing contraction."
+    }
+  ]
+}

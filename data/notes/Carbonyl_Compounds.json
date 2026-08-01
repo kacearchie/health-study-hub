@@ -1,0 +1,91 @@
+{
+  "title": "20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters",
+  "content": [
+    {
+      "type": "heading",
+      "text": "The Carbonyl Group"
+    },
+    {
+      "type": "paragraph",
+      "text": "The carbonyl group (C=O) is a fundamental functional group in organic chemistry. The trigonal planar carbon in the carbonyl group can attach to various substituents, leading to different families of compounds: aldehydes, ketones, carboxylic acids, and esters."
+    },
+    {
+      "type": "mermaid",
+      "title": "Carbonyl Family Overview",
+      "code": "graph TD\n    A[CARBONYL GROUP C=O] --> B[Aldehyde R-CHO]\n    A --> C[Ketone R-CO-R]\n    A --> D[Carboxylic Acid R-COOH]\n    A --> E[Ester R-COOR]\n    B --> F[At least 1 H on C=O]\n    C --> G[2 carbon groups on C=O]\n    D --> H[OH attached to C=O]\n    E --> I[OR attached to C=O]\n    style A fill:#2563eb,color:#fff"
+    },
+    {
+      "type": "heading",
+      "text": "Aldehydes and Ketones"
+    },
+    {
+      "type": "paragraph",
+      "text": "In aldehydes, the carbonyl group is bonded to at least one hydrogen atom (R-CHO). In ketones, the carbonyl group is bonded to two carbon groups (R-CO-R'). The carbonyl carbon is sp2 hybridized with trigonal planar geometry. The C=O bond is polar due to oxygen's higher electronegativity."
+    },
+    {
+      "type": "mermaid",
+      "title": "Aldehyde and Ketone Examples",
+      "code": "graph LR\n    A[Formaldehyde HCHO] --> B[Preservative]\n    C[Acetone CH3COCH3] --> D[Solvent]\n    E[Acetaldehyde CH3CHO] --> F[Intermediate]"
+    },
+    {
+      "type": "heading",
+      "text": "Oxidation of Alcohols"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alcohols can be oxidized to carbonyl compounds. Primary alcohols (RCH2OH) oxidize to aldehydes (RCHO), which can further oxidize to carboxylic acids (RCOOH). Secondary alcohols (R2CHOH) oxidize to ketones (R2CO). Tertiary alcohols cannot be oxidized because they lack a C-H bond on the carbon bearing the -OH."
+    },
+    {
+      "type": "mermaid",
+      "title": "Oxidation of Alcohols",
+      "code": "graph TD\n    A[Primary Alcohol RCH2OH] -->|Oxidation| B[Aldehyde RCHO]\n    B -->|Further Oxidation| C[Carboxylic Acid RCOOH]\n    D[Secondary Alcohol R2CHOH] -->|Oxidation| E[Ketone R2CO]\n    F[Tertiary Alcohol R3COH] -->|Cannot Oxidize| G[No Reaction]"
+    },
+    {
+      "type": "heading",
+      "text": "Carboxylic Acids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Carboxylic acids contain a carbonyl group attached to a hydroxyl group (R-COOH). They are weak acids, ionizing about 1% in water. The acid hydrogen can be removed by a base to form carboxylate salts. Acetic acid (CH3COOH) is the main component of vinegar."
+    },
+    {
+      "type": "mermaid",
+      "title": "Carboxylic Acid Examples",
+      "code": "graph LR\n    A[Formic Acid HCOOH] --> B[Ant Stings]\n    C[Acetic Acid CH3COOH] --> D[Vinegar 3-6 percent]\n    E[Palmitic Acid C16] --> F[Fats and Oils]"
+    },
+    {
+      "type": "heading",
+      "text": "Esters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Esters are formed by the reaction of a carboxylic acid with an alcohol (esterification). They have the formula R-COOR'. Esters are responsible for the pleasant odors of fruits and flowers. Fats and oils are esters of glycerol with long-chain carboxylic acids."
+    },
+    {
+      "type": "mermaid",
+      "title": "Ester Synthesis",
+      "code": "graph LR\n    A[Carboxylic Acid R-COOH] --> B[+ Alcohol ROH]\n    B --> C[Ester R-COOR + H2O]\n    C --> D[Fragrances and Flavors]"
+    },
+    {
+      "type": "mermaid",
+      "title": "Fruit Esters",
+      "code": "graph TD\n    A[Fruit Esters] --> B[Banana Isoamyl acetate]\n    A --> C[Orange Octyl acetate]\n    A --> D[Pineapple Ethyl butyrate]\n    A --> E[Strawberry Methyl butyrate]"
+    },
+    {
+      "type": "heading",
+      "text": "Saturated vs Unsaturated Fats"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fats and oils are triesters of glycerol. Saturated fats contain only single bonds and are solid at room temperature (e.g., butter). Unsaturated fats contain double bonds and are liquid at room temperature (e.g., olive oil). Unsaturated fats have lower melting points due to kinks in the hydrocarbon chains."
+    },
+    {
+      "type": "chart",
+      "title": "Melting Points of Fatty Acids",
+      "labels": ["Palmitic C16:0", "Stearic C18:0", "Oleic C18:1", "Linoleic C18:2"],
+      "data": [63, 70, 13, -5],
+      "label": "Melting Point (C)",
+      "x_label": "Fatty Acid"
+    }
+  ]
+}

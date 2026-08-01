@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the function of transamination?",
+      "options": ["Transfers amino groups from amino acids to α-keto acids", "Breaks down amino acids", "Synthesizes amino acids", "Transports amino acids"],
+      "correct_answer": "Transfers amino groups from amino acids to α-keto acids",
+      "explanation": "Transamination transfers amino groups from amino acids to α-keto acids, catalyzed by aminotransferases (ALT, AST)."
+    },
+    {
+      "id": 2,
+      "question": "What is the first product of the urea cycle?",
+      "options": ["Citrulline", "Arginine", "Carbamoyl phosphate", "Ornithine"],
+      "correct_answer": "Carbamoyl phosphate",
+      "explanation": "Carbamoyl phosphate is the first product of the urea cycle, formed by carbamoyl phosphate synthetase I from NH4+ and CO2."
+    },
+    {
+      "id": 3,
+      "question": "What is the function of the urea cycle?",
+      "options": ["Synthesizes amino acids", "Converts ammonia to urea", "Produces energy", "Transports proteins"],
+      "correct_answer": "Converts ammonia to urea",
+      "explanation": "The urea cycle converts toxic ammonia to urea for excretion in the urine."
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between glucogenic and ketogenic amino acids?",
+      "options": ["Glucogenic → glucose, Ketogenic → ketone bodies", "Glucogenic → ketone bodies, Ketogenic → glucose", "Both → glucose", "Both → ketone bodies"],
+      "correct_answer": "Glucogenic → glucose, Ketogenic → ketone bodies",
+      "explanation": "Glucogenic amino acids can be converted to glucose precursors, while ketogenic amino acids are converted to ketone bodies."
+    },
+    {
+      "id": 5,
+      "question": "What is phenylketonuria (PKU)?",
+      "options": ["Deficiency of phenylalanine hydroxylase", "Deficiency of tyrosine hydroxylase", "Deficiency of dopamine", "Deficiency of serotonin"],
+      "correct_answer": "Deficiency of phenylalanine hydroxylase",
+      "explanation": "PKU is caused by a deficiency of phenylalanine hydroxylase, leading to accumulation of phenylalanine and mental retardation if untreated."
+    },
+    {
+      "id": 6,
+      "question": "What is the role of glutamate in amino acid metabolism?",
+      "options": ["Energy storage", "Central amino group carrier", "Protein synthesis", "Hormone production"],
+      "correct_answer": "Central amino group carrier",
+      "explanation": "Glutamate serves as the central amino group carrier in amino acid metabolism, accepting and donating amino groups."
+    },
+    {
+      "id": 7,
+      "question": "What is the function of alanine transaminase (ALT)?",
+      "options": ["Transfers amino groups to pyruvate", "Transfers amino groups to oxaloacetate", "Breaks down alanine", "Synthesizes alanine"],
+      "correct_answer": "Transfers amino groups to pyruvate",
+      "explanation": "ALT (alanine transaminase) transfers amino groups from alanine to pyruvate and vice versa."
+    },
+    {
+      "id": 8,
+      "question": "What is the clinical significance of elevated ALT and AST?",
+      "options": ["Liver damage", "Kidney damage", "Heart damage", "Muscle damage"],
+      "correct_answer": "Liver damage",
+      "explanation": "Elevated ALT and AST are markers of liver damage or hepatocellular injury, commonly seen in hepatitis or liver disease."
+    }
+  ]
+}

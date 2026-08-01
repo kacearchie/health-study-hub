@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary site of fatty acid synthesis?",
+      "options": ["Mitochondria", "Cytosol", "Nucleus", "Ribosomes"],
+      "correct_answer": "Cytosol",
+      "explanation": "Fatty acid synthesis occurs in the cytosol, using acetyl-CoA and NADPH from the pentose phosphate pathway."
+    },
+    {
+      "id": 2,
+      "question": "What is the rate-limiting enzyme of fatty acid synthesis?",
+      "options": ["Fatty acid synthase", "Acetyl-CoA carboxylase", "HMG-CoA reductase", "Lipoprotein lipase"],
+      "correct_answer": "Acetyl-CoA carboxylase",
+      "explanation": "Acetyl-CoA carboxylase (ACC) catalyzes the conversion of acetyl-CoA to malonyl-CoA, the rate-limiting step in fatty acid synthesis."
+    },
+    {
+      "id": 3,
+      "question": "Where does β-oxidation occur?",
+      "options": ["Cytosol", "Mitochondrial matrix", "Nucleus", "Endoplasmic reticulum"],
+      "correct_answer": "Mitochondrial matrix",
+      "explanation": "β-Oxidation of fatty acids occurs in the mitochondrial matrix, producing acetyl-CoA, FADH2, and NADH."
+    },
+    {
+      "id": 4,
+      "question": "What is the function of carnitine in fatty acid metabolism?",
+      "options": ["Synthesizes fatty acids", "Transports fatty acids into mitochondria", "Breaks down fatty acids", "Stores fatty acids"],
+      "correct_answer": "Transports fatty acids into mitochondria",
+      "explanation": "Carnitine transports long-chain fatty acids into the mitochondrial matrix for β-oxidation."
+    },
+    {
+      "id": 5,
+      "question": "What is the rate-limiting enzyme of cholesterol synthesis?",
+      "options": ["HMG-CoA reductase", "HMG-CoA synthase", "Acetyl-CoA carboxylase", "Fatty acid synthase"],
+      "correct_answer": "HMG-CoA reductase",
+      "explanation": "HMG-CoA reductase is the rate-limiting enzyme in cholesterol synthesis and the target of statin drugs."
+    },
+    {
+      "id": 6,
+      "question": "What are ketone bodies?",
+      "options": ["Fatty acids", "Compounds produced during fatty acid oxidation in the liver", "Compounds produced during glycolysis", "Compounds produced during protein metabolism"],
+      "correct_answer": "Compounds produced during fatty acid oxidation in the liver",
+      "explanation": "Ketone bodies (acetoacetate, β-hydroxybutyrate, acetone) are produced in the liver during fasting or ketogenic states."
+    },
+    {
+      "id": 7,
+      "question": "What is the function of lipoprotein lipase?",
+      "options": ["Synthesizes lipoproteins", "Hydrolyzes triglycerides in chylomicrons and VLDL", "Transports cholesterol", "Breaks down proteins"],
+      "correct_answer": "Hydrolyzes triglycerides in chylomicrons and VLDL",
+      "explanation": "Lipoprotein lipase (LPL) hydrolyzes triglycerides in chylomicrons and VLDL, releasing fatty acids for tissue uptake."
+    },
+    {
+      "id": 8,
+      "question": "What is the energy yield from β-oxidation of palmitic acid?",
+      "options": ["80 ATP", "106 ATP", "120 ATP", "140 ATP"],
+      "correct_answer": "106 ATP",
+      "explanation": "Complete oxidation of palmitic acid (16:0) yields approximately 106 ATP molecules."
+    }
+  ]
+}

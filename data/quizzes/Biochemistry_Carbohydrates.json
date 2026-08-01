@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which carbohydrate is the main energy source for the brain?",
+      "options": ["Fructose", "Galactose", "Glucose", "Sucrose"],
+      "correct_answer": "Glucose",
+      "explanation": "Glucose is the primary energy source for the brain. The brain cannot use fatty acids as an energy source."
+    },
+    {
+      "id": 2,
+      "question": "What is the general formula for carbohydrates?",
+      "options": ["(CH2O)n", "(C6H12O6)n", "(CH2O2)n", "(C3H6O3)n"],
+      "correct_answer": "(CH2O)n",
+      "explanation": "Carbohydrates have the general formula (CH2O)n. For glucose, n=6 gives C6H12O6."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a disaccharide?",
+      "options": ["Glucose", "Fructose", "Sucrose", "Starch"],
+      "correct_answer": "Sucrose",
+      "explanation": "Sucrose (table sugar) is a disaccharide composed of glucose and fructose. Starch is a polysaccharide."
+    },
+    {
+      "id": 4,
+      "question": "What type of bond links monosaccharides in disaccharides?",
+      "options": ["Ester", "Ether", "Glycosidic", "Peptide"],
+      "correct_answer": "Glycosidic",
+      "explanation": "Disaccharides are linked by glycosidic bonds formed by condensation reactions between monosaccharides."
+    },
+    {
+      "id": 5,
+      "question": "What is the function of glycogen?",
+      "options": ["Energy storage in animals", "Energy storage in plants", "Structural support in plants", "Cell wall component"],
+      "correct_answer": "Energy storage in animals",
+      "explanation": "Glycogen is the primary energy storage molecule in animals, stored in the liver and muscles."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is NOT a monosaccharide?",
+      "options": ["Glucose", "Fructose", "Galactose", "Sucrose"],
+      "correct_answer": "Sucrose",
+      "explanation": "Sucrose is a disaccharide (glucose + fructose), not a monosaccharide."
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between starch and cellulose?",
+      "options": ["Starch is α-linked, cellulose is β-linked", "Starch is β-linked, cellulose is α-linked", "Both are α-linked", "Both are β-linked"],
+      "correct_answer": "Starch is α-linked, cellulose is β-linked",
+      "explanation": "Starch contains α-1,4 and α-1,6 glycosidic bonds, while cellulose contains β-1,4 bonds, making it indigestible by humans."
+    },
+    {
+      "id": 8,
+      "question": "What is the glycemic index?",
+      "options": ["Measure of carbohydrate content", "Measure of how quickly carbohydrates raise blood glucose", "Measure of protein content", "Measure of fat content"],
+      "correct_answer": "Measure of how quickly carbohydrates raise blood glucose",
+      "explanation": "The glycemic index measures how quickly a carbohydrate-containing food raises blood glucose levels compared to pure glucose."
+    }
+  ]
+}

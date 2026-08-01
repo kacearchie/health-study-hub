@@ -1,0 +1,125 @@
+{
+  "title": "20.4 Amines and Amides",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Amines and Amides"
+    },
+    {
+      "type": "paragraph",
+      "text": "Amines and amides are nitrogen-containing organic compounds. Amines are derivatives of ammonia with one or more hydrogens replaced by organic groups. Amides contain a nitrogen atom bonded to a carbonyl carbon."
+    },
+    {
+      "type": "mermaid",
+      "title": "Amine Classification",
+      "code": "graph TD\n    A[AMINES] --> B[Primary R-NH2]\n    A --> C[Secondary R-NH-R]\n    A --> D[Tertiary R-NR-R]\n    B --> E[Example: Methylamine CH3NH2]\n    C --> F[Example: Dimethylamine]\n    D --> G[Example: Trimethylamine]\n    style A fill:#2563eb,color:#fff"
+    },
+    {
+      "type": "heading",
+      "text": "Amine Basicity"
+    },
+    {
+      "type": "paragraph",
+      "text": "Amines are weak bases because the nitrogen atom has a lone pair of electrons that can accept a proton. This basicity is important in biological systems, as many neurotransmitters, hormones, and alkaloids contain amine groups."
+    },
+    {
+      "type": "mermaid",
+      "title": "Amine Basicity",
+      "code": "graph LR\n    A[Amine R-NH2] --> B[+ H+]\n    B --> C[Ammonium Ion R-NH3+]"
+    },
+    {
+      "type": "heading",
+      "text": "Important Amines in Biology"
+    },
+    {
+      "type": "paragraph",
+      "text": "Amines are found in many biologically important molecules: amino acids (building blocks of proteins), neurotransmitters (dopamine, serotonin), hormones (adrenaline), and alkaloids (nicotine, morphine, caffeine)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Biologically Important Amines",
+      "code": "graph TD\n    A[Amines in Nature] --> B[Amino Acids\nNH2-CHR-COOH]\n    A --> C[Neurotransmitters\nDopamine Serotonin]\n    A --> D[Alkaloids\nNicotine Morphine]\n    A --> E[DNA Bases\nAdenine Cytosine]\n    style A fill:#c4b5fd"
+    },
+    {
+      "type": "heading",
+      "text": "Amides"
+    },
+    {
+      "type": "paragraph",
+      "text": "Amides contain a nitrogen atom connected to the carbonyl carbon (R-CONH2). They are formed by the reaction of carboxylic acids with amines or ammonia (amidation), eliminating water. Amides are key structural units in proteins (peptide bonds)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Amide Formation",
+      "code": "graph LR\n    A[Carboxylic Acid R-COOH] --> B[+ Amine R-NH2]\n    B --> C[Amide R-CONH-R + H2O]\n    C --> D[Peptide Bond in Proteins]"
+    },
+    {
+      "type": "heading",
+      "text": "Proteins: Polyamides"
+    },
+    {
+      "type": "paragraph",
+      "text": "Proteins are polymers of amino acids linked by amide (peptide) bonds. Amino acids contain both amine and carboxylic acid groups. The 20 standard amino acids combine in different sequences to form proteins with diverse functions: enzymes, structural proteins, hormones, and transport molecules."
+    },
+    {
+      "type": "mermaid",
+      "title": "Protein Structure Levels",
+      "code": "graph TD\n    A[PROTEIN STRUCTURE] --> B[Primary Amino acid sequence]\n    A --> C[Secondary Alpha helices and Beta sheets]\n    A --> D[Tertiary 3D folding]\n    A --> E[Quaternary Multiple chains]\n    B --> F[Peptide bonds]\n    C --> G[Hydrogen bonds]\n    D --> H[Interactions between R groups]\n    E --> I[Protein complex]\n    style A fill:#2563eb,color:#fff"
+    },
+    {
+      "type": "heading",
+      "text": "Kevlar: A Synthetic Polyamide"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kevlar is a synthetic polymer made from two monomers connected by amide bonds. It gets its extraordinary strength from hydrogen bonds between polymer chains and aromatic stacking interactions. Kevlar is five times stronger than steel by weight and is used in body armor, helmets, and protective gear."
+    },
+    {
+      "type": "mermaid",
+      "title": "Kevlar Structure and Uses",
+      "code": "graph TD\n    A[Kevlar Monomers] --> B[1,4-Phenylene-diamine]\n    A --> C[Terephthaloyl Chloride]\n    B --> D[Amide bonds form]\n    C --> D\n    D --> E[Strong hydrogen bonds between chains]\n    E --> F[Body armor Tires Protective gear]"
+    },
+    {
+      "type": "heading",
+      "text": "Alkaloids: Nature's Amines"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkaloids are naturally occurring cyclic molecules containing amine functional groups. Examples include: Nicotine (from tobacco), Morphine (from poppies), Codeine (pain relief), and Heroin (acetylated morphine, highly addictive). The plant produces these substances as chemical defenses against pests."
+    },
+    {
+      "type": "mermaid",
+      "title": "Common Alkaloids",
+      "code": "graph LR\n    A[Nicotine] --> B[Tobacco]\n    C[Morphine] --> D[Poppies]\n    E[Codeine] --> F[Cough Suppressant]\n    G[Heroin] --> H[Addictive Narcotic]"
+    },
+    {
+      "type": "heading",
+      "text": "DNA: Genetic Information"
+    },
+    {
+      "type": "paragraph",
+      "text": "DNA (deoxyribonucleic acid) contains nitrogenous bases (adenine, cytosine, guanine, thymine) which are amine-containing compounds. The sequence of these bases encodes genetic information. DNA is a double helix with sugar-phosphate backbones on the outside and hydrogen-bonded base pairs on the inside."
+    },
+    {
+      "type": "mermaid",
+      "title": "DNA Double Helix",
+      "code": "graph LR\n    A[DNA] --> B[Two strands]\n    B --> C[Hydrogen bonds between bases]\n    C --> D[A-T and G-C pairing]\n    D --> E[Genetic Code]\n    E --> F[Proteins]"
+    },
+    {
+      "type": "heading",
+      "text": "Key Differences: Amines vs Amides"
+    },
+    {
+      "type": "paragraph",
+      "text": "Amines: - Nitrogen bonded to carbon/hydrogen only - Basic (lone pair on N) - Examples: NH3, CH3NH2\n\nAmides: - Nitrogen bonded to carbonyl carbon (C=O) - Not basic (lone pair is delocalized) - Examples: Proteins, Kevlar"
+    },
+    {
+      "type": "chart",
+      "title": "Comparison of Amines and Amides",
+      "labels": ["Amines", "Amides"],
+      "data": [9.5, 2.5],
+      "label": "pKa of Conjugate Acid (Basicity)",
+      "x_label": "Compound Type"
+    }
+  ]
+}

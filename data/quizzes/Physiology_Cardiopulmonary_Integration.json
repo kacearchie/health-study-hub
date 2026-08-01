@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the V/Q ratio?",
+      "options": ["Volume/Flow ratio", "Ventilation/Perfusion ratio", "Velocity/Quantity ratio", "Vital capacity/Flow ratio"],
+      "correct_answer": "Ventilation/Perfusion ratio",
+      "explanation": "The V/Q ratio is the ventilation-perfusion ratio, matching air flow to blood flow in the lungs for optimal gas exchange."
+    },
+    {
+      "id": 2,
+      "question": "What happens to cardiac output during exercise?",
+      "options": ["Decreases", "Increases", "Stays the same", "Fluctuates randomly"],
+      "correct_answer": "Increases",
+      "explanation": "Cardiac output increases during exercise to deliver more oxygen to working muscles. It can increase up to 20-25 L/min in trained athletes."
+    },
+    {
+      "id": 3,
+      "question": "What is the normal arteriovenous oxygen difference?",
+      "options": ["2 mL/dL", "4 mL/dL", "6 mL/dL", "8 mL/dL"],
+      "correct_answer": "4-6 mL/dL",
+      "explanation": "The normal arteriovenous oxygen difference (AVO2 difference) is approximately 4-6 mL/dL, indicating tissue oxygen extraction."
+    },
+    {
+      "id": 4,
+      "question": "What is the effect of exercise on heart rate?",
+      "options": ["Decreases", "Increases", "Stays the same", "First decreases then increases"],
+      "correct_answer": "Increases",
+      "explanation": "Heart rate increases during exercise to increase cardiac output and oxygen delivery to tissues."
+    },
+    {
+      "id": 5,
+      "question": "What is the Bohr effect?",
+      "options": ["Increased CO2 decreases hemoglobin's O2 affinity", "Increased O2 decreases hemoglobin's CO2 affinity", "Decreased pH decreases hemoglobin's O2 affinity", "Both A and C"],
+      "correct_answer": "Both A and C",
+      "explanation": "The Bohr effect describes how increased CO2 and decreased pH reduce hemoglobin's affinity for oxygen, enhancing oxygen delivery to tissues."
+    },
+    {
+      "id": 6,
+      "question": "What is ventilation?",
+      "options": ["Gas exchange", "Movement of air in and out of lungs", "Blood flow through lungs", "Oxygen transport in blood"],
+      "correct_answer": "Movement of air in and out of lungs",
+      "explanation": "Ventilation is the movement of air in and out of the lungs, driven by pressure changes and muscle contractions."
+    },
+    {
+      "id": 7,
+      "question": "What is the effect of altitude on oxygen transport?",
+      "options": ["Increases oxygen transport", "Decreases oxygen transport", "No effect", "Increases CO2 transport"],
+      "correct_answer": "Decreases oxygen transport",
+      "explanation": "At altitude, lower atmospheric pressure reduces the partial pressure of oxygen, decreasing oxygen loading in the lungs."
+    },
+    {
+      "id": 8,
+      "question": "What is the clinical significance of the cardiopulmonary system?",
+      "options": ["Regulates body temperature", "Maintains acid-base balance", "Delivers oxygen and removes CO2", "All of the above"],
+      "correct_answer": "All of the above",
+      "explanation": "The cardiopulmonary system delivers oxygen, removes CO2, regulates body temperature, and helps maintain acid-base balance."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the functional unit of the kidney?",
+      "options": ["Glomerulus", "Nephron", "Renal pyramid", "Collecting duct"],
+      "correct_answer": "Nephron",
+      "explanation": "The nephron is the functional unit of the kidney, responsible for filtration, reabsorption, and secretion to form urine."
+    },
+    {
+      "id": 2,
+      "question": "What is the function of the kidneys?",
+      "options": ["Filter blood and produce urine", "Digest food", "Pump blood", "Produce hormones"],
+      "correct_answer": "Filter blood and produce urine",
+      "explanation": "The kidneys filter blood to remove waste products, regulate fluid balance, and maintain electrolyte homeostasis."
+    },
+    {
+      "id": 3,
+      "question": "Which hormone regulates water reabsorption in the kidneys?",
+      "options": ["Aldosterone", "ADH", "Insulin", "Glucagon"],
+      "correct_answer": "ADH",
+      "explanation": "Antidiuretic hormone (ADH) increases water reabsorption in the collecting ducts, concentrating urine and conserving body water."
+    },
+    {
+      "id": 4,
+      "question": "What is the pathway of urine flow from the kidney?",
+      "options": ["Kidney → Urethra → Bladder → Ureter", "Kidney → Ureter → Bladder → Urethra", "Kidney → Bladder → Ureter → Urethra", "Kidney → Urethra → Ureter → Bladder"],
+      "correct_answer": "Kidney → Ureter → Bladder → Urethra",
+      "explanation": "Urine flows from the kidney through the ureters to the urinary bladder, then out through the urethra."
+    },
+    {
+      "id": 5,
+      "question": "What is the normal pH of urine?",
+      "options": ["4.5-8.0", "7.0", "6.0-7.0", "8.0-9.0"],
+      "correct_answer": "4.5-8.0",
+      "explanation": "Normal urine pH ranges from 4.5 to 8.0, depending on diet and metabolic factors."
+    },
+    {
+      "id": 6,
+      "question": "What is the role of the ureters?",
+      "options": ["Store urine", "Carry urine from kidney to bladder", "Filter blood", "Carry urine from bladder to outside"],
+      "correct_answer": "Carry urine from kidney to bladder",
+      "explanation": "The ureters are muscular tubes that carry urine from the kidneys to the urinary bladder using peristalsis."
+    },
+    {
+      "id": 7,
+      "question": "Which part of the nephron is responsible for filtration?",
+      "options": ["Proximal tubule", "Loop of Henle", "Glomerulus", "Collecting duct"],
+      "correct_answer": "Glomerulus",
+      "explanation": "The glomerulus is a network of capillaries in the renal corpuscle where blood filtration begins, forming the filtrate."
+    },
+    {
+      "id": 8,
+      "question": "What is the function of aldosterone in the kidneys?",
+      "options": ["Increases water reabsorption", "Increases sodium reabsorption", "Increases potassium reabsorption", "Decreases sodium reabsorption"],
+      "correct_answer": "Increases sodium reabsorption",
+      "explanation": "Aldosterone increases sodium reabsorption in the distal tubule and collecting duct, which also promotes water retention."
+    }
+  ]
+}

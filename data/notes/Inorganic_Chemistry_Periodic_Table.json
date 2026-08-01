@@ -1,0 +1,52 @@
+{
+  "title": "Inorganic Chemistry: Periodic Table & Periodicity",
+  "content": [
+    {
+      "type": "heading",
+      "text": "The Periodic Table: Structure and Organization"
+    },
+    {
+      "type": "paragraph",
+      "text": "The periodic table organizes elements based on their atomic number and electron configuration. Dmitri Mendeleev created the first periodic table in 1869, arranging elements by atomic mass and predicting properties of undiscovered elements. The modern periodic table arranges elements by atomic number (Z). Elements are organized into periods (horizontal rows) and groups (vertical columns). There are 18 groups and 7 periods. Elements in the same group have similar chemical properties due to the same number of valence electrons."
+    },
+    {
+      "type": "mermaid",
+      "title": "Periodic Table Layout",
+      "code": "graph TD\n    A[PERIODIC TABLE] --> B[Groups 1-18\nVertical Columns]\n    A --> C[Periods 1-7\nHorizontal Rows]\n    A --> D[Blocks s,p,d,f]\n    B --> E[Group 1: Alkali Metals]\n    B --> F[Group 2: Alkaline Earth]\n    B --> G[Group 17: Halogens]\n    B --> H[Group 18: Noble Gases]"
+    },
+    {
+      "type": "heading",
+      "text": "Periodic Trends"
+    },
+    {
+      "type": "paragraph",
+      "text": "Several key trends exist across periods and down groups: Atomic radius generally decreases across a period (increasing nuclear charge pulls electrons closer) and increases down a group (additional electron shells). Ionization energy (energy required to remove an electron) increases across a period and decreases down a group. Electron affinity (energy change when adding an electron) becomes more negative across a period. Electronegativity (ability to attract electrons in a bond) increases across a period and decreases down a group."
+    },
+    {
+      "type": "chart",
+      "title": "Atomic Radius Trends",
+      "labels": ["Li", "Be", "B", "C", "N", "O", "F", "Ne"],
+      "data": [152, 112, 87, 77, 75, 73, 71, 69],
+      "label": "Atomic Radius (pm)",
+      "x_label": "Element"
+    },
+    {
+      "type": "mermaid",
+      "title": "Periodic Trends",
+      "code": "graph LR\n    A[Across Period ↓] --> B[Atomic Radius ↓]\n    A --> C[Ionization Energy ↑]\n    A --> D[Electronegativity ↑]\n    E[Down Group ↑] --> F[Atomic Radius ↑]\n    E --> G[Ionization Energy ↓]\n    E --> H[Electronegativity ↓]"
+    },
+    {
+      "type": "heading",
+      "text": "Groups and Their Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "Group 1 (Alkali Metals) are soft, reactive metals with one valence electron. Group 2 (Alkaline Earth Metals) have two valence electrons and are less reactive than alkali metals. Group 17 (Halogens) are highly reactive nonmetals with seven valence electrons. Group 18 (Noble Gases) are inert with full valence shells. The transition metals (Groups 3-12) have variable oxidation states and form colored compounds due to d-orbital electron transitions."
+    },
+    {
+      "type": "mermaid",
+      "title": "Group Properties",
+      "code": "graph TD\n    A[Group 1 Alkali Metals] --> B[1 valence e-]\n    A --> C[React with water]\n    A --> D[Form +1 ions]\n    E[Group 17 Halogens] --> F[7 valence e-]\n    E --> G[React with metals]\n    E --> H[Form -1 ions]\n    I[Group 18 Noble Gases] --> J[8 valence e-]\n    I --> K[Inert]\n    I --> L[Full octet]"
+    }
+  ]
+}

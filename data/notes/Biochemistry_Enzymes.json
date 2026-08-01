@@ -1,0 +1,78 @@
+{
+  "title": "Introductory Biochemistry: Enzymes",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Enzymes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Enzymes are biological catalysts that accelerate chemical reactions without being consumed. Most enzymes are proteins, though some are RNA (ribozymes). Enzymes are highly specific (lock-and-key or induced-fit models). The active site is the region where substrate binds. Enzymes lower activation energy, speeding up reactions. Cofactors (metal ions or coenzymes) are often required for catalytic activity. Holoenzyme = apoenzyme (protein) + cofactor. Enzyme nomenclature: Names end in '-ase' (e.g., dehydrogenase, kinase, protease)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Enzyme Structure",
+      "code": "graph LR\n    A[Enzyme] --> B[Active Site]\n    C[Substrate] --> B\n    B --> D[Enzyme-Substrate Complex]\n    D --> E[Product]"
+    },
+    {
+      "type": "heading",
+      "text": "Mechanisms of Enzyme Action"
+    },
+    {
+      "type": "paragraph",
+      "text": "Enzymes employ various catalytic mechanisms: Acid-base catalysis (proton transfer), Covalent catalysis (transient covalent bond formation), Metal ion catalysis (metal ions facilitate reactions), Proximity and orientation effects (bring substrates together), and Strain or distortion (destabilize substrate). The transition state is stabilized by the enzyme. The rate of enzyme-catalyzed reactions follows Michaelis-Menten kinetics: V = (Vmax × [S]) / (Km + [S]). Km is the substrate concentration at half Vmax (affinity). Vmax is the maximum reaction rate."
+    },
+    {
+      "type": "mermaid",
+      "title": "Michaelis-Menten Kinetics",
+      "code": "graph LR\n    A[Substrate] --> B[Enzyme-Substrate]\n    B --> C[Product]\n    D[Vmax] --> E[Maximum rate]\n    F[Km] --> G[Substrate affinity]"
+    },
+    {
+      "type": "chart",
+      "title": "Michaelis-Menten Curve",
+      "labels": ["Low", "Medium", "High"],
+      "data": [25, 50, 75],
+      "label": "Reaction Rate (% Vmax)",
+      "x_label": "Substrate Concentration"
+    },
+    {
+      "type": "heading",
+      "text": "Enzyme Inhibition"
+    },
+    {
+      "type": "paragraph",
+      "text": "Enzyme inhibitors reduce enzyme activity. Reversible inhibitors bind non-covalently: Competitive inhibitors bind at the active site (increase Km, Vmax unchanged) and can be overcome by high [S]. Non-competitive inhibitors bind elsewhere (decrease Vmax, Km unchanged). Uncompetitive inhibitors bind only to ES complex (decrease both Vmax and Km). Irreversible inhibitors bind covalently (destroy enzyme activity). Important examples: Statins (HMG-CoA reductase inhibitors), Penicillin (transpeptidase inhibitor), Aspirin (cyclooxygenase inhibitor), and Alcohol dehydrogenase inhibitors."
+    },
+    {
+      "type": "mermaid",
+      "title": "Types of Enzyme Inhibition",
+      "code": "graph TD\n    A[Inhibition] --> B[Reversible]\n    A --> C[Irreversible]\n    B --> D[Competitive]\n    B --> E[Non-competitive]\n    B --> F[Uncompetitive]\n    D --> G[Increases Km]\n    E --> H[Decreases Vmax]\n    F --> I[Decreases both]"
+    },
+    {
+      "type": "heading",
+      "text": "Enzyme Regulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Enzyme activity is regulated to meet cellular needs. Mechanisms include: Allosteric regulation (effector binding at allosteric site, changes activity), Covalent modification (phosphorylation, acetylation), Zymogen activation (proenzyme cleavage), Isozymes (different forms with varying properties), and Gene expression regulation. Allosteric enzymes exhibit sigmoidal kinetics. Feedback inhibition occurs when the end product inhibits an early enzyme in the pathway. Metabolic pathways are regulated at key committed steps. Protein kinases and phosphatases regulate many enzymes through phosphorylation."
+    },
+    {
+      "type": "mermaid",
+      "title": "Regulation Mechanisms",
+      "code": "graph TD\n    A[Enzyme Regulation] --> B[Allosteric]\n    A --> C[Covalent]\n    A --> D[Zymogen]\n    A --> E[Gene Expression]\n    B --> F[Effector binding]\n    C --> G[Phosphorylation]\n    D --> H[Proteolytic cleavage]\n    E --> I[Transcription control]"
+    },
+    {
+      "type": "heading",
+      "text": "Clinical Applications of Enzymes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Enzymes are important in diagnosis and therapy: Diagnostic enzymes (plasma enzyme levels indicate tissue damage: ALT/AST for liver, CK-MB for heart, ALP for bone/liver). Therapeutic enzymes (streptokinase to dissolve clots, L-asparaginase for leukemia, pancreatin for pancreatic insufficiency). Enzyme deficiencies cause diseases: Phenylketonuria (phenylalanine hydroxylase deficiency), Galactosemia (galactose-1-phosphate uridyltransferase deficiency), G6PD deficiency (hemolytic anemia). Enzyme inhibitors are used therapeutically (statins, NSAIDs, ACE inhibitors)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Clinical Enzymology",
+      "code": "graph TD\n    A[Clinical Enzymes] --> B[Diagnostic]\n    A --> C[Therapeutic]\n    A --> D[Deficiencies]\n    B --> E[ALT/AST, CK-MB]\n    C --> F[Streptokinase]\n    D --> G[PKU, Galactosemia]"
+    }
+  ]
+}

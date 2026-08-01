@@ -1,0 +1,57 @@
+{
+  "title": "Systemic Anatomy I: Introduction & Anatomical Terminology",
+  "content": [
+    {
+      "type": "heading",
+      "text": "What is Anatomy?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Anatomy is the study of the structure of the body. The term 'anatomy' comes from the Greek 'ana' (up) and 'tome' (cutting). Systemic anatomy studies the body by systems, while regional anatomy studies the body by regions. The human body is organized from the simplest to the most complex: chemical level (atoms and molecules), cellular level, tissue level, organ level, organ system level, and organism level."
+    },
+    {
+      "type": "mermaid",
+      "title": "Levels of Organization",
+      "code": "graph TD\n    A[Chemical Level] --> B[Cellular Level]\n    B --> C[Tissue Level]\n    C --> D[Organ Level]\n    D --> E[Organ System Level]\n    E --> F[Organism Level]"
+    },
+    {
+      "type": "heading",
+      "text": "Anatomical Position and Planes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The standard anatomical position is standing upright, facing forward, with arms at the sides and palms facing forward. Three main anatomical planes divide the body: Sagittal plane (left-right division), Coronal plane (front-back division), and Transverse plane (upper-lower division). Directional terms describe body positions: Superior (above), Inferior (below), Anterior (front), Posterior (back), Medial (toward midline), Lateral (away from midline), Proximal (closer to attachment), and Distal (further from attachment)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Anatomical Planes",
+      "code": "graph TD\n    A[Anatomical Planes] --> B[Sagittal\nLeft-Right]\n    A --> C[Coronal\nFront-Back]\n    A --> D[Transverse\nTop-Bottom]"
+    },
+    {
+      "type": "heading",
+      "text": "Body Cavities"
+    },
+    {
+      "type": "paragraph",
+      "text": "Body cavities are spaces within the body that contain and protect internal organs. The dorsal body cavity contains the cranial cavity (brain) and vertebral canal (spinal cord). The ventral body cavity contains the thoracic cavity (heart, lungs, esophagus, trachea) and abdominopelvic cavity (digestive organs, kidneys, reproductive organs). The diaphragm separates the thoracic and abdominal cavities. Serous membranes line these cavities and reduce friction between organs."
+    },
+    {
+      "type": "mermaid",
+      "title": "Body Cavities",
+      "code": "graph TD\n    A[Body Cavities] --> B[Dorsal Cavity]\n    A --> C[Ventral Cavity]\n    B --> D[Cranial - Brain]\n    B --> E[Vertebral - Spinal Cord]\n    C --> F[Thoracic - Heart, Lungs]\n    C --> G[Abdominopelvic]\n    G --> H[Abdominal]\n    G --> I[Pelvic]"
+    },
+    {
+      "type": "heading",
+      "text": "Tissue Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "The four primary tissue types are: Epithelial tissue (covers body surfaces, lines cavities, forms glands), Connective tissue (supports, protects, binds tissues, includes bone, blood, cartilage), Muscle tissue (provides movement, includes skeletal, cardiac, smooth), and Nervous tissue (transmits electrical signals, controls body functions). Each tissue type has distinct characteristics and functions that contribute to organ structure and function."
+    },
+    {
+      "type": "mermaid",
+      "title": "Four Tissue Types",
+      "code": "graph TD\n    A[Tissue Types] --> B[Epithelial]\n    A --> C[Connective]\n    A --> D[Muscle]\n    A --> E[Nervous]\n    B --> F[Covers surfaces]\n    C --> G[Supports/Binds]\n    D --> H[Movement]\n    E --> I[Signaling]"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Health Study Hub - Offline Reader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+        }
+        .header {
+            background: #2563eb;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .header h1 {
+            font-size: 1.2rem;
+        }
+        .header .btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .header .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .note-list {
+            display: grid;
+            gap: 0.5rem;
+        }
+        .note-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .note-item:hover {
+            border-color: #2563eb;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+        }
+        .note-item h3 {
+            font-size: 1rem;
+            color: #0f172a;
+        }
+        .note-item p {
+            font-size: 0.85rem;
+            color: #475569;
+            margin-top: 0.3rem;
+        }
+        .note-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-top: 1rem;
+            display: none;
+        }
+        .note-content.active {
+            display: block;
+        }
+        .note-content h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+        .note-content .content-text {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #334155;
+            white-space: pre-wrap;
+        }
+        .note-content .key-points {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #dbeafe;
+            border-radius: 8px;
+        }
+        .note-content .key-points h4 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        .note-content .key-points ul {
+            list-style: none;
+            padding: 0;
+        }
+        .note-content .key-points li {
+            padding: 0.2rem 0;
+            color: #1e40af;
+        }
+        .note-content .key-points li:before {
+            content: "• ";
+        }
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .empty-state .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .empty-state h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .empty-state p {
+            color: #94a3b8;
+        }
+        .back-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .back-btn:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📖 Offline Reader</h1>
+        <button class="btn" onclick="window.location.href = 'offline.html'">← Back</button>
+    </div>
+
+    <div class="container">
+        <div id="app">
+            <!-- Note List -->
+            <div id="noteList">
+                <div class="empty-state">
+                    <div class="icon">📚</div>
+                    <h3>No Notes Available</h3>
+                    <p>Connect to the internet and download content for offline reading.</p>
+                    <button class="btn" onclick="window.location.href = '/'" style="margin-top:1rem;">🔄 Go Online</button>
+                </div>
+            </div>
+
+            <!-- Note Content -->
+            <div id="noteContent" class="note-content">
+                <button class="back-btn" onclick="closeNote()">← Back to List</button>
+                <div id="noteContentBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load offline data from localStorage
+        function loadOfflineData() {
+            try {
+                const data = localStorage.getItem('offlineData');
+                if (data) {
+                    return JSON.parse(data);
+                }
+            } catch (e) {}
+            return null;
+        }
+
+        // Render note list
+        function renderNoteList() {
+            const offlineData = loadOfflineData();
+            const listContainer = document.getElementById('noteList');
+            const notes = offlineData?.notes || {};
+
+            if (Object.keys(notes).length === 0) {
+                listContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">📚</div>
+                        <h3>No Notes Downloaded</h3>
+                        <p>Connect to the internet and download content for offline reading.</p>
+                        <button class="btn" onclick="window.location.href = '/'" style="margin-top:1rem;">🔄 Go Online</button>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = '<div class="note-list">';
+            for (const [filename, note] of Object.entries(notes)) {
+                const title = note.title || filename.replace('.json', '').replace(/_/g, ' ');
+                html += `
+                    <div class="note-item" onclick="openNote('${filename}')">
+                        <h3>${title}</h3>
+                        ${note.content ? `<p>${String(note.content).substring(0, 100)}...</p>` : ''}
+                    </div>
+                `;
+            }
+            html += '</div>';
+            listContainer.innerHTML = html;
+        }
+
+        // Open a note
+        function openNote(filename) {
+            const offlineData = loadOfflineData();
+            const note = offlineData?.notes?.[filename];
+
+            if (!note) {
+                alert('Note not found.');
+                return;
+            }
+
+            document.getElementById('noteList').style.display = 'none';
+            const contentDiv = document.getElementById('noteContent');
+            contentDiv.classList.add('active');
+
+            const title = note.title || filename.replace('.json', '').replace(/_/g, ' ');
+            let contentHtml = `<h2>${title}</h2>`;
+
+            if (note.content) {
+                if (typeof note.content === 'string') {
+                    contentHtml += `<div class="content-text">${note.content}</div>`;
+                } else {
+                    contentHtml += `<div class="content-text">${JSON.stringify(note.content, null, 2)}</div>`;
+                }
+            }
+
+            if (note.key_points && note.key_points.length > 0) {
+                contentHtml += `
+                    <div class="key-points">
+                        <h4>📌 Key Points</h4>
+                        <ul>
+                            ${note.key_points.map(p => `<li>${p}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            document.getElementById('noteContentBody').innerHTML = contentHtml;
+        }
+
+        // Close note and show list
+        function closeNote() {
+            document.getElementById('noteList').style.display = 'block';
+            document.getElementById('noteContent').classList.remove('active');
+        }
+
+        // Init
+        renderNoteList();
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "title": "Introductory Biochemistry: Introduction & Biomolecules",
+  "content": [
+    {
+      "type": "heading",
+      "text": "What is Biochemistry?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Biochemistry is the study of chemical processes in living organisms. It bridges biology and chemistry, exploring the molecular basis of life. Key areas include: Structure and function of biomolecules, Metabolism (chemical reactions in cells), Enzymology (catalysis of biochemical reactions), Genetics (DNA, RNA, protein synthesis), and Cell signaling. The four major classes of biomolecules are: Carbohydrates, Lipids, Proteins, and Nucleic Acids. Biochemistry is fundamental to understanding health, disease, and drug action."
+    },
+    {
+      "type": "mermaid",
+      "title": "Biochemistry Overview",
+      "code": "graph TD\n    A[Biochemistry] --> B[Biomolecules]\n    A --> C[Metabolism]\n    A --> D[Enzymology]\n    A --> E[Genetics]\n    B --> F[Carbohydrates]\n    B --> G[Lipids]\n    B --> H[Proteins]\n    B --> I[Nucleic Acids]"
+    },
+    {
+      "type": "heading",
+      "text": "Chemical Bonds in Biochemistry"
+    },
+    {
+      "type": "paragraph",
+      "text": "Biochemical interactions rely on various chemical bonds and forces: Covalent bonds (strong, sharing electrons), Ionic bonds (electrostatic attraction), Hydrogen bonds (weak, between H and O/N/F), Hydrophobic interactions (nonpolar molecules aggregate), van der Waals forces (weak, transient). These interactions determine biomolecular structure and function. Hydrogen bonds are crucial for protein folding, DNA base pairing, and enzyme-substrate interactions. Hydrophobic interactions drive protein folding and membrane formation."
+    },
+    {
+      "type": "mermaid",
+      "title": "Biochemical Interactions",
+      "code": "graph TD\n    A[Chemical Bonds] --> B[Covalent]\n    A --> C[Non-covalent]\n    C --> D[Hydrogen Bonds]\n    C --> E[Ionic Bonds]\n    C --> F[Hydrophobic]\n    C --> G[van der Waals]"
+    },
+    {
+      "type": "heading",
+      "text": "pH and Buffers in Biochemistry"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most biochemical reactions occur at physiological pH (7.4). The Henderson-Hasselbalch equation: pH = pKa + log([A-]/[HA]) is used to calculate pH of buffer solutions. Biological buffers include: Bicarbonate (major extracellular buffer), Phosphate (major intracellular buffer), Proteins (histidine residues), and Hemoglobin (blood buffer). Buffers resist pH changes by neutralizing acids and bases. The maintenance of pH homeostasis is critical for enzyme function and cellular processes."
+    },
+    {
+      "type": "mermaid",
+      "title": "Biological Buffers",
+      "code": "graph TD\n    A[Biological Buffers] --> B[Bicarbonate]\n    A --> C[Phosphate]\n    A --> D[Proteins]\n    A --> E[Hemoglobin]\n    B --> F[ECF major buffer]\n    C --> G[ICF major buffer]\n    D --> H[Histidine residues]"
+    },
+    {
+      "type": "chart",
+      "title": "pH of Body Fluids",
+      "labels": ["Gastric Juice", "Blood", "Saliva", "Urine", "Cytoplasm"],
+      "data": [1.5, 7.4, 6.8, 6.0, 7.2],
+      "label": "pH Value",
+      "x_label": "Body Fluid"
+    }
+  ]
+}

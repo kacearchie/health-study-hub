@@ -1,0 +1,57 @@
+{
+  "title": "Systemic Anatomy I: The Urinary System",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to the Urinary System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The urinary system removes waste products, regulates blood volume and pressure, controls electrolyte balance, and maintains acid-base balance. It consists of the kidneys (filtration), ureters (transport), urinary bladder (storage), and urethra (elimination). The kidneys are retroperitoneal organs at T12-L3, protected by the lower ribs. Each kidney contains about 1 million nephrons (functional units)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Urinary System Overview",
+      "code": "graph LR\n    A[Kidneys] --> B[Ureters]\n    B --> C[Urinary Bladder]\n    C --> D[Urethra]"
+    },
+    {
+      "type": "heading",
+      "text": "Kidney Anatomy and the Nephron"
+    },
+    {
+      "type": "paragraph",
+      "text": "The kidney has three regions: Cortex (outer), Medulla (inner with renal pyramids), and Pelvis (collecting urine). The nephron is the functional unit, consisting of the renal corpuscle (Bowman's capsule + glomerulus) and renal tubule (proximal convoluted tubule, loop of Henle, distal convoluted tubule, collecting duct). Glomerular filtration occurs in the renal corpuscle. The juxtaglomerular apparatus regulates blood pressure and filtration rate."
+    },
+    {
+      "type": "mermaid",
+      "title": "Nephron Structure",
+      "code": "graph TD\n    A[Nephron] --> B[Renal Corpuscle]\n    A --> C[Proximal Tubule]\n    A --> D[Loop of Henle]\n    A --> E[Distal Tubule]\n    A --> F[Collecting Duct]\n    B --> G[Bowman's Capsule]\n    B --> H[Glomerulus]"
+    },
+    {
+      "type": "heading",
+      "text": "Urine Formation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Urine formation occurs in three stages: Glomerular filtration (blood enters Bowman's capsule, forming filtrate), Tubular reabsorption (water, glucose, amino acids, ions are reabsorbed back into blood), and Tubular secretion (wastes and excess ions are secreted into the filtrate). The kidneys filter about 180 liters of blood plasma daily, producing about 1-2 liters of urine. ADH and aldosterone regulate water and salt reabsorption, affecting urine concentration."
+    },
+    {
+      "type": "mermaid",
+      "title": "Urine Formation Process",
+      "code": "graph LR\n    A[Blood] --> B[Glomerular Filtration]\n    B --> C[Filtrate]\n    C --> D[Tubular Reabsorption]\n    C --> E[Tubular Secretion]\n    D --> F[Blood]\n    E --> G[Urine]"
+    },
+    {
+      "type": "heading",
+      "text": "Hormonal Regulation of Urine Formation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Antidiuretic Hormone (ADH) increases water reabsorption in the collecting ducts, producing concentrated urine. Aldosterone increases sodium reabsorption and potassium secretion. Atrial Natriuretic Peptide (ANP) decreases sodium reabsorption, increasing urine output. Renin-Angiotensin-Aldosterone System (RAAS) regulates blood pressure and fluid balance. The kidneys also produce erythropoietin for red blood cell production and activate vitamin D for calcium homeostasis."
+    },
+    {
+      "type": "mermaid",
+      "title": "Hormonal Regulation",
+      "code": "graph TD\n    A[Kidney Hormones] --> B[ADH - Water retention]\n    A --> C[Aldosterone - Salt retention]\n    A --> D[ANP - Salt excretion]\n    A --> E[Erythropoietin - RBC production]"
+    }
+  ]
+}

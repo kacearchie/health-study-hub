@@ -1,0 +1,78 @@
+{
+  "title": "Systemic Anatomy I: The Skeletal System",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to the Skeletal System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The skeletal system consists of 206 bones in the adult human body. Bones provide structural support, protection of internal organs, movement (serve as levers for muscles), mineral storage (calcium, phosphorus), and blood cell formation (hematopoiesis in bone marrow). Bones are classified by shape: long bones (femur, humerus), short bones (carpals), flat bones (cranium, sternum), irregular bones (vertebrae), and sesamoid bones (patella)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Functions of the Skeletal System",
+      "code": "graph TD\n    A[Skeletal System] --> B[Support]\n    A --> C[Protection]\n    A --> D[Movement]\n    A --> E[Mineral Storage]\n    A --> F[Blood Cell Production]\n    B --> G[Framework for body]\n    C --> H[Protect vital organs]\n    D --> I[Attachment for muscles]\n    E --> J[Calcium & Phosphorus]\n    F --> K[Hematopoiesis]"
+    },
+    {
+      "type": "heading",
+      "text": "Bone Structure and Composition"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bones consist of compact (dense) bone on the outside and spongy (cancellous) bone on the inside. The periosteum is a fibrous membrane covering the outer surface. The endosteum lines the inner surface. Bone cells include osteoblasts (bone-forming), osteocytes (mature bone cells), and osteoclasts (bone-destroying). The bone matrix is composed of organic components (collagen fibers, proteoglycans) for flexibility and inorganic mineral salts (hydroxyapatite, calcium phosphate) for hardness and strength."
+    },
+    {
+      "type": "mermaid",
+      "title": "Bone Structure",
+      "code": "graph TD\n    A[Bone Structure] --> B[Compact Bone]\n    A --> C[Spongy Bone]\n    A --> D[Periosteum]\n    A --> E[Endosteum]\n    A --> F[Bone Marrow]\n    B --> G[Outer layer]\n    C --> H[Inner trabeculae]\n    D --> I[Outer membrane]\n    E --> J[Inner lining]"
+    },
+    {
+      "type": "heading",
+      "text": "Bone Development and Growth"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bones develop through two processes: Intramembranous ossification (bones develop directly from mesenchymal tissue, e.g., cranial bones) and Endochondral ossification (bones develop from cartilage models, e.g., long bones). Bone growth occurs at the epiphyseal plates in growing children. Bone remodeling is the continuous process of bone resorption and formation, regulated by hormones (growth hormone, estrogen, testosterone) and mechanical stress."
+    },
+    {
+      "type": "mermaid",
+      "title": "Bone Development",
+      "code": "graph LR\n    A[Intramembranous] --> B[Skull bones]\n    A --> C[Direct formation]\n    D[Endochondral] --> E[Long bones]\n    D --> F[Cartilage model]\n    F --> G[Ossification]\n    G --> H[Bone formed]"
+    },
+    {
+      "type": "heading",
+      "text": "Axial and Appendicular Skeleton"
+    },
+    {
+      "type": "paragraph",
+      "text": "The axial skeleton (80 bones) includes the skull, vertebral column, rib cage, and sternum. The appendicular skeleton (126 bones) includes the pectoral girdle (clavicles, scapulae), upper limbs (humerus, radius, ulna, carpals, metacarpals, phalanges), pelvic girdle (hip bones), and lower limbs (femur, tibia, fibula, tarsals, metatarsals, phalanges)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Axial vs Appendicular Skeleton",
+      "code": "graph TD\n    A[Skeleton] --> B[Axial 80 bones]\n    A --> C[Appendicular 126 bones]\n    B --> D[Skull]\n    B --> E[Vertebral Column]\n    B --> F[Rib Cage]\n    C --> G[Pectoral Girdle]\n    C --> H[Upper Limbs]\n    C --> I[Pelvic Girdle]\n    C --> J[Lower Limbs]"
+    },
+    {
+      "type": "heading",
+      "text": "Joints and Articulations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Joints are where two or more bones meet. Joints are classified by structure: Fibrous joints (sutures of the skull, immovable), Cartilaginous joints (pubic symphysis, slightly movable), and Synovial joints (freely movable, contain synovial fluid). Types of synovial joints include: Ball-and-socket (shoulder, hip), Hinge (elbow, knee), Pivot (atlantoaxial), Condyloid (wrist), Saddle (thumb), and Gliding (carpals)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Joint Classification",
+      "code": "graph TD\n    A[Joints] --> B[Fibrous]\n    A --> C[Cartilaginous]\n    A --> D[Synovial]\n    B --> E[Sutures - Immovable]\n    C --> F[Public symphysis - Slightly movable]\n    D --> G[Ball & Socket]\n    D --> H[Hinge]\n    D --> I[Pivot]\n    D --> J[Gliding]"
+    },
+    {
+      "type": "chart",
+      "title": "Types of Synovial Joints and Range of Motion",
+      "labels": ["Ball & Socket", "Hinge", "Pivot", "Condyloid", "Saddle", "Gliding"],
+      "data": [360, 180, 180, 180, 180, 90],
+      "label": "Degrees of Motion",
+      "x_label": "Joint Type"
+    }
+  ]
+}

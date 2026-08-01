@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the definition of physiology?",
+      "options": ["Study of body structure", "Study of body function", "Study of body chemistry", "Study of body disease"],
+      "correct_answer": "Study of body function",
+      "explanation": "Physiology is the study of how the body functions, focusing on mechanisms and processes at all levels of organization."
+    },
+    {
+      "id": 2,
+      "question": "What is homeostasis?",
+      "options": ["Abnormal body state", "Maintenance of stable internal environment", "Body temperature regulation", "Blood pressure control"],
+      "correct_answer": "Maintenance of stable internal environment",
+      "explanation": "Homeostasis is the maintenance of a stable internal environment despite external changes, essential for normal body function."
+    },
+    {
+      "id": 3,
+      "question": "What is a negative feedback loop?",
+      "options": ["A loop that amplifies a stimulus", "A loop that counteracts a stimulus", "A loop that has no effect", "A loop that causes disease"],
+      "correct_answer": "A loop that counteracts a stimulus",
+      "explanation": "Negative feedback loops counteract changes to maintain homeostasis. They are the most common type of feedback loop in the body."
+    },
+    {
+      "id": 4,
+      "question": "What is the normal core body temperature?",
+      "options": ["35°C", "37°C", "39°C", "41°C"],
+      "correct_answer": "37°C",
+      "explanation": "Normal core body temperature is approximately 37°C (98.6°F), maintained by homeostatic mechanisms."
+    },
+    {
+      "id": 5,
+      "question": "What percentage of body weight is water?",
+      "options": ["40%", "60%", "80%", "90%"],
+      "correct_answer": "60%",
+      "explanation": "Approximately 60% of body weight is water, distributed between intracellular and extracellular compartments."
+    },
+    {
+      "id": 6,
+      "question": "What is the main intracellular cation?",
+      "options": ["Na+", "K+", "Ca2+", "Cl-"],
+      "correct_answer": "K+",
+      "explanation": "Potassium (K+) is the main intracellular cation, while sodium (Na+) is the main extracellular cation."
+    },
+    {
+      "id": 7,
+      "question": "What is a positive feedback loop?",
+      "options": ["A loop that counteracts a stimulus", "A loop that amplifies a stimulus", "A loop that has no effect", "A loop that maintains balance"],
+      "correct_answer": "A loop that amplifies a stimulus",
+      "explanation": "Positive feedback loops amplify an initial stimulus, leading to a cascade effect (e.g., childbirth contractions)."
+    },
+    {
+      "id": 8,
+      "question": "What is the normal pH range of blood?",
+      "options": ["7.0-7.2", "7.35-7.45", "7.5-7.7", "6.8-7.0"],
+      "correct_answer": "7.35-7.45",
+      "explanation": "Normal blood pH is tightly regulated between 7.35 and 7.45. Values outside this range indicate acidosis or alkalosis."
+    }
+  ]
+}

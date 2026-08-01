@@ -1,0 +1,78 @@
+{
+  "title": "Cell Physiology & Membrane Transport",
+  "content": [
+    {
+      "type": "heading",
+      "text": "The Cell: Structure and Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cell is the basic structural and functional unit of the body. Key cellular components include: The Plasma Membrane (phospholipid bilayer with embedded proteins), Nucleus (contains DNA, controls cell activities), Cytoplasm (cytosol + organelles), Mitochondria (ATP production, powerhouses), Endoplasmic Reticulum (protein and lipid synthesis), Golgi Apparatus (protein modification and packaging), Lysosomes (digestion and waste removal), Ribosomes (protein synthesis), and the Cytoskeleton (maintains cell shape and provides movement)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Cell Structure",
+      "code": "graph TD\n    A[Cell] --> B[Plasma Membrane]\n    A --> C[Nucleus]\n    A --> D[Cytoplasm]\n    A --> E[Organelles]\n    E --> F[Mitochondria]\n    E --> G[ER]\n    E --> H[Golgi]\n    E --> I[Ribosomes]\n    E --> J[Lysosomes]"
+    },
+    {
+      "type": "heading",
+      "text": "The Plasma Membrane"
+    },
+    {
+      "type": "paragraph",
+      "text": "The plasma membrane is a selective barrier composed of phospholipids, cholesterol, and proteins. The phospholipid bilayer has hydrophilic heads facing outward and hydrophobic tails facing inward. Membrane proteins include: Integral proteins (span the membrane, function as channels, carriers, or receptors) and Peripheral proteins (associated with membrane surface, function in signaling or support). Cholesterol stabilizes the membrane and regulates fluidity. Membrane carbohydrates are involved in cell recognition and adhesion."
+    },
+    {
+      "type": "mermaid",
+      "title": "Plasma Membrane Structure",
+      "code": "graph TD\n    A[Plasma Membrane] --> B[Phospholipid Bilayer]\n    A --> C[Proteins]\n    A --> D[Cholesterol]\n    A --> E[Carbohydrates]\n    B --> F[Hydrophilic Heads]\n    B --> G[Hydrophobic Tails]\n    C --> H[Integral Proteins]\n    C --> I[Peripheral Proteins]"
+    },
+    {
+      "type": "heading",
+      "text": "Membrane Transport Mechanisms"
+    },
+    {
+      "type": "paragraph",
+      "text": "Substances cross the membrane through various mechanisms: Passive Transport (no energy required) includes Simple Diffusion (movement down concentration gradient), Facilitated Diffusion (via carrier proteins), and Osmosis (water movement through aquaporins). Active Transport (requires ATP) includes Primary Active Transport (direct ATP use, e.g., Na+/K+ pump), and Secondary Active Transport (uses electrochemical gradient, e.g., glucose transport). Vesicular Transport includes Endocytosis (phagocytosis, pinocytosis) and Exocytosis (release of molecules)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Membrane Transport Types",
+      "code": "graph TD\n    A[Membrane Transport] --> B[Passive Transport]\n    A --> C[Active Transport]\n    A --> D[Vesicular Transport]\n    B --> E[Simple Diffusion]\n    B --> F[Facilitated Diffusion]\n    B --> G[Osmosis]\n    C --> H[Primary Active]\n    C --> I[Secondary Active]\n    D --> J[Endocytosis]\n    D --> K[Exocytosis]"
+    },
+    {
+      "type": "heading",
+      "text": "The Na+/K+ Pump"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Na+/K+ ATPase pump is essential for maintaining cellular ion gradients. It pumps 3 Na+ out of the cell and 2 K+ into the cell for each ATP hydrolyzed. This maintains a high K+ and low Na+ inside the cell, which is crucial for establishing the resting membrane potential. The pump also drives secondary active transport of glucose and amino acids. Ouabain, a cardiac glycoside, inhibits the Na+/K+ pump, increasing intracellular Na+ and Ca2+, which enhances cardiac contractility."
+    },
+    {
+      "type": "mermaid",
+      "title": "Na+/K+ Pump Mechanism",
+      "code": "graph LR\n    A[3 Na+ inside] --> B[ATP binds]\n    B --> C[Phosphorylation]\n    C --> D[Conformation change]\n    D --> E[3 Na+ released outside]\n    E --> F[2 K+ bind]\n    F --> G[Dephosphorylation]\n    G --> H[2 K+ released inside]"
+    },
+    {
+      "type": "heading",
+      "text": "Resting Membrane Potential"
+    },
+    {
+      "type": "paragraph",
+      "text": "All cells maintain a resting membrane potential (RMP), typically -70 mV in neurons. The RMP results from: Unequal distribution of ions (K+ concentrated inside, Na+ outside), Selective permeability of the membrane (more permeable to K+ than Na+), and the activity of the Na+/K+ pump. The Nernst equation calculates the equilibrium potential for a single ion. The Goldman-Hodgkin-Katz equation accounts for multiple ions. Changes in membrane potential underlie all electrical signaling in excitable tissues."
+    },
+    {
+      "type": "mermaid",
+      "title": "Resting Membrane Potential",
+      "code": "graph LR\n    A[K+ channels open] --> B[K+ moves out]\n    B --> C[Inside becomes negative]\n    C --> D[Na+ moves in]\n    D --> E[Na+/K+ pump maintains]\n    E --> F[RMP -70mV]"
+    },
+    {
+      "type": "chart",
+      "title": "Ion Concentrations (Intracellular vs Extracellular)",
+      "labels": ["Na+", "K+", "Cl-", "Ca2+"],
+      "data": [15, 140, 10, 0.0001],
+      "label": "Intracellular (mM)",
+      "x_label": "Ion"
+    }
+  ]
+}

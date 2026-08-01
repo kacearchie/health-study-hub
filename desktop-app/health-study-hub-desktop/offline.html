@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Health Study Hub - Offline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f8fafc;
+            color: #0f172a;
+        }
+        .container {
+            text-align: center;
+            max-width: 450px;
+            padding: 2rem;
+        }
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: #475569;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 0.3rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #1d4ed8;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2563eb;
+            border: 1px solid #2563eb;
+        }
+        .btn-secondary:hover {
+            background: #dbeafe;
+        }
+        .offline-features {
+            text-align: left;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .offline-features h3 {
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+        }
+        .offline-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .offline-features li {
+            padding: 0.3rem 0;
+            color: #475569;
+        }
+        .offline-features li:before {
+            content: "✅ ";
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        .status-online {
+            background: #10b981;
+        }
+        .status-offline {
+            background: #ef4444;
+        }
+        .status-text {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">📶</div>
+        <h1>You're Offline</h1>
+        <p>Don't worry! You can still access your downloaded content.</p>
+
+        <div class="offline-features">
+            <h3>📚 Available Offline:</h3>
+            <ul>
+                <li>📖 Downloaded Notes</li>
+                <li>📝 Downloaded Quizzes</li>
+                <li>🃏 Your Flashcards</li>
+                <li>📋 Study Tasks</li>
+                <li>❌ Wrong Bank</li>
+            </ul>
+        </div>
+
+        <div>
+            <button class="btn" onclick="retryConnection()">🔄 Retry Connection</button>
+            <button class="btn btn-secondary" onclick="openOfflineReader()">📖 Read Offline</button>
+        </div>
+
+        <div class="status-text">
+            <span class="status-indicator status-offline" id="statusDot"></span>
+            <span id="statusText">Offline Mode</span>
+        </div>
+    </div>
+
+    <script>
+        // Check if online
+        function updateStatus() {
+            const dot = document.getElementById('statusDot');
+            const text = document.getElementById('statusText');
+            if (navigator.onLine) {
+                dot.className = 'status-indicator status-online';
+                text.textContent = 'Online - Try connecting';
+            } else {
+                dot.className = 'status-indicator status-offline';
+                text.textContent = 'Offline Mode';
+            }
+        }
+
+        function retryConnection() {
+            if (navigator.onLine) {
+                window.location.href = '/';
+            } else {
+                alert('Still offline. Please check your internet connection.');
+                updateStatus();
+            }
+        }
+
+        function openOfflineReader() {
+            // Try to open offline reader if available
+            window.location.href = 'offline-reader.html';
+        }
+
+        // Listen for online/offline events
+        window.addEventListener('online', () => {
+            updateStatus();
+            // Auto redirect when back online
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 2000);
+        });
+
+        window.addEventListener('offline', updateStatus);
+
+        // Initial status
+        updateStatus();
+    </script>
+</body>
+</html>

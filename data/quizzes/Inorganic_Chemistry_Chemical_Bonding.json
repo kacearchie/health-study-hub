@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which type of bond is formed by the transfer of electrons?",
+      "options": ["Covalent bond", "Ionic bond", "Hydrogen bond", "Metallic bond"],
+      "correct_answer": "Ionic bond",
+      "explanation": "Ionic bonds form when electrons are transferred from a metal to a nonmetal, creating oppositely charged ions that attract each other."
+    },
+    {
+      "id": 2,
+      "question": "What type of bond is formed by the sharing of electrons?",
+      "options": ["Ionic bond", "Covalent bond", "Hydrogen bond", "Metallic bond"],
+      "correct_answer": "Covalent bond",
+      "explanation": "Covalent bonds form when atoms share electron pairs to achieve stable electron configurations."
+    },
+    {
+      "id": 3,
+      "question": "What is the VSEPR geometry of methane (CH4)?",
+      "options": ["Linear", "Trigonal planar", "Tetrahedral", "Octahedral"],
+      "correct_answer": "Tetrahedral",
+      "explanation": "Methane (CH4) has four bonding pairs and no lone pairs, giving a tetrahedral geometry with bond angles of 109.5°."
+    },
+    {
+      "id": 4,
+      "question": "What is the bond angle in a trigonal planar molecule?",
+      "options": ["90°", "109.5°", "120°", "180°"],
+      "correct_answer": "120°",
+      "explanation": "Trigonal planar molecules (like BF3) have bond angles of 120° around the central atom."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following molecules is polar?",
+      "options": ["CO2", "CH4", "H2O", "CCl4"],
+      "correct_answer": "H2O",
+      "explanation": "Water (H2O) is polar due to its bent shape and the electronegativity difference between O and H, creating a dipole moment."
+    },
+    {
+      "id": 6,
+      "question": "What type of intermolecular force is the strongest?",
+      "options": ["London dispersion forces", "Dipole-dipole forces", "Hydrogen bonding", "Ionic forces"],
+      "correct_answer": "Hydrogen bonding",
+      "explanation": "Hydrogen bonds are the strongest type of intermolecular force. They occur when H is bonded to N, O, or F."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is an example of a covalent compound?",
+      "options": ["NaCl", "MgO", "H2O", "KBr"],
+      "correct_answer": "H2O",
+      "explanation": "Water (H2O) is a covalent compound where electrons are shared between oxygen and hydrogen atoms."
+    },
+    {
+      "id": 8,
+      "question": "What is the shape of a molecule with 4 bonding pairs and 0 lone pairs?",
+      "options": ["Linear", "Trigonal planar", "Tetrahedral", "Trigonal pyramidal"],
+      "correct_answer": "Tetrahedral",
+      "explanation": "Four bonding pairs and no lone pairs gives a tetrahedral shape with 109.5° bond angles (e.g., CH4)."
+    }
+  ]
+}

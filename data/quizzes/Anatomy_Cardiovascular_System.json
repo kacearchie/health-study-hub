@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which chamber of the heart pumps blood to the lungs?",
+      "options": ["Right atrium", "Right ventricle", "Left atrium", "Left ventricle"],
+      "correct_answer": "Right ventricle",
+      "explanation": "The right ventricle pumps deoxygenated blood through the pulmonary artery to the lungs for oxygenation."
+    },
+    {
+      "id": 2,
+      "question": "What is the pacemaker of the heart?",
+      "options": ["AV node", "SA node", "Bundle of His", "Purkinje fibers"],
+      "correct_answer": "SA node",
+      "explanation": "The sinoatrial (SA) node is the natural pacemaker of the heart, generating impulses at 60-100 beats per minute."
+    },
+    {
+      "id": 3,
+      "question": "What is the function of the mitral valve?",
+      "options": ["Prevents backflow from left ventricle to left atrium", "Prevents backflow from right ventricle to right atrium", "Prevents backflow from aorta to left ventricle", "Prevents backflow from pulmonary artery"],
+      "correct_answer": "Prevents backflow from left ventricle to left atrium",
+      "explanation": "The mitral (bicuspid) valve prevents backflow of blood from the left ventricle into the left atrium during ventricular contraction."
+    },
+    {
+      "id": 4,
+      "question": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+      "options": ["Pulmonary artery", "Pulmonary vein", "Aorta", "Vena cava"],
+      "correct_answer": "Pulmonary vein",
+      "explanation": "The pulmonary veins carry oxygenated blood from the lungs to the left atrium. There are four pulmonary veins."
+    },
+    {
+      "id": 5,
+      "question": "What is the normal average cardiac output at rest?",
+      "options": ["2.5 L/min", "5 L/min", "10 L/min", "15 L/min"],
+      "correct_answer": "5 L/min",
+      "explanation": "Average cardiac output at rest is approximately 5 L/min (heart rate × stroke volume = 70 bpm × 70 mL = 4.9 L/min)."
+    },
+    {
+      "id": 6,
+      "question": "Which component of the ECG represents ventricular depolarization?",
+      "options": ["P wave", "QRS complex", "T wave", "PR interval"],
+      "correct_answer": "QRS complex",
+      "explanation": "The QRS complex represents ventricular depolarization (contraction). The P wave represents atrial depolarization."
+    },
+    {
+      "id": 7,
+      "question": "What is the functional unit of the cardiovascular system?",
+      "options": ["Heart", "Blood vessel", "Capillary", "Blood"],
+      "correct_answer": "Capillary",
+      "explanation": "Capillaries are the functional units of the cardiovascular system where gas and nutrient exchange occurs between blood and tissues."
+    },
+    {
+      "id": 8,
+      "question": "Which is the largest artery in the body?",
+      "options": ["Pulmonary artery", "Carotid artery", "Aorta", "Femoral artery"],
+      "correct_answer": "Aorta",
+      "explanation": "The aorta is the largest artery in the body. It carries oxygenated blood from the left ventricle to the systemic circulation."
+    }
+  ]
+}

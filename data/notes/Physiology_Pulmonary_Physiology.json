@@ -1,0 +1,52 @@
+{
+  "title": "Pulmonary Physiology",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Pulmonary Ventilation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pulmonary ventilation is the movement of air into and out of the lungs. Inspiration is active (diaphragm and intercostal muscles contract), expiration is passive (muscles relax). Lung pressures: Atmospheric pressure (760 mmHg), Intrapleural pressure (-4 mmHg), Alveolar pressure (0 to -1 mmHg). Compliance is the ease of lung expansion (decreased in fibrosis, pulmonary edema). Surfactant reduces surface tension in alveoli, preventing collapse. Pulmonary volumes include Tidal Volume (500 mL), Inspiratory Reserve Volume, Expiratory Reserve Volume, and Residual Volume."
+    },
+    {
+      "type": "mermaid",
+      "title": "Lung Pressures and Ventilation",
+      "code": "graph LR\n    A[Atmospheric Pressure] --> B[Alveolar Pressure]\n    B --> C[Intrapleural Pressure]\n    C --> D[Transpulmonary Pressure]\n    D --> E[Lung Expansion]"
+    },
+    {
+      "type": "chart",
+      "title": "Lung Volumes and Capacities",
+      "labels": ["Tidal", "IRV", "ERV", "RV", "VC", "TLC"],
+      "data": [500, 3000, 1200, 1200, 4700, 6000],
+      "label": "Volume (mL)",
+      "x_label": "Measurement"
+    },
+    {
+      "type": "heading",
+      "text": "Gas Exchange and Transport"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gas exchange occurs by diffusion across the respiratory membrane. Oxygen moves from alveoli (PO2=100 mmHg) to pulmonary capillaries (PO2=40 mmHg). CO2 moves from pulmonary capillaries (PCO2=45 mmHg) to alveoli (PCO2=40 mmHg). Oxygen is transported in blood by: Dissolved in plasma (1.5%), Bound to hemoglobin as oxyhemoglobin (98.5%). CO2 is transported as: Dissolved in plasma (7%), Bound to hemoglobin as carbaminohemoglobin (23%), Bicarbonate ions (70%) via carbonic anhydrase. The oxygen-hemoglobin dissociation curve is sigmoidal, affected by pH, temperature, and 2,3-DPG (Bohr effect)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Gas Exchange",
+      "code": "graph LR\n    A[Alveolus O2=100, CO2=40] --> B[Diffusion]\n    B --> C[Blood O2=40, CO2=45]\n    C --> D[Hemoglobin binds O2]\n    D --> E[O2 transported]\n    C --> F[CO2 → Bicarbonate]\n    F --> G[CO2 transported]"
+    },
+    {
+      "type": "heading",
+      "text": "Regulation of Breathing"
+    },
+    {
+      "type": "paragraph",
+      "text": "The respiratory center in the medulla oblongata and pons regulates breathing. Medullary respiratory groups generate the basic rhythm. Dorsal respiratory group (inspiration), Ventral respiratory group (expiration). Pontine respiratory center modulates the rhythm. Chemoreceptors monitor blood gases: Central chemoreceptors (respond to CO2 and H+ in CSF), Peripheral chemoreceptors (carotid and aortic bodies, respond to O2, CO2, H+). Inflation reflex (Hering-Breuer) prevents over-inflation. Hypoxia stimulates ventilation via peripheral chemoreceptors."
+    },
+    {
+      "type": "mermaid",
+      "title": "Control of Breathing",
+      "code": "graph TD\n    A[Medullary Respiratory Center] --> B[Inspiration]\n    A --> C[Expiration]\n    D[Chemoreceptors] --> A\n    D --> E[CO2, H+, O2]\n    F[Higher Centers] --> A\n    G[Lung Receptors] --> A"
+    }
+  ]
+}

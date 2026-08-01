@@ -1,0 +1,78 @@
+{
+  "title": "Introductory Biochemistry: Carbohydrates",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Carbohydrates"
+    },
+    {
+      "type": "paragraph",
+      "text": "Carbohydrates are polyhydroxy aldehydes or ketones with the general formula (CH2O)n. They are the most abundant organic molecules in nature. Functions include: Energy source (glucose is the primary fuel), Energy storage (glycogen, starch), Structural components (cellulose, chitin), Cell recognition (glycoproteins, glycolipids), and Metabolic intermediates. Carbohydrates are classified by the number of sugar units: Monosaccharides (1), Disaccharides (2), Oligosaccharides (3-10), and Polysaccharides (>10)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Carbohydrate Classification",
+      "code": "graph TD\n    A[Carbohydrates] --> B[Monosaccharides]\n    A --> C[Disaccharides]\n    A --> D[Oligosaccharides]\n    A --> E[Polysaccharides]\n    B --> F[Glucose, Fructose]\n    C --> G[Sucrose, Lactose]\n    E --> H[Starch, Glycogen]\n    E --> I[Cellulose, Chitin]"
+    },
+    {
+      "type": "heading",
+      "text": "Monosaccharides"
+    },
+    {
+      "type": "paragraph",
+      "text": "Monosaccharides are the simplest carbohydrates, with 3-6 carbons. Hexoses (C6H12O6) are most important: Glucose (blood sugar, main energy source), Fructose (fruit sugar, sweetest), Galactose (milk sugar component). Monosaccharides exist as linear chains and ring structures. Anomers (α and β) differ at the anomeric carbon (C1). Mutarotation is the interconversion between anomers. Monosaccharides can be aldoses (aldehyde group) or ketoses (ketone group)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Monosaccharide Structures",
+      "code": "graph TD\n    A[Monosaccharides] --> B[Hexoses]\n    A --> C[Pentoses]\n    B --> D[Glucose]\n    B --> E[Fructose]\n    B --> F[Galactose]\n    C --> G[Ribose]\n    C --> H[Deoxyribose]\n    D --> I[Blood sugar]\n    E --> J[Fruit sugar]\n    G --> K[RNA]\n    H --> L[DNA]"
+    },
+    {
+      "type": "heading",
+      "text": "Disaccharides"
+    },
+    {
+      "type": "paragraph",
+      "text": "Disaccharides consist of two monosaccharides linked by glycosidic bonds. Maltose (glucose + glucose) is a maltase product. Sucrose (glucose + fructose) is table sugar. Lactose (galactose + glucose) is milk sugar. Glycosidic bonds are formed by condensation reactions and can be α or β. Enzymes hydrolyze disaccharides: Maltase, Sucrase, and Lactase. Lactose intolerance results from reduced lactase activity."
+    },
+    {
+      "type": "mermaid",
+      "title": "Common Disaccharides",
+      "code": "graph LR\n    A[Maltose] --> B[Glucose + Glucose]\n    C[Sucrose] --> D[Glucose + Fructose]\n    E[Lactose] --> F[Galactose + Glucose]"
+    },
+    {
+      "type": "heading",
+      "text": "Polysaccharides"
+    },
+    {
+      "type": "paragraph",
+      "text": "Polysaccharides are long chains of monosaccharides linked by glycosidic bonds. Starch (plant energy storage) consists of amylose (linear α-1,4) and amylopectin (branched α-1,4 and α-1,6). Glycogen (animal energy storage, highly branched) is stored in liver and muscles. Cellulose (plant structural) is β-1,4 linked, indigestible by humans. Chitin (exoskeletons) is β-1,4 linked N-acetylglucosamine. Glycogenolysis breaks down glycogen, while glycogenesis synthesizes it."
+    },
+    {
+      "type": "mermaid",
+      "title": "Polysaccharide Structure",
+      "code": "graph TD\n    A[Polysaccharides] --> B[Starch]\n    A --> C[Glycogen]\n    A --> D[Cellulose]\n    A --> E[Chitin]\n    B --> F[Amylose]\n    B --> G[Amylopectin]\n    F --> H[linear α-1,4]\n    G --> I[branched α-1,4/1,6]\n    C --> J[branched α-1,4/1,6]\n    D --> K[linear β-1,4]"
+    },
+    {
+      "type": "heading",
+      "text": "Carbohydrate Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Carbohydrates serve multiple functions: Energy (glucose is the primary fuel, yield 4 kcal/g), Energy storage (glycogen in animals, starch in plants), Structural (cellulose in plants, chitin in arthropods), Cell recognition (glycoproteins, glycolipids on cell surfaces), Lubrication (glycosaminoglycans in joints), and Blood group antigens (glycolipids on RBCs). The glycemic index indicates how quickly carbohydrates raise blood glucose. Complex carbohydrates with fiber have lower glycemic responses."
+    },
+    {
+      "type": "mermaid",
+      "title": "Functions of Carbohydrates",
+      "code": "graph TD\n    A[Carbohydrates] --> B[Energy Source]\n    A --> C[Storage]\n    A --> D[Structural]\n    A --> E[Cell Recognition]\n    B --> F[Glucose]\n    C --> G[Glycogen, Starch]\n    D --> H[Cellulose, Chitin]"
+    },
+    {
+      "type": "chart",
+      "title": "Glycemic Index of Common Foods",
+      "labels": ["Glucose", "White Bread", "Apple", "Lentils", "Sucrose"],
+      "data": [100, 70, 40, 30, 65],
+      "label": "Glycemic Index",
+      "x_label": "Food"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the normal average cardiac output at rest?",
+      "options": ["2.5 L/min", "5 L/min", "10 L/min", "15 L/min"],
+      "correct_answer": "5 L/min",
+      "explanation": "Average cardiac output at rest is approximately 5 L/min (heart rate × stroke volume = 70 bpm × 70 mL = 4.9 L/min)."
+    },
+    {
+      "id": 2,
+      "question": "What is the pacemaker of the heart?",
+      "options": ["AV node", "SA node", "Bundle of His", "Purkinje fibers"],
+      "correct_answer": "SA node",
+      "explanation": "The sinoatrial (SA) node is the natural pacemaker of the heart, generating impulses at 60-100 beats per minute."
+    },
+    {
+      "id": 3,
+      "question": "What is the Frank-Starling law?",
+      "options": ["Heart rate increases with exercise", "Stroke volume increases with increased preload", "Blood pressure increases with exercise", "Cardiac output decreases with age"],
+      "correct_answer": "Stroke volume increases with increased preload",
+      "explanation": "The Frank-Starling law states that stroke volume increases with increased preload (end-diastolic volume) due to greater myocardial stretch."
+    },
+    {
+      "id": 4,
+      "question": "What does the QRS complex on an ECG represent?",
+      "options": ["Atrial depolarization", "Ventricular depolarization", "Ventricular repolarization", "Atrial repolarization"],
+      "correct_answer": "Ventricular depolarization",
+      "explanation": "The QRS complex represents ventricular depolarization (contraction). The P wave represents atrial depolarization."
+    },
+    {
+      "id": 5,
+      "question": "What is the normal heart rate range for a healthy adult at rest?",
+      "options": ["40-60 bpm", "60-100 bpm", "100-120 bpm", "120-140 bpm"],
+      "correct_answer": "60-100 bpm",
+      "explanation": "Normal resting heart rate for a healthy adult is 60-100 beats per minute."
+    },
+    {
+      "id": 6,
+      "question": "What is cardiac output?",
+      "options": ["Heart rate × Stroke volume", "Heart rate ÷ Stroke volume", "Stroke volume ÷ Heart rate", "Blood pressure × Heart rate"],
+      "correct_answer": "Heart rate × Stroke volume",
+      "explanation": "Cardiac output = Heart rate × Stroke volume. It is the volume of blood pumped by the heart per minute."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following increases heart rate?",
+      "options": ["Parasympathetic stimulation", "Sympathetic stimulation", "Vagal stimulation", "Acetylcholine release"],
+      "correct_answer": "Sympathetic stimulation",
+      "explanation": "Sympathetic stimulation (norepinephrine) increases heart rate and contractility. Parasympathetic stimulation (vagal) decreases heart rate."
+    },
+    {
+      "id": 8,
+      "question": "What is the normal systolic blood pressure?",
+      "options": ["60-80 mmHg", "80-100 mmHg", "90-120 mmHg", "120-140 mmHg"],
+      "correct_answer": "90-120 mmHg",
+      "explanation": "Normal systolic blood pressure is approximately 90-120 mmHg. Normal diastolic blood pressure is 60-80 mmHg."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the function of the mitochondria?",
+      "options": ["Protein synthesis", "ATP production", "Waste disposal", "Cell division"],
+      "correct_answer": "ATP production",
+      "explanation": "Mitochondria are the powerhouses of the cell, producing ATP through oxidative phosphorylation."
+    },
+    {
+      "id": 2,
+      "question": "What is the resting membrane potential of a typical neuron?",
+      "options": ["-70 mV", "+30 mV", "0 mV", "-90 mV"],
+      "correct_answer": "-70 mV",
+      "explanation": "The resting membrane potential of a typical neuron is approximately -70 mV, maintained by ion gradients and the Na+/K+ pump."
+    },
+    {
+      "id": 3,
+      "question": "Which ion is responsible for establishing the resting membrane potential?",
+      "options": ["Na+", "K+", "Ca2+", "Cl-"],
+      "correct_answer": "K+",
+      "explanation": "K+ is the primary ion responsible for establishing the resting membrane potential due to its high membrane permeability."
+    },
+    {
+      "id": 4,
+      "question": "What type of transport requires ATP?",
+      "options": ["Simple diffusion", "Facilitated diffusion", "Active transport", "Osmosis"],
+      "correct_answer": "Active transport",
+      "explanation": "Active transport requires ATP to move substances against their concentration gradient."
+    },
+    {
+      "id": 5,
+      "question": "What is the function of the Na+/K+ pump?",
+      "options": ["Pumps Na+ in, K+ out", "Pumps Na+ out, K+ in", "Pumps both in", "Pumps both out"],
+      "correct_answer": "Pumps Na+ out, K+ in",
+      "explanation": "The Na+/K+ pump moves 3 Na+ out of the cell and 2 K+ into the cell, maintaining concentration gradients."
+    },
+    {
+      "id": 6,
+      "question": "What is osmosis?",
+      "options": ["Movement of solutes", "Movement of water across a membrane", "Movement of ions", "Movement of proteins"],
+      "correct_answer": "Movement of water across a membrane",
+      "explanation": "Osmosis is the movement of water across a selectively permeable membrane from high water concentration to low water concentration."
+    },
+    {
+      "id": 7,
+      "question": "Which organelle is involved in protein synthesis?",
+      "options": ["Mitochondria", "Ribosomes", "Lysosomes", "Golgi apparatus"],
+      "correct_answer": "Ribosomes",
+      "explanation": "Ribosomes are the site of protein synthesis, translating mRNA into polypeptide chains."
+    },
+    {
+      "id": 8,
+      "question": "What is the function of the plasma membrane?",
+      "options": ["ATP production", "Selective barrier", "Protein synthesis", "Waste removal"],
+      "correct_answer": "Selective barrier",
+      "explanation": "The plasma membrane is a selective barrier that controls what enters and exits the cell."
+    }
+  ]
+}

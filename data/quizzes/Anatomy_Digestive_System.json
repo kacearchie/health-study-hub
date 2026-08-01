@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which organ produces bile?",
+      "options": ["Stomach", "Pancreas", "Liver", "Gallbladder"],
+      "correct_answer": "Liver",
+      "explanation": "The liver produces bile, which is stored in the gallbladder and released into the small intestine to emulsify fats."
+    },
+    {
+      "id": 2,
+      "question": "What is the primary site of nutrient absorption in the digestive system?",
+      "options": ["Stomach", "Small intestine", "Large intestine", "Esophagus"],
+      "correct_answer": "Small intestine",
+      "explanation": "The small intestine is the primary site of nutrient absorption, with its villi and microvilli greatly increasing surface area."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is NOT an accessory organ of the digestive system?",
+      "options": ["Liver", "Pancreas", "Gallbladder", "Stomach"],
+      "correct_answer": "Stomach",
+      "explanation": "The stomach is part of the alimentary canal. Accessory organs include the liver, pancreas, gallbladder, and salivary glands."
+    },
+    {
+      "id": 4,
+      "question": "What is the function of the large intestine?",
+      "options": ["Digestion of proteins", "Absorption of nutrients", "Water and electrolyte absorption", "Production of bile"],
+      "correct_answer": "Water and electrolyte absorption",
+      "explanation": "The large intestine absorbs water, electrolytes, and some vitamins from undigested food, forming feces for elimination."
+    },
+    {
+      "id": 5,
+      "question": "Which enzyme digests proteins in the stomach?",
+      "options": ["Amylase", "Lipase", "Pepsin", "Trypsin"],
+      "correct_answer": "Pepsin",
+      "explanation": "Pepsin is the primary protein-digesting enzyme in the stomach, activated by the acidic environment."
+    },
+    {
+      "id": 6,
+      "question": "What is the function of the gallbladder?",
+      "options": ["Produces bile", "Stores and concentrates bile", "Digests proteins", "Produces insulin"],
+      "correct_answer": "Stores and concentrates bile",
+      "explanation": "The gallbladder stores and concentrates bile produced by the liver, releasing it when needed for fat digestion."
+    },
+    {
+      "id": 7,
+      "question": "What is peristalsis?",
+      "options": ["Churning of food in the stomach", "Wave-like muscle contractions moving food along the digestive tract", "Bile production", "Hormone secretion"],
+      "correct_answer": "Wave-like muscle contractions moving food along the digestive tract",
+      "explanation": "Peristalsis is the wave-like contractions of smooth muscle that propel food through the digestive tract."
+    },
+    {
+      "id": 8,
+      "question": "Where is the appendix located?",
+      "options": ["At the junction of the small and large intestine", "At the stomach", "At the esophagus", "At the rectum"],
+      "correct_answer": "At the junction of the small and large intestine",
+      "explanation": "The appendix is a small, finger-like projection attached to the cecum at the junction of the small and large intestines."
+    }
+  ]
+}

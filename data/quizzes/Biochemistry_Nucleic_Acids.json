@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the monomer of nucleic acids?",
+      "options": ["Monosaccharide", "Fatty acid", "Amino acid", "Nucleotide"],
+      "correct_answer": "Nucleotide",
+      "explanation": "Nucleic acids (DNA and RNA) are polymers of nucleotides."
+    },
+    {
+      "id": 2,
+      "question": "What type of bond links nucleotides in DNA?",
+      "options": ["Glycosidic bond", "Peptide bond", "Phosphodiester bond", "Hydrogen bond"],
+      "correct_answer": "Phosphodiester bond",
+      "explanation": "Nucleotides in DNA and RNA are linked by phosphodiester bonds between the 3' and 5' carbons of sugars."
+    },
+    {
+      "id": 3,
+      "question": "What is the complementarity rule for DNA base pairing?",
+      "options": ["A-C, G-T", "A-T, G-C", "A-G, T-C", "A-U, G-C"],
+      "correct_answer": "A-T, G-C",
+      "explanation": "In DNA, adenine (A) pairs with thymine (T) and guanine (G) pairs with cytosine (C)."
+    },
+    {
+      "id": 4,
+      "question": "Which base is found in RNA but not in DNA?",
+      "options": ["Adenine", "Guanine", "Cytosine", "Uracil"],
+      "correct_answer": "Uracil",
+      "explanation": "Uracil (U) is found in RNA instead of thymine (T), which is found in DNA."
+    },
+    {
+      "id": 5,
+      "question": "What is the function of mRNA?",
+      "options": ["Carries genetic code from DNA to ribosomes", "Brings amino acids to the ribosome", "Forms the ribosome", "Regulates gene expression"],
+      "correct_answer": "Carries genetic code from DNA to ribosomes",
+      "explanation": "mRNA (messenger RNA) carries the genetic code from DNA to ribosomes for protein synthesis."
+    },
+    {
+      "id": 6,
+      "question": "What is the central dogma of molecular biology?",
+      "options": ["DNA → RNA → Protein", "Protein → RNA → DNA", "RNA → DNA → Protein", "DNA → Protein → RNA"],
+      "correct_answer": "DNA → RNA → Protein",
+      "explanation": "The central dogma states that genetic information flows from DNA to RNA to Protein."
+    },
+    {
+      "id": 7,
+      "question": "What is the function of tRNA?",
+      "options": ["Carries genetic code", "Brings amino acids to the ribosome", "Forms the ribosome", "Regulates gene expression"],
+      "correct_answer": "Brings amino acids to the ribosome",
+      "explanation": "tRNA (transfer RNA) brings amino acids to the ribosome during translation, recognizing codons through anticodons."
+    },
+    {
+      "id": 8,
+      "question": "What is a codon?",
+      "options": ["A single nucleotide", "A sequence of three nucleotides coding for an amino acid", "A sequence of amino acids", "A protein"],
+      "correct_answer": "A sequence of three nucleotides coding for an amino acid",
+      "explanation": "A codon is a sequence of three nucleotides in mRNA that codes for a specific amino acid or stop signal."
+    }
+  ]
+}

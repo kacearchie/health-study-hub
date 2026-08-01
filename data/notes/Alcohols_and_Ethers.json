@@ -1,0 +1,102 @@
+{
+  "title": "20.2 Alcohols and Ethers",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Alcohols and Ethers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Incorporation of an oxygen atom into carbon- and hydrogen-containing molecules leads to new functional groups. When oxygen is attached by single bonds, the molecule is either an alcohol (R-OH) or an ether (R-O-R')."
+    },
+    {
+      "type": "heading",
+      "text": "Alcohols"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alcohols are derivatives of hydrocarbons where an -OH group has replaced a hydrogen atom. Unlike ionic hydroxides (NaOH), the -OH group in alcohols is covalently bonded to carbon. Ethanol (CH3CH2OH) is the most important alcohol for human use, produced by fermentation of sugars."
+    },
+    {
+      "type": "mermaid",
+      "title": "Alcohol Classification",
+      "code": "graph TD\n    A[ALCOHOLS] --> B[Primary 1 Degree]\n    A --> C[Secondary 2 Degree]\n    A --> D[Tertiary 3 Degree]\n    B --> E[Example: Ethanol CH3CH2OH]\n    C --> F[Example: 2-Propanol]\n    D --> G[Example: 2-Methyl-2-propanol]\n    style A fill:#2563eb,color:#fff\n    style B fill:#16a34a,color:#fff\n    style C fill:#ca8a04,color:#fff\n    style D fill:#dc2626,color:#fff"
+    },
+    {
+      "type": "heading",
+      "text": "Naming Alcohols"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alcohols are named by replacing the final -e of the parent alkane with -ol. The position of the -OH group is indicated by a number. For example, CH3CH2CH2OH is 1-propanol, and CH3CH(OH)CH3 is 2-propanol (or propan-2-ol in the new IUPAC style)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Alcohol Nomenclature Examples",
+      "code": "graph LR\n    A[Methanol CH3OH] --> B[Ethanol CH3CH2OH]\n    B --> C[1-Propanol]\n    C --> D[2-Propanol]\n    D --> E[2-Methyl-2-propanol]"
+    },
+    {
+      "type": "heading",
+      "text": "Polyhydric Alcohols"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alcohols can contain multiple -OH groups. Important examples include: 1,2-ethanediol (ethylene glycol) used in antifreeze, and 1,2,3-propanetriol (glycerine) used as a solvent in cosmetics and medicines."
+    },
+    {
+      "type": "mermaid",
+      "title": "Polyhydric Alcohols",
+      "code": "graph LR\n    A[Ethylene Glycol\nHOCH2CH2OH] --> B[Antifreeze]\n    C[Glycerine\nHOCH2CHOHCH2OH] --> D[Cosmetics Solvent]"
+    },
+    {
+      "type": "heading",
+      "text": "Ethers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ethers contain the functional group -O- connecting two carbon groups. In IUPAC nomenclature, the smaller carbon branch is named as an alkoxy substituent. Common names list both branches followed by 'ether'. Diethyl ether (C2H5OC2H5) was historically used as an anesthetic."
+    },
+    {
+      "type": "mermaid",
+      "title": "Ether Nomenclature",
+      "code": "graph LR\n    A[Diethyl Ether\nC2H5-O-C2H5] --> B[Ethoxyethane IUPAC]\n    C[MTBE\nCH3-O-C(CH3)3] --> D[Gasoline Additive]"
+    },
+    {
+      "type": "heading",
+      "text": "Synthesis of Ethers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ethers can be prepared by the acid-catalyzed elimination of water from two alcohol molecules. For example, heating ethanol with sulfuric acid produces diethyl ether and water: 2 CH3CH2OH → CH3CH2OCH2CH3 + H2O"
+    },
+    {
+      "type": "heading",
+      "text": "Carbohydrates: Biological Ethers and Alcohols"
+    },
+    {
+      "type": "paragraph",
+      "text": "Carbohydrates are large biomolecules with the general formula Cm(H2O)n. They contain both alcohol groups and ether linkages. Monosaccharides (like glucose and fructose) are simple sugars. Disaccharides (like lactose and sucrose) consist of two monosaccharides linked by an ether bond. Polysaccharides (like starch and cellulose) are polymers of sugars."
+    },
+    {
+      "type": "mermaid",
+      "title": "Carbohydrate Classification",
+      "code": "graph TD\n    A[Carbohydrates] --> B[Monosaccharides 1 sugar]\n    A --> C[Disaccharides 2 sugars]\n    A --> D[Oligosaccharides few]\n    A --> E[Polysaccharides many]\n    B --> F[Glucose Fructose]\n    C --> G[Lactose Sucrose]\n    E --> H[Starch Cellulose]\n    style A fill:#7c3aed,color:#fff"
+    },
+    {
+      "type": "heading",
+      "text": "Diabetes and Carbohydrates"
+    },
+    {
+      "type": "paragraph",
+      "text": "Diabetes is a group of metabolic diseases characterized by high blood sugar. It may be caused by insufficient insulin production or by the body's cells not responding properly to insulin. Prevention involves healthy diet, exercise, and maintaining normal body weight. Treatment may require insulin injections and lifestyle changes."
+    },
+    {
+      "type": "chart",
+      "title": "Blood Glucose Levels in Diabetes",
+      "labels": ["Normal", "Prediabetes", "Diabetes"],
+      "data": [5.6, 7.0, 11.1],
+      "label": "Fasting Blood Glucose (mmol/L)",
+      "x_label": "Condition"
+    }
+  ]
+}

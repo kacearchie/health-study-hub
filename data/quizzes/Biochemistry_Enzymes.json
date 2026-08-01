@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the function of enzymes?",
+      "options": ["Store energy", "Catalyze reactions", "Transport oxygen", "Store genetic information"],
+      "correct_answer": "Catalyze reactions",
+      "explanation": "Enzymes are biological catalysts that speed up chemical reactions without being consumed."
+    },
+    {
+      "id": 2,
+      "question": "What is the active site of an enzyme?",
+      "options": ["The region where substrate binds", "The region where ATP is produced", "The region where the enzyme is stored", "The region where the enzyme is synthesized"],
+      "correct_answer": "The region where substrate binds",
+      "explanation": "The active site is the specific region of an enzyme where the substrate binds and catalysis occurs."
+    },
+    {
+      "id": 3,
+      "question": "What is a coenzyme?",
+      "options": ["A metal ion", "A protein", "A small organic molecule", "A carbohydrate"],
+      "correct_answer": "A small organic molecule",
+      "explanation": "A coenzyme is a small organic molecule (often derived from vitamins) that assists enzymes in catalysis."
+    },
+    {
+      "id": 4,
+      "question": "What is Km in enzyme kinetics?",
+      "options": ["Maximum reaction rate", "Substrate concentration at half Vmax", "Enzyme concentration", "Inhibition constant"],
+      "correct_answer": "Substrate concentration at half Vmax",
+      "explanation": "Km (Michaelis constant) is the substrate concentration at which the reaction rate is half of Vmax, indicating substrate affinity."
+    },
+    {
+      "id": 5,
+      "question": "What type of inhibition cannot be overcome by increasing substrate concentration?",
+      "options": ["Competitive", "Non-competitive", "Uncompetitive", "All of the above"],
+      "correct_answer": "Non-competitive",
+      "explanation": "Non-competitive inhibitors bind to the allosteric site and cannot be overcome by increasing substrate concentration."
+    },
+    {
+      "id": 6,
+      "question": "What is the rate-limiting enzyme in glycolysis?",
+      "options": ["Hexokinase", "Phosphofructokinase-1", "Pyruvate kinase", "Glucokinase"],
+      "correct_answer": "Phosphofructokinase-1",
+      "explanation": "PFK-1 is the rate-limiting enzyme of glycolysis, regulated by ATP, AMP, and fructose-2,6-bisphosphate."
+    },
+    {
+      "id": 7,
+      "question": "What is the effect of temperature on enzyme activity?",
+      "options": ["Always increases", "Always decreases", "Increases then decreases", "No effect"],
+      "correct_answer": "Increases then decreases",
+      "explanation": "Enzyme activity increases with temperature until the optimum, then decreases due to denaturation."
+    },
+    {
+      "id": 8,
+      "question": "What is an allosteric enzyme?",
+      "options": ["An enzyme with an active site only", "An enzyme with regulatory sites for effector binding", "An enzyme that is always active", "An enzyme that requires ATP"],
+      "correct_answer": "An enzyme with regulatory sites for effector binding",
+      "explanation": "Allosteric enzymes have regulatory sites where effectors bind to modulate activity, often showing sigmoidal kinetics."
+    }
+  ]
+}

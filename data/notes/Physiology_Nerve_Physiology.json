@@ -1,0 +1,73 @@
+{
+  "title": "Excitable Tissues: Nerve Physiology",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Neurons and Their Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "Neurons are excitable cells specialized for electrical signaling. They exhibit: Excitability (ability to respond to stimuli), Conductivity (ability to transmit signals), and Secretion (release of neurotransmitters). Neurons have four functional regions: Dendrites (receive input), Cell body (integrates input), Axon hillock (action potential initiation), and Axon (conducts signals). Myelination increases conduction velocity by saltatory conduction. Unmyelinated axons conduct signals more slowly."
+    },
+    {
+      "type": "mermaid",
+      "title": "Neuron Structure",
+      "code": "graph LR\n    A[Dendrites] --> B[Cell Body]\n    B --> C[Axon Hillock]\n    C --> D[Axon]\n    D --> E[Axon Terminals]\n    F[Myelin Sheath] --> D"
+    },
+    {
+      "type": "heading",
+      "text": "Graded Potentials"
+    },
+    {
+      "type": "paragraph",
+      "text": "Graded potentials are local, decremental changes in membrane potential that occur in dendrites and cell bodies. They result from the opening of ligand-gated or mechanically-gated channels. Graded potentials can be depolarizing (excitatory, making the cell more positive) or hyperpolarizing (inhibitory, making the cell more negative). They are graded in amplitude (proportional to stimulus strength) and decremental (decrease with distance). When sufficient graded potentials reach the axon hillock, they trigger an action potential."
+    },
+    {
+      "type": "heading",
+      "text": "Action Potentials"
+    },
+    {
+      "type": "paragraph",
+      "text": "An action potential is a rapid, all-or-none reversal of membrane potential. It follows the all-or-none law: once threshold (-55 mV) is reached, the action potential is generated at full amplitude. The phases include: Depolarization (Na+ channels open, Na+ rushes in), Repolarization (Na+ channels inactivate, K+ channels open, K+ rushes out), and Hyperpolarization (K+ channels remain open briefly). The refractory period ensures unidirectional propagation and limits firing frequency."
+    },
+    {
+      "type": "mermaid",
+      "title": "Action Potential Phases",
+      "code": "graph LR\n    A[Resting -70mV] --> B[Threshold -55mV]\n    B --> C[Depolarization Na+ enters]\n    C --> D[Repolarization K+ exits]\n    D --> E[Hyperpolarization]\n    E --> F[Return to Resting]"
+    },
+    {
+      "type": "chart",
+      "title": "Action Potential Graph",
+      "labels": ["RMP", "Threshold", "Peak", "Repolarization", "Hyperpolarization"],
+      "data": [-70, -55, 30, -80, -90],
+      "label": "Membrane Potential (mV)",
+      "x_label": "Phase"
+    },
+    {
+      "type": "heading",
+      "text": "Synaptic Transmission"
+    },
+    {
+      "type": "paragraph",
+      "text": "Synaptic transmission is the process of signal transmission between neurons. Two main types: Electrical synapses (gap junctions, rapid, bidirectional) and Chemical synapses (neurotransmitter-mediated, slower, unidirectional). Chemical synaptic transmission involves: Action potential arrives at presynaptic terminal, Voltage-gated Ca2+ channels open, Synaptic vesicles fuse with membrane and release neurotransmitter, Neurotransmitter diffuses across synaptic cleft and binds to postsynaptic receptors, Ion channels open causing EPSP or IPSP, and Neurotransmitter is removed by reuptake or enzymatic breakdown."
+    },
+    {
+      "type": "mermaid",
+      "title": "Chemical Synaptic Transmission",
+      "code": "graph LR\n    A[Action Potential] --> B[Ca2+ enters]\n    B --> C[Vesicles fuse]\n    C --> D[NT released]\n    D --> E[NT binds receptor]\n    E --> F[Ion channels open]\n    F --> G[EPSP or IPSP]"
+    },
+    {
+      "type": "heading",
+      "text": "Neurotransmitters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Neurotransmitters are chemical messengers that transmit signals across synapses. Major neurotransmitters include: Acetylcholine (ACh) - neuromuscular junctions, autonomic ganglia; Glutamate - main excitatory NT in CNS; GABA - main inhibitory NT in CNS; Dopamine - reward, movement, motivation; Serotonin - mood, appetite, sleep; Norepinephrine - alertness, fight-or-flight; Glycine - inhibitory in spinal cord; Substance P - pain transmission; Endorphins - pain inhibition (natural opiates)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Major Neurotransmitters",
+      "code": "graph TD\n    A[Neurotransmitters] --> B[Acetylcholine]\n    A --> C[Glutamate]\n    A --> D[GABA]\n    A --> E[Dopamine]\n    A --> F[Serotonin]\n    A --> G[Norepinephrine]\n    B --> H[Neuromuscular]\n    C --> I[Excitatory CNS]\n    D --> J[Inhibitory CNS]\n    E --> K[Reward]\n    F --> L[Mood]\n    G --> M[Fight-or-Flight]"
+    }
+  ]
+}

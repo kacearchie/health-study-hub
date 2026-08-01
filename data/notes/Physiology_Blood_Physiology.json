@@ -1,0 +1,78 @@
+{
+  "title": "Blood Physiology",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Functions and Composition of Blood"
+    },
+    {
+      "type": "paragraph",
+      "text": "Blood is a specialized connective tissue with multiple functions: Transportation (oxygen, nutrients, wastes, hormones), Regulation (pH, temperature, fluid balance), and Protection (immune defense, clotting). Blood consists of plasma (55%) and formed elements (45%). Plasma is 92% water plus proteins (albumin, globulins, fibrinogen), electrolytes, nutrients, gases, and wastes. Formed elements include erythrocytes (RBCs), leukocytes (WBCs), and thrombocytes (platelets)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Blood Composition",
+      "code": "graph TD\n    A[Blood] --> B[Plasma 55%]\n    A --> C[Formed Elements 45%]\n    B --> D[Water 92%]\n    B --> E[Proteins 7%]\n    B --> F[Solutes 1%]\n    C --> G[RBCs 44%]\n    C --> H[WBCs 1%]\n    C --> I[Platelets]"
+    },
+    {
+      "type": "heading",
+      "text": "Erythrocytes (Red Blood Cells)"
+    },
+    {
+      "type": "paragraph",
+      "text": "RBCs are biconcave discs without nuclei, optimized for oxygen transport. They contain hemoglobin, composed of heme (iron-containing group) and globin (protein chains). Hemoglobin binds O2 in the lungs and releases it in tissues (oxyhemoglobin to deoxyhemoglobin). It also transports CO2 (carbaminohemoglobin). Erythropoiesis (RBC production) occurs in bone marrow, stimulated by erythropoietin (EPO). RBCs have a lifespan of ~120 days, destroyed in the spleen and liver. Iron is recycled."
+    },
+    {
+      "type": "mermaid",
+      "title": "Hemoglobin Structure",
+      "code": "graph TD\n    A[Hemoglobin] --> B[Heme]\n    A --> C[Globin]\n    B --> D[Iron-containing]\n    B --> E[O2 binding site]\n    C --> F[4 polypeptide chains]\n    F --> G[2 alpha chains]\n    F --> H[2 beta chains]"
+    },
+    {
+      "type": "heading",
+      "text": "Leukocytes (White Blood Cells)"
+    },
+    {
+      "type": "paragraph",
+      "text": "WBCs are immune cells involved in defense. Granulocytes include: Neutrophils (most common, phagocytose bacteria), Eosinophils (fight parasites, involved in allergies), Basophils (release histamine, inflammatory response). Agranulocytes include: Lymphocytes (B cells produce antibodies, T cells destroy infected cells, NK cells destroy tumors), Monocytes (become macrophages, phagocytose pathogens and debris). Leukocytosis (increased WBCs) indicates infection. Leukopenia (decreased WBCs) may indicate viral infection or bone marrow suppression."
+    },
+    {
+      "type": "mermaid",
+      "title": "WBC Types",
+      "code": "graph TD\n    A[Leukocytes] --> B[Granulocytes]\n    A --> C[Agranulocytes]\n    B --> D[Neutrophils]\n    B --> E[Eosinophils]\n    B --> F[Basophils]\n    C --> G[Lymphocytes]\n    C --> H[Monocytes]"
+    },
+    {
+      "type": "heading",
+      "text": "Hemostasis and Coagulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hemostasis is the process of stopping bleeding. It involves three stages: Vascular spasm (vasoconstriction to reduce blood flow), Platelet plug formation (platelets adhere and aggregate at injury site), and Coagulation (blood clotting). The coagulation cascade can be intrinsic (activated by contact with damaged vessels) or extrinsic (activated by tissue factor). Thrombin converts fibrinogen to fibrin, forming a mesh that traps platelets and RBCs. Clot retraction and fibrinolysis (plasmin breaks down fibrin) occur after healing."
+    },
+    {
+      "type": "mermaid",
+      "title": "Coagulation Cascade",
+      "code": "graph TD\n    A[Injury] --> B[Vascular Spasm]\n    B --> C[Platelet Plug]\n    C --> D[Coagulation Cascade]\n    D --> E[Prothrombin → Thrombin]\n    E --> F[Fibrinogen → Fibrin]\n    F --> G[Clot Formation]"
+    },
+    {
+      "type": "heading",
+      "text": "Blood Groups and Transfusions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Blood groups are determined by antigens (agglutinogens) on RBC surfaces. The ABO system has A, B, AB, and O types. Type O is the universal donor, Type AB is the universal recipient. The Rh system (D antigen) determines Rh+ or Rh-. Rh incompatibility between Rh- mother and Rh+ fetus can cause erythroblastosis fetalis. Cross-matching is performed before transfusion to prevent hemolytic transfusion reactions (agglutination and hemolysis)."
+    },
+    {
+      "type": "mermaid",
+      "title": "ABO Blood Groups",
+      "code": "graph LR\n    A[Type A] --> B[Anti-B antibodies]\n    C[Type B] --> D[Anti-A antibodies]\n    E[Type AB] --> F[No antibodies]\n    G[Type O] --> H[Anti-A and Anti-B]"
+    },
+    {
+      "type": "chart",
+      "title": "Blood Group Distribution",
+      "labels": ["O+", "A+", "B+", "AB+", "O-", "A-", "B-", "AB-"],
+      "data": [44, 42, 10, 4, 1, 1, 0.5, 0.5],
+      "label": "Population (%)",
+      "x_label": "Blood Type"
+    }
+  ]
+}

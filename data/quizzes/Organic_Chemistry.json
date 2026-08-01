@@ -1,0 +1,74 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the general formula for a noncyclic alkane?",
+      "options": ["CnH2n", "CnH2n+2", "CnH2n-2", "CnHn"],
+      "correct_answer": "CnH2n+2",
+      "explanation": "Noncyclic alkanes have the formula CnH2n+2. This ensures that each carbon has four bonds (tetravalent)."
+    },
+    {
+      "id": 2,
+      "question": "What type of hybridization do carbon atoms in an alkene have?",
+      "options": ["sp", "sp2", "sp3", "dsp2"],
+      "correct_answer": "sp2",
+      "explanation": "Alkenes contain carbon-carbon double bonds, which require sp2 hybridization with trigonal planar geometry (120 degree bond angles)."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is an aromatic hydrocarbon?",
+      "options": ["Ethane", "Ethene", "Benzene", "Ethyne"],
+      "correct_answer": "Benzene",
+      "explanation": "Benzene (C6H6) is the simplest aromatic hydrocarbon with a ring of delocalized pi electrons."
+    },
+    {
+      "id": 4,
+      "question": "What type of reaction do alkenes typically undergo?",
+      "options": ["Substitution", "Addition", "Elimination", "Combustion"],
+      "correct_answer": "Addition",
+      "explanation": "Alkenes undergo addition reactions where the pi bond breaks and two new sigma bonds form. For example: C2H4 + Br2 → C2H4Br2."
+    },
+    {
+      "id": 5,
+      "question": "Which functional group is found in alcohols?",
+      "options": ["-OH", "-CHO", "-COOH", "-NH2"],
+      "correct_answer": "-OH",
+      "explanation": "Alcohols contain the hydroxyl group (-OH) attached to a carbon atom. Examples include ethanol (CH3CH2OH) and methanol (CH3OH)."
+    },
+    {
+      "id": 6,
+      "question": "What is the IUPAC name for CH3CH(OH)CH3?",
+      "options": ["1-Propanol", "2-Propanol", "Propanal", "Acetone"],
+      "correct_answer": "2-Propanol",
+      "explanation": "The -OH group is on the middle carbon (carbon 2) of the three-carbon propane chain. In the new IUPAC style, this would be propan-2-ol."
+    },
+    {
+      "id": 7,
+      "question": "Which functional group is present in esters?",
+      "options": ["-OH", "-CHO", "-COOR", "-NH2"],
+      "correct_answer": "-COOR",
+      "explanation": "Esters contain a carbonyl group attached to an alkoxy group (R-COO-R'). They are formed from carboxylic acids and alcohols."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a ketone?",
+      "options": ["CH3CHO", "CH3COCH3", "HCOOH", "CH3CH2OH"],
+      "correct_answer": "CH3COCH3",
+      "explanation": "Acetone (CH3COCH3) has a carbonyl group bonded to two carbon groups, making it a ketone."
+    },
+    {
+      "id": 9,
+      "question": "What is the functional group of an amide?",
+      "options": ["-CONH2", "-NH2", "-COOH", "-COOR"],
+      "correct_answer": "-CONH2",
+      "explanation": "Amides contain a carbonyl group attached to a nitrogen atom (R-CONH2). They are formed from carboxylic acids and amines."
+    },
+    {
+      "id": 10,
+      "question": "What type of alcohol cannot be oxidized?",
+      "options": ["Primary", "Secondary", "Tertiary", "All can be oxidized"],
+      "correct_answer": "Tertiary",
+      "explanation": "Tertiary alcohols lack a C-H bond on the carbon bearing the -OH, so they cannot be oxidized."
+    }
+  ]
+}

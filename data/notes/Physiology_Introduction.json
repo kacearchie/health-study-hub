@@ -1,0 +1,60 @@
+{
+  "title": "General, Excitable Tissues, Blood & Cardiopulmonary Physiology: Introduction",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Human Physiology"
+    },
+    {
+      "type": "paragraph",
+      "text": "Physiology is the study of how the body functions. It focuses on mechanisms and processes at the cellular, tissue, organ, and system levels. Homeostasis is the maintenance of a stable internal environment despite external changes. The body uses negative feedback loops (most common) to counteract changes and positive feedback loops to amplify changes. Key homeostatic mechanisms regulate temperature, pH, blood pressure, glucose, and ion concentrations."
+    },
+    {
+      "type": "mermaid",
+      "title": "Homeostasis Feedback Loops",
+      "code": "graph TD\n    A[Stimulus] --> B[Receptor Detects]\n    B --> C[Control Center]\n    C --> D[Effector Responds]\n    D --> E[Response]\n    E --> F[Negative Feedback\nReturn to Normal]\n    F --> A"
+    },
+    {
+      "type": "heading",
+      "text": "Homeostatic Control Systems"
+    },
+    {
+      "type": "paragraph",
+      "text": "The body's control systems are hierarchical: Local control (within a tissue), Reflex control (nervous and endocrine systems), and Higher-order control (brain integration). The nervous system provides rapid, short-term responses. The endocrine system provides slower, long-term responses through hormones. Both systems work together to maintain homeostasis. The hypothalamus serves as the master control center, integrating neural and endocrine signals."
+    },
+    {
+      "type": "mermaid",
+      "title": "Control Systems Hierarchy",
+      "code": "graph TD\n    A[Control Systems] --> B[Local Control]\n    A --> C[Reflex Control]\n    A --> D[Higher-Order Control]\n    C --> E[Nervous System]\n    C --> F[Endocrine System]\n    D --> G[Brain Integration]"
+    },
+    {
+      "type": "heading",
+      "text": "Body Fluid Compartments"
+    },
+    {
+      "type": "paragraph",
+      "text": "Total body water is distributed between two major compartments: Intracellular Fluid (ICF) - 2/3 of body water inside cells and Extracellular Fluid (ECF) - 1/3 of body water outside cells. The ECF is further divided into Interstitial Fluid (between cells) and Plasma (liquid part of blood). The composition of these compartments is tightly regulated. ICF has high K+ and low Na+, while ECF has high Na+ and low K+. Osmotic equilibrium between compartments is maintained by water movement."
+    },
+    {
+      "type": "mermaid",
+      "title": "Body Fluid Compartments",
+      "code": "graph TD\n    A[Total Body Water] --> B[Intracellular Fluid 2/3]\n    A --> C[Extracellular Fluid 1/3]\n    C --> D[Interstitial Fluid 3/4]\n    C --> E[Plasma 1/4]\n    B --> F[High K+]\n    B --> G[Low Na+]\n    D --> H[High Na+]\n    D --> I[Low K+]"
+    },
+    {
+      "type": "heading",
+      "text": "Homeostatic Imbalances"
+    },
+    {
+      "type": "paragraph",
+      "text": "Disruption of homeostasis can lead to disease or death. Dehydration occurs when water loss exceeds intake, leading to increased osmolarity and ADH release. Edema results from abnormal fluid accumulation in tissues due to increased capillary pressure or decreased plasma proteins. Acidosis (low blood pH) or Alkalosis (high blood pH) can result from respiratory or metabolic disturbances. The body's buffer systems (bicarbonate, phosphate, proteins) help maintain pH within the narrow range of 7.35-7.45."
+    },
+    {
+      "type": "chart",
+      "title": "Normal Physiological Ranges",
+      "labels": ["Body Temperature", "Blood pH", "Blood Glucose", "Heart Rate", "Blood Pressure"],
+      "data": [37, 7.4, 90, 72, 120],
+      "label": "Normal Value",
+      "x_label": "Parameter"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Where is sperm produced in the male reproductive system?",
+      "options": ["Prostate", "Seminal vesicles", "Testes", "Epididymis"],
+      "correct_answer": "Testes",
+      "explanation": "Sperm is produced in the seminiferous tubules of the testes through spermatogenesis."
+    },
+    {
+      "id": 2,
+      "question": "What is the function of the ovaries?",
+      "options": ["Produce sperm", "Produce ova and hormones", "Store urine", "Produce milk"],
+      "correct_answer": "Produce ova and hormones",
+      "explanation": "The ovaries produce ova (egg cells) and secrete female sex hormones (estrogen and progesterone)."
+    },
+    {
+      "id": 3,
+      "question": "Where does fertilization typically occur?",
+      "options": ["Uterus", "Ovary", "Fallopian tube", "Vagina"],
+      "correct_answer": "Fallopian tube",
+      "explanation": "Fertilization typically occurs in the ampulla of the fallopian tube (oviduct)."
+    },
+    {
+      "id": 4,
+      "question": "What is the function of the prostate gland?",
+      "options": ["Produces sperm", "Produces seminal fluid", "Stores urine", "Produces testosterone"],
+      "correct_answer": "Produces seminal fluid",
+      "explanation": "The prostate gland produces a milky fluid that contributes to semen, helping to nourish and protect sperm."
+    },
+    {
+      "id": 5,
+      "question": "What is the average duration of the menstrual cycle?",
+      "options": ["21 days", "28 days", "35 days", "40 days"],
+      "correct_answer": "28 days",
+      "explanation": "The average menstrual cycle is 28 days, though it can vary from 21 to 35 days and still be normal."
+    },
+    {
+      "id": 6,
+      "question": "What hormone triggers ovulation in females?",
+      "options": ["Estrogen", "Progesterone", "LH surge", "FSH"],
+      "correct_answer": "LH surge",
+      "explanation": "A surge in Luteinizing Hormone (LH) triggers ovulation, the release of the mature ovum from the ovary."
+    },
+    {
+      "id": 7,
+      "question": "What is the function of the epididymis?",
+      "options": ["Produces sperm", "Matures and stores sperm", "Produces seminal fluid", "Transports urine"],
+      "correct_answer": "Matures and stores sperm",
+      "explanation": "The epididymis is where sperm mature and are stored until ejaculation."
+    },
+    {
+      "id": 8,
+      "question": "Which hormone is primarily responsible for male secondary sex characteristics?",
+      "options": ["Estrogen", "Progesterone", "Testosterone", "LH"],
+      "correct_answer": "Testosterone",
+      "explanation": "Testosterone is the primary male sex hormone responsible for secondary sex characteristics like facial hair, voice deepening, and muscle growth."
+    }
+  ]
+}

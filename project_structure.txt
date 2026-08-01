@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\health_study_hub\
+├── app.py
+├── requirements.txt     ✅
+├── Procfile             ✅
+├── runtime.txt          ✅
+├── .env
+├── .gitignore
+├── data/
+│   ├── notes/
+│   └── quizzes/
+├── templates/
+│   └── index.html
+└── static/
+    └── sw.js

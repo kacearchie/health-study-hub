@@ -1,0 +1,78 @@
+{
+  "title": "Introductory Biochemistry: Lipids",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Lipids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lipids are hydrophobic (water-insoluble) organic molecules. They are diverse in structure and function. Functions include: Energy storage (triglycerides yield 9 kcal/g), Structural (cell membranes), Signaling (hormones, eicosanoids), Protection (insulation, cushioning), and Transport (lipoproteins). Lipids are classified into: Fatty acids, Triglycerides (fats/oils), Phospholipids, Steroids, Eicosanoids, and Lipoproteins. They are amphipathic (contain both hydrophobic and hydrophilic regions) in membrane lipids."
+    },
+    {
+      "type": "mermaid",
+      "title": "Lipid Classification",
+      "code": "graph TD\n    A[Lipids] --> B[Fatty Acids]\n    A --> C[Triglycerides]\n    A --> D[Phospholipids]\n    A --> E[Steroids]\n    A --> F[Eicosanoids]\n    B --> G[Saturated/Unsaturated]\n    C --> H[Fats/Oils]\n    D --> I[Membrane components]\n    E --> J[Cholesterol, Hormones]\n    F --> K[Prostaglandins]"
+    },
+    {
+      "type": "heading",
+      "text": "Fatty Acids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fatty acids are carboxylic acids with long hydrocarbon chains. Saturated fatty acids have no double bonds (solid at RT, e.g., palmitic acid, stearic acid). Unsaturated fatty acids have double bonds (liquid at RT, e.g., oleic acid, linoleic acid). Essential fatty acids (linoleic, linolenic) cannot be synthesized by the body and must be obtained from the diet. Trans fats are unsaturated fats with trans configuration, associated with cardiovascular disease. The omega (ω) designation indicates the position of the first double bond from the methyl end."
+    },
+    {
+      "type": "mermaid",
+      "title": "Fatty Acid Structure",
+      "code": "graph LR\n    A[Saturated] --> B[No double bonds]\n    A --> C[Solid at RT]\n    D[Unsaturated] --> E[Double bonds]\n    D --> F[Liquid at RT]\n    G[Essential] --> H[Must be dietary]\n    G --> I[Linoleic, Linolenic]"
+    },
+    {
+      "type": "chart",
+      "title": "Fatty Acid Melting Points",
+      "labels": ["Palmitic", "Stearic", "Oleic", "Linoleic", "Linolenic"],
+      "data": [63, 70, 13, -5, -11],
+      "label": "Melting Point (°C)",
+      "x_label": "Fatty Acid"
+    },
+    {
+      "type": "heading",
+      "text": "Triglycerides and Phospholipids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Triglycerides (triacylglycerols) are composed of glycerol with three fatty acids attached by ester bonds. They are the main form of energy storage. Phospholipids have glycerol, two fatty acids, and a phosphate group with a head group (choline, ethanolamine, serine, inositol). Phospholipids are amphipathic, forming bilayers (the basis of cell membranes). Sphingolipids are similar but based on sphingosine. Cholesterol is a steroid lipid, maintaining membrane fluidity and serving as a precursor for steroid hormones and bile acids."
+    },
+    {
+      "type": "mermaid",
+      "title": "Phospholipid Structure",
+      "code": "graph LR\n    A[Glycerol] --> B[2 Fatty Acids]\n    A --> C[Phosphate]\n    C --> D[Head Group]\n    D --> E[Choline/Serine]\n    B --> F[Hydrophobic Tails]\n    D --> G[Hydrophilic Head]"
+    },
+    {
+      "type": "heading",
+      "text": "Lipoproteins and Steroids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lipoproteins transport lipids in blood: Chylomicrons (dietary lipids), VLDL (endogenous triglycerides), LDL ('bad' cholesterol, delivers cholesterol to tissues), HDL ('good' cholesterol, removes cholesterol from tissues). Cholesterol is synthesized in the liver and is a precursor for: Bile salts (emulsification), Steroid hormones (cortisol, aldosterone, sex hormones), Vitamin D, and Cell membranes. Eicosanoids (prostaglandins, thromboxanes, leukotrienes) are derived from arachidonic acid and are involved in inflammation, pain, and blood clotting."
+    },
+    {
+      "type": "mermaid",
+      "title": "Lipoprotein Classes",
+      "code": "graph TD\n    A[Lipoproteins] --> B[Chylomicrons]\n    A --> C[VLDL]\n    A --> D[LDL]\n    A --> E[HDL]\n    B --> F[Transport dietary fats]\n    C --> G[Endogenous fats]\n    D --> H[Bad Cholesterol]\n    E --> I[Good Cholesterol]"
+    },
+    {
+      "type": "heading",
+      "text": "Cholesterol and Steroid Hormones"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cholesterol is a precursor for all steroid hormones. These include: Glucocorticoids (cortisol - stress response, metabolism), Mineralocorticoids (aldosterone - salt balance), Androgens (testosterone - male characteristics), Estrogens (estradiol - female characteristics), and Progestins (progesterone - pregnancy). Cholesterol is also the precursor for vitamin D (after UV exposure in skin). Bile acids are synthesized from cholesterol for lipid digestion. Cholesterol synthesis is regulated by HMG-CoA reductase (target of statin drugs)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Steroid Hormone Pathways",
+      "code": "graph LR\n    A[Cholesterol] --> B[Cortisol]\n    A --> C[Aldosterone]\n    A --> D[Testosterone]\n    A --> E[Estradiol]\n    A --> F[Vitamin D]"
+    }
+  ]
+}

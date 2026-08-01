@@ -1,0 +1,65 @@
+{
+  "title": "Introductory Biochemistry: Proteins",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Proteins"
+    },
+    {
+      "type": "paragraph",
+      "text": "Proteins are polymers of amino acids, the most abundant and diverse biomolecules. Functions include: Catalysis (enzymes), Structure (collagen, keratin), Transport (hemoglobin, lipoproteins), Defense (antibodies), Signaling (hormones, receptors), Movement (actin, myosin), and Regulation (transcription factors). Proteins exhibit four levels of organization: Primary (amino acid sequence), Secondary (α-helices, β-sheets), Tertiary (3D structure), and Quaternary (multisubunit complexes)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Protein Functions",
+      "code": "graph TD\n    A[Proteins] --> B[Catalysis]\n    A --> C[Structure]\n    A --> D[Transport]\n    A --> E[Defense]\n    A --> F[Signaling]\n    A --> G[Movement]\n    B --> H[Enzymes]\n    C --> I[Collagen, Keratin]\n    D --> J[Hemoglobin]\n    E --> K[Antibodies]\n    F --> L[Hormones, Receptors]\n    G --> M[Actin, Myosin]"
+    },
+    {
+      "type": "heading",
+      "text": "Amino Acids"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are 20 standard amino acids, each with a central carbon (Cα), amino group (NH2), carboxyl group (COOH), hydrogen, and a variable side chain (R group). Amino acids are classified as: Nonpolar (hydrophobic - alanine, valine, leucine, etc.), Polar (hydrophilic - serine, threonine, etc.), Charged (acidic - aspartic acid, glutamic acid; basic - lysine, arginine, histidine). Essential amino acids cannot be synthesized by the body and must be obtained from the diet (histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Amino Acid Classification",
+      "code": "graph TD\n    A[Amino Acids] --> B[Nonpolar]\n    A --> C[Polar]\n    A --> D[Acidic]\n    A --> E[Basic]\n    B --> F[Ala, Val, Leu, Ile]\n    C --> G[Ser, Thr, Tyr]\n    D --> H[Asp, Glu]\n    E --> I[Lys, Arg, His]"
+    },
+    {
+      "type": "heading",
+      "text": "Protein Structure Levels"
+    },
+    {
+      "type": "paragraph",
+      "text": "Primary structure: Linear sequence of amino acids connected by peptide bonds (formed by condensation reactions). Secondary structure: Local folding into α-helices (right-handed, stabilized by H-bonds) and β-sheets (parallel/antiparallel, stabilized by H-bonds). Tertiary structure: Overall 3D folding of a single polypeptide, stabilized by hydrophobic interactions, H-bonds, disulfide bonds, and ionic bonds. Quaternary structure: Assembly of multiple polypeptide subunits (e.g., hemoglobin with 2α+2β subunits). Protein folding is guided by chaperones. Misfolding leads to diseases (prion diseases, Alzheimer's)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Protein Structure Levels",
+      "code": "graph TD\n    A[Protein Structure] --> B[Primary]\n    A --> C[Secondary]\n    A --> D[Tertiary]\n    A --> E[Quaternary]\n    B --> F[Amino Acid Sequence]\n    C --> G[α-helix, β-sheet]\n    D --> H[3D Folding]\n    E --> I[Multiple Subunits]"
+    },
+    {
+      "type": "heading",
+      "text": "Collagen and Hemoglobin"
+    },
+    {
+      "type": "paragraph",
+      "text": "Collagen is the most abundant protein in the body, found in skin, bone, tendons, and ligaments. It has a unique triple-helix structure rich in glycine, proline, and hydroxyproline. Vitamin C is required for collagen synthesis (scurvy results from deficiency). Hemoglobin is an oxygen transport protein with four subunits (2α, 2β) and heme groups containing iron. It exhibits cooperative binding (sigmoidal O2 dissociation curve). Myoglobin is a single-subunit oxygen storage protein in muscles. Hemoglobinopathies (sickle cell anemia) result from mutations in hemoglobin genes."
+    },
+    {
+      "type": "mermaid",
+      "title": "Collagen and Hemoglobin",
+      "code": "graph LR\n    A[Collagen] --> B[Triple Helix]\n    A --> C[Rich in Gly, Pro]\n    A --> D[Requires Vitamin C]\n    E[Hemoglobin] --> F[4 subunits]\n    E --> G[Iron-containing Heme]\n    E --> H[O2 transport]"
+    },
+    {
+      "type": "chart",
+      "title": "Amino Acid Abundance in Proteins",
+      "labels": ["Glycine", "Alanine", "Valine", "Leucine", "Lysine"],
+      "data": [7.5, 8.0, 6.5, 9.0, 6.0],
+      "label": "Average Abundance (%)",
+      "x_label": "Amino Acid"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary energy currency of the cell?",
+      "options": ["GTP", "ATP", "NADH", "Glucose"],
+      "correct_answer": "ATP",
+      "explanation": "ATP (adenosine triphosphate) is the primary energy currency of the cell, used to power most energy-requiring processes."
+    },
+    {
+      "id": 2,
+      "question": "What are the four major classes of biomolecules?",
+      "options": ["Carbohydrates, Lipids, Proteins, Nucleic Acids", "Carbohydrates, Lipids, Enzymes, Hormones", "Proteins, Lipids, Vitamins, Minerals", "Nucleic Acids, Proteins, Carbohydrates, Enzymes"],
+      "correct_answer": "Carbohydrates, Lipids, Proteins, Nucleic Acids",
+      "explanation": "The four major classes of biomolecules are carbohydrates, lipids, proteins, and nucleic acids."
+    },
+    {
+      "id": 3,
+      "question": "What is the normal physiological pH range?",
+      "options": ["7.0-7.2", "7.35-7.45", "7.5-7.7", "6.8-7.0"],
+      "correct_answer": "7.35-7.45",
+      "explanation": "Normal physiological pH is 7.35-7.45, maintained by buffer systems like bicarbonate and phosphate."
+    },
+    {
+      "id": 4,
+      "question": "What type of bond holds water molecules together?",
+      "options": ["Covalent bond", "Ionic bond", "Hydrogen bond", "Metallic bond"],
+      "correct_answer": "Hydrogen bond",
+      "explanation": "Water molecules are held together by hydrogen bonds between the oxygen of one molecule and the hydrogen of another."
+    },
+    {
+      "id": 5,
+      "question": "What is the function of buffers in the body?",
+      "options": ["Increase pH", "Decrease pH", "Resist pH changes", "Produce pH changes"],
+      "correct_answer": "Resist pH changes",
+      "explanation": "Buffers resist pH changes by neutralizing acids and bases, maintaining physiological pH."
+    },
+    {
+      "id": 6,
+      "question": "Which element is the backbone of organic molecules?",
+      "options": ["Oxygen", "Nitrogen", "Carbon", "Hydrogen"],
+      "correct_answer": "Carbon",
+      "explanation": "Carbon is the backbone of organic molecules, capable of forming four bonds and creating complex structures."
+    },
+    {
+      "id": 7,
+      "question": "What is the pH of gastric juice?",
+      "options": ["1-2", "4-5", "6-7", "8-9"],
+      "correct_answer": "1-2",
+      "explanation": "Gastric juice has a pH of 1-2 due to hydrochloric acid, which aids in protein digestion and kills pathogens."
+    },
+    {
+      "id": 8,
+      "question": "What is the Henderson-Hasselbalch equation used for?",
+      "options": ["Calculate pH of buffers", "Calculate ATP production", "Calculate enzyme activity", "Calculate DNA sequences"],
+      "correct_answer": "Calculate pH of buffers",
+      "explanation": "The Henderson-Hasselbalch equation (pH = pKa + log[A-]/[HA]) is used to calculate the pH of buffer solutions."
+    }
+  ]
+}

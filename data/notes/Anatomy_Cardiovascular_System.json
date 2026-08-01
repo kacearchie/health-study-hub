@@ -1,0 +1,78 @@
+{
+  "title": "Systemic Anatomy I: The Cardiovascular System",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to the Cardiovascular System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cardiovascular system consists of the heart (pump), blood vessels (conduits), and blood (transport medium). Its primary functions are: Transport of oxygen and nutrients to tissues, removal of carbon dioxide and wastes, regulation of body temperature, protection through immune responses, and hormone distribution. The heart is a four-chambered organ located in the mediastinum. The pulmonary circulation carries blood to the lungs, while the systemic circulation carries blood to the rest of the body."
+    },
+    {
+      "type": "mermaid",
+      "title": "Cardiovascular System Overview",
+      "code": "graph TD\n    A[Cardiovascular System] --> B[Heart]\n    A --> C[Blood Vessels]\n    A --> D[Blood]\n    B --> E[Pump]\n    C --> F[Arteries]\n    C --> G[Veins]\n    C --> H[Capillaries]\n    D --> I[Transport medium]"
+    },
+    {
+      "type": "heading",
+      "text": "Anatomy of the Heart"
+    },
+    {
+      "type": "paragraph",
+      "text": "The heart is a muscular organ about the size of a fist. It has four chambers: Right atrium (receives deoxygenated blood from the body), Right ventricle (pumps blood to the lungs), Left atrium (receives oxygenated blood from the lungs), Left ventricle (pumps blood to the body). The heart valves ensure one-way blood flow: Tricuspid valve (right AV), Bicuspid/Mitral valve (left AV), Pulmonary valve (to lungs), Aortic valve (to body). The coronary arteries supply blood to the heart muscle itself."
+    },
+    {
+      "type": "mermaid",
+      "title": "Heart Chambers and Valves",
+      "code": "graph TD\n    A[Heart] --> B[Right Atrium]\n    A --> C[Right Ventricle]\n    A --> D[Left Atrium]\n    A --> E[Left Ventricle]\n    B --> F[Tricuspid Valve]\n    C --> F\n    D --> G[Mitral Valve]\n    E --> G\n    C --> H[Pulmonary Valve]\n    E --> I[Aortic Valve]"
+    },
+    {
+      "type": "heading",
+      "text": "Blood Vessels"
+    },
+    {
+      "type": "paragraph",
+      "text": "Blood vessels form a closed system of conduits. Arteries carry blood away from the heart (thick, elastic walls, high pressure). Arterioles are small arteries that regulate blood flow. Capillaries are the smallest vessels where exchange occurs (thin walls for diffusion). Venules collect blood from capillaries. Veins return blood to the heart (thinner walls, valves to prevent backflow, low pressure, act as reservoirs). The vena cavae return blood to the right atrium."
+    },
+    {
+      "type": "mermaid",
+      "title": "Blood Vessel Hierarchy",
+      "code": "graph LR\n    A[Heart] --> B[Arteries]\n    B --> C[Arterioles]\n    C --> D[Capillaries]\n    D --> E[Venules]\n    E --> F[Veins]\n    F --> G[Heart]"
+    },
+    {
+      "type": "heading",
+      "text": "Blood Flow Through the Heart"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deoxygenated blood enters the right atrium from the superior and inferior vena cava. Blood flows through the tricuspid valve to the right ventricle. The right ventricle pumps blood through the pulmonary valve to the lungs via the pulmonary artery. In the lungs, blood picks up oxygen and releases carbon dioxide. Oxygenated blood returns via the pulmonary veins to the left atrium. Blood flows through the mitral valve to the left ventricle. The left ventricle pumps blood through the aortic valve to the body via the aorta."
+    },
+    {
+      "type": "mermaid",
+      "title": "Blood Flow Through the Heart",
+      "code": "graph TD\n    A[Body] -->|Deoxygenated| B[Right Atrium]\n    B --> C[Right Ventricle]\n    C -->|Pulmonary Artery| D[Lungs]\n    D -->|Oxygenated| E[Left Atrium]\n    E --> F[Left Ventricle]\n    F -->|Aorta| A"
+    },
+    {
+      "type": "heading",
+      "text": "Cardiac Cycle and Conduction System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cardiac cycle consists of systole (contraction) and diastole (relaxation). The conduction system generates and transmits electrical impulses: SA node (pacemaker) initiates impulses, AV node delays impulses, bundle of His, bundle branches, and Purkinje fibers conduct impulses. An ECG records the electrical activity: P wave (atrial depolarization), QRS complex (ventricular depolarization), T wave (ventricular repolarization)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Cardiac Conduction System",
+      "code": "graph TD\n    A[SA Node] --> B[AV Node]\n    B --> C[Bundle of His]\n    C --> D[Bundle Branches]\n    D --> E[Purkinje Fibers]"
+    },
+    {
+      "type": "chart",
+      "title": "ECG Waveform",
+      "labels": ["P Wave", "QRS Complex", "T Wave"],
+      "data": [0.1, 0.08, 0.2],
+      "label": "Duration (seconds)",
+      "x_label": "ECG Component"
+    }
+  ]
+}

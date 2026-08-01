@@ -1,0 +1,188 @@
+{
+  "title": "Organic Chemistry: Hydrocarbons",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Organic Chemistry"
+    },
+    {
+      "type": "paragraph",
+      "text": "All living things on earth are formed mostly of carbon compounds. Organic compounds were once thought to be formed only by a 'vital force' present in living organisms. In 1828, Friedrich Wohler refuted this by synthesizing urea from nonliving materials. Today, organic compounds are key components of plastics, soaps, perfumes, sweeteners, fabrics, pharmaceuticals, and many other substances we use daily."
+    },
+    {
+      "type": "heading",
+      "text": "20.1 Hydrocarbons"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hydrocarbons are the simplest organic compounds, containing only carbon and hydrogen. They exist in varying lengths of chains, branched chains, and rings. The ability of carbon atoms to form up to four strong bonds to other carbon atoms results in an estimated 10^60 potential organic compounds."
+    },
+    {
+      "type": "mermaid",
+      "title": "Classification of Hydrocarbons",
+      "code": "graph TD\n    A[HYDROCARBONS] --> B[Alkanes]\n    A --> C[Alkenes]\n    A --> D[Alkynes]\n    A --> E[Aromatic]\n    B --> F[Single bonds only]\n    C --> G[Double bonds]\n    D --> H[Triple bonds]\n    E --> I[Benzene rings]\n    style A fill:#2563eb,color:#fff\n    style B fill:#16a34a,color:#fff\n    style C fill:#ca8a04,color:#fff\n    style D fill:#dc2626,color:#fff\n    style E fill:#7c3aed,color:#fff"
+    },
+    {
+      "type": "heading",
+      "text": "Alkanes (Saturated Hydrocarbons)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkanes contain only single covalent bonds between carbon atoms. Each carbon atom has sp3 hybrid orbitals and is bonded to four other atoms. The bond angles are approximately 109.5 degrees, giving carbon chains a zigzag shape. Noncyclic alkanes have the general formula CnH2n+2."
+    },
+    {
+      "type": "mermaid",
+      "title": "Alkane Structures",
+      "code": "graph LR\n    A[Methane CH4] --> B[Ethane C2H6]\n    B --> C[Propane C3H8]\n    C --> D[Butane C4H10]"
+    },
+    {
+      "type": "heading",
+      "text": "Representing Organic Molecules"
+    },
+    {
+      "type": "paragraph",
+      "text": "Organic chemists use several ways to represent molecules: Expanded formulas (show all bonds), Condensed formulas (show bonding without bond symbols), and Skeletal structures (carbon atoms represented by line ends and bends). In skeletal structures, hydrogen atoms attached to carbon are not drawn."
+    },
+    {
+      "type": "heading",
+      "text": "Properties of Alkanes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkane properties change predictably as molecular size increases. Larger molecules have stronger dispersion forces, leading to higher melting and boiling points. The number of structural isomers also increases dramatically with chain length."
+    },
+    {
+      "type": "chart",
+      "title": "Boiling Points of Alkanes (C1-C10)",
+      "labels": ["Methane", "Ethane", "Propane", "Butane", "Pentane", "Hexane", "Heptane", "Octane", "Nonane", "Decane"],
+      "data": [-161.5, -88.6, -42.1, -0.5, 36.1, 68.7, 98.4, 125.7, 150.8, 174.0],
+      "label": "Boiling Point (C)",
+      "x_label": "Alkane"
+    },
+    {
+      "type": "heading",
+      "text": "Structural Isomers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Compounds with the same molecular formula but different spatial arrangements are called structural isomers (constitutional isomers). For example, butane (C4H10) has two isomers: n-butane (unbranched chain) and 2-methylpropane (branched chain)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Butane Isomers",
+      "code": "graph LR\n    A[n-Butane Unbranched] --> B[2-Methylpropane Branched]"
+    },
+    {
+      "type": "heading",
+      "text": "IUPAC Nomenclature"
+    },
+    {
+      "type": "paragraph",
+      "text": "The IUPAC system names alkanes based on: 1) the longest carbon chain (methane, ethane, propane, butane, pentane, hexane, heptane, octane, nonane, decane) and 2) the positions and names of substituents (branches or functional groups)."
+    },
+    {
+      "type": "heading",
+      "text": "Alkyl Groups"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkyl groups are substituents formed by removing one hydrogen atom from an alkane. They are named by replacing the -ane suffix with -yl (e.g., methane to methyl, ethane to ethyl). Different alkyl groups can be formed depending on which hydrogen atom is removed."
+    },
+    {
+      "type": "mermaid",
+      "title": "Common Alkyl Groups",
+      "code": "graph LR\n    A[Methyl CH3-] --> B[Ethyl CH3CH2-]\n    B --> C[Propyl CH3CH2CH2-]\n    C --> D[Butyl CH3CH2CH2CH2-]"
+    },
+    {
+      "type": "heading",
+      "text": "Reactions of Alkanes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkanes are relatively stable but undergo two important reactions: 1) Combustion - highly exothermic reaction with oxygen producing CO2 and H2O, making alkanes excellent fuels. 2) Substitution reactions - hydrogen atoms are replaced by other atoms (e.g., chlorination)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Alkane Reactions",
+      "code": "graph TD\n    A[Alkanes] --> B[Combustion]\n    A --> C[Substitution]\n    B --> D[CO2 + H2O]\n    C --> E[Halogenation]"
+    },
+    {
+      "type": "heading",
+      "text": "Alkenes (Unsaturated Hydrocarbons)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkenes contain at least one carbon-carbon double bond. The carbon atoms in the double bond are sp2 hybridized with trigonal planar geometry (120 degree bond angles). The general formula for alkenes is CnH2n. Ethene (ethylene) is the simplest alkene."
+    },
+    {
+      "type": "mermaid",
+      "title": "Ethene Structure",
+      "code": "graph LR\n    A[Ethene C2H4] --> B[sp2 Hybridized]\n    B --> C[Trigonal Planar 120 degrees]"
+    },
+    {
+      "type": "heading",
+      "text": "Geometric Isomers in Alkenes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkenes can form geometric isomers because double bonds prevent rotation. In cis-isomers, the same groups are on the same side of the double bond. In trans-isomers, they are on opposite sides. This leads to different physical properties."
+    },
+    {
+      "type": "mermaid",
+      "title": "Cis-Trans Isomerism",
+      "code": "graph LR\n    A[Cis-2-Butene] --> B[Both CH3 on same side]\n    C[Trans-2-Butene] --> D[CH3 on opposite sides]"
+    },
+    {
+      "type": "heading",
+      "text": "Addition Reactions of Alkenes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkenes undergo addition reactions where the pi bond breaks and two new sigma bonds form. The hybridization changes from sp2 to sp3. For example, halogens add across the double bond (halogenation), and water adds in the presence of acid (hydration)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Addition Reactions",
+      "code": "graph LR\n    A[Ethene] --> B[+ Br2]\n    B --> C[1,2-Dibromoethane]"
+    },
+    {
+      "type": "heading",
+      "text": "Alkynes (Triple Bonds)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alkynes contain at least one carbon-carbon triple bond. The carbon atoms are sp hybridized with linear geometry (180 degree bond angles). The general formula is CnH2n-2. Ethyne (acetylene) is the simplest alkyne. Alkynes react even more readily than alkenes, adding two equivalents of reagent."
+    },
+    {
+      "type": "mermaid",
+      "title": "Alkyne Structure",
+      "code": "graph LR\n    A[Ethyne HC≡CH] --> B[sp Hybridized]\n    B --> C[Linear 180 degrees]"
+    },
+    {
+      "type": "heading",
+      "text": "Aromatic Hydrocarbons"
+    },
+    {
+      "type": "paragraph",
+      "text": "Benzene (C6H6) is the simplest aromatic hydrocarbon. It has a hexagonal ring of sp2-hybridized carbon atoms with delocalized pi electrons above and below the plane. Benzene does not behave like alkenes; it undergoes substitution rather than addition to preserve aromatic stability."
+    },
+    {
+      "type": "mermaid",
+      "title": "Benzene Structure",
+      "code": "graph TD\n    A[Benzene C6H6] --> B[6 sp2 carbons]\n    B --> C[Planar ring]\n    C --> D[Delocalized electrons]\n    D --> E[Resonance stabilized]"
+    },
+    {
+      "type": "heading",
+      "text": "Common Aromatic Derivatives"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hydrogen atoms on benzene can be substituted to form various derivatives: Toluene (methylbenzene), Xylene (dimethylbenzene), Phenol (hydroxybenzene), Styrene (vinylbenzene), and Aniline (aminobenzene)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Benzene Derivatives",
+      "code": "graph LR\n    A[Benzene] --> B[Toluene + CH3]\n    A --> C[Phenol + OH]\n    A --> D[Aniline + NH2]\n    A --> E[Styrene + CH=CH2]"
+    }
+  ]
+}

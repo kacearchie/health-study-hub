@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What ion is responsible for the depolarization phase of an action potential?",
+      "options": ["K+", "Na+", "Ca2+", "Cl-"],
+      "correct_answer": "Na+",
+      "explanation": "During depolarization, voltage-gated sodium channels open, allowing Na+ to rush into the cell, making the inside more positive."
+    },
+    {
+      "id": 2,
+      "question": "What is the threshold potential for firing an action potential?",
+      "options": ["-70 mV", "-55 mV", "0 mV", "+30 mV"],
+      "correct_answer": "-55 mV",
+      "explanation": "The threshold potential is approximately -55 mV. When reached, voltage-gated Na+ channels open, initiating an action potential."
+    },
+    {
+      "id": 3,
+      "question": "What is the function of myelin sheath?",
+      "options": ["Protects the neuron", "Speeds up impulse conduction", "Provides nutrition", "Produces neurotransmitters"],
+      "correct_answer": "Speeds up impulse conduction",
+      "explanation": "The myelin sheath insulates the axon and speeds up impulse conduction through saltatory conduction."
+    },
+    {
+      "id": 4,
+      "question": "What type of neuron carries impulses toward the central nervous system?",
+      "options": ["Motor neuron", "Sensory neuron", "Interneuron", "Association neuron"],
+      "correct_answer": "Sensory neuron",
+      "explanation": "Sensory (afferent) neurons carry impulses from sensory receptors toward the central nervous system."
+    },
+    {
+      "id": 5,
+      "question": "What is synaptic transmission?",
+      "options": ["Signal between neurons", "Signal within a neuron", "Muscle contraction", "Gland secretion"],
+      "correct_answer": "Signal between neurons",
+      "explanation": "Synaptic transmission is the process of signal transmission between neurons through neurotransmitter release."
+    },
+    {
+      "id": 6,
+      "question": "Which neurotransmitter is involved in pain transmission?",
+      "options": ["Dopamine", "Serotonin", "Substance P", "GABA"],
+      "correct_answer": "Substance P",
+      "explanation": "Substance P is a neurotransmitter involved in pain transmission in the spinal cord and brain."
+    },
+    {
+      "id": 7,
+      "question": "What is an action potential?",
+      "options": ["A local change in membrane potential", "A rapid, all-or-none reversal of membrane potential", "A slow change in membrane potential", "A chemical signal"],
+      "correct_answer": "A rapid, all-or-none reversal of membrane potential",
+      "explanation": "An action potential is a rapid, all-or-none reversal of membrane potential that propagates along the axon."
+    },
+    {
+      "id": 8,
+      "question": "What is the refractory period?",
+      "options": ["Time when no new action potential can be generated", "Time when action potential is generated", "Time when neurotransmitter is released", "Time when synapse is active"],
+      "correct_answer": "Time when no new action potential can be generated",
+      "explanation": "The refractory period is the time during which a neuron cannot generate another action potential, ensuring unidirectional propagation."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Cardiopulmonary Integration",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Cardiopulmonary Interactions"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cardiovascular and respiratory systems are intimately linked to meet tissue oxygen demands. During exercise, both cardiac output and ventilation increase. The V/Q ratio (ventilation-perfusion ratio) ensures matching of air and blood flow. Shunting occurs when ventilation and perfusion are mismatched. Pulmonary hypertension results from increased pulmonary vascular resistance. The cardiopulmonary response to exercise involves: Increased heart rate, Increased stroke volume, Increased tidal volume and respiratory rate, Increased cardiac output, Oxygen extraction by tissues increases."
+    },
+    {
+      "type": "mermaid",
+      "title": "Cardiopulmonary Response to Exercise",
+      "code": "graph LR\n    A[Exercise] --> B[HR increases]\n    A --> C[SV increases]\n    A --> D[Ventilation increases]\n    B --> E[CO increases]\n    C --> E\n    D --> F[O2 delivery increases]\n    E --> F"
+    },
+    {
+      "type": "heading",
+      "text": "Acid-Base Balance Integration"
+    },
+    {
+      "type": "paragraph",
+      "text": "The respiratory system regulates acid-base balance through CO2 elimination. Increased ventilation (hyperventilation) eliminates CO2, reducing H+ (respiratory alkalosis). Decreased ventilation (hypoventilation) retains CO2, increasing H+ (respiratory acidosis). The renal system compensates by adjusting bicarbonate reabsorption. The Henderson-Hasselbalch equation relates pH, bicarbonate, and PCO2. Buffers include bicarbonate, phosphate, and proteins. Compensation mechanisms restore pH toward normal."
+    },
+    {
+      "type": "mermaid",
+      "title": "Acid-Base Regulation",
+      "code": "graph TD\n    A[Acid-Base Balance] --> B[Respiratory System]\n    A --> C[Renal System]\n    A --> D[Buffers]\n    B --> E[CO2 elimination]\n    C --> F[HCO3 regulation]\n    D --> G[Immediate response]"
+    },
+    {
+      "type": "heading",
+      "text": "Clinical Correlations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Common cardiopulmonary disorders include: Hypertension (chronic high BP), Coronary artery disease (atherosclerosis, angina, MI), Heart failure (reduced cardiac output), Arrhythmias (irregular rhythm), COPD (chronic bronchitis, emphysema), Asthma (airway hyperreactivity), Pulmonary embolism (blockage of pulmonary artery), Pneumonia (lung infection), Hypoxia (low tissue O2), Cyanosis (bluish discoloration due to low O2). Diagnostic tests include ECG, echocardiography, spirometry, pulse oximetry, arterial blood gases (ABGs)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Common Cardiopulmonary Disorders",
+      "code": "graph TD\n    A[Cardiopulmonary Disorders] --> B[Cardiovascular]\n    A --> C[Pulmonary]\n    B --> D[Hypertension]\n    B --> E[CAD]\n    B --> F[Heart Failure]\n    B --> G[Arrhythmias]\n    C --> H[COPD]\n    C --> I[Asthma]\n    C --> J[PE]\n    C --> K[Pneumonia]"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "title": "Inorganic Chemistry: Chemical Bonding",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Chemical Bonding"
+    },
+    {
+      "type": "paragraph",
+      "text": "Chemical bonds are forces that hold atoms together in compounds. Atoms bond to achieve a more stable electron configuration, typically achieving a full outer shell (octet rule). The three main types of chemical bonds are: Ionic bonds (transfer of electrons between metals and nonmetals), Covalent bonds (sharing of electrons between nonmetals), and Metallic bonds (delocalized electrons in metals)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Types of Chemical Bonds",
+      "code": "graph TD\n    A[CHEMICAL BONDS] --> B[Ionic Bonds]\n    A --> C[Covalent Bonds]\n    A --> D[Metallic Bonds]\n    B --> E[Transfer of e-]\n    B --> F[Between metal & nonmetal]\n    B --> G[NaCl, MgO]\n    C --> H[Sharing of e-]\n    C --> I[Between nonmetals]\n    C --> J[H2O, CH4]\n    D --> K[Sea of electrons]\n    D --> L[Metals only]\n    D --> M[Cu, Fe, Au]"
+    },
+    {
+      "type": "heading",
+      "text": "Ionic Bonding"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ionic bonds form when atoms transfer electrons to achieve stable electron configurations. Metals lose electrons to form cations (positive ions), while nonmetals gain electrons to form anions (negative ions). The resulting electrostatic attraction between oppositely charged ions forms the ionic bond. Ionic compounds typically have high melting and boiling points, are soluble in water, and conduct electricity when dissolved or molten."
+    },
+    {
+      "type": "mermaid",
+      "title": "Ionic Bond Formation",
+      "code": "graph LR\n    A[Sodium Na\n1 valence e-] --> B[Loses 1 e-]\n    B --> C[Na+ Cation]\n    D[Chlorine Cl\n7 valence e-] --> E[Gains 1 e-]\n    E --> F[Cl- Anion]\n    C --> G[Ionic Bond]\n    F --> G\n    G --> H[NaCl]"
+    },
+    {
+      "type": "heading",
+      "text": "Covalent Bonding"
+    },
+    {
+      "type": "paragraph",
+      "text": "Covalent bonds form when atoms share electrons to achieve stable electron configurations. The shared electrons are counted in the valence shells of both atoms. Covalent bonds can be single (sharing one pair of electrons), double (sharing two pairs), or triple (sharing three pairs). Bond length decreases and bond strength increases from single to double to triple bonds. Covalent compounds typically have lower melting/boiling points and do not conduct electricity."
+    },
+    {
+      "type": "mermaid",
+      "title": "Types of Covalent Bonds",
+      "code": "graph LR\n    A[Single Bond] --> B[1 shared pair\nH-H, C-C]\n    C[Double Bond] --> D[2 shared pairs\nC=C, O=O]\n    E[Triple Bond] --> F[3 shared pairs\nC≡C, N≡N]\n    B --> G[Longest bond]\n    B --> H[Weakest bond]\n    F --> I[Shortest bond]\n    F --> J[Strongest bond]"
+    },
+    {
+      "type": "heading",
+      "text": "Polarity and Electronegativity"
+    },
+    {
+      "type": "paragraph",
+      "text": "When atoms with different electronegativities form bonds, the electrons are not shared equally. This creates a polar bond with partial positive (δ+) and partial negative (δ-) charges. The greater the electronegativity difference, the more polar the bond. Bond polarity determines molecular polarity, which affects physical properties like boiling point, solubility, and melting point. Dipole-dipole interactions and hydrogen bonds are examples of intermolecular forces resulting from molecular polarity."
+    },
+    {
+      "type": "chart",
+      "title": "Electronegativity Values (Pauling Scale)",
+      "labels": ["H", "C", "N", "O", "F", "Cl", "Br", "I"],
+      "data": [2.20, 2.55, 3.04, 3.44, 3.98, 3.16, 2.96, 2.66],
+      "label": "Electronegativity",
+      "x_label": "Element"
+    },
+    {
+      "type": "heading",
+      "text": "Molecular Shapes: VSEPR Theory"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Valence Shell Electron Pair Repulsion (VSEPR) theory predicts molecular geometry based on the number of bonding and non-bonding electron pairs around a central atom. Electron pairs repel each other and arrange themselves to minimize repulsion. Common molecular shapes include: linear (2 bonding pairs, no lone pairs), trigonal planar (3 bonding pairs), tetrahedral (4 bonding pairs), trigonal bipyramidal (5 bonding pairs), and octahedral (6 bonding pairs). Lone pairs occupy more space than bonding pairs, distorting bond angles."
+    },
+    {
+      "type": "mermaid",
+      "title": "VSEPR Molecular Shapes",
+      "code": "graph TD\n    A[VSEPR] --> B[Linear\n180°: BeCl2]\n    A --> C[Trigonal Planar\n120°: BF3]\n    A --> D[Tetrahedral\n109.5°: CH4]\n    A --> E[Trigonal Bipyramidal\n90°/120°: PCl5]\n    A --> F[Octahedral\n90°: SF6]"
+    }
+  ]
+}

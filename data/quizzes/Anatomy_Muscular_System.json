@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What percentage of body weight is skeletal muscle?",
+      "options": ["20%", "40%", "60%", "80%"],
+      "correct_answer": "40%",
+      "explanation": "Skeletal muscle accounts for approximately 40% of body weight in an average adult."
+    },
+    {
+      "id": 2,
+      "question": "Which muscle type is involuntary and striated?",
+      "options": ["Skeletal muscle", "Smooth muscle", "Cardiac muscle", "Voluntary muscle"],
+      "correct_answer": "Cardiac muscle",
+      "explanation": "Cardiac muscle is found only in the heart. It is involuntary (autonomic control) and striated (has sarcomeres)."
+    },
+    {
+      "id": 3,
+      "question": "What is the functional unit of skeletal muscle?",
+      "options": ["Myofibril", "Sarcomere", "Fascicle", "Muscle fiber"],
+      "correct_answer": "Sarcomere",
+      "explanation": "The sarcomere is the functional unit of skeletal muscle, containing actin and myosin filaments that slide during contraction."
+    },
+    {
+      "id": 4,
+      "question": "What neurotransmitter is released at the neuromuscular junction?",
+      "options": ["Dopamine", "Acetylcholine", "Serotonin", "Glutamate"],
+      "correct_answer": "Acetylcholine",
+      "explanation": "Acetylcholine (ACh) is released at the neuromuscular junction, where it binds to receptors on muscle fibers to initiate contraction."
+    },
+    {
+      "id": 5,
+      "question": "What type of muscle contraction maintains constant muscle length?",
+      "options": ["Isotonic", "Isometric", "Eccentric", "Concentric"],
+      "correct_answer": "Isometric",
+      "explanation": "In isometric contractions, muscle length remains constant while tension increases (e.g., pushing against an immovable object)."
+    },
+    {
+      "id": 6,
+      "question": "Which energy system is used for immediate muscle contraction?",
+      "options": ["Aerobic respiration", "Anaerobic glycolysis", "Phosphocreatine system", "Fatty acid oxidation"],
+      "correct_answer": "Phosphocreatine system",
+      "explanation": "The phosphocreatine system provides immediate energy for muscle contraction, lasting about 8-10 seconds."
+    },
+    {
+      "id": 7,
+      "question": "What is the origin of a muscle?",
+      "options": ["The movable attachment", "The fixed attachment", "The middle of the muscle", "The insertion point"],
+      "correct_answer": "The fixed attachment",
+      "explanation": "The origin is the fixed attachment point of a muscle that generally does not move during contraction."
+    },
+    {
+      "id": 8,
+      "question": "Which muscle is responsible for breathing (diaphragm)?",
+      "options": ["Skeletal muscle", "Smooth muscle", "Cardiac muscle", "Voluntary muscle"],
+      "correct_answer": "Skeletal muscle",
+      "explanation": "The diaphragm is skeletal muscle that is under involuntary control for breathing, making it a special case of voluntary muscle that can be controlled consciously."
+    }
+  ]
+}

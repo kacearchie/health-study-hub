@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the standard anatomical position?",
+      "options": ["Standing upright, facing forward, palms facing forward", "Lying down, facing up", "Standing upright, facing forward, palms facing backward", "Sitting down"],
+      "correct_answer": "Standing upright, facing forward, palms facing forward",
+      "explanation": "The standard anatomical position is standing upright, facing forward, with arms at the sides and palms facing forward."
+    },
+    {
+      "id": 2,
+      "question": "Which plane divides the body into left and right halves?",
+      "options": ["Coronal plane", "Sagittal plane", "Transverse plane", "Frontal plane"],
+      "correct_answer": "Sagittal plane",
+      "explanation": "The sagittal plane divides the body into left and right portions. The midsagittal plane divides it into equal halves."
+    },
+    {
+      "id": 3,
+      "question": "What is the term for a position closer to the midline?",
+      "options": ["Lateral", "Medial", "Proximal", "Distal"],
+      "correct_answer": "Medial",
+      "explanation": "Medial means closer to the midline of the body. Lateral means further from the midline."
+    },
+    {
+      "id": 4,
+      "question": "Which body cavity contains the brain?",
+      "options": ["Thoracic cavity", "Abdominal cavity", "Cranial cavity", "Pelvic cavity"],
+      "correct_answer": "Cranial cavity",
+      "explanation": "The cranial cavity within the skull contains and protects the brain."
+    },
+    {
+      "id": 5,
+      "question": "What is the correct order of organization in the body?",
+      "options": ["Cell → Tissue → Organ → Organ System → Organism", "Tissue → Cell → Organ → Organ System → Organism", "Organ → Tissue → Cell → Organ System → Organism", "Cell → Organ → Tissue → Organ System → Organism"],
+      "correct_answer": "Cell → Tissue → Organ → Organ System → Organism",
+      "explanation": "The levels of organization from simplest to most complex are: Cell → Tissue → Organ → Organ System → Organism."
+    },
+    {
+      "id": 6,
+      "question": "Which tissue type covers body surfaces and lines cavities?",
+      "options": ["Connective tissue", "Muscle tissue", "Epithelial tissue", "Nervous tissue"],
+      "correct_answer": "Epithelial tissue",
+      "explanation": "Epithelial tissue covers body surfaces, lines body cavities, and forms glands."
+    },
+    {
+      "id": 7,
+      "question": "What is the term for the front of the body?",
+      "options": ["Posterior", "Anterior", "Superior", "Inferior"],
+      "correct_answer": "Anterior",
+      "explanation": "Anterior means toward the front of the body. Posterior means toward the back."
+    },
+    {
+      "id": 8,
+      "question": "Which body cavity contains the heart and lungs?",
+      "options": ["Cranial cavity", "Thoracic cavity", "Abdominal cavity", "Pelvic cavity"],
+      "correct_answer": "Thoracic cavity",
+      "explanation": "The thoracic cavity contains the heart, lungs, esophagus, and trachea, protected by the rib cage."
+    }
+  ]
+}

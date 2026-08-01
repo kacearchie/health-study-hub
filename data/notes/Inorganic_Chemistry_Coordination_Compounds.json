@@ -1,0 +1,57 @@
+{
+  "title": "Inorganic Chemistry: Coordination Compounds",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to Coordination Compounds"
+    },
+    {
+      "type": "paragraph",
+      "text": "Coordination compounds consist of a central metal ion surrounded by ligands (molecules or ions that donate electron pairs). The coordination number is the number of ligand donor atoms attached to the metal. Common coordination numbers are 4 (tetrahedral or square planar) and 6 (octahedral). Werner's theory explained the structure of coordination compounds, distinguishing between primary (ionizable) and secondary (coordination) valence."
+    },
+    {
+      "type": "mermaid",
+      "title": "Coordination Compound Structure",
+      "code": "graph TD\n    A[Coordination Compound] --> B[Central Metal Ion]\n    A --> C[Ligands]\n    A --> D[Coordination Sphere]\n    A --> E[Counter Ions]\n    B --> F[Transition metal]\n    C --> G[Donate e- pairs]\n    D --> H[Inside brackets]\n    E --> I[Outside brackets]"
+    },
+    {
+      "type": "heading",
+      "text": "Ligands and Isomerism"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ligands can be monodentate (one donor atom, e.g., H₂O, NH₃, Cl⁻), bidentate (two donor atoms, e.g., ethylenediamine), or polydentate (multiple donor atoms, e.g., EDTA). Chelation occurs when polydentate ligands form rings around the metal ion. Coordination compounds can exhibit different types of isomerism: structural (ionization, linkage, coordination sphere) and stereoisomerism (geometric, optical)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Types of Isomers in Coordination Compounds",
+      "code": "graph TD\n    A[Isomers] --> B[Structural Isomers]\n    A --> C[Stereoisomers]\n    B --> D[Ionization]\n    B --> E[Linkage]\n    B --> F[Coordination sphere]\n    C --> G[Geometric cis/trans]\n    C --> H[Optical mirror images]"
+    },
+    {
+      "type": "heading",
+      "text": "Crystal Field Theory"
+    },
+    {
+      "type": "paragraph",
+      "text": "Crystal Field Theory explains the color and magnetic properties of coordination compounds. Ligands create an electric field that splits the d-orbital energies of the metal ion. The magnitude of splitting depends on ligand strength (spectrochemical series). Strong field ligands (CN⁻, CO) cause large splitting and low-spin configurations. Weak field ligands (I⁻, Br⁻, Cl⁻, F⁻, H₂O) cause small splitting and high-spin configurations. The color of a compound results from d-d electron transitions absorbing specific wavelengths."
+    },
+    {
+      "type": "mermaid",
+      "title": "Spectrochemical Series",
+      "code": "graph LR\n    A[I-] --> B[Br-]\n    B --> C[Cl-]\n    C --> D[F-]\n    D --> E[H2O]\n    E --> F[NH3]\n    F --> G[CN-]\n    G --> H[CO]\n    A --> I[Weak Field]\n    H --> J[Strong Field]"
+    },
+    {
+      "type": "heading",
+      "text": "Applications of Coordination Compounds"
+    },
+    {
+      "type": "paragraph",
+      "text": "Coordination compounds have numerous practical applications: In medicine (cisplatin for cancer treatment, vitamin B12, hemoglobin for oxygen transport), in analytical chemistry (EDTA for water hardness determination, complexometric titrations), in industry (catalysis, extraction of metals), in photography (silver complexes), and in biology (chlorophyll, hemoglobin, vitamin B12, enzymes with metal cofactors)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Biological and Medical Applications",
+      "code": "graph TD\n    A[Coordination Compounds] --> B[Hemoglobin\nFe-porphyrin]\n    A --> C[Chlorophyll\nMg-porphyrin]\n    A --> D[Vitamin B12\nCo-corrin]\n    A --> E[Cisplatin\nCancer treatment]"
+    }
+  ]
+}

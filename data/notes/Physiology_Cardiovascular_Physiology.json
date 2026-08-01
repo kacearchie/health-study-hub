@@ -1,0 +1,65 @@
+{
+  "title": "Cardiovascular Physiology",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Cardiac Muscle and Conduction System"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cardiac muscle is specialized for continuous contraction. It has striations, intercalated discs with gap junctions, and autorhythmicity. The conduction system coordinates contraction: Sinoatrial (SA) node (60-100 bpm, pacemaker), Atrioventricular (AV) node (40-60 bpm), Bundle of His, Bundle Branches, and Purkinje Fibers (20-40 bpm). The autonomic nervous system modulates heart rate: Sympathetic stimulation increases rate, Parasympathetic (vagal) stimulation decreases rate. Cardiac action potentials have a plateau phase due to Ca2+ influx."
+    },
+    {
+      "type": "mermaid",
+      "title": "Cardiac Conduction System",
+      "code": "graph TD\n    A[SA Node] --> B[AV Node]\n    B --> C[Bundle of His]\n    C --> D[Left Bundle Branch]\n    C --> E[Right Bundle Branch]\n    D --> F[Purkinje Fibers]\n    E --> F"
+    },
+    {
+      "type": "heading",
+      "text": "The Cardiac Cycle"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cardiac cycle consists of systole (contraction) and diastole (relaxation). Phases include: Atrial systole (ventricular filling), Isovolumic contraction (ventricles contract, valves closed), Ventricular ejection (blood pumped to arteries), Isovolumic relaxation (ventricles relax, valves closed), and Passive ventricular filling. Stroke volume (SV) is the volume ejected per beat (average 70 mL). Cardiac output = Heart Rate × Stroke Volume (average 5 L/min). The Frank-Starling law states increased preload = increased stroke volume."
+    },
+    {
+      "type": "mermaid",
+      "title": "Cardiac Cycle Phases",
+      "code": "graph LR\n    A[Atrial Systole] --> B[Isovolumic Contraction]\n    B --> C[Ventricular Ejection]\n    C --> D[Isovolumic Relaxation]\n    D --> E[Ventricular Filling]\n    E --> A"
+    },
+    {
+      "type": "chart",
+      "title": "Cardiac Cycle Pressures",
+      "labels": ["Atrial Systole", "Isovolumic Contraction", "Ventricular Ejection", "Isovolumic Relaxation", "Ventricular Filling"],
+      "data": [5, 80, 120, 80, 5],
+      "label": "Pressure (mmHg)",
+      "x_label": "Phase"
+    },
+    {
+      "type": "heading",
+      "text": "ECG Interpretation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The electrocardiogram (ECG) records the electrical activity of the heart. ECG waves: P wave (atrial depolarization), QRS complex (ventricular depolarization), T wave (ventricular repolarization). Intervals include: PR interval (AV conduction time, normal 0.12-0.20s), QRS duration (ventricular depolarization, normal <0.12s), QT interval (ventricular repolarization). ECG abnormalities: Tachycardia (HR >100), Bradycardia (HR <60), Arrhythmias (irregular rhythm), Ischemia (ST depression), Infarction (ST elevation)."
+    },
+    {
+      "type": "mermaid",
+      "title": "ECG Waveform",
+      "code": "graph LR\n    A[P Wave] --> B[QRS Complex]\n    B --> C[T Wave]\n    A --> D[Atrial Depolarization]\n    B --> E[Ventricular Depolarization]\n    C --> F[Ventricular Repolarization]"
+    },
+    {
+      "type": "heading",
+      "text": "Blood Pressure Regulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Blood pressure is determined by Cardiac Output and Total Peripheral Resistance (TPR). Normal BP is 120/80 mmHg. Baroreceptors in carotid sinus and aortic arch monitor pressure and trigger reflexes. Short-term regulation: Baroreceptor reflex adjusts HR and vessel diameter. Hormonal regulation: Renin-Angiotensin-Aldosterone System (increases BP), ADH (water retention), ANP (decreases BP). Long-term regulation involves renal control of blood volume. Hypertension (high BP) and hypotension (low BP) can result from dysregulation."
+    },
+    {
+      "type": "mermaid",
+      "title": "Blood Pressure Regulation",
+      "code": "graph TD\n    A[BP Changes] --> B[Baroreceptors]\n    B --> C[Brainstem]\n    C --> D[Autonomic NS]\n    D --> E[HR changes]\n    D --> F[Vessel diameter changes]\n    F --> G[BP returns to normal]"
+    }
+  ]
+}

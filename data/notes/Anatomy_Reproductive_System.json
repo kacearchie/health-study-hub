@@ -1,0 +1,60 @@
+{
+  "title": "Systemic Anatomy I: The Reproductive System",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Introduction to the Reproductive System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The reproductive system ensures continuation of the species through gamete production and hormone secretion. The male reproductive system produces and delivers sperm. The female reproductive system produces ova, supports fertilization, and provides for fetal development and lactation. Reproductive hormones (FSH, LH, estrogen, testosterone) regulate gametogenesis and secondary sex characteristics."
+    },
+    {
+      "type": "heading",
+      "text": "Male Reproductive System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The testes produce sperm and testosterone. Sperm mature in the epididymis, travel through the vas deferens, and mix with seminal fluid from the seminal vesicles, prostate gland, and bulbourethral glands. The penis contains erectile tissue (corpora cavernosa and corpus spongiosum). Ejaculation releases sperm through the urethra. Spermatogenesis occurs in the seminiferous tubules, requiring a temperature 2-3°C below body temperature (maintained by the scrotum)."
+    },
+    {
+      "type": "mermaid",
+      "title": "Male Reproductive Anatomy",
+      "code": "graph LR\n    A[Testes] --> B[Epididymis]\n    B --> C[Vas Deferens]\n    C --> D[Ejaculatory Duct]\n    D --> E[Urethra]\n    F[Seminal Vesicles] --> D\n    G[Prostate] --> E\n    H[Bulbourethral Glands] --> E"
+    },
+    {
+      "type": "heading",
+      "text": "Female Reproductive System"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ovaries produce ova and estrogen/progesterone. The fallopian tubes (uterine tubes) transport ova to the uterus and are the site of fertilization. The uterus provides for fetal development, with three layers: perimetrium (outer), myometrium (middle muscle), endometrium (inner lining). The cervix is the lower part of the uterus. The vagina is the birth canal and copulatory organ. The external genitalia (vulva) include the labia, clitoris, and vestibule."
+    },
+    {
+      "type": "mermaid",
+      "title": "Female Reproductive Anatomy",
+      "code": "graph LR\n    A[Ovaries] --> B[Fallopian Tubes]\n    B --> C[Uterus]\n    C --> D[Cervix]\n    D --> E[Vagina]"
+    },
+    {
+      "type": "heading",
+      "text": "The Menstrual Cycle"
+    },
+    {
+      "type": "paragraph",
+      "text": "The menstrual cycle (average 28 days) is regulated by hormonal changes. The ovarian cycle includes the follicular phase (follicle development), ovulation (release of ovum), and luteal phase (corpus luteum formation). The uterine cycle includes the menstrual phase (shedding of endometrium), proliferative phase (endometrial regrowth), and secretory phase (endometrial preparation for implantation). Menopause occurs when ovarian function ceases, typically around age 50."
+    },
+    {
+      "type": "mermaid",
+      "title": "Menstrual Cycle",
+      "code": "graph LR\n    A[Follicular Phase] --> B[Ovulation]\n    B --> C[Luteal Phase]\n    C --> D[Menstruation]\n    D --> A"
+    },
+    {
+      "type": "chart",
+      "title": "Hormone Levels During Menstrual Cycle",
+      "labels": ["Day 1-7", "Day 8-14", "Day 15-21", "Day 22-28"],
+      "data": [50, 200, 150, 50],
+      "label": "Estrogen (pg/mL)",
+      "x_label": "Cycle Day"
+    }
+  ]
+}

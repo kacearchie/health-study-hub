@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is a ketone?",
+      "options": ["CH3CHO", "CH3COCH3", "HCOOH", "CH3CH2OH"],
+      "correct_answer": "CH3COCH3",
+      "explanation": "Acetone (CH3COCH3) is a ketone where the carbonyl group is bonded to two carbon groups."
+    },
+    {
+      "id": 2,
+      "question": "What is the name for the compound CH3COOCH2CH3?",
+      "options": ["Acetic acid", "Ethyl acetate", "Acetone", "Diethyl ether"],
+      "correct_answer": "Ethyl acetate",
+      "explanation": "This is an ester formed from acetic acid and ethanol. The -COO- group indicates an ester, with methyl (acetate part) and ethyl (alcohol part) groups."
+    },
+    {
+      "id": 3,
+      "question": "Which compound is responsible for the odor of vinegar?",
+      "options": ["Ethanol", "Acetic acid", "Acetone", "Formic acid"],
+      "correct_answer": "Acetic acid",
+      "explanation": "Vinegar is 3-6% acetic acid (CH3COOH). Its characteristic sour taste and pungent odor come from this carboxylic acid."
+    },
+    {
+      "id": 4,
+      "question": "What type of compound is produced when a carboxylic acid reacts with an alcohol?",
+      "options": ["Amide", "Ester", "Ether", "Ketone"],
+      "correct_answer": "Ester",
+      "explanation": "Esterification: R-COOH + R-OH → R-COO-R' + H2O. This is a condensation reaction that forms an ester and water."
+    },
+    {
+      "id": 5,
+      "question": "What is the oxidation state of carbon in a carboxylic acid?",
+      "options": ["-4", "-2", "0", "+2"],
+      "correct_answer": "+2",
+      "explanation": "In a carboxylic acid (R-COOH), the carbonyl carbon is bonded to two oxygen atoms, giving it an oxidation number of +2."
+    },
+    {
+      "id": 6,
+      "question": "What is the product when a primary alcohol is fully oxidized?",
+      "options": ["Ketone", "Aldehyde", "Carboxylic acid", "Ester"],
+      "correct_answer": "Carboxylic acid",
+      "explanation": "Primary alcohols oxidize first to aldehydes, then to carboxylic acids with further oxidation."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is responsible for the pleasant odors of fruits?",
+      "options": ["Alcohols", "Aldehydes", "Esters", "Ketones"],
+      "correct_answer": "Esters",
+      "explanation": "Esters are responsible for the pleasant odors of many fruits and flowers. Different esters give different fruit scents."
+    },
+    {
+      "id": 8,
+      "question": "What is the difference between saturated and unsaturated fats?",
+      "options": ["Number of carbons", "Presence of double bonds", "Presence of oxygen", "Chain length"],
+      "correct_answer": "Presence of double bonds",
+      "explanation": "Saturated fats contain only single bonds and are solid at room temperature. Unsaturated fats contain double bonds and are liquid at room temperature."
+    }
+  ]
+}
