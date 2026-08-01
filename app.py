@@ -45,6 +45,7 @@ else:
 # Create users directory if it doesn't exist
 if not os.path.exists(USERS_DIR):
     os.makedirs(USERS_DIR)
+    print(f"✅ Created users directory: {USERS_DIR}")
 
 # Create static directories for PWA
 if not os.path.exists('static'):
@@ -59,13 +60,15 @@ courses_cache = None
 user_cache = {}
 
 # ============================================================
-# USER MANAGEMENT
+# USER MANAGEMENT - FIXED
 # ============================================================
 
 def get_user_file(username):
+    """Get the file path for a user"""
     return os.path.join(USERS_DIR, f"{username}.json")
 
 def load_user(username):
+    """Load user data from file"""
     if username in user_cache:
         return user_cache[username]
     filepath = get_user_file(username)
@@ -74,14 +77,35 @@ def load_user(username):
             data = json.load(f)
             user_cache[username] = data
             return data
-    except:
+    except FileNotFoundError:
+        return None
+    except Exception as e:
+        print(f"Error loading user {username}: {e}")
         return None
 
 def save_user(username, data):
+    """Save user data to file"""
     filepath = get_user_file(username)
-    with open(filepath, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2)
-    user_cache[username] = data
+    try:
+        # Ensure the directory exists
+        os.makedirs(USERS_DIR, exist_ok=True)
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+        user_cache[username] = data
+        return True
+    except Exception as e:
+        print(f"Error saving user {username}: {e}")
+        return False
+
+def user_exists(username):
+    """Check if a user exists"""
+    filepath = get_user_file(username)
+    return os.path.exists(filepath)
+
+def get_all_users():
+    """Get list of all users"""
+    files = glob.glob(os.path.join(USERS_DIR, '*.json'))
+    return [os.path.basename(f).replace('.json', '') for f in files]
 
 # ============================================================
 # CONTENT LOADING
@@ -385,7 +409,7 @@ def get_exam_questions():
     return jsonify(all_questions)
 
 # ============================================================
-# USER ROUTES
+# USER ROUTES - FIXED
 # ============================================================
 
 @app.route('/api/user/create', methods=['POST'])
@@ -397,9 +421,10 @@ def create_user():
     if not username or not password:
         return jsonify({'error': 'Username and password required'}), 400
     
-    if load_user(username):
+    if user_exists(username):
         return jsonify({'error': 'Username already exists'}), 400
     
+    # Create user data
     user_data = {
         'username': username,
         'password_hash': hashlib.sha256(password.encode()).hexdigest(),
@@ -418,14 +443,20 @@ def create_user():
         'study_groups': []
     }
     
-    save_user(username, user_data)
-    return jsonify({'success': True, 'username': username})
+    success = save_user(username, user_data)
+    if success:
+        return jsonify({'success': True, 'username': username})
+    else:
+        return jsonify({'error': 'Failed to save user data'}), 500
 
 @app.route('/api/user/login', methods=['POST'])
 def login_user():
     data = request.json
     username = data.get('username', '').strip()
     password = data.get('password', '').strip()
+    
+    if not username or not password:
+        return jsonify({'error': 'Username and password required'}), 400
     
     user_data = load_user(username)
     if not user_data:
@@ -1090,6 +1121,7 @@ if __name__ == '__main__':
         print(f"🔑 OpenAI API Key: {OPENAI_API_KEY[:15]}...")
     print("📱 PWA Mode: ENABLED")
     print("📶 Offline Mode: ENABLED")
+    print(f"👤 Users Directory: {USERS_DIR}")
     print("="*50 + "\n")
     
     app.run(
