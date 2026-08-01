@@ -1,3 +1,6 @@
+Here is the **complete merged `index.html`** with the mobile menu button and bottom navigation added:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -577,9 +580,110 @@
             gap: 0.5rem;
         }
         .offline-banner.show { display: flex; }
+
+        /* ===== FLOATING MOBILE MENU BUTTON ===== */
+        #mobileMenuBtn {
+            position: fixed;
+            bottom: 80px;
+            left: 16px;
+            z-index: 9999;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+        #mobileMenuBtn:hover {
+            transform: scale(1.05);
+        }
+        #mobileMenuBtn:active {
+            transform: scale(0.95);
+        }
+
+        /* ===== MOBILE BOTTOM NAV ===== */
+        #mobileBottomNav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-color);
+            display: none;
+            justify-content: space-around;
+            padding: 8px 0;
+            z-index: 100;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        #mobileBottomNav button {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: var(--text-muted);
+            padding: 4px 12px;
+            transition: color 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            gap: 2px;
+        }
+        #mobileBottomNav button .icon {
+            font-size: 22px;
+        }
+        #mobileBottomNav button.active {
+            color: var(--accent);
+        }
+        #mobileBottomNav button .label {
+            font-size: 9px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            #mobileBottomNav { display: flex; }
+            #mobileMenuBtn { display: flex; }
+            body { padding-bottom: 70px; }
+        }
     </style>
 </head>
 <body>
+
+<!-- ===== FLOATING MOBILE MENU BUTTON ===== -->
+<button id="mobileMenuBtn" onclick="toggleSidebar()">
+    ☰
+</button>
+
+<!-- ===== MOBILE BOTTOM NAVIGATION ===== -->
+<div id="mobileBottomNav">
+    <button onclick="switchTab('dashboard')" class="active" data-tab="dashboard">
+        <span class="icon">📖</span>
+        <span class="label">Notes</span>
+    </button>
+    <button onclick="switchTab('quiz-bank')" data-tab="quiz-bank">
+        <span class="icon">📝</span>
+        <span class="label">Quizzes</span>
+    </button>
+    <button onclick="toggleSidebar()" style="color:var(--accent);">
+        <span class="icon">☰</span>
+        <span class="label">Menu</span>
+    </button>
+    <button onclick="switchTab('examination')" data-tab="examination">
+        <span class="icon">📝</span>
+        <span class="label">Exam</span>
+    </button>
+    <button onclick="switchTab('ai-generator')" data-tab="ai-generator">
+        <span class="icon">🤖</span>
+        <span class="label">AI</span>
+    </button>
+</div>
 
 <!-- ===== SIDEBAR OVERLAY ===== -->
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
@@ -1425,6 +1529,11 @@
         if (target) target.classList.remove('hidden');
         document.querySelectorAll('.sidebar-nav .nav-item').forEach(el => el.classList.toggle('active', el.dataset.tab === tabId));
         
+        // Update bottom nav active state
+        document.querySelectorAll('#mobileBottomNav button').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.tab === tabId);
+        });
+        
         const titles = {
             dashboard: 'Dashboard', 'user-profile': 'Profile', analytics: 'Analytics',
             adaptive: 'Adaptive Learning', 'essay-grader': 'Essay Grader',
@@ -1452,12 +1561,33 @@
     function toggleSidebar() {
         document.getElementById('sidebar').classList.toggle('open');
         document.getElementById('sidebarOverlay').classList.toggle('show');
+        // Close chat if open
+        const chatWindow = document.getElementById('chatWindow');
+        if (chatWindow && chatWindow.classList.contains('open')) {
+            chatWindow.classList.remove('open');
+        }
     }
 
     function closeSidebar() {
         document.getElementById('sidebar').classList.remove('open');
         document.getElementById('sidebarOverlay').classList.remove('show');
     }
+
+    // Close sidebar when clicking outside on mobile
+    document.addEventListener('click', function(e) {
+        const sidebar = document.getElementById('sidebar');
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        if (!sidebar || !menuBtn) return;
+        const isClickInsideSidebar = sidebar.contains(e.target);
+        const isClickOnMenuBtn = menuBtn.contains(e.target);
+        const isClickOnOverlay = e.target.id === 'sidebarOverlay';
+        
+        if (!isClickInsideSidebar && !isClickOnMenuBtn && !isClickOnOverlay) {
+            if (sidebar.classList.contains('open')) {
+                closeSidebar();
+            }
+        }
+    });
 
     // ============================================================
     // SECTION 7: AUTH (User accounts)
@@ -3070,3 +3200,4 @@
 
 </body>
 </html>
+```
