@@ -653,6 +653,37 @@
 </head>
 <body>
 
+    <script>
+    // ============================================================
+    // FORCE SERVICE WORKER UPDATE - MOBILE FIX
+    // ============================================================
+    if ('serviceWorker' in navigator) {
+        // Unregister old service workers
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+                console.log('Unregistering old service worker:', registration);
+                registration.unregister();
+            }
+        });
+        
+        // Register new service worker with force update
+        navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' })
+            .then(registration => {
+                console.log('✅ Service Worker registered:', registration);
+                // Force check for update
+                registration.update();
+            })
+            .catch(error => {
+                console.log('❌ Service Worker registration failed:', error);
+            });
+        
+        // Reload when controller changes
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+            console.log('🔄 Controller changed, reloading...');
+            window.location.reload();
+        });
+    }
+</script>
 <!-- ===== FLOATING MOBILE MENU BUTTON ===== -->
 <button id="mobileMenuBtn" onclick="toggleSidebar()">
     ☰
@@ -1305,36 +1336,43 @@
     // ============================================================
     // SECTION 1: SERVICE WORKER & PWA
     // ============================================================
+    // ============================================================
+// PWA INSTALL WITH FORCE UPDATE
+// ============================================================
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    const btn = document.getElementById('installBtn');
+    if (btn) {
+        btn.style.display = 'flex';
+        btn.onclick = () => {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(result => {
+                if (result.outcome === 'accepted') {
+                    showNotification('📲 App installed!', 'success');
+                    btn.style.display = 'none';
+                    // Force reload after install
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 2000);
+                }
+                deferredPrompt = null;
+            });
+        };
+    }
+});
+
+// Check if already installed
+if (window.matchMedia('(display-mode: standalone)').matches) {
+    document.getElementById('installBtn').style.display = 'none';
+    // Check for updates when in standalone mode
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('✅ Service Worker registered:', reg.scope))
-            .catch(err => console.log('❌ Service Worker failed:', err));
+        navigator.serviceWorker.ready.then(registration => {
+            registration.update();
+        });
     }
-
-    let deferredPrompt;
-    window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault();
-        deferredPrompt = e;
-        const btn = document.getElementById('installBtn');
-        if (btn) {
-            btn.style.display = 'flex';
-            btn.onclick = () => {
-                deferredPrompt.prompt();
-                deferredPrompt.userChoice.then(result => {
-                    if (result.outcome === 'accepted') {
-                        showNotification('📲 App installed!', 'success');
-                        btn.style.display = 'none';
-                    }
-                    deferredPrompt = null;
-                });
-            };
-        }
-    });
-
-    // Check if already installed
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-        document.getElementById('installBtn').style.display = 'none';
-    }
+}
 
     // ============================================================
     // SECTION 2: OFFLINE MODE

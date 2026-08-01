@@ -1,9 +1,9 @@
-// static/sw.js - Service Worker for Offline Support
+// static/sw.js - Service Worker with Force Update
 
-const CACHE_NAME = 'health-hub-v1.0';
+const CACHE_NAME = 'health-hub-v2'; // ← Changed version to force update
 const OFFLINE_URL = '/offline';
 
-// Assets to cache for offline use
+// Assets to cache
 const ASSETS_TO_CACHE = [
     '/',
     '/offline',
@@ -21,11 +21,11 @@ self.addEventListener('install', event => {
                 console.log('[Service Worker] Caching assets...');
                 return cache.addAll(ASSETS_TO_CACHE);
             })
-            .then(() => self.skipWaiting())
+            .then(() => self.skipWaiting()) // ← Force activation
     );
 });
 
-// Activate event - Clean old caches
+// Activate event - Clean old caches and take control
 self.addEventListener('activate', event => {
     const cacheWhitelist = [CACHE_NAME];
     event.waitUntil(
@@ -39,7 +39,7 @@ self.addEventListener('activate', event => {
                 })
             );
         })
-        .then(() => self.clients.claim())
+        .then(() => self.clients.claim()) // ← Take control immediately
     );
 });
 
@@ -58,7 +58,6 @@ self.addEventListener('fetch', event => {
         event.respondWith(
             fetch(request)
                 .then(response => {
-                    // Cache the response for offline use
                     const responseClone = response.clone();
                     caches.open(CACHE_NAME).then(cache => {
                         cache.put(request, responseClone);
@@ -66,19 +65,17 @@ self.addEventListener('fetch', event => {
                     return response;
                 })
                 .catch(() => {
-                    // If offline, try cache
                     return caches.match(request);
                 })
         );
         return;
     }
 
-    // Handle HTML pages
+    // Handle HTML pages - network first, then cache
     if (request.mode === 'navigate' || url.pathname === '/') {
         event.respondWith(
             fetch(request)
                 .then(response => {
-                    // Cache the page
                     const responseClone = response.clone();
                     caches.open(CACHE_NAME).then(cache => {
                         cache.put(request, responseClone);
@@ -86,7 +83,6 @@ self.addEventListener('fetch', event => {
                     return response;
                 })
                 .catch(() => {
-                    // If offline, show offline page
                     return caches.match(OFFLINE_URL);
                 })
         );
@@ -102,7 +98,6 @@ self.addEventListener('fetch', event => {
                 }
                 return fetch(request)
                     .then(response => {
-                        // Cache the response
                         const responseClone = response.clone();
                         caches.open(CACHE_NAME).then(cache => {
                             cache.put(request, responseClone);
@@ -113,7 +108,7 @@ self.addEventListener('fetch', event => {
     );
 });
 
-// Background sync for offline data
+// Background sync
 self.addEventListener('sync', event => {
     if (event.tag === 'sync-data') {
         event.waitUntil(syncData());
@@ -125,14 +120,12 @@ async function syncData() {
         const cache = await caches.open(CACHE_NAME);
         const requests = await cache.match('/offline-queue');
         if (requests) {
-            // Process offline queue
             const data = await requests.json();
             await fetch('/api/offline/sync', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             });
-            // Clear the queue after sync
             await cache.delete('/offline-queue');
         }
     } catch (error) {
@@ -140,7 +133,7 @@ async function syncData() {
     }
 }
 
-// Push notification support
+// Push notifications
 self.addEventListener('push', event => {
     const data = event.data.json();
     const options = {
