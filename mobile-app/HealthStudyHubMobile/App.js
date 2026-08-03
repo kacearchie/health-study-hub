@@ -58,11 +58,9 @@ const MainApp = () => {
     const checkConnection = async () => {
         // Try multiple URLs
         const urls = [
-            'https://health-study-hub.onrender.com', // Deployed URL - CHANGE THIS
-            'http://192.168.1.100:5000', // Local network IP
-            'http://127.0.0.1:5000',
-        ];
-
+    'https://health-study-hub.onrender.com', // <- Your Render URL
+    'http://192.168.1.100:5000',
+];
         let connected = false;
         for (const url of urls) {
             try {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - Health Study Hub</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f8fafc;
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            max-width: 500px;
+            padding: 40px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .emoji { font-size: 64px; margin-bottom: 16px; }
+        h1 { color: #0f172a; margin-bottom: 8px; }
+        p { color: #475569; margin-bottom: 20px; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .btn:hover { background: #1d4ed8; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="emoji">📶</div>
+        <h1>You're Offline</h1>
+        <p>Please check your internet connection and try again.</p>
+        <a href="/" class="btn">🔄 Retry</a>
+    </div>
+</body>
+</html>
