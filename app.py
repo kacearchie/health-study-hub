@@ -264,13 +264,55 @@ def get_explanation(q):
     return ''
 
 # ============================================================
+# CREATE DEFAULT USER
+# ============================================================
+def create_default_user():
+    """Create a default test user if no users exist"""
+    username = "testuser"
+    password = "Test123"
+    
+    if not user_exists(username):
+        user_data = {
+            'username': username,
+            'password_hash': hash_password(password),
+            'created_at': datetime.datetime.now().isoformat(),
+            'study_time': 0,
+            'streak': 1,
+            'last_study_date': datetime.datetime.now().isoformat(),
+            'quiz_history': [],
+            'exam_history': [],
+            'full_exam_history': [],
+            'topic_scores': {},
+            'mastered_concepts': [],
+            'flashcards': [],
+            'tasks': [],
+            'clinical_skills': [],
+            'wrong_answers': [],
+            'activity_log': [],
+            'study_groups': [],
+            'badges': ['🌟 First Login'],
+            'total_questions_answered': 0,
+            'total_correct_answers': 0,
+            'last_login': datetime.datetime.now().isoformat()
+        }
+        save_user(username, user_data)
+        print(f"✅ Default user created: {username} / {password}")
+        return True
+    return False
+
+# ============================================================
 # AUTH ROUTES
 # ============================================================
 @app.route('/api/user/create', methods=['POST'])
 def create_user():
     data = request.json
+    print(f"📝 Signup attempt: {data}")
+    
     username = data.get('username', '').strip()
     password = data.get('password', '').strip()
+    email = data.get('email', '').strip()
+    firstName = data.get('firstName', '').strip()
+    lastName = data.get('lastName', '').strip()
     
     if not username or not password:
         return jsonify({'error': 'Username and password required'}), 400
@@ -309,9 +351,66 @@ def create_user():
     }
     
     if save_user(username, user_data):
-        return jsonify({'success': True, 'username': username})
+        print(f"✅ User created: {username}")
+        return jsonify({
+            'success': True,
+            'username': username,
+            'message': 'Account created successfully!'
+        })
     else:
+        print(f"❌ Failed to create user: {username}")
         return jsonify({'error': 'Failed to create account'}), 500
+
+@app.route('/api/quick-signup')
+def quick_signup():
+    """Quick test endpoint to create a test user"""
+    username = "testuser"
+    password = "Test123"
+    
+    if user_exists(username):
+        return jsonify({'message': 'User already exists', 'username': username})
+    
+    user_data = {
+        'username': username,
+        'password_hash': hash_password(password),
+        'created_at': datetime.datetime.now().isoformat(),
+        'study_time': 0,
+        'streak': 1,
+        'last_study_date': datetime.datetime.now().isoformat(),
+        'quiz_history': [],
+        'exam_history': [],
+        'full_exam_history': [],
+        'topic_scores': {},
+        'mastered_concepts': [],
+        'flashcards': [],
+        'tasks': [],
+        'clinical_skills': [],
+        'wrong_answers': [],
+        'activity_log': [],
+        'study_groups': [],
+        'badges': ['🌟 First Login'],
+        'total_questions_answered': 0,
+        'total_correct_answers': 0,
+        'last_login': datetime.datetime.now().isoformat()
+    }
+    
+    if save_user(username, user_data):
+        return jsonify({
+            'success': True,
+            'username': username,
+            'password': password,
+            'message': 'Test user created! Login with testuser/Test123'
+        })
+    return jsonify({'error': 'Failed to create user'}), 500
+
+@app.route('/api/test-signup')
+def test_signup():
+    """Test endpoint to verify signup API is working"""
+    return jsonify({
+        'message': 'Signup API is working',
+        'status': 'ok',
+        'timestamp': datetime.datetime.now().isoformat()
+    })
 
 @app.route('/api/user/login', methods=['POST'])
 def login_user():
@@ -319,33 +418,29 @@ def login_user():
     username = data.get('username', '').strip()
     password = data.get('password', '').strip()
     
+    print(f"🔐 Login attempt: {username}")
+    
     if not username or not password:
         return jsonify({'error': 'Username and password required'}), 400
     
     user_data = load_user(username)
+    
     if not user_data:
+        print(f"❌ User not found: {username}")
         return jsonify({'error': 'User not found'}), 404
     
-    if user_data.get('password_hash') != hash_password(password):
-        return jsonify({'error': 'Incorrect password'}), 401
+    stored_hash = user_data.get('password_hash', '')
+    computed_hash = hash_password(password)
     
-    today = datetime.datetime.now().strftime('%Y-%m-%d')
-    last_login = user_data.get('last_login', '')
-    if last_login:
-        last_date = datetime.datetime.fromisoformat(last_login).strftime('%Y-%m-%d')
-        if last_date != today:
-            yesterday = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d')
-            if last_date == yesterday:
-                user_data['streak'] = user_data.get('streak', 0) + 1
-            else:
-                user_data['streak'] = 1
-    else:
-        user_data['streak'] = 1
+    if stored_hash != computed_hash:
+        print(f"❌ Incorrect password for: {username}")
+        return jsonify({'error': 'Incorrect password'}), 401
     
     user_data['last_login'] = datetime.datetime.now().isoformat()
     user_data['last_study_date'] = datetime.datetime.now().isoformat()
-    
     save_user(username, user_data)
+    
+    print(f"✅ Login successful: {username}")
     
     return jsonify({
         'success': True,
@@ -426,6 +521,45 @@ def get_user_analytics(username):
         'streak': user_data.get('streak', 0),
         'badges': user_data.get('badges', [])
     })
+
+@app.route('/api/user/<username>/recommendations')
+def get_recommendations(username):
+    user_data = load_user(username)
+    if not user_data:
+        return jsonify([])
+    
+    recommendations = []
+    topic_scores = user_data.get('topic_scores', {})
+    mastered = set(user_data.get('mastered_concepts', []))
+    
+    for note_file in get_all_notes():
+        topic_name = get_note_title(note_file)
+        if topic_name not in topic_scores:
+            recommendations.append({
+                'topic': topic_name,
+                'filename': note_file,
+                'reason': 'Not studied yet',
+                'priority': 'High'
+            })
+        elif topic_name in topic_scores and topic_scores[topic_name] < 60:
+            recommendations.append({
+                'topic': topic_name,
+                'filename': note_file,
+                'reason': f'Score: {topic_scores[topic_name]}% - Needs improvement',
+                'priority': 'High' if topic_scores[topic_name] < 40 else 'Medium'
+            })
+        elif topic_name in mastered:
+            recommendations.append({
+                'topic': topic_name,
+                'filename': note_file,
+                'reason': 'Mastered! Keep up the good work!',
+                'priority': 'Low'
+            })
+    
+    priority_order = {'High': 0, 'Medium': 1, 'Low': 2}
+    recommendations.sort(key=lambda x: priority_order.get(x['priority'], 3))
+    
+    return jsonify(recommendations[:15])
 
 @app.route('/api/user/<username>/reminders')
 def get_reminders(username):
@@ -699,7 +833,7 @@ def search_pronunciation():
     return jsonify(results[:20])
 
 # ============================================================
-# QUIZ BANK - AI POWERED GRADING (SUPPORTS BOTH answer AND correct_answer)
+# QUIZ BANK - AI POWERED GRADING
 # ============================================================
 @app.route('/api/quiz/submit', methods=['POST'])
 def submit_quiz():
@@ -723,7 +857,6 @@ def submit_quiz():
     for i, q in enumerate(questions):
         user_answer = answers.get(str(i), -1)
         
-        # Get correct answer - supports both 'correct_answer' and 'answer'
         correct_answer = get_correct_answer(q)
         if correct_answer is None:
             print(f"  Q{i+1}: No correct answer found!")
@@ -733,14 +866,12 @@ def submit_quiz():
         question_text = q.get('question', '')
         explanation = get_explanation(q)
         
-        # Get selected text
         selected_text = ""
         if isinstance(user_answer, int) and 0 <= user_answer < len(options):
             selected_text = options[user_answer]
         else:
             selected_text = str(user_answer)
         
-        # Get correct text
         correct_text = ""
         if isinstance(correct_answer, str):
             correct_text = correct_answer
@@ -749,7 +880,6 @@ def submit_quiz():
         else:
             correct_text = str(correct_answer)
         
-        # Use AI to grade the question
         is_correct, grade_explanation, confidence = ai_grade_question(
             question_text, selected_text, correct_text, options
         )
@@ -800,7 +930,6 @@ def submit_quiz():
     
     print(f"📊 AI Quiz results: {correct}/{total} correct, {score_percentage}%")
     
-    # Save to user history
     if username and user_exists(username):
         user_data = load_user(username)
         if user_data:
@@ -855,7 +984,7 @@ def submit_quiz():
     })
 
 # ============================================================
-# EXAM SIMULATOR - AI POWERED GRADING (SUPPORTS BOTH answer AND correct_answer)
+# EXAM SIMULATOR
 # ============================================================
 @app.route('/api/exam/generate', methods=['POST'])
 def generate_exam():
@@ -945,7 +1074,6 @@ def submit_exam():
     for i, q in enumerate(questions):
         user_answer = answers.get(str(i), -1)
         
-        # Get correct answer - supports both 'correct_answer' and 'answer'
         correct_answer = get_correct_answer(q)
         if correct_answer is None:
             print(f"  Q{i+1}: No correct answer found!")
@@ -955,14 +1083,12 @@ def submit_exam():
         question_text = q.get('question', '')
         explanation = get_explanation(q)
         
-        # Get selected text
         selected_text = ""
         if isinstance(user_answer, int) and 0 <= user_answer < len(options):
             selected_text = options[user_answer]
         else:
             selected_text = str(user_answer)
         
-        # Get correct text
         correct_text = ""
         if isinstance(correct_answer, str):
             correct_text = correct_answer
@@ -971,7 +1097,6 @@ def submit_exam():
         else:
             correct_text = str(correct_answer)
         
-        # Use AI to grade
         is_correct, grade_explanation, confidence = ai_grade_question(
             question_text, selected_text, correct_text, options
         )
@@ -1087,7 +1212,7 @@ def submit_exam():
     })
 
 # ============================================================
-# FULL EXAM - AI POWERED GRADING (SUPPORTS BOTH answer AND correct_answer)
+# FULL EXAM
 # ============================================================
 @app.route('/api/full-exam/generate', methods=['POST'])
 def generate_full_exam():
@@ -1190,14 +1315,12 @@ def submit_full_exam():
             question_text = q.get('question', '')
             explanation = get_explanation(q)
             
-            # Get selected text
             selected_text = ""
             if isinstance(user_answer, int) and 0 <= user_answer < len(options):
                 selected_text = options[user_answer]
             else:
                 selected_text = str(user_answer)
             
-            # Get correct text
             correct_text = ""
             if isinstance(correct_answer, str):
                 correct_text = correct_answer
@@ -1206,7 +1329,6 @@ def submit_full_exam():
             else:
                 correct_text = str(correct_answer)
             
-            # Use AI to grade
             is_correct, grade_explanation, confidence = ai_grade_question(
                 question_text, selected_text, correct_text, options
             )
@@ -1427,7 +1549,7 @@ Return ONLY valid JSON:
     })
 
 # ============================================================
-# RANDOM QUESTION - AI POWERED
+# RANDOM QUESTION
 # ============================================================
 @app.route('/api/random-question')
 def random_question():
@@ -2067,6 +2189,11 @@ def health_check():
     })
 
 # ============================================================
+# CREATE DEFAULT USER ON STARTUP
+# ============================================================
+create_default_user()
+
+# ============================================================
 # MAIN
 # ============================================================
 if __name__ == '__main__':
@@ -2098,4 +2225,4 @@ if __name__ == '__main__':
     print("  ✅ PWA (Install as App)")
     print("="*60 + "\n")
     
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=10000, debug=True)
