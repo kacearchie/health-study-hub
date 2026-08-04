@@ -476,7 +476,7 @@ def login_user():
     })
 
 # ============================================================
-# USER DATA ROUTE - FIXED
+# USER DATA ROUTE - ADDED!
 # ============================================================
 @app.route('/api/user/<username>/data', methods=['GET', 'POST'])
 def user_data_route(username):
@@ -487,6 +487,7 @@ def user_data_route(username):
         if not user_data:
             print(f"❌ User not found: {username}")
             return jsonify({'error': 'User not found'}), 404
+        # Remove password hash for security
         safe_data = {k: v for k, v in user_data.items() if k != 'password_hash'}
         return jsonify(safe_data)
     
