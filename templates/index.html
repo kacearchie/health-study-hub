@@ -559,37 +559,7 @@
         }
         #mobileMenuBtn:hover { transform: scale(1.05); }
         #mobileMenuBtn:active { transform: scale(0.95); }
-        #mobileBottomNav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--bg-card);
-            border-top: 1px solid var(--border-color);
-            display: none;
-            justify-content: space-around;
-            padding: 8px 0;
-            z-index: 100;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-        }
-        #mobileBottomNav button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--text-muted);
-            padding: 4px 12px;
-            transition: color 0.2s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 12px;
-            gap: 2px;
-        }
-        #mobileBottomNav button .icon { font-size: 22px; }
-        #mobileBottomNav button.active { color: var(--accent); }
-        #mobileBottomNav button .label { font-size: 9px; font-weight: 600; }
         @media (max-width: 768px) {
-            #mobileBottomNav { display: flex; }
             #mobileMenuBtn { display: flex; }
         }
 
@@ -653,25 +623,6 @@
 
 <!-- FLOATING MOBILE MENU BUTTON -->
 <button id="mobileMenuBtn" onclick="toggleSidebar()">☰</button>
-
-<!-- MOBILE BOTTOM NAVIGATION -->
-<div id="mobileBottomNav">
-    <button onclick="switchTab('dashboard')" class="active" data-tab="dashboard">
-        <span class="icon">📖</span><span class="label">Notes</span>
-    </button>
-    <button onclick="switchTab('random-question')" data-tab="random-question">
-        <span class="icon">🎲</span><span class="label">Random</span>
-    </button>
-    <button onclick="toggleSidebar()" style="color:var(--accent);">
-        <span class="icon">☰</span><span class="label">Menu</span>
-    </button>
-    <button onclick="switchTab('full-exam')" data-tab="full-exam">
-        <span class="icon">📝</span><span class="label">Exam</span>
-    </button>
-    <button onclick="switchTab('timer')" data-tab="timer">
-        <span class="icon">⏱️</span><span class="label">Timer</span>
-    </button>
-</div>
 
 <!-- SIDEBAR OVERLAY -->
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
@@ -1378,24 +1329,79 @@
             </div>
         </section>
 
+        <!-- ============================================================ -->
+        <!-- TAB: ANALYTICS - FIXED -->
+        <!-- ============================================================ -->
         <section id="tab-analytics" class="tab-content hidden fade-in">
             <div class="card">
                 <h2 class="text-sm font-bold mb-2">📊 Analytics Dashboard</h2>
                 <p class="text-xs text-muted mb-3">Your study performance at a glance</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-                    <div class="p-3 bg-[var(--bg-input)] rounded text-center"><div class="text-xl font-bold text-[var(--accent)]" id="analyticsStudyTime">0</div><div class="text-xs text-muted">Total Study Hours</div></div>
-                    <div class="p-3 bg-[var(--bg-input)] rounded text-center"><div class="text-xl font-bold text-[#10b981]" id="analyticsAvgScore">0%</div><div class="text-xs text-muted">Avg Quiz Score</div></div>
-                    <div class="p-3 bg-[var(--bg-input)] rounded text-center"><div class="text-xl font-bold text-[#f59e0b]" id="analyticsMastery">0</div><div class="text-xs text-muted">Topics Mastered</div></div>
-                    <div class="p-3 bg-[var(--bg-input)] rounded text-center"><div class="text-xl font-bold text-[#ef4444]" id="analyticsWeak">0</div><div class="text-xs text-muted">Weak Topics</div></div>
+                <div id="analyticsContainer">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+                        <div class="p-3 bg-[var(--bg-input)] rounded text-center">
+                            <div class="text-xl font-bold text-[var(--accent)]" id="analyticsStudyTime">0</div>
+                            <div class="text-xs text-muted">Total Study Hours</div>
+                        </div>
+                        <div class="p-3 bg-[var(--bg-input)] rounded text-center">
+                            <div class="text-xl font-bold text-[#10b981]" id="analyticsAvgScore">0%</div>
+                            <div class="text-xs text-muted">Avg Quiz Score</div>
+                        </div>
+                        <div class="p-3 bg-[var(--bg-input)] rounded text-center">
+                            <div class="text-xl font-bold text-[#f59e0b]" id="analyticsMastery">0</div>
+                            <div class="text-xs text-muted">Topics Mastered</div>
+                        </div>
+                        <div class="p-3 bg-[var(--bg-input)] rounded text-center">
+                            <div class="text-xl font-bold text-[#ef4444]" id="analyticsWeak">0</div>
+                            <div class="text-xs text-muted">Weak Topics</div>
+                        </div>
+                    </div>
+                    <div class="h-48"><canvas id="analyticsChart"></canvas></div>
+                    <div class="mt-3">
+                        <h4 class="font-bold text-xs mb-1">Recent Activity</h4>
+                        <div id="recentActivity" class="text-xs space-y-1">
+                            <p class="text-muted italic">Loading analytics data...</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="h-48"><canvas id="analyticsChart"></canvas></div>
-                <div class="mt-3"><h4 class="font-bold text-xs mb-1">Recent Activity</h4><div id="recentActivity" class="text-xs space-y-1"><p class="text-muted italic">No recent activity.</p></div></div>
             </div>
         </section>
 
+        <!-- ============================================================ -->
+        <!-- TAB: ADAPTIVE - FIXED -->
+        <!-- ============================================================ -->
         <section id="tab-adaptive" class="tab-content hidden fade-in">
-            <div class="card"><h2 class="text-sm font-bold mb-1">🎯 Adaptive Learning</h2><p class="text-xs text-muted mb-3">Personalized recommendations based on your performance</p>
-            <div id="adaptiveRecommendations" class="space-y-2"><p class="text-xs text-muted italic">Login to see personalized recommendations.</p></div></div>
+            <div class="card">
+                <h2 class="text-sm font-bold mb-1">🎯 Adaptive Learning</h2>
+                <p class="text-xs text-muted mb-3">Personalized recommendations based on your performance</p>
+                <div id="adaptiveContainer">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+                        <div class="p-3 bg-[var(--bg-input)] rounded">
+                            <h4 class="font-bold text-xs text-[var(--accent)] mb-1">📚 Recommended Topics</h4>
+                            <div id="recommendedTopics" class="text-xs space-y-1">
+                                <p class="text-muted italic">Complete a quiz to get recommendations.</p>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-[var(--bg-input)] rounded">
+                            <h4 class="font-bold text-xs text-[#10b981] mb-1">💪 Strong Areas</h4>
+                            <div id="strongAreas" class="text-xs space-y-1">
+                                <p class="text-muted italic">Complete more quizzes to identify strengths.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-[var(--bg-input)] rounded mb-3">
+                        <h4 class="font-bold text-xs text-[#ef4444] mb-1">📈 Weak Areas to Focus On</h4>
+                        <div id="weakAreas" class="text-xs space-y-1">
+                            <p class="text-muted italic">Your weak areas will appear here based on quiz performance.</p>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-[var(--bg-input)] rounded">
+                        <h4 class="font-bold text-xs text-[#f59e0b] mb-1">⏱️ Study Recommendations</h4>
+                        <div id="studyRecommendations" class="text-xs space-y-1">
+                            <p class="text-muted italic">Based on your study patterns, we'll recommend optimal study times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="tab-essay-grader" class="tab-content hidden fade-in">
@@ -1567,6 +1573,23 @@ let pomodoroState = {
     interval: null
 };
 
+// Analytics data
+let analyticsData = {
+    studyTime: 0,
+    avgScore: 0,
+    mastery: 0,
+    weakTopics: 0,
+    recentActivity: []
+};
+
+// Adaptive data
+let adaptiveData = {
+    recommendedTopics: [],
+    strongAreas: [],
+    weakAreas: [],
+    studyRecommendations: []
+};
+
 // ============================================================
 // INITIALIZATION
 // ============================================================
@@ -1588,6 +1611,10 @@ document.addEventListener('DOMContentLoaded', function() {
         currentUser = savedUser;
         autoLoginUser();
     }
+    
+    // Load analytics and adaptive data
+    loadAnalyticsData();
+    loadAdaptiveData();
     
     console.log('📚 Health Study Hub v2.0 loaded!');
 });
@@ -2057,7 +2084,8 @@ async function loginUser() {
         await loadUserData();
         updateAllUI();
         loadProductivityStats();
-        loadAnalytics();
+        loadAnalyticsData();
+        loadAdaptiveData();
         updateStats();
         updateBadges();
         
@@ -2068,6 +2096,92 @@ async function loginUser() {
         showNotification('🎉 Welcome back, ' + currentUser + '!', 'success');
     } catch (e) {
         showNotification('Error: ' + e.message, 'error');
+    }
+}
+
+// ============================================================
+// SIGNUP FUNCTION - FIXED!
+// ============================================================
+async function signupUser() {
+    const firstName = document.getElementById('signupFirstName').value.trim();
+    const lastName = document.getElementById('signupLastName').value.trim();
+    const username = document.getElementById('signupUsername').value.trim();
+    const email = document.getElementById('signupEmail').value.trim();
+    const password = document.getElementById('signupPassword').value.trim();
+    const confirmPassword = document.getElementById('signupConfirmPassword').value.trim();
+    const terms = document.getElementById('signupTerms').checked;
+
+    // Validation
+    if (!firstName || !lastName || !username || !email || !password || !confirmPassword) {
+        showNotification('Please fill in all fields.', 'warning');
+        return;
+    }
+
+    if (password.length < 6) {
+        showNotification('Password must be at least 6 characters.', 'warning');
+        return;
+    }
+
+    if (password !== confirmPassword) {
+        showNotification('Passwords do not match.', 'warning');
+        return;
+    }
+
+    if (!terms) {
+        showNotification('Please agree to the Terms of Service.', 'warning');
+        return;
+    }
+
+    try {
+        showNotification('🚀 Creating account...', 'info');
+        
+        const response = await fetch('/api/user/register', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username,
+                email,
+                password,
+                first_name: firstName,
+                last_name: lastName
+            })
+        });
+
+        const data = await response.json();
+
+        if (data.error) {
+            showNotification(data.error, 'error');
+            return;
+        }
+
+        // Auto-login after successful signup
+        currentUser = data.username;
+        localStorage.setItem('currentUser', currentUser);
+
+        // Update UI
+        document.getElementById('authBtn').textContent = '👤 ' + currentUser;
+        document.getElementById('authBtn').className = 'btn btn-sm btn-success text-xs';
+        document.getElementById('sidebarUserBadge').innerHTML = 
+            `<span class="user-badge"><span class="avatar">${currentUser.charAt(0).toUpperCase()}</span> ${currentUser}</span>`;
+        document.getElementById('profileSection').classList.remove('hidden');
+        document.getElementById('signupForm').classList.add('hidden');
+        document.getElementById('loginForm').classList.add('hidden');
+        document.getElementById('profileUsername').textContent = currentUser;
+        document.getElementById('profileAvatar').textContent = currentUser.charAt(0).toUpperCase();
+
+        await loadUserData();
+        updateAllUI();
+        loadProductivityStats();
+        loadAnalyticsData();
+        loadAdaptiveData();
+        updateStats();
+        updateBadges();
+
+        showNotification('🎉 Welcome, ' + currentUser + '! Account created successfully!', 'success');
+        
+    } catch (error) {
+        showNotification('Error: ' + error.message, 'error');
+        console.error('Signup error:', error);
     }
 }
 
@@ -2098,10 +2212,6 @@ function switchTab(tabId) {
         el.classList.toggle('active', el.dataset.tab === tabId);
     });
     
-    document.querySelectorAll('#mobileBottomNav button').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.tab === tabId);
-    });
-    
     const titles = {
         dashboard: 'Dashboard', 'user-profile': 'Profile', analytics: 'Analytics',
         adaptive: 'Adaptive Learning', 'essay-grader': 'Essay Grader',
@@ -2120,8 +2230,8 @@ function switchTab(tabId) {
     document.getElementById('breadcrumbCurrent').textContent = titles[tabId] || tabId;
     
     if (tabId === 'progress') updateProgressTab();
-    if (tabId === 'analytics') loadAnalytics();
-    if (tabId === 'adaptive') loadRecommendations();
+    if (tabId === 'analytics') loadAnalyticsData();
+    if (tabId === 'adaptive') loadAdaptiveData();
     if (tabId === 'reminders') loadReminders();
     if (tabId === 'study-groups') loadStudyGroups();
     if (tabId === 'clinical-skills') renderClinicalSkills('all');
@@ -2290,6 +2400,8 @@ function submitQuizBank() {
         if (currentUser) {
             loadUserData();
             updateAllUI();
+            loadAnalyticsData();
+            loadAdaptiveData();
         }
     })
     .catch(err => {
@@ -2556,6 +2668,8 @@ function submitFullExam() {
                 loadUserData();
                 updateAllUI();
                 loadProductivityStats();
+                loadAnalyticsData();
+                loadAdaptiveData();
             }, 500);
         }
         
@@ -2716,6 +2830,8 @@ function submitExam() {
         if (currentUser) {
             loadUserData();
             updateAllUI();
+            loadAnalyticsData();
+            loadAdaptiveData();
         }
     })
     .catch(err => {
@@ -2935,12 +3051,215 @@ function updateProductivity(type, duration, details = {}) {
             document.getElementById('progressStreak').textContent = `🔥 ${data.streak} Day${data.streak > 1 ? 's' : ''}`;
         }
         loadUserData();
+        loadAnalyticsData();
+        loadAdaptiveData();
     })
     .catch(err => console.error('Error updating productivity:', err));
 }
 
 // ============================================================
-// OTHER FUNCTIONS (Placeholders)
+// ANALYTICS FUNCTIONS - FIXED
+// ============================================================
+function loadAnalyticsData() {
+    const container = document.getElementById('analyticsContainer');
+    if (!container) return;
+    
+    if (!currentUser) {
+        document.getElementById('analyticsStudyTime').textContent = '0';
+        document.getElementById('analyticsAvgScore').textContent = '0%';
+        document.getElementById('analyticsMastery').textContent = '0';
+        document.getElementById('analyticsWeak').textContent = '0';
+        document.getElementById('recentActivity').innerHTML = '<p class="text-muted italic">Please login to see your analytics.</p>';
+        
+        // Show empty chart
+        try {
+            new Chart(document.getElementById('analyticsChart'), {
+                type: 'line',
+                data: {
+                    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                    datasets: [{
+                        label: 'Quiz Scores',
+                        data: [0, 0, 0, 0],
+                        borderColor: '#2563eb',
+                        backgroundColor: 'rgba(37,99,235,0.1)',
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true, max: 100 } }
+                }
+            });
+        } catch(e) {}
+        return;
+    }
+    
+    fetch(`/api/user/${currentUser}/analytics`)
+        .then(res => res.json())
+        .then(data => {
+            analyticsData = data;
+            
+            document.getElementById('analyticsStudyTime').textContent = Math.floor((data.study_time || 0) / 60);
+            document.getElementById('analyticsAvgScore').textContent = `${data.average_score || 0}%`;
+            document.getElementById('analyticsMastery').textContent = data.mastered_topics || 0;
+            document.getElementById('analyticsWeak').textContent = data.weak_topics || 0;
+            
+            // Recent activity
+            const recentContainer = document.getElementById('recentActivity');
+            if (data.recent_activity && data.recent_activity.length > 0) {
+                recentContainer.innerHTML = data.recent_activity.map(activity => 
+                    `<div class="flex justify-between items-center p-1 border-b border-[var(--border-color)]">
+                        <span>${activity.type}: ${activity.details || ''}</span>
+                        <span class="text-xs text-muted">${new Date(activity.date).toLocaleDateString()}</span>
+                    </div>`
+                ).join('');
+            } else {
+                recentContainer.innerHTML = '<p class="text-muted italic">No recent activity.</p>';
+            }
+            
+            // Chart
+            try {
+                const ctx = document.getElementById('analyticsChart');
+                if (ctx) {
+                    const scores = data.weekly_scores || [0, 0, 0, 0];
+                    new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                            datasets: [{
+                                label: 'Quiz Scores',
+                                data: scores,
+                                borderColor: '#2563eb',
+                                backgroundColor: 'rgba(37,99,235,0.1)',
+                                fill: true,
+                                tension: 0.3
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: { 
+                                legend: { display: false },
+                                tooltip: { 
+                                    callbacks: {
+                                        label: function(context) {
+                                            return context.parsed.y + '%';
+                                        }
+                                    }
+                                }
+                            },
+                            scales: { 
+                                y: { 
+                                    beginAtZero: true, 
+                                    max: 100,
+                                    ticks: { callback: function(value) { return value + '%'; } }
+                                } 
+                            }
+                        }
+                    });
+                }
+            } catch(e) {
+                console.error('Chart error:', e);
+            }
+        })
+        .catch(err => {
+            console.error('Error loading analytics:', err);
+            document.getElementById('recentActivity').innerHTML = '<p class="text-red-500">Error loading analytics.</p>';
+        });
+}
+
+// ============================================================
+// ADAPTIVE FUNCTIONS - FIXED
+// ============================================================
+function loadAdaptiveData() {
+    const container = document.getElementById('adaptiveContainer');
+    if (!container) return;
+    
+    if (!currentUser) {
+        document.getElementById('recommendedTopics').innerHTML = '<p class="text-muted italic">Please login to see personalized recommendations.</p>';
+        document.getElementById('strongAreas').innerHTML = '<p class="text-muted italic">Login to identify your strengths.</p>';
+        document.getElementById('weakAreas').innerHTML = '<p class="text-muted italic">Login to identify weak areas.</p>';
+        document.getElementById('studyRecommendations').innerHTML = '<p class="text-muted italic">Login to get study recommendations.</p>';
+        return;
+    }
+    
+    fetch(`/api/user/${currentUser}/adaptive`)
+        .then(res => res.json())
+        .then(data => {
+            adaptiveData = data;
+            
+            // Recommended topics
+            const recommendedContainer = document.getElementById('recommendedTopics');
+            if (data.recommended_topics && data.recommended_topics.length > 0) {
+                recommendedContainer.innerHTML = data.recommended_topics.map(topic => 
+                    `<div class="flex items-center gap-2 p-1">
+                        <span>📚</span>
+                        <span>${topic}</span>
+                        <button class="btn btn-primary btn-sm ml-auto" onclick="switchTabAndStudy('${topic}')">Study</button>
+                    </div>`
+                ).join('');
+            } else {
+                recommendedContainer.innerHTML = '<p class="text-muted italic">Complete a quiz to get recommendations.</p>';
+            }
+            
+            // Strong areas
+            const strongContainer = document.getElementById('strongAreas');
+            if (data.strong_areas && data.strong_areas.length > 0) {
+                strongContainer.innerHTML = data.strong_areas.map(area => 
+                    `<div class="flex items-center gap-2 p-1">
+                        <span>💪</span>
+                        <span class="text-green-600">${area}</span>
+                        <span class="text-xs text-muted ml-auto">Score: ${data.strong_scores?.[area] || '90%+'}</span>
+                    </div>`
+                ).join('');
+            } else {
+                strongContainer.innerHTML = '<p class="text-muted italic">Complete more quizzes to identify strengths.</p>';
+            }
+            
+            // Weak areas
+            const weakContainer = document.getElementById('weakAreas');
+            if (data.weak_areas && data.weak_areas.length > 0) {
+                weakContainer.innerHTML = data.weak_areas.map(area => 
+                    `<div class="flex items-center gap-2 p-1">
+                        <span>📖</span>
+                        <span class="text-red-600">${area}</span>
+                        <span class="text-xs text-muted ml-auto">Score: ${data.weak_scores?.[area] || 'Needs practice'}</span>
+                        <button class="btn btn-primary btn-sm" onclick="switchTabAndStudy('${area}')">Practice</button>
+                    </div>`
+                ).join('');
+            } else {
+                weakContainer.innerHTML = '<p class="text-muted italic">Your weak areas will appear here based on quiz performance.</p>';
+            }
+            
+            // Study recommendations
+            const studyContainer = document.getElementById('studyRecommendations');
+            if (data.study_recommendations && data.study_recommendations.length > 0) {
+                studyContainer.innerHTML = data.study_recommendations.map(rec => 
+                    `<div class="flex items-center gap-2 p-1">
+                        <span>⏱️</span>
+                        <span>${rec}</span>
+                    </div>`
+                ).join('');
+            } else {
+                studyContainer.innerHTML = '<p class="text-muted italic">Based on your study patterns, we\'ll recommend optimal study times.</p>';
+            }
+        })
+        .catch(err => {
+            console.error('Error loading adaptive data:', err);
+            document.getElementById('recommendedTopics').innerHTML = '<p class="text-red-500">Error loading recommendations.</p>';
+        });
+}
+
+// Helper function for adaptive recommendations
+function switchTabAndStudy(topic) {
+    switchTab('dashboard');
+    showNotification(`📚 Focus on: ${topic}`, 'info');
+}
+
+// ============================================================
+// OTHER FUNCTIONS
 // ============================================================
 function loadDefaultFlashcards() {
     const defaults = [
@@ -3609,39 +3928,6 @@ function sendChat() {
     });
 }
 
-function loadAnalytics() {
-    if (document.getElementById('analyticsChart')) {
-        try {
-            new Chart(document.getElementById('analyticsChart'), {
-                type: 'line',
-                data: {
-                    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
-                    datasets: [{
-                        label: 'Quiz Scores',
-                        data: [0, 0, 0, 0],
-                        borderColor: '#2563eb',
-                        backgroundColor: 'rgba(37,99,235,0.1)',
-                        fill: true
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: { y: { beginAtZero: true, max: 100 } }
-                }
-            });
-        } catch(e) {}
-    }
-}
-
-function loadRecommendations() {
-    const container = document.getElementById('adaptiveRecommendations');
-    if (container) {
-        container.innerHTML = '<p class="text-xs text-muted italic">Login to see personalized recommendations.</p>';
-    }
-}
-
 function loadReminders() {
     const container = document.getElementById('remindersList');
     if (container) {
@@ -3675,28 +3961,7 @@ function renderPrintableSummary() {
 }
 
 function initChart() {
-    const ctx = document.getElementById('performanceChart');
-    if (!ctx) return;
-    try {
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
-                datasets: [{
-                    label: 'Quiz Scores (%)',
-                    data: [0, 0, 0, 0],
-                    backgroundColor: ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd'],
-                    borderRadius: 6
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: { legend: { display: false } },
-                scales: { y: { beginAtZero: true, max: 100 } }
-            }
-        });
-    } catch(e) {}
+    // Chart is now initialized in loadAnalyticsData
 }
 
 function manualSync() {
@@ -3712,6 +3977,8 @@ function manualSync() {
     
     setTimeout(() => {
         loadUserData();
+        loadAnalyticsData();
+        loadAdaptiveData();
         updateSyncStatus('synced', `(${new Date().toLocaleTimeString()})`);
         showNotification('✅ Synced successfully!', 'success');
     }, 1000);
@@ -3926,18 +4193,21 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 // ============================================================
-// INIT CHART & PRINT DATE
+// INIT STATS & PRINT DATE
 // ============================================================
 document.addEventListener('DOMContentLoaded', function() {
-    initChart();
     const printDate = document.getElementById('printDate');
     if (printDate) printDate.textContent = new Date().toLocaleDateString();
     document.getElementById('statTotalNotes').textContent = Object.values(notesData).reduce((sum, topics) => sum + topics.length, 0);
     document.getElementById('statTotalQuizzes').textContent = allQuizzes.length;
+    
+    // Initial load of analytics and adaptive data
+    loadAnalyticsData();
+    loadAdaptiveData();
 });
 
 console.log('📚 Health Study Hub v2.0 - Complete Edition loaded!');
-console.log('✅ Features: Notes, Flashcards, Quiz Bank, AI Random Question, Exam Simulator, Full Exam, Productivity, Pomodoro, AI, Sync, Offline, PWA');
+console.log('✅ Features: Notes, Flashcards, Quiz Bank, AI Random Question, Exam Simulator, Full Exam, Productivity, Pomodoro, AI, Sync, Offline, PWA, Analytics, Adaptive');
 </script>
 </body>
 </html>
