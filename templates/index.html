@@ -1189,7 +1189,7 @@
         </section>
 
         <!-- ============================================================ -->
-        <!-- REMAINING TABS (Placeholders) -->
+        <!-- REMAINING TABS -->
         <!-- ============================================================ -->
         <section id="tab-flashcards" class="tab-content hidden fade-in">
             <div class="card max-w-2xl mx-auto">
@@ -1582,13 +1582,8 @@ let analyticsData = {
     recentActivity: []
 };
 
-// Adaptive data
-let adaptiveData = {
-    recommendedTopics: [],
-    strongAreas: [],
-    weakAreas: [],
-    studyRecommendations: []
-};
+// Chart instance - FIXED: Store chart globally
+let analyticsChartInstance = null;
 
 // ============================================================
 // INITIALIZATION
@@ -2135,15 +2130,16 @@ async function signupUser() {
     try {
         showNotification('🚀 Creating account...', 'info');
         
+        // Using /api/user/register which now works (aliased to /api/user/create in backend)
         const response = await fetch('/api/user/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 username,
-                email,
                 password,
-                first_name: firstName,
-                last_name: lastName
+                email,
+                firstName,
+                lastName
             })
         });
 
@@ -3058,7 +3054,7 @@ function updateProductivity(type, duration, details = {}) {
 }
 
 // ============================================================
-// ANALYTICS FUNCTIONS - FIXED
+// ANALYTICS FUNCTIONS - FIXED (Chart.js canvas reuse fix)
 // ============================================================
 function loadAnalyticsData() {
     const container = document.getElementById('analyticsContainer');
@@ -3073,26 +3069,36 @@ function loadAnalyticsData() {
         
         // Show empty chart
         try {
-            new Chart(document.getElementById('analyticsChart'), {
-                type: 'line',
-                data: {
-                    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
-                    datasets: [{
-                        label: 'Quiz Scores',
-                        data: [0, 0, 0, 0],
-                        borderColor: '#2563eb',
-                        backgroundColor: 'rgba(37,99,235,0.1)',
-                        fill: true
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: { y: { beginAtZero: true, max: 100 } }
+            const ctx = document.getElementById('analyticsChart');
+            if (ctx) {
+                // Destroy existing chart if it exists
+                if (window.analyticsChartInstance) {
+                    window.analyticsChartInstance.destroy();
+                    window.analyticsChartInstance = null;
                 }
-            });
-        } catch(e) {}
+                window.analyticsChartInstance = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                        datasets: [{
+                            label: 'Quiz Scores',
+                            data: [0, 0, 0, 0],
+                            borderColor: '#2563eb',
+                            backgroundColor: 'rgba(37,99,235,0.1)',
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: { y: { beginAtZero: true, max: 100 } }
+                    }
+                });
+            }
+        } catch(e) {
+            console.error('Chart error:', e);
+        }
         return;
     }
     
@@ -3103,8 +3109,8 @@ function loadAnalyticsData() {
             
             document.getElementById('analyticsStudyTime').textContent = Math.floor((data.study_time || 0) / 60);
             document.getElementById('analyticsAvgScore').textContent = `${data.average_score || 0}%`;
-            document.getElementById('analyticsMastery').textContent = data.mastered_topics || 0;
-            document.getElementById('analyticsWeak').textContent = data.weak_topics || 0;
+            document.getElementById('analyticsMastery').textContent = data.concepts_mastered || 0;
+            document.getElementById('analyticsWeak').textContent = data.weakest_topics ? data.weakest_topics.length : 0;
             
             // Recent activity
             const recentContainer = document.getElementById('recentActivity');
@@ -3112,19 +3118,26 @@ function loadAnalyticsData() {
                 recentContainer.innerHTML = data.recent_activity.map(activity => 
                     `<div class="flex justify-between items-center p-1 border-b border-[var(--border-color)]">
                         <span>${activity.type}: ${activity.details || ''}</span>
-                        <span class="text-xs text-muted">${new Date(activity.date).toLocaleDateString()}</span>
+                        <span class="text-xs text-muted">${new Date(activity.timestamp).toLocaleDateString()}</span>
                     </div>`
                 ).join('');
             } else {
                 recentContainer.innerHTML = '<p class="text-muted italic">No recent activity.</p>';
             }
             
-            // Chart
+            // Chart - FIXED: Destroy old chart before creating new one
             try {
                 const ctx = document.getElementById('analyticsChart');
                 if (ctx) {
+                    // DESTROY existing chart first!
+                    if (window.analyticsChartInstance) {
+                        window.analyticsChartInstance.destroy();
+                        window.analyticsChartInstance = null;
+                    }
+                    
+                    // Get weekly scores or use default
                     const scores = data.weekly_scores || [0, 0, 0, 0];
-                    new Chart(ctx, {
+                    window.analyticsChartInstance = new Chart(ctx, {
                         type: 'line',
                         data: {
                             labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
@@ -3188,8 +3201,6 @@ function loadAdaptiveData() {
     fetch(`/api/user/${currentUser}/adaptive`)
         .then(res => res.json())
         .then(data => {
-            adaptiveData = data;
-            
             // Recommended topics
             const recommendedContainer = document.getElementById('recommendedTopics');
             if (data.recommended_topics && data.recommended_topics.length > 0) {
@@ -3211,7 +3222,6 @@ function loadAdaptiveData() {
                     `<div class="flex items-center gap-2 p-1">
                         <span>💪</span>
                         <span class="text-green-600">${area}</span>
-                        <span class="text-xs text-muted ml-auto">Score: ${data.strong_scores?.[area] || '90%+'}</span>
                     </div>`
                 ).join('');
             } else {
@@ -3225,8 +3235,7 @@ function loadAdaptiveData() {
                     `<div class="flex items-center gap-2 p-1">
                         <span>📖</span>
                         <span class="text-red-600">${area}</span>
-                        <span class="text-xs text-muted ml-auto">Score: ${data.weak_scores?.[area] || 'Needs practice'}</span>
-                        <button class="btn btn-primary btn-sm" onclick="switchTabAndStudy('${area}')">Practice</button>
+                        <button class="btn btn-primary btn-sm ml-auto" onclick="switchTabAndStudy('${area}')">Practice</button>
                     </div>`
                 ).join('');
             } else {
@@ -3248,7 +3257,7 @@ function loadAdaptiveData() {
         })
         .catch(err => {
             console.error('Error loading adaptive data:', err);
-            document.getElementById('recommendedTopics').innerHTML = '<p class="text-red-500">Error loading recommendations.</p>';
+            document.getElementById('recommendedTopics').innerHTML = '<p class="text-red-500">Error loading recommendations. Please try again.</p>';
         });
 }
 
