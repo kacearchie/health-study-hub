@@ -534,6 +534,91 @@ def get_user_analytics(username):
         'badges': user_data.get('badges', [])
     })
 
+# ============================================================
+# ADAPTIVE LEARNING ENDPOINT - FIXED!
+# ============================================================
+@app.route('/api/user/<username>/adaptive')
+def get_adaptive_data(username):
+    """Get adaptive learning recommendations for a user"""
+    user_data = load_user(username)
+    if not user_data:
+        return jsonify({'error': 'User not found'}), 404
+    
+    # Get topic scores
+    topic_scores = user_data.get('topic_scores', {})
+    mastered = set(user_data.get('mastered_concepts', []))
+    
+    # Analyze performance
+    strong_areas = []
+    weak_areas = []
+    recommended_topics = []
+    study_recommendations = []
+    
+    all_notes = get_all_notes()
+    all_topics = [get_note_title(note) for note in all_notes]
+    
+    # Calculate performance for each topic
+    for topic in all_topics:
+        score = topic_scores.get(topic, 0)
+        
+        # Get average score if multiple attempts
+        if isinstance(score, list):
+            avg_score = sum(score) / len(score) if score else 0
+        else:
+            avg_score = score
+        
+        if avg_score >= 80 and topic in mastered:
+            strong_areas.append(topic)
+        elif avg_score < 60 and avg_score > 0:
+            weak_areas.append(topic)
+        elif avg_score == 0:
+            recommended_topics.append(topic)
+    
+    # Generate study recommendations based on patterns
+    quiz_history = user_data.get('quiz_history', [])
+    exam_history = user_data.get('exam_history', [])
+    full_exam_history = user_data.get('full_exam_history', [])
+    
+    all_activities = quiz_history + exam_history + full_exam_history
+    
+    # Find best study time (based on activity frequency)
+    if all_activities:
+        hour_counts = {}
+        for activity in all_activities:
+            if activity.get('date'):
+                try:
+                    dt = datetime.datetime.fromisoformat(activity['date'])
+                    hour = dt.hour
+                    hour_counts[hour] = hour_counts.get(hour, 0) + 1
+                except:
+                    pass
+        
+        if hour_counts:
+            best_hour = max(hour_counts, key=hour_counts.get)
+            study_recommendations.append(f"Your most productive study time: {best_hour}:00 - {best_hour+1}:00")
+    
+    # Add other recommendations
+    if len(all_activities) == 0:
+        study_recommendations.append("Start with a 25-minute Pomodoro session on a topic you're curious about.")
+    elif len(all_activities) < 5:
+        study_recommendations.append("Try completing 3 short quizzes this week to build momentum.")
+    elif weak_areas:
+        study_recommendations.append(f"Focus on: {', '.join(weak_areas[:3])} this week.")
+    
+    if recommended_topics:
+        study_recommendations.append(f"New topics to explore: {', '.join(recommended_topics[:3])}")
+    
+    return jsonify({
+        'recommended_topics': recommended_topics[:5],
+        'strong_areas': strong_areas[:5],
+        'weak_areas': weak_areas[:5],
+        'study_recommendations': study_recommendations[:5],
+        'total_quizzes_taken': len(quiz_history),
+        'total_exams_taken': len(exam_history),
+        'total_full_exams_taken': len(full_exam_history),
+        'streak': user_data.get('streak', 0)
+    })
+
 @app.route('/api/user/<username>/recommendations')
 def get_recommendations(username):
     user_data = load_user(username)
