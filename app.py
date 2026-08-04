@@ -362,7 +362,7 @@ def create_user():
         return jsonify({'error': 'Failed to create account'}), 500
 
 # ============================================================
-# FIX: ADDED /api/user/register ALIAS ROUTE
+# ADDED: /api/user/register ALIAS ROUTE
 # ============================================================
 @app.route('/api/user/register', methods=['POST'])
 def register_user():
@@ -475,6 +475,9 @@ def login_user():
         }
     })
 
+# ============================================================
+# USER DATA ROUTE - FIXED
+# ============================================================
 @app.route('/api/user/<username>/data', methods=['GET', 'POST'])
 def user_data_route(username):
     print(f"📊 User data request for: {username}, method: {request.method}")
@@ -494,9 +497,10 @@ def user_data_route(username):
             print(f"❌ User not found: {username}")
             return jsonify({'error': 'User not found'}), 404
         
-        allowed_fields = ['study_time', 'streak', 'last_study_date', 'quiz_history', 'exam_history', 'full_exam_history',
-                         'topic_scores', 'mastered_concepts', 'flashcards', 'tasks',
-                         'clinical_skills', 'wrong_answers', 'activity_log', 'badges',
+        allowed_fields = ['study_time', 'streak', 'last_study_date', 'quiz_history', 
+                         'exam_history', 'full_exam_history', 'topic_scores', 
+                         'mastered_concepts', 'flashcards', 'tasks', 'clinical_skills', 
+                         'wrong_answers', 'activity_log', 'badges', 
                          'total_questions_answered', 'total_correct_answers']
         
         for key, value in data.items():
@@ -505,37 +509,87 @@ def user_data_route(username):
         
         user_data['updated_at'] = datetime.datetime.now().isoformat()
         save_user(username, user_data)
-        return jsonify({'success': True})
+        return jsonify({'success': True, 'message': 'Data saved successfully!'})
 
+# ============================================================
+# USER ANALYTICS ROUTE - ADDED!
+# ============================================================
 @app.route('/api/user/<username>/analytics')
 def get_user_analytics(username):
+    """Get analytics data for a user"""
     user_data = load_user(username)
     if not user_data:
         return jsonify({'error': 'User not found'}), 404
     
+    # Get all activity history
     quiz_history = user_data.get('quiz_history', [])
     exam_history = user_data.get('exam_history', [])
     full_exam_history = user_data.get('full_exam_history', [])
     
+    # Combine all history
     all_history = quiz_history + exam_history + full_exam_history
-    scores = [q.get('score', 0) for q in all_history if q.get('score') is not None]
+    
+    # Calculate scores
+    scores = []
+    for item in all_history:
+        score = item.get('score')
+        if score is not None:
+            scores.append(score)
+    
+    # Get weekly scores (last 4 weeks)
+    weekly_scores = []
+    weekly_labels = []
+    now = datetime.datetime.now()
+    
+    for i in range(3, -1, -1):
+        week_start = now - datetime.timedelta(days=(i * 7) + 7)
+        week_end = now - datetime.timedelta(days=i * 7)
+        week_scores = []
+        
+        for item in all_history:
+            try:
+                item_date_str = item.get('date', '')
+                if item_date_str:
+                    item_date = datetime.datetime.fromisoformat(item_date_str)
+                    if week_start <= item_date < week_end:
+                        if item.get('score') is not None:
+                            week_scores.append(item.get('score'))
+            except:
+                pass
+        
+        avg_score = sum(week_scores) / len(week_scores) if week_scores else 0
+        weekly_scores.append(round(avg_score, 1))
+        weekly_labels.append(f'Week {i+1}')
+    
+    # Get recent activity
+    recent_activity = user_data.get('activity_log', [])[-10:]
+    
+    # Calculate weak topics from topic_scores
+    topic_scores = user_data.get('topic_scores', {})
+    weak_topics = []
+    for topic, score_data in topic_scores.items():
+        if isinstance(score_data, list):
+            avg = sum(score_data) / len(score_data) if score_data else 0
+            if avg < 50:
+                weak_topics.append(topic)
+        elif isinstance(score_data, (int, float)) and score_data < 50:
+            weak_topics.append(topic)
     
     return jsonify({
-        'total_study_time': user_data.get('study_time', 0),
-        'total_quizzes_taken': len(quiz_history),
-        'total_exams_taken': len(exam_history),
-        'total_full_exams_taken': len(full_exam_history),
-        'total_questions_answered': user_data.get('total_questions_answered', 0),
+        'study_time': user_data.get('study_time', 0),
         'average_score': round(sum(scores) / len(scores), 1) if scores else 0,
         'concepts_mastered': len(user_data.get('mastered_concepts', [])),
-        'weakest_topics': sorted(user_data.get('topic_scores', {}).items(), key=lambda x: x[1])[:5],
-        'recent_activity': user_data.get('activity_log', [])[-10:],
-        'streak': user_data.get('streak', 0),
-        'badges': user_data.get('badges', [])
+        'weakest_topics': weak_topics[:5],
+        'weekly_scores': weekly_scores,
+        'weekly_labels': weekly_labels,
+        'recent_activity': recent_activity,
+        'total_quizzes': len(quiz_history),
+        'total_exams': len(exam_history),
+        'total_full_exams': len(full_exam_history)
     })
 
 # ============================================================
-# ADAPTIVE LEARNING ENDPOINT - FIXED!
+# USER ADAPTIVE ROUTE - ADDED!
 # ============================================================
 @app.route('/api/user/<username>/adaptive')
 def get_adaptive_data(username):
@@ -554,44 +608,47 @@ def get_adaptive_data(username):
     recommended_topics = []
     study_recommendations = []
     
+    # Get all available topics from notes
     all_notes = get_all_notes()
     all_topics = [get_note_title(note) for note in all_notes]
     
     # Calculate performance for each topic
     for topic in all_topics:
-        score = topic_scores.get(topic, 0)
+        score_data = topic_scores.get(topic)
         
-        # Get average score if multiple attempts
-        if isinstance(score, list):
-            avg_score = sum(score) / len(score) if score else 0
+        if score_data is not None:
+            if isinstance(score_data, list):
+                avg_score = sum(score_data) / len(score_data) if score_data else 0
+            else:
+                avg_score = score_data
+            
+            if avg_score >= 80 and topic in mastered:
+                strong_areas.append(topic)
+            elif avg_score < 60 and avg_score > 0:
+                weak_areas.append(topic)
         else:
-            avg_score = score
-        
-        if avg_score >= 80 and topic in mastered:
-            strong_areas.append(topic)
-        elif avg_score < 60 and avg_score > 0:
-            weak_areas.append(topic)
-        elif avg_score == 0:
-            recommended_topics.append(topic)
+            # Topic not yet studied
+            if topic not in mastered:
+                recommended_topics.append(topic)
     
-    # Generate study recommendations based on patterns
+    # Generate study recommendations based on history
     quiz_history = user_data.get('quiz_history', [])
     exam_history = user_data.get('exam_history', [])
     full_exam_history = user_data.get('full_exam_history', [])
     
     all_activities = quiz_history + exam_history + full_exam_history
     
-    # Find best study time (based on activity frequency)
+    # Find best study time
     if all_activities:
         hour_counts = {}
         for activity in all_activities:
-            if activity.get('date'):
-                try:
+            try:
+                if activity.get('date'):
                     dt = datetime.datetime.fromisoformat(activity['date'])
                     hour = dt.hour
                     hour_counts[hour] = hour_counts.get(hour, 0) + 1
-                except:
-                    pass
+            except:
+                pass
         
         if hour_counts:
             best_hour = max(hour_counts, key=hour_counts.get)
@@ -602,7 +659,8 @@ def get_adaptive_data(username):
         study_recommendations.append("Start with a 25-minute Pomodoro session on a topic you're curious about.")
     elif len(all_activities) < 5:
         study_recommendations.append("Try completing 3 short quizzes this week to build momentum.")
-    elif weak_areas:
+    
+    if weak_areas:
         study_recommendations.append(f"Focus on: {', '.join(weak_areas[:3])} this week.")
     
     if recommended_topics:
@@ -619,6 +677,9 @@ def get_adaptive_data(username):
         'streak': user_data.get('streak', 0)
     })
 
+# ============================================================
+# USER RECOMMENDATIONS ROUTE
+# ============================================================
 @app.route('/api/user/<username>/recommendations')
 def get_recommendations(username):
     user_data = load_user(username)
