@@ -159,6 +159,8 @@
         .btn-sm { padding: 0.3rem 0.7rem; font-size: 0.7rem; }
         .btn-ai { background: linear-gradient(135deg, #7c3aed, #2563eb); color: white; }
         .btn-ai:hover { background: linear-gradient(135deg, #6d28d9, #1d4ed8); }
+        .btn-refresh { background: linear-gradient(135deg, #059669, #10b981); color: white; }
+        .btn-refresh:hover { background: linear-gradient(135deg, #047857, #059669); }
         .theme-dot {
             width: 18px;
             height: 18px;
@@ -617,6 +619,11 @@
         }
         .result-correct { color: var(--success); }
         .result-wrong { color: var(--danger); }
+        .refresh-btn-container {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
@@ -698,6 +705,7 @@
             <div class="flex items-center gap-2 flex-wrap">
                 <button class="btn btn-sm btn-outline text-xs" onclick="speakCurrentText()">🔊 Speak</button>
                 <button id="installBtn" class="btn btn-primary btn-sm" style="display:none;" onclick="installPWA()">📲 Install</button>
+                <button class="btn btn-refresh btn-sm text-xs" onclick="refreshAllData()">🔄 Refresh</button>
                 <button class="btn btn-sm btn-outline text-xs" onclick="manualSync()">☁️ Sync</button>
                 <button class="btn btn-sm btn-outline text-xs" onclick="downloadOfflineContent()">📥 Offline</button>
                 <div class="theme-selector flex gap-1.5 bg-[var(--bg-input)] p-1 rounded-full border border-[var(--border-color)]">
@@ -1127,6 +1135,7 @@
                             <div id="profileBadges" class="mb-4 flex flex-wrap gap-1"></div>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <button class="btn btn-primary btn-sm" onclick="manualSync()">☁️ Sync Now</button>
+                                <button class="btn btn-refresh btn-sm" onclick="refreshAllData()">🔄 Refresh</button>
                                 <button class="btn btn-outline btn-sm" onclick="exportData()">📤 Export Data</button>
                                 <button class="btn btn-outline btn-sm" onclick="downloadOfflineContent()">📥 Offline Backup</button>
                                 <button class="btn btn-danger btn-sm ml-auto" onclick="logoutUser()">🚪 Logout</button>
@@ -1334,7 +1343,10 @@
         <!-- ============================================================ -->
         <section id="tab-analytics" class="tab-content hidden fade-in">
             <div class="card">
-                <h2 class="text-sm font-bold mb-2">📊 Analytics Dashboard</h2>
+                <div class="flex justify-between items-center mb-2">
+                    <h2 class="text-sm font-bold">📊 Analytics Dashboard</h2>
+                    <button class="btn btn-refresh btn-sm" onclick="loadAnalyticsData()">🔄 Refresh</button>
+                </div>
                 <p class="text-xs text-muted mb-3">Your study performance at a glance</p>
                 <div id="analyticsContainer">
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
@@ -1371,7 +1383,10 @@
         <!-- ============================================================ -->
         <section id="tab-adaptive" class="tab-content hidden fade-in">
             <div class="card">
-                <h2 class="text-sm font-bold mb-1">🎯 Adaptive Learning</h2>
+                <div class="flex justify-between items-center mb-2">
+                    <h2 class="text-sm font-bold">🎯 Adaptive Learning</h2>
+                    <button class="btn btn-refresh btn-sm" onclick="loadAdaptiveData()">🔄 Refresh</button>
+                </div>
                 <p class="text-xs text-muted mb-3">Personalized recommendations based on your performance</p>
                 <div id="adaptiveContainer">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
@@ -1573,16 +1588,7 @@ let pomodoroState = {
     interval: null
 };
 
-// Analytics data
-let analyticsData = {
-    studyTime: 0,
-    avgScore: 0,
-    mastery: 0,
-    weakTopics: 0,
-    recentActivity: []
-};
-
-// Chart instance - FIXED: Store chart globally
+// Chart instance
 let analyticsChartInstance = null;
 
 // ============================================================
@@ -1882,6 +1888,8 @@ async function loadUserData() {
         const response = await fetch(`/api/user/${currentUser}/data`);
         if (response.ok) {
             const data = await response.json();
+            console.log('📊 User data loaded:', data);
+            
             if (data) {
                 userFlashcards = data.flashcards || [];
                 studyTasks = data.tasks || [];
@@ -1905,7 +1913,7 @@ async function loadUserData() {
                 updateBadges();
                 updateWrongBank();
                 
-                console.log('✅ User data loaded');
+                console.log('✅ User data loaded successfully');
             }
         } else {
             console.warn('Failed to load user data, using localStorage');
@@ -2007,6 +2015,7 @@ async function autoLoginUser() {
         loadProductivityStats();
         updateStats();
         updateBadges();
+        updateWrongBank();
         
         console.log('✅ Auto-login successful for:', currentUser);
     } catch (e) {
@@ -2083,6 +2092,7 @@ async function loginUser() {
         loadAdaptiveData();
         updateStats();
         updateBadges();
+        updateWrongBank();
         
         setTimeout(() => {
             manualSync();
@@ -2106,7 +2116,6 @@ async function signupUser() {
     const confirmPassword = document.getElementById('signupConfirmPassword').value.trim();
     const terms = document.getElementById('signupTerms').checked;
 
-    // Validation
     if (!firstName || !lastName || !username || !email || !password || !confirmPassword) {
         showNotification('Please fill in all fields.', 'warning');
         return;
@@ -2130,7 +2139,6 @@ async function signupUser() {
     try {
         showNotification('🚀 Creating account...', 'info');
         
-        // Using /api/user/register which now works (aliased to /api/user/create in backend)
         const response = await fetch('/api/user/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -2150,11 +2158,9 @@ async function signupUser() {
             return;
         }
 
-        // Auto-login after successful signup
         currentUser = data.username;
         localStorage.setItem('currentUser', currentUser);
 
-        // Update UI
         document.getElementById('authBtn').textContent = '👤 ' + currentUser;
         document.getElementById('authBtn').className = 'btn btn-sm btn-success text-xs';
         document.getElementById('sidebarUserBadge').innerHTML = 
@@ -2165,6 +2171,7 @@ async function signupUser() {
         document.getElementById('profileUsername').textContent = currentUser;
         document.getElementById('profileAvatar').textContent = currentUser.charAt(0).toUpperCase();
 
+        // Force reload all data after signup
         await loadUserData();
         updateAllUI();
         loadProductivityStats();
@@ -2172,6 +2179,11 @@ async function signupUser() {
         loadAdaptiveData();
         updateStats();
         updateBadges();
+        updateWrongBank();
+
+        setTimeout(() => {
+            manualSync();
+        }, 1000);
 
         showNotification('🎉 Welcome, ' + currentUser + '! Account created successfully!', 'success');
         
@@ -2225,16 +2237,36 @@ function switchTab(tabId) {
     };
     document.getElementById('breadcrumbCurrent').textContent = titles[tabId] || tabId;
     
-    if (tabId === 'progress') updateProgressTab();
-    if (tabId === 'analytics') loadAnalyticsData();
-    if (tabId === 'adaptive') loadAdaptiveData();
-    if (tabId === 'reminders') loadReminders();
-    if (tabId === 'study-groups') loadStudyGroups();
-    if (tabId === 'clinical-skills') renderClinicalSkills('all');
-    if (tabId === 'random-question') getRandomQuestion();
-    if (tabId === 'productivity') loadProductivityStats();
-    if (tabId === 'timer') updatePomodoroMode();
-    if (tabId === 'full-exam') resetFullExamPanel();
+    // Refresh data when switching to these tabs
+    if (tabId === 'progress') {
+        updateProgressTab();
+        if (currentUser) {
+            loadUserData();
+            updateAllUI();
+        }
+    }
+    if (tabId === 'analytics') {
+        loadAnalyticsData();
+    }
+    if (tabId === 'adaptive') {
+        loadAdaptiveData();
+    }
+    if (tabId === 'productivity') {
+        loadProductivityStats();
+    }
+    if (tabId === 'user-profile') {
+        if (currentUser) {
+            loadUserData();
+            updateAllUI();
+        }
+    }
+    if (tabId === 'wrong-bank') {
+        updateWrongBank();
+    }
+    if (tabId === 'dashboard') {
+        updateStats();
+        updateBadges();
+    }
     
     closeSidebar();
 }
@@ -2393,11 +2425,18 @@ function submitQuizBank() {
         
         showNotification(`📊 Quiz complete! Score: ${data.score}%`, data.passed ? 'success' : 'warning');
         
+        // Refresh ALL data after quiz
         if (currentUser) {
-            loadUserData();
-            updateAllUI();
-            loadAnalyticsData();
-            loadAdaptiveData();
+            setTimeout(() => {
+                loadUserData();
+                updateAllUI();
+                loadAnalyticsData();
+                loadAdaptiveData();
+                loadProductivityStats();
+                updateStats();
+                updateBadges();
+                updateWrongBank();
+            }, 300);
         }
     })
     .catch(err => {
@@ -2824,10 +2863,16 @@ function submitExam() {
         updateProductivity('exam', timeTaken, { score: data.score, questions: data.total });
         
         if (currentUser) {
-            loadUserData();
-            updateAllUI();
-            loadAnalyticsData();
-            loadAdaptiveData();
+            setTimeout(() => {
+                loadUserData();
+                updateAllUI();
+                loadAnalyticsData();
+                loadAdaptiveData();
+                loadProductivityStats();
+                updateStats();
+                updateBadges();
+                updateWrongBank();
+            }, 300);
         }
     })
     .catch(err => {
@@ -3054,7 +3099,7 @@ function updateProductivity(type, duration, details = {}) {
 }
 
 // ============================================================
-// ANALYTICS FUNCTIONS - FIXED (Chart.js canvas reuse fix)
+// ANALYTICS FUNCTIONS - FIXED
 // ============================================================
 function loadAnalyticsData() {
     const container = document.getElementById('analyticsContainer');
@@ -3067,16 +3112,14 @@ function loadAnalyticsData() {
         document.getElementById('analyticsWeak').textContent = '0';
         document.getElementById('recentActivity').innerHTML = '<p class="text-muted italic">Please login to see your analytics.</p>';
         
-        // Show empty chart
         try {
             const ctx = document.getElementById('analyticsChart');
             if (ctx) {
-                // Destroy existing chart if it exists
-                if (window.analyticsChartInstance) {
-                    window.analyticsChartInstance.destroy();
-                    window.analyticsChartInstance = null;
+                if (analyticsChartInstance) {
+                    analyticsChartInstance.destroy();
+                    analyticsChartInstance = null;
                 }
-                window.analyticsChartInstance = new Chart(ctx, {
+                analyticsChartInstance = new Chart(ctx, {
                     type: 'line',
                     data: {
                         labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
@@ -3103,16 +3146,20 @@ function loadAnalyticsData() {
     }
     
     fetch(`/api/user/${currentUser}/analytics`)
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`HTTP error! status: ${res.status}`);
+            }
+            return res.json();
+        })
         .then(data => {
-            analyticsData = data;
+            console.log('📊 Analytics data:', data);
             
             document.getElementById('analyticsStudyTime').textContent = Math.floor((data.study_time || 0) / 60);
             document.getElementById('analyticsAvgScore').textContent = `${data.average_score || 0}%`;
             document.getElementById('analyticsMastery').textContent = data.concepts_mastered || 0;
             document.getElementById('analyticsWeak').textContent = data.weakest_topics ? data.weakest_topics.length : 0;
             
-            // Recent activity
             const recentContainer = document.getElementById('recentActivity');
             if (data.recent_activity && data.recent_activity.length > 0) {
                 recentContainer.innerHTML = data.recent_activity.map(activity => 
@@ -3125,22 +3172,19 @@ function loadAnalyticsData() {
                 recentContainer.innerHTML = '<p class="text-muted italic">No recent activity.</p>';
             }
             
-            // Chart - FIXED: Destroy old chart before creating new one
             try {
                 const ctx = document.getElementById('analyticsChart');
                 if (ctx) {
-                    // DESTROY existing chart first!
-                    if (window.analyticsChartInstance) {
-                        window.analyticsChartInstance.destroy();
-                        window.analyticsChartInstance = null;
+                    if (analyticsChartInstance) {
+                        analyticsChartInstance.destroy();
+                        analyticsChartInstance = null;
                     }
                     
-                    // Get weekly scores or use default
                     const scores = data.weekly_scores || [0, 0, 0, 0];
-                    window.analyticsChartInstance = new Chart(ctx, {
+                    analyticsChartInstance = new Chart(ctx, {
                         type: 'line',
                         data: {
-                            labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                            labels: data.weekly_labels || ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
                             datasets: [{
                                 label: 'Quiz Scores',
                                 data: scores,
@@ -3179,7 +3223,7 @@ function loadAnalyticsData() {
         })
         .catch(err => {
             console.error('Error loading analytics:', err);
-            document.getElementById('recentActivity').innerHTML = '<p class="text-red-500">Error loading analytics.</p>';
+            document.getElementById('recentActivity').innerHTML = '<p class="text-red-500">Error loading analytics. Please refresh.</p>';
         });
 }
 
@@ -3199,9 +3243,15 @@ function loadAdaptiveData() {
     }
     
     fetch(`/api/user/${currentUser}/adaptive`)
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`HTTP error! status: ${res.status}`);
+            }
+            return res.json();
+        })
         .then(data => {
-            // Recommended topics
+            console.log('🎯 Adaptive data:', data);
+            
             const recommendedContainer = document.getElementById('recommendedTopics');
             if (data.recommended_topics && data.recommended_topics.length > 0) {
                 recommendedContainer.innerHTML = data.recommended_topics.map(topic => 
@@ -3215,7 +3265,6 @@ function loadAdaptiveData() {
                 recommendedContainer.innerHTML = '<p class="text-muted italic">Complete a quiz to get recommendations.</p>';
             }
             
-            // Strong areas
             const strongContainer = document.getElementById('strongAreas');
             if (data.strong_areas && data.strong_areas.length > 0) {
                 strongContainer.innerHTML = data.strong_areas.map(area => 
@@ -3228,7 +3277,6 @@ function loadAdaptiveData() {
                 strongContainer.innerHTML = '<p class="text-muted italic">Complete more quizzes to identify strengths.</p>';
             }
             
-            // Weak areas
             const weakContainer = document.getElementById('weakAreas');
             if (data.weak_areas && data.weak_areas.length > 0) {
                 weakContainer.innerHTML = data.weak_areas.map(area => 
@@ -3242,7 +3290,6 @@ function loadAdaptiveData() {
                 weakContainer.innerHTML = '<p class="text-muted italic">Your weak areas will appear here based on quiz performance.</p>';
             }
             
-            // Study recommendations
             const studyContainer = document.getElementById('studyRecommendations');
             if (data.study_recommendations && data.study_recommendations.length > 0) {
                 studyContainer.innerHTML = data.study_recommendations.map(rec => 
@@ -3257,14 +3304,35 @@ function loadAdaptiveData() {
         })
         .catch(err => {
             console.error('Error loading adaptive data:', err);
-            document.getElementById('recommendedTopics').innerHTML = '<p class="text-red-500">Error loading recommendations. Please try again.</p>';
+            document.getElementById('recommendedTopics').innerHTML = '<p class="text-red-500">Error loading recommendations. Please refresh.</p>';
         });
 }
 
-// Helper function for adaptive recommendations
 function switchTabAndStudy(topic) {
     switchTab('dashboard');
     showNotification(`📚 Focus on: ${topic}`, 'info');
+}
+
+// ============================================================
+// REFRESH ALL DATA - FIX FOR PROGRESS NOT SAVING
+// ============================================================
+function refreshAllData() {
+    showNotification('🔄 Refreshing all data...', 'info');
+    if (currentUser) {
+        loadUserData();
+        setTimeout(() => {
+            updateAllUI();
+            loadAnalyticsData();
+            loadAdaptiveData();
+            loadProductivityStats();
+            updateStats();
+            updateBadges();
+            updateWrongBank();
+            showNotification('✅ Data refreshed successfully!', 'success');
+        }, 500);
+    } else {
+        showNotification('Please login first.', 'warning');
+    }
 }
 
 // ============================================================
@@ -3967,10 +4035,6 @@ function renderPrintableSummary() {
         div.innerHTML = `<strong>${cat}:</strong> ${titles || 'No topics'}`;
         container.appendChild(div);
     });
-}
-
-function initChart() {
-    // Chart is now initialized in loadAnalyticsData
 }
 
 function manualSync() {
