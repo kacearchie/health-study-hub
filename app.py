@@ -244,7 +244,7 @@ def extract_questions_from_data(data):
                     if 'questions' in item and isinstance(item['questions'], list):
                         return item['questions']
                     if 'quiz' in item and isinstance(item['quiz'], list):
-                        return item['quiz']
+                        return item['questions']
                     if item.get('type') == 'quiz' and 'questions' in item:
                         return item['questions']
     return questions
@@ -361,6 +361,18 @@ def create_user():
         print(f"❌ Failed to create user: {username}")
         return jsonify({'error': 'Failed to create account'}), 500
 
+# ============================================================
+# FIX: ADDED /api/user/register ALIAS ROUTE
+# ============================================================
+@app.route('/api/user/register', methods=['POST'])
+def register_user():
+    """Alias for /api/user/create - maintains compatibility with frontend"""
+    print("📝 Registration via /api/user/register alias")
+    return create_user()
+
+# ============================================================
+# QUICK SIGNUP (Test Endpoint)
+# ============================================================
 @app.route('/api/quick-signup')
 def quick_signup():
     """Quick test endpoint to create a test user"""
